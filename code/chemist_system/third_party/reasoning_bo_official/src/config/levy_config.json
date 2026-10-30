@@ -1,0 +1,58 @@
+{
+    "name": "Bayesian Optimization on Levy Function",
+    "application_context": "Optimization Benchmark",
+    "description": "Optimize parameters to find the global minimum of the Levy function. The Levy function is a standard test function for evaluating optimization algorithms, featuring many local minima and complex nonlinear interactions between parameters.",
+    "constraint": "Parameters must be in [-10, 10] range. The global minimum is known to be at (1, 1, ..., 1).",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x4",
+            "description": "Fourth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x5",
+            "description": "Fifth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        }
+    ],
+    "target": {
+        "name": "Levy Function Value",
+        "description": "Minimize the Levy function value. The global minimum is 0, achieved at point (1, 1, ..., 1).",
+        "direction": "minimize"
+    }
+}

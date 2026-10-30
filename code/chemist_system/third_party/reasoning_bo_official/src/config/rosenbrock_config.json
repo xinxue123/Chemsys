@@ -1,0 +1,40 @@
+{
+    "name": "High-Dimensional Rosenbrock Optimization",
+    "application_context": "Mathematical Optimization Benchmarking",
+    "description": "Global optimization of the Rosenbrock banana function in n-dimensional space. This non-convex function features a parabolic valley containing the global minimum, testing algorithms' ability to navigate ill-conditioned search spaces.",
+    "constraint": "All variables must satisfy x_i ∈ [-5.0, 10.0]. Function evaluations must maintain floating-point precision of 1e-8.",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension variable in Rosenbrock function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension variable in Rosenbrock function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension variable in Rosenbrock function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        }
+    ],
+    "target": {
+        "name": "Function Value",
+        "description": "Minimize the Rosenbrock function value defined as f(x) = Σ[100(x_{i+1}-x_i²)² + (1-x_i)²]",
+        "direction": "minimize"
+    }
+}

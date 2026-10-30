@@ -1,0 +1,58 @@
+{
+    "name": "Bayesian Optimization on a Complex Multidimensional Function",
+    "application_context": "Optimization Benchmark",
+    "description": "Optimize parameters to find the global minimum of a complex multidimensional function. This function features many local minima and complex nonlinear interactions between parameters, making it a standard test for evaluating optimization algorithms.",
+    "constraint": "Parameters must be in [-10, 10] range.",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x4",
+            "description": "Fourth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        },
+        {
+            "display_name": "x5",
+            "description": "Fifth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -10,
+                10
+            ]
+        }
+    ],
+    "target": {
+        "name": "Function Value",
+        "description": "Minimize the value of the complex multidimensional function. The global minimum is 0.",
+        "direction": "minimize"
+    }
+}

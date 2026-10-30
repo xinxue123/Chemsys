@@ -1,0 +1,40 @@
+{
+    "name": "High-Dimensional Mathematical Function Optimization",
+    "application_context": "Mathematical Optimization Benchmarking",
+    "description": "Global optimization of a non-convex mathematical function in n-dimensional space. This function features a complex landscape with multiple local minima, testing algorithms' ability to navigate challenging search spaces.",
+    "constraint": "All variables must satisfy x_i ∈ [-5.0, 10.0]. Function evaluations must maintain floating-point precision of 1e-8.",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension variable in the mathematical function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension variable in the mathematical function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension variable in the mathematical function",
+            "data_type": "float",
+            "bounds": [
+                -5.0,
+                10.0
+            ]
+        }
+    ],
+    "target": {
+        "name": "Function Value",
+        "description": "Minimize the value of the mathematical function defined over the given parameter space.",
+        "direction": "minimize"
+    }
+}

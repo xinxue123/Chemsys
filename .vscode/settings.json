@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/runtime/environments/.venv-official/Scripts/python.exe",
+    "python.analysis.extraPaths": ["${workspaceFolder}/code/chemist_system"],
+    "files.exclude": {
+        "chemist_system": true,
+        "experiments/chemist_system": true,
+        "**/__pycache__": true
+    },
+    "search.exclude": {
+        "chemist_system": true,
+        "experiments": true,
+        "runtime": true
+    }
+}

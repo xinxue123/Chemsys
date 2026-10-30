@@ -1,0 +1,45 @@
+[project]
+name = "faithful-bo"
+version = "0.0.1"
+description = "Enhancing Bayesian Optimization with Long-Context Reasoning  Power in LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "black>=25.1.0",
+    "box2d>=2.3.10",
+    "camel>=0.1.2",
+    "gym>=0.26.2",
+    "hatchling>=1.27.0",
+    "lightrag-hku>=1.2.1",
+    "matplotlib>=3.10.1",
+    "neo4j>=5.28.1",
+    "openai>=1.64.0",
+    "pre-commit>=4.1.0",
+    "pymilvus>=2.5.4",
+    "pytest>=8.3.4",
+    "ruff>=0.9.7",
+    "scipy>=1.15.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.jupyter]
+notebook-dir = "src"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::UserWarning",
+    'ignore:function ham\(\) is deprecated:DeprecationWarning',
+]

@@ -1,0 +1,121 @@
+{
+    "name": "Bayesian Optimization on Lunar Lander",
+    "application_context": "Aerospace Control/Optimization",
+    "description": "This experiment aims to optimize the control policy for the Lunar Lander task by considering the state and action spaces. The goal is to maximize the average final reward over 50 randomly generated terrains, initial positions, and speed combinations.",
+    "constraint": "State variables must remain within physically valid ranges. Actions are boolean values, where only one action can be active at a time. A successful landing occurs when the lander comes to rest without crashing or deviating too far from the target.",
+    "parameter_definitions": [
+        {
+            "display_name": "horizontal_position",
+            "description": "Normalized horizontal coordinate (x) of the lander.",
+            "data_type": "continuous",
+            "bounds": [
+                -1.5,
+                1.5
+            ]
+        },
+        {
+            "display_name": "vertical_position",
+            "description": "Normalized vertical coordinate (y) of the lander.",
+            "data_type": "continuous",
+            "bounds": [
+                -1.5,
+                1.5
+            ]
+        },
+        {
+            "display_name": "horizontal_velocity",
+            "description": "Normalized horizontal velocity (vx) of the lander.",
+            "data_type": "continuous",
+            "bounds": [
+                -5.0,
+                5.0
+            ]
+        },
+        {
+            "display_name": "vertical_velocity",
+            "description": "Normalized vertical velocity (vy) of the lander.",
+            "data_type": "continuous",
+            "bounds": [
+                -5.0,
+                5.0
+            ]
+        },
+        {
+            "display_name": "angle",
+            "description": "Angle (θ) of the lander in radians, with respect to the vertical axis.",
+            "data_type": "continuous",
+            "bounds": [
+                -3.14,
+                3.14
+            ]
+        },
+        {
+            "display_name": "angular_velocity",
+            "description": "Normalized angular velocity (ω) of the lander.",
+            "data_type": "continuous",
+            "bounds": [
+                -5.0,
+                5.0
+            ]
+        },
+        {
+            "display_name": "left_leg_contact",
+            "description": "Boolean value indicating whether the left leg is in contact with the ground.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        },
+        {
+            "display_name": "right_leg_contact",
+            "description": "Boolean value indicating whether the right leg is in contact with the ground.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        },
+        {
+            "display_name": "no_action",
+            "description": "Boolean value indicating whether no action is taken.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        },
+        {
+            "display_name": "fire_left_engine",
+            "description": "Boolean value indicating whether the left engine is fired to rotate clockwise.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        },
+        {
+            "display_name": "fire_main_engine",
+            "description": "Boolean value indicating whether the main engine is fired to reduce descent speed.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        },
+        {
+            "display_name": "fire_right_engine",
+            "description": "Boolean value indicating whether the right engine is fired to rotate counterclockwise.",
+            "data_type": "categorical",
+            "bounds": [
+                0,
+                1
+            ]
+        }
+    ],
+    "target": {
+        "name": "Average Landing Reward",
+        "description": "The reward system is designed to encourage safe and efficient landings. Moving from the top of the screen to the landing pad and coming to rest yields about 100-140 points. If the lander moves away from the landing pad, it loses reward. If the lander crashes, it receives an additional -100 points. If it comes to rest successfully, it receives an additional +100 points. Each leg with ground contact contributes +10 points. Firing the main engine incurs a penalty of -0.3 points per frame, while firing the side engine incurs a penalty of -0.03 points per frame. The maximum possible reward for a solved episode is 200 points.",
+        "direction": "maximize"
+    }
+}

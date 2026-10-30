@@ -1,0 +1,31 @@
+{
+    "name": "Bayesian Optimization on a Multimodal Function",
+    "application_context": "Global Optimization Benchmark",
+    "description": "Optimize parameters to find the global minimum of a multimodal mathematical function. This function features a nearly flat outer region and a sharp central valley, making it particularly challenging for optimization algorithms.",
+    "constraint": "Parameters must be in [-32.768, 32.768] range. The global minimum is located at the origin (0, 0, ..., 0).",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        }
+    ],
+    "target": {
+        "name": "Function Value",
+        "description": "Minimize the value of the multimodal mathematical function. The global minimum is 0. Typical values range from 0 to ~20.",
+        "direction": "minimize"
+    }
+}

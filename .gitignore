@@ -1,0 +1,10 @@
+/config.txt
+/experiments/
+/runtime/
+/chemist_system/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv*/
+/code/chemist_system/third_party/reasoning_bo_official/scripts/experiment.py

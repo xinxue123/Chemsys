@@ -1,0 +1,31 @@
+{
+    "name": "Bayesian Optimization on Ackley Function",
+    "application_context": "Global Optimization Benchmark",
+    "description": "Optimize parameters to find the global minimum of the Ackley function. The Ackley function is a classic multimodal test problem that presents a nearly flat outer region and a sharp central valley, making it particularly challenging for optimization algorithms.",
+    "constraint": "Parameters must be in [-32.768, 32.768] range. The global minimum is at the origin (0, 0, ..., 0).",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        }
+    ],
+    "target": {
+        "name": "Ackley Function Value",
+        "description": "Minimize the Ackley function value. The global minimum is 0, achieved at the origin (0, 0, ..., 0). Typical values range from 0 to ~20.",
+        "direction": "minimize"
+    }
+}

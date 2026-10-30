@@ -1,0 +1,148 @@
+{
+    "name": "15D Bayesian Optimization on Multimodal Function",
+    "application_context": "High-Dimensional Global Optimization Benchmark",
+    "description": "Optimize parameters to find the global minimum of a 15-dimensional multimodal Ackley function. This high-dimensional version amplifies the challenges of escaping local minima and navigating sharp valleys in search space.",
+    "constraint": "All parameters must be in [-32.768, 32.768] range. The 15-dimensional global minimum is at the origin (0, 0, ..., 0).",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x4",
+            "description": "Fourth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x5",
+            "description": "Fifth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x6",
+            "description": "Sixth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x7",
+            "description": "Seventh dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x8",
+            "description": "Eighth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x9",
+            "description": "Ninth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x10",
+            "description": "Tenth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x11",
+            "description": "Eleventh dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x12",
+            "description": "Twelfth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x13",
+            "description": "Thirteenth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x14",
+            "description": "Fourteenth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        },
+        {
+            "display_name": "x15",
+            "description": "Fifteenth dimension parameter",
+            "data_type": "float",
+            "bounds": [
+                -32.768,
+                32.768
+            ]
+        }
+    ],
+    "target": {
+        "name": "Ackley Function Value",
+        "description": "Minimize the value of the 15-dimensional Ackley function. Global minimum is 0. In high dimensions, typical values range from 0 to ~200 due to exponential term amplification.",
+        "direction": "minimize"
+    }
+}

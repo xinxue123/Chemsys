@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Run the chemist CLI with the interpreter's own libstdc++ on the loader path.
+# Needed on hosts where scipy/mp_api extensions require a newer CXXABI than the
+# system libstdc++ (i.e. when conda is not activated in the calling shell).
+set -euo pipefail
+PY="${CHEMIST_PYTHON:-/home/ucas/miniconda3/envs/python12/bin/python}"
+PREFIX="$(cd "$(dirname "$PY")/.." && pwd)"
+export LD_LIBRARY_PATH="$PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PYTHONPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)${PYTHONPATH:+:$PYTHONPATH}"
+exec "$PY" -m chem.cli "$@"

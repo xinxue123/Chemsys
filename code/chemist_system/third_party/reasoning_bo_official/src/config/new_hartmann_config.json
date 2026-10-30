@@ -1,0 +1,67 @@
+{
+    "name": "Multimodal Optimization in Six Dimensions",
+    "application_context": "Global Optimization Challenge",
+    "description": "Global minimization of a six-dimensional mathematical function, featuring multiple local minima with complex nonlinear parameter interactions. The global minimum is approximately f(x) ≈ -3.86278.",
+    "constraint": "Variables must satisfy 0 ≤ x_i ≤ 1. Function evaluations require precision control of certain matrix parameters.",
+    "parameter_definitions": [
+        {
+            "display_name": "x1",
+            "description": "First dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        },
+        {
+            "display_name": "x2",
+            "description": "Second dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        },
+        {
+            "display_name": "x3",
+            "description": "Third dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        },
+        {
+            "display_name": "x4",
+            "description": "Fourth dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        },
+        {
+            "display_name": "x5",
+            "description": "Fifth dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        },
+        {
+            "display_name": "x6",
+            "description": "Sixth dimension variable",
+            "data_type": "float",
+            "bounds": [
+                0.0,
+                1.0
+            ]
+        }
+    ],
+    "target": {
+        "name": "Function Value",
+        "description": "Minimize the value of the six-dimensional mathematical function defined over the given parameter space.",
+        "direction": "minimize"
+    }
+}

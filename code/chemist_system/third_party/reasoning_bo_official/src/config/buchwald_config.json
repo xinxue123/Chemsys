@@ -1,0 +1,84 @@
+{
+    "name": "Buchwald-Hartwig Coupling Reaction Optimization",
+    "application_context": "Organic Chemistry / Reaction Condition Optimization",
+    "description": "This experiment aims to optimize the reaction conditions for the Buchwald-Hartwig amination, a key C-N cross-coupling reaction used in the synthesis of pharmaceuticals and functional materials. The optimization focuses on selecting optimal ligands, additives, bases, and aryl halides to maximize reaction yield. High-throughput experimentation and AI-driven decision-making are employed to explore a large combinatorial chemical space.",
+    "constraint": "Only one choice per category (Ligand, Additive, Base, Aryl halide) can be selected per reaction run. All inputs are categorical.",
+    "parameter_definitions": [
+        {
+            "display_name": "Ligand",
+            "description": "Phosphine-based or bulky ligands that influence catalyst reactivity and selectivity",
+            "data_type": "categorical",
+            "bounds": [
+                "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P([C@@]3(C[C@@H]4C5)C[C@H](C4)C[C@H]5C3)[C@]6(C7)C[C@@H](C[C@@H]7C8)C[C@@H]8C6)C(OC)=CC=C2OC",
+                "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C(C)(C)C)C(C)(C)C)C(OC)=CC=C2OC",
+                "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C(C)(C)C)C(C)(C)C)C=CC=C2",
+                "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C3CCCCC3)C4CCCCC4)C=CC=C2"
+            ]
+        },
+        {
+            "display_name": "Additive",
+            "description": "Nitrogen or oxygen heterocycles influencing reactivity and solubility",
+            "data_type": "categorical",
+            "bounds": [
+                "C1(C2=CC=CC=C2)=CC=NO1",
+                "C1(C2=CC=CC=C2)=CON=C1",
+                "C1(C2=CC=CC=C2)=NOC=C1",
+                "C1(N(CC2=CC=CC=C2)CC3=CC=CC=C3)=CC=NO1",
+                "C1(N(CC2=CC=CC=C2)CC3=CC=CC=C3)=NOC=C1",
+                "C12=C(C=CC=C2)ON=C1",
+                "C12=CON=C1C=CC=C2",
+                "CC1=C(C(OCC)=O)C=NO1",
+                "CC1=CC(C(OCC)=O)=NO1",
+                "CC1=CC(N2C=CC=C2)=NO1",
+                "CC1=CC=NO1",
+                "CC1=NOC(C(OCC)=O)=C1",
+                "CC1=NOC(C2=CC=CC=C2)=C1",
+                "CC1=NOC=C1",
+                "CCOC(C1=CON=C1)=O",
+                "CCOC(C1=NOC=C1)=O",
+                "COC1=NOC(C(OCC)=O)=C1",
+                "FC(C=CC=C1F)=C1C2=CC=NO2",
+                "O=C(OC)C1=CC=NO1",
+                "O=C(OC)C1=NOC(C2=CC=CO2)=C1",
+                "O=C(OC)C1=NOC(C2=CC=CS2)=C1"
+            ]
+        },
+        {
+            "display_name": "Base",
+            "description": "Nitrogen-based or phosphine-derived bases used for deprotonation and catalytic cycle support",
+            "data_type": "categorical",
+            "bounds": [
+                "CC(C)(C)/N=C(N(C)C)/N(C)C",
+                "CN(C)P(N(C)C)(N(C)C)=NP(N(C)C)(N(C)C)=NCC",
+                "CN1CCCN2C1=NCCC2"
+            ]
+        },
+        {
+            "display_name": "Aryl halide",
+            "description": "Aryl halide substrate used for oxidative addition in the catalytic cycle",
+            "data_type": "categorical",
+            "bounds": [
+                "BrC1=CC=C(C(F)(F)F)C=C1",
+                "BrC1=CC=C(CC)C=C1",
+                "BrC1=CC=C(OC)C=C1",
+                "BrC1=CN=CC=C1",
+                "BrC1=NC=CC=C1",
+                "ClC1=CC=C(C(F)(F)F)C=C1",
+                "ClC1=CC=C(CC)C=C1",
+                "ClC1=CC=C(OC)C=C1",
+                "ClC1=CN=CC=C1",
+                "ClC1=NC=CC=C1",
+                "IC1=CC=C(C(F)(F)F)C=C1",
+                "IC1=CC=C(CC)C=C1",
+                "IC1=CC=C(OC)C=C1",
+                "IC1=CN=CC=C1",
+                "IC1=NC=CC=C1"
+            ]
+        }
+    ],
+    "target": {
+        "name": "Yield",
+        "description": "Isolated yield percentage of the desired amine product from the B-H coupling reaction",
+        "direction": "maximize"
+    }
+}
