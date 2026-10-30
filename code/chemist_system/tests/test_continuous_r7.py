@@ -98,6 +98,13 @@ class BinaryInformationTests(unittest.TestCase):
 
 
 class PassiveCovarianceEngineTests(unittest.TestCase):
+    def test_online_and_frozen_call_rounds_are_explicitly_distinct(self):
+        _, context, state, _ = fixture('B2')
+        with patch.object(r6, 'build_context', return_value=context):
+            self.assertEqual(r7.build_context(None, state, 3)['menu'], ())
+            online = r7.build_context(None, dict(state, arm='B2_online'), 3)
+        self.assertEqual(len(online['menu']), 2)
+
     def test_base_arm_preserves_frozen_bo(self):
         cache, context, state, _ = fixture('B0')
         chosen = r7.plan(cache, state, 1, context)

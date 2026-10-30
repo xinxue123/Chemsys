@@ -16,8 +16,9 @@ from . import continuous_r6_engine as r6
 from . import continuous_r7_core as core
 
 
-ARMS = ('B0', 'B2', 'B4')
+ARMS = ('B0', 'B2', 'B4', 'B2_online')
 CALL_ROUNDS = (1,)  # One shared first-round hypothesis for controlled comparisons.
+ONLINE_CALL_ROUNDS = r6.CALL_ROUNDS  # Separate adaptive LLM mechanism study.
 
 
 def build_context(cache, state, t):
@@ -26,8 +27,9 @@ def build_context(cache, state, t):
     # R6 context is a read-only adapter to the identical original GP and menu.
     simulated_arm = 'A0' if state['arm'] == 'B0' else 'A4'
     context = r6.build_context(cache, dict(state, arm=simulated_arm), t)
-    if t not in CALL_ROUNDS:
-        context['menu'] = ()
+    authorized_calls = ONLINE_CALL_ROUNDS if state['arm'] == 'B2_online' else CALL_ROUNDS
+    if t not in authorized_calls:
+        context = dict(context, menu=())
     return context
 
 

@@ -57,9 +57,11 @@ def prepare():
         'initial_queries': 4, 'additional_queries': 16,
         'GP': 'frozen original SingleTaskGP plus MC512 qLogEI',
         'LLM': {'model': api.MODEL, 'prompt_sha256': r6.digest(llm.SYSTEM),
-                'call_rounds': list(r7.CALL_ROUNDS),
+                'fixed_hypothesis_call_rounds': list(r7.CALL_ROUNDS),
+                'adaptive_hypothesis_call_rounds': list(r7.ONLINE_CALL_ROUNDS),
                 'shared_first_round_request': True,
-                'future_response_reuse': False},
+                'future_response_reuse': False,
+                'online_arm': 'B2_online'},
         'knowledge': {'representation': 'one precommitted anchored pair-sign event',
                       'propagation': 'full GP posterior covariance to existing gate',
                       'not_global_monotonicity': True,
@@ -222,7 +224,10 @@ def audit():
         history = state['history']
         assert len(history) == 4 + len(state['decisions'])
         assert len({h['candidate_id'] for h in history}) == len(history)
-        assert len(state['calls']) <= 1
+        maximum_calls = len(r7.ONLINE_CALL_ROUNDS) if state['arm'] == 'B2_online' else len(r7.CALL_ROUNDS)
+        assert len(state['calls']) <= maximum_calls
+        allowed_call_rounds = r7.ONLINE_CALL_ROUNDS if state['arm'] == 'B2_online' else r7.CALL_ROUNDS
+        assert all(c['round'] in allowed_call_rounds for c in state['calls'])
         for t, decision in enumerate(state['decisions'], 1):
             commit = data.read(state_file.parent / 'rounds' / f'{t:02d}_committed.json')
             assert commit['history_sha256'] == r6.digest(history[:t + 3])

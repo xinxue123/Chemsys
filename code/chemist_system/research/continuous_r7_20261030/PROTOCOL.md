@@ -54,11 +54,15 @@ The correlated-sign information diagnostic uses
 | B0 | exact original Pure BO | none | none |
 | B2 | original GP + passive covariance-conditioned preference | one first-round comparison | none |
 | B4 | B2 with the direction of the **same** first-round comparison reversed | exact B2 first-round request/response is reused | none |
+| B2_online | same covariance policy, but adaptive later hypotheses | original R6 rounds 1, 3, 6, 9 | none |
 
 One first-round comparison, shared by B2/B4 for the same task+seed, isolates
 the propagation mechanism from stochastic later-round LLM generations. If the
-LLM abstains, B2/B4 must reduce to Pure BO. A separate R7-V with cost-aware
-active verification is **not implemented** in this stage.
+LLM abstains, B2/B4 must reduce to Pure BO. `B2_online` is the separately
+identified **adaptive/full-stack** test: later input prefixes may diverge,
+so its LLM responses cannot be causally attributed to the same fixed knowledge
+tape as B2/B4. A separate R7-V with cost-aware active verification is
+**not implemented** in this stage.
 
 ## Original research environment
 
@@ -74,6 +78,7 @@ python continuous_r7.py prepare
 python continuous_r7.py run --task SnAr --arm B0 --seed 1
 python continuous_r7.py run --task SnAr --arm B2 --seed 1 --config ../config.txt
 python continuous_r7.py run --task SnAr --arm B4 --seed 1 --config ../config.txt
+python continuous_r7.py run --task SnAr --arm B2_online --seed 1 --config ../config.txt
 python continuous_r7.py audit
 python continuous_r7.py status
 python continuous_r7.py report
