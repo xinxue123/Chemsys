@@ -1,0 +1,89 @@
+{
+  "name": "R7_S_OpenAI_gpt_6_1_terra_medium_passive_covariance",
+  "tasks": [
+    "SnAr",
+    "HPLC"
+  ],
+  "arms": [
+    "B0",
+    "B2",
+    "B4",
+    "B2_online"
+  ],
+  "initial_queries": 4,
+  "additional_queries": 16,
+  "GP": "unchanged original SingleTaskGP and MC512 qLogEI",
+  "LLM": {
+    "provider": "OpenAI API",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model": "gpt-6.1-terra",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 8192,
+    "format": "json_object",
+    "store": false,
+    "system_prompt_sha256": "0c54738919b045356bdd2c93e4d0606b946cbae05d3c81db8b61482e02cbbe35",
+    "frozen_first_call_rounds": [
+      1
+    ],
+    "adaptive_call_rounds": [
+      1,
+      3,
+      6,
+      9
+    ],
+    "identical_first_round_request_for_B2_B4": true,
+    "accepted_visible_JSON_only": true,
+    "credential_not_copied": true
+  },
+  "knowledge": {
+    "representation": "anchored pairwise sign event",
+    "propagation": "joint original GP posterior covariance",
+    "evidence": "passive prequential score; rollback if contradicted",
+    "active_probes": 0,
+    "gate_exceptions": 0
+  },
+  "data_sha256": {
+    "SnAr": {
+      "pool": "2303c7e9d9c431a2e7c5961a1c6db5ea6a502d0d0faa1c1a9f8864507e69bc39",
+      "oracle": "c85d1995ab6725d25f4c185f899157666a2c477d63a25514da491af2f2ffea2c"
+    },
+    "HPLC": {
+      "pool": "ec8d39d5ca519d13620b01a9c5a52d282b6ce64e1437d0b843d760797e483adf",
+      "oracle": "b43315e9dd25dd79d1e3012fb4b61f13769395121e68dd2a03ce0fc7fd8094d7"
+    }
+  },
+  "sources_sha256": {
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_benchmark_data.py": "f9ed553b6ab4466540b4da6d3fa624486551408751314770648eb29f99db91a8",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_benchmark_engine.py": "52c1146483696bbb7fbe35f1bb3c8efa1a8e057072ca67920cb5299c9e5a26c2",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r6_core.py": "b6abaf701439e5dccf90c2d4f4aab161efefdf54f257c78aa4256749ba9fd5d6",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r6_engine.py": "78c95c98bd0d0afbbc13e2f3767c98aaa635c86383645eab8823597f4f4a3f76",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r6_llm.py": "dcda64d47a81070e796447d4c74ef7975ff065f11ed24734cf8d805bfb2ca9d6",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r6_study.py": "b5a4e3ccb8ff177be4d7a9b3c64a4888286d31a7786fdb94a7ad0455ab2bc8d6",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_core.py": "f541d43c7a67fa3a5f6b7a23b5271d9d8752c88d364de1c4da0cf0ed27a7674a",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_diagnostics.py": "e8bd799e5ecff3ec12ab09129c58ded0b8d07aa7152123cbd8acd75c40d7b869",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_engine.py": "40abd292f851c33e336150e8ba0031f5a65197b34816c0d2ee557b869ad4ee7a",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_openai_llm.py": "4f11f28ef73c03bff4a34c80cd9af99c49512baf3ba825b533c1c2311835c13e",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_openai_study.py": "ea5c20258be208a883afe14c96f3c350f47e66fda9dd81427a783618a06d6805",
+    "/workspace/scratch/7b48f55b668d/chemsys_r6/code/chemist_system/chem/benchmarks/continuous_r7_study.py": "67018b0fd09062276c360ac14d6ac73c6dc8a05b54a467ee561294fc53fd7816",
+    "chem/benchmarks/deepseek_suzuki_client.py": "30963e833089e8df8c3df22ee18cb72de8950d8076de72f43e322cb18831fc08",
+    "chem/benchmarks/official_suzuki_adapter.py": "804ba44b0819dca5f0766b6d27923aa7a5c8928e267369ed8412ae37625161ff",
+    "chem/benchmarks/r2_region_trust_engine.py": "39e155b39fafbef0d69a51f170daee0d112bb1ef9be0b282abe751d531749c1c",
+    "chem/benchmarks/reaction_transfer_llm.py": "e4cbb8ea7ee513757ab759af0a0cdbd073f4703f98f2fff62eaf2701422efb6f",
+    "chem/benchmarks/regional_ablation_suzuki_engine.py": "82823275bf91a48c7d9913baf398b1695d87f65e30ad2d9ac5568497ac604a3f",
+    "chem/benchmarks/stable_information_engine.py": "b313954ec28afecb332617ef82aef0fa4c30f06c6df8a6398e048f076dee22f9",
+    "chem/benchmarks/suzuki_domain.py": "8f002c814e3613481d0f507367a5e378cfa06a7aa3e140d64f59826b3284b035",
+    "chem/decision/domain_guard.py": "5739238bef315f05827386f0f51a94867e1571cb82b51d49259e0b1a8aa6cd05",
+    "continuous_r6.py": "6ac98c8235673a41440a9adfa3fe741861f1c5a6ccbaf0dcdbf95cf3ac4e8d00",
+    "continuous_r7.py": "439e266641679bd0c8a3638710762a62aac0d052fa9ee19485bd19c3611b36c3",
+    "continuous_r7_openai.py": "fdd2775e5103db08d4429839cd975281885ce3d8d20d61ce962b3225485d1b88",
+    "third_party/suzuki_official/lgbo/decide.py": "849c04b16655892615ae7a7ddeff460a5c0c247915824f2682fce19b5f00797f",
+    "third_party/suzuki_official/lgbo/prior.py": "2ccd8a6f9559a743b7150aa1ac998c341f069db4a7a5af01145ee21887cc7f7d"
+  },
+  "source_refs": {
+    "original_main": "cf5c01b32af8e8417b66e4aa9b314c8acb55ef5a",
+    "original_R7_PR2": "92621378e7972d4353b07cf96fa3f9b02cd6ee56"
+  },
+  "created_utc": "2026-10-30T11:15:08Z",
+  "no_prior_performance_claim": true,
+  "protocol_sha256": "cadd31ce64015e7c3f9daca29dd58a290713caa95acf6ae6040ab8e864afd4ed"
+}
