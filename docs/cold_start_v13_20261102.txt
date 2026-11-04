@@ -1,0 +1,62 @@
+V13 zero-observation comparison: registered before any new response/outcome
+
+Scope confirmed by the user: eight existing tasks, seed0, V13, Reasoning BO,
+and pure BO. Every arm starts with an empty history and has20 PAID queries.
+No shared or free warm-start outcome is loaded. Every query, including zero
+responses and non-improvements, counts. Historical4+16 results are a separate
+cost/scope cohort, sealed in experiments/milestones/v13_warmstart_20261102.
+
+The existing input pools, categorical representations, native Mixed GP for
+P0/P1, continuous GP for SnAr/HPLC, MC512 q1 qLogEI, numerical seed0 and
+feature-keyed exact-tie/menu streams are inherited. Query indices are now
+absolute paid experiment numbers1..20. There is no ID-based ranking.
+
+At query1 there is no fitted GP or incumbent, hence EI is undefined. Form the
+same five-input menu for all arms using PCG64 feature-keyed random priorities.
+BO selects the first prior priority. V13 and Reasoning BO use domain knowledge
+to choose one menu point via the same official stable confidence extractor.
+No fitted mean/SD/EI is fabricated: first-round numerical files mark posterior
+arrays undefined and a neutral sorting sentinel as NOT log-EI.
+
+At query2 the native GP fits its one own observation. The native model and
+qLogEI scores are unchanged. A singleton or all-identical-value prefix cannot
+estimate a nonzero output scale: use scale1 in normalized objective units for
+posterior output/forecast calibration, instead of the legacy1e-12 variance floor.
+For nonconstant prefixes of two or more observations all fitting, posterior and
+acquisition numerics remain native. This also covers repeated zero feedback.
+Apply exactly the same convention to every arm. This necessary cold-start
+adaptation is explicitly reported; do not claim byte-identical warm-start GP
+behavior for singleton/constant-prefix output units.
+
+V13 retains its split prediction-reliability/recommendation permissions, scalar
+KF, adverse-evidence inheritance, two improving direction tests, two failed
+tests/accurate-failure suppression, bounded review and explicit withdrawal.
+First-round official hypotheses are domain-only; there is no improvement-over-
+incumbent forecast before an incumbent exists. First memory editor is query2,
+with an actual own incumbent. Keep at most4 editor calls, at least3 queries
+between calls, at most2 review experiments, and reserve the final editor call
+until paid query15 (same total-experiment cost position as4+11 before).
+Stagnation uses a first paid observation as its initial best and requires three
+subsequent non-improvements; no fabricated initial anchor or negative index.
+
+Reasoning BO receives only own observations/official Insights/domain data and
+the native five-point menu, with no V13 Notes/KF. The warm-start assertion in
+its wrapper prompt is replaced by the actual zero-observation contract. Both
+LLM arms use fresh gpt-6.1-terra medium children, fork none, each request isolated,
+no response-cache reuse, at most3 schema-only attempts with a valid point locked.
+Compile the official extractor and warm kernel operators before each worker's
+round loop. Use three independent single-thread CPU workers and exact-prefix
+numerical caches; do not alter numerical kernels to seek GPU utilization.
+
+Prospectively seal selection, own-prefix hash, GP arrays, memory predictions and
+raw-response receipts before reading each selected oracle outcome. Replay all
+480 decisions and state transitions; verify historical source/result hashes.
+First menus must match all three arms. Preflight must exercise0/1/2/4 synthetic
+observations without reading oracle values and verify native GP equivalence for
+non-singleton prefixes. Synthetic preflight caches are separate from real runs.
+
+Primary SearchAUC is mean of the20 post-query cumulative best objectives, with
+no free initial incumbent. Secondary metrics: final best and first query reaching
+it. Report per-task all three methods and paired differences. Never average raw
+units across tasks. This is one seed and one new LLM trajectory per arm/task;
+results do not establish multi-seed stability. Do not tune or reroll for outcome.

@@ -1,0 +1,114 @@
+V11：改用Reasoning BO主线后的实验结果
+
+已完成8任务×16查询。SearchAUC相对纯BO：5胜/0平/3负；相对Reasoning BO：2胜/3平/3负。
+多数优势门限（至少5/8严格胜BO）：True。同一seed0开发比较，未进行新的独立种子确认。
+
+结论边界：相对原Reasoning BO，新增记忆组合只在Case4和HPLC提高SearchAUC；Case1、Case2、Perera下降，Case3、Doyle和SnAr持平。不能宣称该组合整体稳定优于Reasoning BO。
+Case2相对纯BO的SearchAUC下降30.16%；Perera和Doyle的最终最佳也低于纯BO。保留这些负结果，不逐任务挑选版本。
+
+实际方案
+GP在原候选池上计算原qLogEI并给出5点；LLM使用本轨迹结果、官方Insight历史与Notes，形成3–5个带置信等级的假设。官方稳定置信排序直接选1点。
+实验前附带预测固定参照的超越概率；实验后计算相对原GP的Brier增益，KF更新知识可靠性。可靠性、暂停/撤回、旧负证据作为下一轮LLM的记忆。事件触发最多4次Notes修订。
+KF不改GP、不改qLogEI、不直接给候选加权，也不否决官方选择。记忆引用并非因果增益证明。
+
+统一设置与官方差异
+相同候选池、原GP/Mixed GP、seed0、4初始化+16查询。新方案真实调用gpt-6.1-terra/medium；其它四组直接读封存结果。
+使用官方提示词与原始置信提取方法，固定官方commit4df3cd64abd1be1aab533627578523610f89788c。为与已有对照公平，保留5→1、共享初始化及本地GP后端；未复现论文5→3批量、LLM热启动、外部图检索或后训练。
+官方论文：https://arxiv.org/html/2505.12833v2
+
+SearchAUC（16次查询后累计最佳的平均；保留各任务原单位）
+任务	纯BO	Reasoning BO	V9	V10	V11	V11较BO/%
+Reizman_Suzuki_Case_1	70.9166	81.1951	70.9836	65.1419	81.1281	+14.399
+Reizman_Suzuki_Case_2	27.6564	25.3903	27.6564	30.1990	19.3144	-30.163
+Reizman_Suzuki_Case_3	85.2846	88.2505	85.2846	86.5734	88.2505	+3.478
+Reizman_Suzuki_Case_4	87.6061	90.3490	87.6061	89.0691	90.9968	+3.870
+Perera_Suzuki	96.3025	96.0050	96.3025	95.5700	95.5700	-0.761
+Doyle_Buchwald_Hartwig	86.1863	81.5322	85.1649	80.8244	81.5322	-5.400
+SnAr	10373.5403	10691.5428	10056.3280	10059.3069	10691.5428	+3.066
+HPLC	2126.1817	1977.0975	2250.5683	2207.2948	2195.8332	+3.276
+
+最终最佳与首达（总实验序号，含4次初始化）
+任务	纯BO最佳	RBO最佳	V11最佳	V11首达	V11最佳较BO
+Reizman_Suzuki_Case_1	88.496315	89.569000	89.569000	15	+1.072685
+Reizman_Suzuki_Case_2	40.085316	40.085316	40.085316	19	+0.000000
+Reizman_Suzuki_Case_3	89.644997	90.709923	90.709923	8	+1.064926
+Reizman_Suzuki_Case_4	94.514603	95.626068	96.515831	20	+2.001228
+Perera_Suzuki	96.570000	99.050000	95.570000	2	-1.000000
+Doyle_Buchwald_Hartwig	92.209311	83.764417	83.764417	15	-8.444894
+SnAr	11559.605122	11559.605122	11559.605122	13	+0.000000
+HPLC	2317.816410	2248.061520	2569.879640	14	+252.063230
+
+机制执行证据
+{
+  "non_BO_choices": 89,
+  "qLogEI_selected_rank_counts": {
+    "2": 24,
+    "1": 39,
+    "3": 24,
+    "5": 24,
+    "4": 17
+  },
+  "decisions_citing_notes": 102,
+  "citations": 114,
+  "citations_outside_retrieval": 27,
+  "citations_outside_selected_scope": 47,
+  "active_support_citations": 78,
+  "counterevidence_citations": 34,
+  "memory_actions": {
+    "add": 27,
+    "retain": 2,
+    "retract": 6,
+    "revise": 4
+  },
+  "refresh_reasons": {
+    "initial_knowledge": 8,
+    "no_active_coverage": 16,
+    "automatic_lifecycle_event": 4,
+    "negative_prediction": 5,
+    "reserved_late_edit": 8,
+    "stagnation": 13
+  },
+  "KF_events": {
+    "prospective_update": 32,
+    "negative_feedback_downgrade": 35,
+    "automatic_pause": 4
+  },
+  "causal_module_attribution": false,
+  "interpretation": "Citations describe public rationales; no no-memory ablation, so they do not prove causal benefit."
+}
+
+这些计数说明模块已运行；没有本版无记忆或无KF完整消融，不能据此断言哪个模块导致收益。
+实际出现4次KF自动暂停、0次KF自动撤回、0次自动恢复；6次撤回来自LLM事件动作。4次版本修订的适用负证据继承数量为0，继承逻辑通过回归测试，但本轮没有实际触发的继承案例。
+引用位于预测Notes但不属于当前检索范围时已独立标注；范围外引用不等于范围内证据，也不用于KF更新。
+
+执行问题与修复
+初次运行中7个任务的引用侧表校验失败：模型引用了提示内forecast_notes中的知识，但原校验只接受当前retrieved_notes。所有失败均发生在下一次oracle读取前。
+技术修订只放宽为可引用提示中明确提供的准确ID/version；官方Insight、系统提示、GP、选点、KF与事件规则未改。修订前32次已完成选择和378份记录逐项核验保留；原始失败响应及多余格式修复成本均保留。
+原协议SHA：34044840deded8d70183af969473c65536411abc389bb639b2eb78b7f876eef1
+修订SHA：bf196c9729c4be428c376db770c543e72fb367bc91d28977b30ed838b2568db3
+
+验证与成本
+10项流程测试、3项审计回归测试通过；8任务首轮GP数组完全一致；128轮官方排序、事前预测和KF审计通过。
+原生GP预热每进程一次并复用缓存，循环中重复编译计数为0；小数据GP使用8路CPU。
+{
+  "logical_calls": 160,
+  "validated_calls": 160,
+  "successful_HTTP_responses": 177,
+  "models": {
+    "gpt-6.1-terra": 177
+  },
+  "input_tokens": 1834608,
+  "output_tokens": 170104,
+  "total_tokens": 2004712,
+  "schema_repair_HTTP_responses": 17,
+  "historical_schema_rejection_receipts": 24,
+  "resolved_technical_amendment": "technical_amendment_01.json",
+  "note": "Historical rejected citation sidecars are retained. First saved official Insight was reused after the annotation-only fix."
+}
+V11/V10最多20次逻辑LLM调用，RBO/V9为16次；只保证实验查询预算一致。
+审计独立重算选点、CDF、KF、生命周期和继承；提示/动作结构复核复用生产函数，未独立重新拟合GP，也没有外部可信时间戳。
+
+复现入口：code/experiment_tools/run_reasoning_memory_v11.py；check检查冻结；status查看进度；report重建汇总。
+已完成run会读取现有结果；只读审计：code/tools/audit_reasoning_memory_v11.py。
+逐轮决策理由：experiments/reports/knowledge_loop_20261101/v11_decision_explanations.csv
+引用范围检查：experiments/reports/knowledge_loop_20261101/v11_note_citations.csv

@@ -1,0 +1,25 @@
+Research goal: evidence-complete English methods manuscript
+Date: 2026-11-01
+User decision: English LaTeX main manuscript, with the methodological narrative of Nature Machine Intelligence.
+
+Objective
+Keep V12 frozen; consolidate every available historical experiment into a provenance-indexed catalogue, complete a bounded set of missing comparisons, and deliver an English LaTeX manuscript, compiled PDF, supplementary results and reproducible figures. The scientific question is when prospective, feedback-calibrated knowledge can complement GP-guided experimental choice without changing the GP.
+
+Acceptance criteria
+1. Catalogue completed, partial, superseded and invalid historical runs, preserving their original protocols, units, knowledge conditions and source paths. Never pool incompatible experiments or count linked copies twice.
+2. Separate the frozen V12 evaluation from earlier development variants. Recompute primary metrics from measured trajectories, and preserve all losses and execution failures.
+3. Register supplemental runs before execution. Keep candidate inputs, native GP recipes, numerical/tie/display streams, 4 initial observations plus 16 queries, and Terra medium unchanged. No outcome-dependent rerolls or method changes.
+4. Complete the registered supplemental matrix and audit initializations, acquisition menus, pre-outcome commitments, response-cache isolation, forecast updates, frozen source and historical controls.
+5. Deliver an evidence-backed manuscript with Introduction, Results, Discussion and Methods; data/code availability, references, scientific figures and supplementary tables. Main text <=3500 words, abstract <=150 words, <=6 main display items; no table of contents.
+6. Compile and visually inspect the PDF. Distinguish retrospective offline optimization from new laboratory experiments and descriptive evidence from causal or population-level guarantees.
+
+Completion means a complete, auditable scientific account, not a required winning result or journal acceptance. V12's limitations and failed earlier gates remain visible.
+
+Goal-tool state
+The application currently holds an unfinished paused earlier optimization goal and rejected creation of this new goal. The old goal has not been marked complete or resumed by a tool. This file records the newly authorized publication task independently; task work continues under the user's explicit request.
+
+Output separation
+Code: code/experiment_tools/paper_v12 and code/tools/paper_*.py
+New experiment data/logs: experiments/runs/paper_v12 and experiments/reports/paper_v12
+Manuscript, tables and figures: paper/v12
+Historical controls remain read-only. No merge or push is authorized by this task.

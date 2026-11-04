@@ -1,0 +1,49 @@
+{
+  "protocol_sha256": "9fe7c3ef785615949b6210803a2b5e4e122e9c78beddcf69724d6e4fdf8bbea0",
+  "status": "PASS_COMPLETE",
+  "complete_online_trajectories": 6,
+  "online_queries": 120,
+  "prefix": {
+    "perera1": {
+      "prefixes": 9,
+      "all_GP_tied": 7,
+      "all_LLM_tied": 2,
+      "mathematical_opportunities": 4,
+      "switched": [],
+      "positive": [],
+      "negative": [],
+      "neutral": [],
+      "net_immediate_uplift": 0.0
+    },
+    "hplc1": {
+      "prefixes": 9,
+      "all_GP_tied": 0,
+      "all_LLM_tied": 1,
+      "mathematical_opportunities": 7,
+      "switched": [
+        8
+      ],
+      "positive": [],
+      "negative": [],
+      "neutral": [
+        8
+      ],
+      "net_immediate_uplift": 0.0
+    },
+    "aryl0": {
+      "prefixes": 9,
+      "all_GP_tied": 4,
+      "all_LLM_tied": 6,
+      "mathematical_opportunities": 0,
+      "switched": [],
+      "positive": [],
+      "negative": [],
+      "neutral": [],
+      "net_immediate_uplift": 0.0
+    }
+  },
+  "mechanism_confirmed": false,
+  "cross_task_performance_gate": false,
+  "material_gain_cells": 1,
+  "material_loss_cells": 0
+}

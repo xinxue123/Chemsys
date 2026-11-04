@@ -1,0 +1,3 @@
+cell,query,incumbent,fixed_id,dynamic_id,fixed_value,dynamic_value,fixed_weight,dynamic_weight,immediate_improvement_delta
+hplc1,9,1489.94141,HPLC_00352,HPLC_00615,87.44064,2206.26367,0.4,0.3800491966275833,716.3222599999999
+aryl0,14,84.62,a00761,a00701,76.63,75.39,0.4,0.7038767595218612,0.0

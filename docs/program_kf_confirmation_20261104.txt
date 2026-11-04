@@ -1,0 +1,55 @@
+Independent confirmation of program-side KF selection — 2026-11-04
+
+Freeze before any new forecast or paired alternative outcome evaluation.
+Cells: Perera Suzuki start 1, HPLC start 1, Direct Arylation start 0.
+The first two are new starts for this rank policy; Direct Arylation was
+previously evaluated under V13/BO/RBO and is new to this rank policy.
+Selection uses task coverage and the smallest unused positive start for the
+two development tasks; the transfer task uses its first archived start.
+No cells selected using measured policy effects under the confirmation.
+
+Stage 1: all q2–q10 archived V13 decision prefixes in each cell, 27 total.
+The window is fixed to the first half of the 20-query budget. q1 has no
+incumbent or KF update. Use archived GP arrays, menu, history, public Notes
+and Insights, and one new sealed all-five forecast per prefix. Replay shadow
+KF feedback using only previously executed archived points; no new outcome
+enters the controller. Lock every policy selection in every cell before
+offline evaluation. Evaluate two committed alternatives only when choices
+differ, count both label lookups, and set matched-choice contrast to zero
+without looking up either. Retain all prefixes, including ties. Report
+GP/LLM tie flags, existence of a different winner on the deployed weight
+interval, observed switch, both objectives, and difference in immediate
+positive improvement over the common incumbent. The sensitivity calculation
+checks affine-score intersections and the intervening intervals, using the
+policy's tie rule. It is descriptive; no sensitivity choice is deployed.
+
+Stage 2: six fresh 0+20 traces (3 cells x fixed/dynamic); 120 online
+simulation queries. Begin after Stage 1 sealed and evaluated. Same native
+GP, qLogEI, five-candidate interface, first-menu seeds and rank rule as the
+prior program-KF study. Fixed .4 vs native V13 scalar KF in [0,.8].
+Both arms share the exact immutable response whenever scientific inputs
+match, including first query. Only selected outcomes update the live KF.
+No KF or arm identifier in LLM prompts. Prefix feedback is not transferred.
+Frozen BO, Reasoning BO and V13 on the matching cells are contextual
+references. Independent gpt-6.1-terra medium responders as previously
+authorized. No new queries on the reference arms.
+
+Primary: paired dynamic-minus-fixed SearchAUC on each cell, actual twenty
+post-query cumulative best values in native units. Secondary: final best and
+first query reaching the common, evaluator-only target 95% of the respective
+pool maximum (unreached reported as such, never supplied to agents). Report
+complete round logs and all three paired differences; three heterogeneous
+cells cannot support a cross-task significance claim. A change of at least
+one percent of that cell's fixed-arm SearchAUC is the predeclared material
+trajectory signal (symmetric loss boundary); mechanistic confirmation
+requires a positive committed switch in at least two independent cells and
+no material paired loss, with a material gain in at least two cells for a
+cross-task performance claim. Mixed or null findings are retained.
+
+All old code, releases and runs are read-only references. Workers persist
+across rounds; shared GP caches; native extractor compiled before each
+worker's loop; no in-loop operator compilation. For choose packets with an
+otherwise valid proposal and forecast vector, strip only assessments for
+Notes outside the proposal's public scope or withdrawn; preserve raw bytes
+and all other fields, and record the removed entries. Other invalid
+responses follow the native validation/repair protocol.

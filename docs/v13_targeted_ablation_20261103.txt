@@ -1,0 +1,50 @@
+Targeted V13 ablation, amended scope at the user's explicit request
+
+User requested cancellation of the no_notes arm and said that not all eight
+tasks need ablation. Stop the old broad scheduler; preserve its completed and
+partial evidence as CANCELLED_BROAD_PHASE, excluded from the primary analysis.
+No old completed result, source, response or checkpoint is deleted or rewritten.
+
+Primary cells, selected from the already-known historical mechanisms before any
+new control outcome on these cells: Doyle seeds0,1 (large gains without KF
+updates); HPLC seed3 (late improvements with feedback); Perera seed2 (early loss
+and subsequent recovery). This is targeted mechanism diagnosis, not an unbiased
+sample or an eight-task performance claim.
+
+Four cells x three new controls x20 queries =240 control queries. Four full V13
+traces are archived-response replay (80 observations), not independent new runs.
+Original BO and Reasoning BO references on these four cells stay unchanged.
+The12 already-completed Doyle fixed-prefix prompt probes are separate diagnostics.
+
+Keep zero free observations,20 total paid queries, the original pool, native GP,
+MC512 qLogEI, top-five menu, numerical seed0 and the historical first-menu seeds.
+Use the already registered exact-input response map within each task/start.
+Different inputs obtain fresh isolated gpt-6.1-terra medium responders. Do not
+claim new full-V13 repeatability or perfectly paired randomness at changed inputs.
+
+Arms:
+ full: unchanged V13.
+ fixed: freeze m,P,probability_positive,r at native birth values, with factual
+        feedback, recommendation permissions and LLM editing retained.
+ no_refresh: allow native editor calls until the FIRST ACCEPTED NONEMPTY Note
+        set exists, then stop all later semantic editor calls. KF and permissions
+        continue. If an editor initially defers with empty knowledge, do not
+        confuse that empty call with supplying initial knowledge.
+ neither: same initial accepted Note and same stop rule, with fixed KF values.
+
+The stop rule explicitly refines the cancelled broad phase, which stopped after
+the first editor CALL even when empty. Main target cells have no old broad-phase
+control observations. Register this new definition before their control runs.
+No no_notes trajectories are scheduled or included in the new primary analysis.
+
+Primary contrasts: full-fixed (KF with editing), full-no_refresh (later editing
+with KF), no_refresh-neither (KF without later editing), fixed-neither (editing
+with fixed KF), and full-fixed-no_refresh+neither (interaction). Report every
+cell individually, SearchAUC, final best, first best and all20 chosen points.
+Do not infer chemical truth or attribute a hit to feedback occurring after it.
+
+Transport adapters only: reuse frozen native loop, numerical cache and schema
+validators; no GP mean/covariance/acquisition/pool changes. Keep original raw
+responses and actual agent receipts. The metadata-only coordinator does not see
+scientific input packets, labels or results. Use six persistent single-thread
+CPU workers and two parallel fresh responders; precompile/warm once per worker.

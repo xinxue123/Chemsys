@@ -1,0 +1,49 @@
+V8设计：数值对比先验、提出时冻结的联合GP和前瞻效用信用
+2026-11-01；本文件须在任何V8新查询/LLM响应前冻结到protocol。
+
+范围与目标
+P0 Reizman Suzuki Case1–4，P1 Perera Suzuki/Doyle Buchwald–Hartwig，P2 SnAr/HPLC，共8任务。候选池、原Mixed/continuous GP配方、native MC512 qLogEI、seed0、4初始化+16查询、真实类别编码和物理特征随机同分序保持。用户性能门为至少5/8 SearchAUC严格胜出；持平不计胜，全部终值下降披露，不按任务挑版本。
+旧V5/V7、已检查seed1/2和所有失败结果保留。seed0是开发；seed1/2不能重新作为独立确认。V7停止结论不改变。
+
+知识输入与固定形状
+使用openai-key.txt中的gpt-6.1-terra medium，最多4次事件调用、最小间隔3轮、预留q11以后一次，沿用V7输入菜单与公开约束提示。新SYSTEM/schema形成新请求hash，不冒用旧定性响应。
+每个add/revise继续给1–2focus、scope/background、未查plus和自身已查reference，但新增numeric_prior={delta_mean_raw,delta_sd_raw}：前者为plus期望目标减reference已知真实目标，后者为该期望对比的一标准差不确定性，均使用任务原单位。delta_mean_raw>0、delta_sd_raw>0；不能量化则null，明确数值弃权，不创建/替换专家。retain/retract为null。此处plus是化学上优于reference的主张；残差相对GP可以为负。
+形状不搜索多个模板：scope内连续focus为clip((x−reference)/(plus−reference),−1,1)，类别为是否等于真实plus标签的指示；1–2focus等权平均。其他类别没有编号距离。scope外phi=0，原plus处phi=1、reference处phi=0。anchors、feature、scope及数值先验参与版本身份；不能同版本重写。
+在birth冻结当前GP的mu_b/C_b/noise、归一化、前缀和fit：m0=delta_mean_raw/scale−[mu_b(plus)−reference_y]，P0=(delta_sd_raw/scale)^2。与GP一致则剩余均值为0，不直接重复加一份相同完整趋势。这只在origin plus处精确对齐；共享beta的范围迁移及与GP剩余误差的条件独立是待检验假设。
+
+联合预测与反馈
+使用已验证BirthEffect：给定birth后的唯一观测Z，以同一联合高斯模型条件化，不把旧KF残差叠在当前重新拟合的GP上。固定birth-null同时条件化，明确区分冻结GP收益与知识效应。scope外观测可以更新共同GP残差部分；scope外不部署知识、不授予该rule正信用。数值输入必须来自固定fit，不能后换kernel。
+每轮先冻结：current GP、raw expert、birth-null、同m0/P0但禁止beta更新的cut-feedback专家、仅保留expert方差的影子，以及版本/点/前缀/GP/birth哈希。selected commit持久写入后只揭示该点真实目标，然后评分，再追加反馈一次。禁止用已查旧点为新版本追记正信用。
+正常GP每轮原样重拟合；birth GP仅恢复既有fit和缓存核块，禁止额外拟合。候选批量计算N×n交叉块，n<=16，不构造候选N×N协方差，预热一次，无循环重复编译。
+
+与基础qLogEI一致的有界专家混合
+R=raw expert潜在Gaussian analytic EI / current GP潜在Gaussian analytic EI；保留原native qLogEI，只乘这个声明的近似倍率。专家可比GP更悲观，R可小于1。
+tempering lambda使实际分布(1−lambda)g+lambda e的EI倍率落在[1/4,4]：R>4时lambda=3/(R−1)，R<1/4时lambda=.75/(1−R)，其余lambda=1。abs(logR)<=1e-12或current latent variance=0时明确零作用lambda=0。倍率裁限必须对应实际预测密度，不能只裁评分却给未裁分布记信用。数值无法解析的输入明确记录失败，不换GP或静默放宽门。
+正信用专家总混合权重<=.5，未覆盖点使用g；按照混合倍率修正native qLogEI，只在原机会预算eligible集合内选点。若新赢家不在任何正权重专家的scope且无非零作用预测支撑，则回到BO并记原因，不能制造没有事前预测的第三点赢家。
+
+四个相关效用账本
+1. 实际tempered expert相对current GP的log density增益。
+2. 相对使用同lambda的tempered birth-null的log density增益。
+3. 用current GP同方差衡量tempered均值的平方误差改善。
+4. 用tempered birth-null同方差衡量相对该null均值的平方误差改善。
+这些是相关的保守效用约束，不相乘成独立似然。第4项防止把冻结GP均值收益加仅方差改善包装成知识均值贡献；所有完整分数及均值/方差分解均保留。
+各账累计S，formula=min(.5,各max(0,tanh(S/2)))。只有当前四项均正时才释放新信用，增加量不超过各tanh(本次gain/2)的最小正值；否则权重不增加。新版本无正信用继承。同结构方向family、旧点和origin ref均落新scope的负事件按来源继承；同query/point在不同expert中反复评分只按每项最负一次计，不重复处罚为多份独立证据。旧“超过最高可比参照”的fact门不再适用于完整数值模型；仍记录实际origin pair事实，但不把它混同为残差方向。
+
+预算内主动验证
+保留最多一次、q<=10、基础gap<=min(epsilon,log1.1)和原总查询预算。目标规则须当前权重0、四账无负债、有至少2个当前预算内未查scope点、cap权重可改变排名。
+新信息量I(beta;Y|Z)=.5 log(1+P*psi(x)^2/(v_null(x)+birth_noise))。选择较同轮BO增量>=.01 nats的候选，最大增量优先、再小gap、最后原物理随机同分序；BO在scope外仍可通过共同协方差提供beta信息，比较不能任意置0。它是该模型内部参数信息，不是相对GP的有效化学知识，错误共享背景仍可能导致有害验证。
+只在加权选择未改变BO时考虑验证；冷验证同样需要冻结完整前瞻预测。成功验证不会自动扩大scope，也不保证下一轮仍在预算内。
+
+预声明实验阶段
+阶段1：8条新匹配BO和8条full，完整20点BO要复现历史。完整报告SearchAUC、终值、首达轮次、提案/弃权、前瞻分数、权重、beta、实际改点与失败。
+full不足5严格AUC胜出或没有真实信用加权改点则停止此候选，不增加确认种子、不临时改门限。
+阶段2（仅阶段1过门）：运行8条verification（同知识/学习/主动验证，但不部署信用）和8条no_calibration（同初始m0/P0、birth-null条件化及psi，beta保持原先验的cut-feedback预测控制）。后者是明确的预测控制，不声称完整joint后验；只禁beta更新，其他信用与调用政策仍按该臂自身前瞻反馈运行。
+同完整公开context复用LLM响应；分歧后的信用/额度/刷新可能导致不同context，比较的是整条政策，不把后续曲线全归因于一个即时修正。
+只有full完整独立审计通过，且至少1任务AUC高于verification、至少1任务AUC高于no_calibration，才进入另行登记的新初始化确认。birth-null与仅方差影子保留作同前缀预测诊断，不宣称它们已经跑过独立优化轨迹。
+不宣称旧LLM预测过新幅度，不从历史未查询目标调参，不用单元测试代替新性能和学习增量。
+
+解释边界与数值表示
+严格AUC胜出以差异>1e-9计数；绝对差异<=1e-9视为数值持平，与已有阶段报告一致。
+跨版本旧负score仅为保守惩罚，不当作新birth专家的似然或幅度训练数据；旧GP和tempering不同，不能说新专家已受到同等量化反驳。
+scope内赢家要求保护被选点的前瞻信用可观测性，但会拒绝纯悲观规则把赢家推到scope外的避险路线，不宣称负知识利用完整。
+极大EI比率使用log权重base/remainder两部分保留归一化常数；零作用以zero_effect_policy判断，float exp(lambda)下溢不等于无作用。

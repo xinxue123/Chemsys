@@ -54,3 +54,7 @@ GitHub检出说明见[代码包与实验归档](docs/GITHUB_EXPORT.md)。仓库�
 旧协议、调试脚本和封存清单包含原路径，因此保留`chemist_system`目录联接，以及归档中的源码硬链接兼容名。实验目录的四个便捷入口指向`experiments/chemist_system/`中的原归档结构，不复制数据。硬链接与`code/`的主文件共享同一份文件内容，不是复制的第二套源码；实验数据未放进`code/`。若编辑器以替换文件的方式保存，入口会在运行前重新绑定兼容名。所有科学哈希检查仍按原规则执行，修改算法后不会伪造旧协议通过。
 
 请不要单独删除兼容链接或在归档兼容名下另外开发。冻结目录中的历史源码快照属于证据材料，保留原名字和内容。迁移前后源码哈希和已封存实验清单由`code/tools/verify_layout.py`验证；文件映射及回退信息保存在`runtime/layout_20261030/`。
+
+## V13 与程序化 KF
+
+[结果索引](results/README.md)汇总冻结 V13 和两轮程序化 KF 对照。V13 的预测可信度与推荐权限实现位于 [cold_start_v13](code/experiment_tools/cold_start_v13)。程序化固定权重、动态 KF 和排序规则位于 [program_kf_weight](code/experiment_tools/program_kf_weight)。[独立验证入口](code/experiment_tools/run_program_kf_confirmation.py)使用原始归档，[结果校验脚本](code/analysis/verify_exported_kf_results.py)可直接复算已提交的结果表。

@@ -1,0 +1,31 @@
+Frozen-V12 publication supplement, version 1
+Registered before any new trajectory is evaluated.
+
+Scope and rationale
+Eight tasks: Reizman Suzuki Case 1-4, Perera Suzuki, Doyle Buchwald-Hartwig, SnAr and HPLC. Complete missing V12 coverage and matched initialization sensitivity; add focused removal ablations for the two adaptive components. These are retrospective benchmarks, not wet-lab experiments. Historical development used these datasets; this is not an untouched external test set.
+
+Fixed run matrix: 71 new trajectories, 1136 post-initial queries maximum
+A. V12 seed0 on Case1, Case3, Perera, Doyle and SnAr: 5 trajectories. Reuse the original frozen V12 seed0 Case2/Case4/HPLC and frozen seed0 BO/RBO; do not replace them with a better fresh repeat.
+B. Initializations1,2,3: on the five tasks in A run V12, pure BO and Reasoning BO (45 trajectories). On Case2/Case4/HPLC run Reasoning BO only (9 trajectories); their existing frozen seed1-3 V12/BO trajectories are the paired references. This yields all eight tasks with the three matched initializations. Previously inspected initializations remain labelled as development-exposed.
+C. Removal ablations on Case2, Case4 and HPLC, initializations0 and3: no_KF and no_refresh (12 trajectories). Full V12 reference is the original matching frozen run, not the best repeat. Independent fresh responses in every new arm. One trajectory per cell cannot isolate causal module effects from LLM variability; interpret with the existing fixed-initialization three-repeat study.
+
+Common controls
+Frozen V12 source and prompts; main commit c0fc51257ae85f097b027e375d779dc8234b76a2; protocol 1a5d59471d799105003297e427a8f907801b370e59a997cdb93c142da02fb3f6.
+Same public candidate pools and task-native GP: mixed continuous/categorical for Suzuki, categorical for Perera/Doyle, continuous for SnAr/HPLC. No arbitrary ordinal categorical encoding. Numerical/tie/display random streams stay0. Initial seed0 uses archived IDs; seeds1-3 use physical-feature lexicographic order, PCG64 SeedSequence([seed,0]), choice(N,4,replace=False), retaining order.
+Same 4 initial observations plus16 unique sequential queries, top5 base-qLogEI menu, original official confidence extraction n=1. All five remain executable. Model gpt-6.1-terra, reasoning_effort medium; existing authorized local configuration. No fine-tuning, GP mean correction, new candidate generation or manual oracle-derived knowledge.
+Reasoning BO is the existing matched adaptation: no LLM warm start, external Notes graph or post-training, n=1 rather than paper batch3. It must not be called a full replication of every feature of the original paper.
+
+Ablations (external wrappers only; do not modify frozen packages)
+no_KF: retain prospective forecasts, individual Brier-gain events, factual memory and event-driven LLM edits. Disable numerical KF state adaptation and automatic KF pause/retract/resume: mean0, variance0.25, weight0.4 and probability0.5 remain at birth values for live versions. Increment local observation counts, but no automatic lifecycle event. Explicit evidence-grounded LLM revision/retraction remains. Numerical gain diagnostics are still recorded, so this tests the filter/lifecycle increment over direct factual feedback, not removal of all feedback.
+no_refresh: allow the initial knowledge call only; skip subsequent memory edits. Keep native KF updates, automatic lifecycle and per-round selection Insights. This removes event-driven note revision, not ordinary observation/Insight history.
+No other ablation or best-per-task combination will be promoted as V12.
+
+Measures and analysis
+Primary: SearchAUC = mean of the16 post-initial cumulative-best raw objectives. Secondary: final best, first query achieving final best (0 if already initial), selections differing from same-history BO, prospective Brier gains, lifecycle and edit counts, token/call cost.
+Report per-task paired raw differences and relative differences; never average raw yield and HPLC peak-area units together. Seed1-3 means and sample SD, all individual points, exact win/tie/loss counts. No broad significance or guaranteed non-inferiority claim from n=3. Seed0 development and repeated-LLM experiments are separate panels, not extra independent initialization seeds.
+Compare identical-prefix GP/menu arrays, official extraction and selected-outcome custody. Ablation audits must check their deliberately different transition rules, not demand native-KF equality.
+
+Execution and stopping
+71 trajectories maximum; 15 BO and56 LLM trajectories. Maximum1006 logical LLM calls (selection plus bounded memory); schema repair only follows the frozen client, <=3 attempts/context. No extra run may be triggered by poor performance. Transport failure resumes the same committed prefix and cache; never discard a validated response for its result.
+Use up to9 CPU processes, one Torch thread per worker; warm reusable operators once per process and share native GP prefix caches with locks. No repeated in-loop compilation. Existing CPU GP numerics are preserved; cluster migration or GPU conversion would change the frozen numerical recipe and is not required.
+Source hashes, registered initial IDs, historical-control hashes and the run matrix are sealed before any new outcome access. Hashes and audits are local custody, not external timestamp attestations. API credentials are never copied to paper, run receipts or version control.

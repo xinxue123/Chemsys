@@ -1,0 +1,78 @@
+Program-side KF rank-weight experiment (registered before new outcomes)
+
+User scope: Perera Suzuki starting seed2 and HPLC starting seed3 only. Keep
+frozen V13, Reasoning BO, pure BO, V14 and earlier controls unchanged. No retuning
+on the diagnostic outcome and no expansion to the other six tasks.
+
+Scientific question: does dynamically deploying the existing predictive-skill
+KF weight improve program selection compared with the same fixed .4 weight,
+when current KF numbers and arm labels never enter the LLM request?
+
+Common policy: unchanged native Mixed GP, MC512 qLogEI and five-point menus;
+numerical seed0, prior first-menu seeds2/3 respectively. Existing cold-start
+V13 semantic editor, permission separation and bounded reviews remain common.
+LLM supplies the ordinary official proposal plus five prospective strict-
+incumbent-improvement probabilities. The same public input within a task/start
+shares exactly one accepted raw response across both weights and both phases.
+Changed prefixes get fresh, isolated gpt-6.1-terra medium responses; do not claim
+perfect pairing of LLM randomness after physical histories diverge.
+
+No current per-note KF numbers, candidate-channel KF, deployment weights, arm
+labels, GP means, variances, EI scores or program scoring diagnostics are shown
+to the LLM/editor. Actual observations, Note semantics/permissions/adverse facts
+and previous public Insights remain. Every Insight explicitly distinguishes a
+proposal from the experiment actually executed. Editing rules are shared.
+
+Rank rule (q>=2): tie-aware Borda ranks of the five true GP logEI values and of
+the five LLM probabilities; ties get equal scores. Combined score is
+ (1-w)*Borda_GP + w*Borda_LLM.
+Final ties use the unchanged native physical-feature-keyed random priority.
+If all LLM probabilities are identical, execute the unchanged native GP first
+point. No candidate-ID ordinal is used and no extra budget gate is added.
+Fixed: w=.4. Dynamic: w=the native V13 calibration.reliability in [0,.8].
+Both maintain the same kind of private scalar KF ledger; the fixed arm logs its
+shadow updates but does not deploy them. No extra shrinkage or tuned threshold.
+For q1, no GP/incumbent/probability forecast exists: both execute the shared
+official domain proposal and count its observation as the first paid query.
+
+This KF calibrates the overall candidate-forecast channel, not causal truth or
+the individual chemical contribution of each Note. It uses the existing Brier-
+skill update against the current GP probability and CURRENT incumbent. Update
+only the actually observed selected point, after a sealed pre-outcome packet.
+Unexecuted proposals and alternatives receive no synthetic observation/credit.
+Original Note forecasts/permissions update only when their proposed experiment
+is actually executed; do not transfer proposal-specific citations to another
+point chosen by the ranker. This contract is identical in both arms.
+
+Phase1: all20 frozen V13 prefixes in each of the two starts (40 snapshots).
+Hold each full observed prefix, saved GP arrays, native five-point menu, public
+Note/Insight state and one new all-five forecast packet fixed. Compute both
+weights' program selections before consuming that round's archived behavior
+feedback. The private KF learns along the fixed historical behavior sequence,
+using only its committed forecast for the historical executed point. This is
+off-policy mechanism diagnosis, not a newly optimized trajectory. No additional
+oracle/experiment queries; never evaluate unchosen alternatives for this phase.
+Report all five scores, disagreement rounds, weights, GP/LLM ties and selection
+margins. All-GP-tied menus can make positive weights choose the same LLM favorite;
+record that structural limitation instead of inventing rank differences.
+
+Phase2: two starts x fixed/dynamic x zero initialization +20 paid queries =
+80 new simulated experiment queries total. Run after phase1 completes, without
+changing the registered formula, prompts or parameters. Matched first menus and
+exact-input response coupling ensure matching predictions before divergence.
+After divergence, each policy fits the same GP recipe to its own observations.
+Evaluate every completed trajectory and retain failures/negative evidence.
+
+Primary metric: SearchAUC = mean of the20 post-query cumulative maxima in raw
+task units. Also final best, first query attaining its own best, each selected
+point, actual forecast/KF update, first prompt/physical-selection divergence and
+same-prefix fixed-weight shadows. Archived V13/BO/RBO/V14 references are only
+descriptive; this study's KF contrast is dynamic versus fixed within the new
+common forecaster/controller. Two targeted starts cannot establish stability.
+
+Execution: persistent single-thread CPU workers (two prefix, four full trace),
+shared locked exact-prefix GP cache, native warmup and official extraction
+compilation once per worker; no operator compilation inside a query loop.
+Actual LLM responders are fresh context-free children; coordinator handles only
+opaque metadata. Preserve actual spawn receipts, original UTF-8 response bytes,
+scientific source/input hashes and all pre-outcome commitments. No API key use.

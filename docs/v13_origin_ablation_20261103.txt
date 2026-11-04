@@ -1,0 +1,75 @@
+V13 from-zero mechanism ablation, registered before new decisions
+
+All old methods, code, reports, caches and publications remain immutable.
+Eight historical tasks, starting-menu seeds0,1,2,3, zero free observations,
+20 paid queries per trajectory. Native task-specific GP, MC512 q=1 qLogEI,
+top-five menu, feature-keyed priorities, display order and numerical seed0
+remain unchanged. A starting seed changes only the query1 prior/menu.
+
+Five V13-interface arms per task/start (160 traces):
+  full: exact frozen V13; replay its archived validated responses.
+  fixed: hold m,P,probability_positive,r at their native birth values. Continue
+    prospective forecasts, raw Brier feedback, counters, permissions and editing.
+  no_refresh: allow the original first editor call atq2, even if it returns no
+    accepted Note, then disable all later editor calls. Keep native KF/permissions.
+  neither: combine fixed and no_refresh, retaining the same initial Note(s).
+  no_notes: disable all Note editing and keep notes empty. Retain the identical
+    V13 selection system prompt, official Insight history and GP menu. Its empty
+    knowledge_uses/assessments are still validated. This isolates the structured
+    knowledge bundle from the V13 chooser, not from all implicit LLM knowledge.
+
+The four Note arms share the same initial editor response, because the complete
+scientific input before that intervention is identical. Their first point is
+also shared through the same unchanged V13 query1 prompt. Each point still costs
+one paid query in each arm; there are no free measurements or inherited trials.
+Empty initial knowledge is retained, never replaced by a hand-picked hypothesis.
+
+Use a single immutable response map within each task/start, keyed by exact
+system/public JSON plus requested model/effort and request kind. Seed it with
+archived V13 responses only, using full original packets and raw accepted bytes.
+An old response may be used only for an identical scientific input in that same
+task/start. Different public inputs get a fresh independent child agent. Identical
+new inputs across arms reuse the first validated response, never the best one.
+No cross-start response sharing. All reuses preserve source/response hashes and
+are explicitly labeled, not counted as new independent language realizations.
+This is a conditional diagnostic of a frozen response map. It does not measure
+independent-response repeatability, which remains a separate question.
+
+Full32 trajectories are exact replay checks, not fresh performance evidence.
+The128 control trajectories contain2560 budgeted benchmark queries. Archived
+BO/Reasoning BO32-per-method references remain unchanged and separately labeled;
+their responses are not coupled to the new controls. Do not claim that a
+no_notes-minus-ReasoningBO difference isolates only wording or sampling noise.
+
+Primary module contrasts at each matched task/start:
+  KF with refresh: full-fixed; KF without refresh: no_refresh-neither.
+  Refresh with adaptive KF: full-no_refresh; without KF: fixed-neither.
+  Interaction: full-fixed-no_refresh+neither.
+  Entire structured bundle: full-no_notes.
+Report all20-query SearchAUC, final best, first-best query, complete trajectories,
+per-task means/sample SD and paired starts; never average raw units across tasks.
+Retain query10 record-origin accounting and all negative results. No retuning.
+
+Additional targeted, one-step prompt probes (12 fresh responses, not full runs):
+Doyle start0 beforeq2 and start1 beforeq9, the previously identified first
+divergences. Replay each exact V13 observed prefix and public Insight history.
+Build V13-with-empty-Note and bare-ReasoningBO prompts on the SAME observations,
+Insight history and GP menu. Both prefixes have no retrieved Note. Obtain three
+independent fresh responses per template/prefix, no historical response reuse.
+Lock each choice before looking up its frozen yield. These probes diagnose the
+prompt/interface bundle and response spread at known cases; they are not an
+unbiased task sample, a pure text-only effect, or new20-query optimization runs.
+
+Requested model: independent gpt-6.1-terra medium agents, fork none. Agents see
+only their exact system/public packet and own assigned output file. No truth
+tables, other-arm results, repository search, web, outcome-by-ID inference or
+delegation. Preserve all raw bytes, actual spawn receipts and schema failures.
+Maximum three schema-only attempts; valid extracted point remains locked.
+
+Before new calls, seal source/input/old-result hashes, seed the response map,
+copy exact-prefix numerical caches to the NEW namespace, run synthetic tests
+and exact full-arm replay. The full replay must need zero fresh LLM requests.
+Warm operators and the official extractor once per persistent CPU worker;
+no compilation in the query loop. Six single-thread CPU workers, three concurrent
+decision agents; numeric work is cached only for exact observed prefixes.
+New commits precede every benchmark outcome read. No API credentials are used.

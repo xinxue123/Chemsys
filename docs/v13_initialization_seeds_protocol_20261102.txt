@@ -1,0 +1,50 @@
+V13 frozen multi-initialization validation, registered before new responses
+
+Run all eight existing tasks with initialization seeds 1, 2 and 3: 24 new V13
+trajectories, each with four initial observations and sixteen new queries.
+Reuse all 24 existing matched pure-BO trajectories; also report matched frozen
+V12 and Reasoning BO fresh-subagent controls. No baseline is rerun or changed.
+Seed0 is a development result and is reported separately, not pooled into the
+primary new-seed conclusion. Seeds1/2/3 appeared in earlier V12 research and are
+not a previously unseen test set for the overall research program.
+
+Initialization is the archived input-only rule: lexicographically sort physical
+feature tuples, PCG64 SeedSequence([initialization_seed,0]), draw four without
+replacement and retain draw order. IDs are not sorting scores. The native GP
+numerical, exact-tie and five-point display streams remain0. Only initial_ids
+and storage/transport namespaces are redirected. The original V13 run loop,
+prompts, KF, recommendation state, refresh, menus and all thresholds are frozen.
+Every paired arm has exactly the same initial points and candidate pool.
+
+Use one fresh gpt-6.1-terra medium child agent for each decision/edit/repair,
+fork none, identical instructions to the seed0 V13 study. No old LLM responses
+are copied. Each opaque packet contains exactly system and public. No unqueried
+outcome, other-arm result or GP numerical score is exported. Maximum three
+schema attempts; preserve the first valid official selected point during repair;
+stop before oracle on unresolved schema failure. Never reroll for performance.
+
+First GP arrays must equal the frozen matched BO arrays exactly for all24 pairs.
+Audit all384 existing BO decisions against their saved acquisition/tie arrays.
+Each new query has a durable prospective commit, raw response custody and atomic
+feedback, then full replay. Historical sources, controls and seed0 V13 remain
+hash protected. Operators are warmed once per worker; reuse numerical prefix
+caches with locks. Three independent CPU workers match the three concurrent
+decision-agent slots; do not change scientific numerics to use a GPU.
+
+Primary metric is SearchAUC: mean of all16 post-query cumulative best objectives,
+including the initial incumbent in each maximum. Count every query, including
+zeros, failures and non-improvements. Secondary metrics: final best objective
+and first query reaching it. Report all24 paired results, per-task mean and
+sample standard deviation, paired raw/relative difference, wins/ties/losses,
+range and an explicitly exploratory Student-t95% interval on the paired raw
+differences (df2). Different tasks have different units: never pool raw objectives.
+Report normalized differences descriptively;24 task-seed pairs are not24
+independent tasks. An all-three-positive task is direction-consistent in this
+sample, not proof of general stability. Do not equate a positive mean or a
+majority of individual wins with statistically established stable superiority.
+One new LLM realization per initialization means the experiment measures their
+combined variation; it does not separately identify initialization and LLM noise.
+
+Complete all24 trajectories before a performance conclusion. Do not tune V13,
+select favorable seeds, drop unsuccessful queries, or extend sample size after
+looking at results. Additional seeds or changes require a separate experiment.

@@ -1,0 +1,56 @@
+Frozen V13 zero-observation multi-start study, registered before new outcomes
+
+Eight tasks: Reizman Suzuki Cases1-4, Perera Suzuki, Doyle Buchwald-Hartwig,
+SnAr and HPLC. Add starting seeds1,2,3 for V13, Reasoning BO and pure BO:
+72 new trajectories and1440 paid queries. Keep the completed24 seed0 runs
+unchanged, for a final four-seed cohort of96 trajectories/1920 queries.
+
+There are ZERO free observations, so a starting seed changes ONLY the query1
+feature-keyed PCG64 prior order and shared five-input menu/BO first point.
+Native GP fitting, output scaling, MC512 qLogEI, post-first tie priorities,
+and physical display permutation remain frozen at numerical seed0. Within
+each task/starting-seed all three arms receive the SAME first menu. Later
+menus are generated from each arm's own prefix. Seed1/2/3 are not passed to
+the historical warm-start GP loader, which expects four old measurements.
+Do not load any old objective as an initial observation.
+
+Invoke the exact frozen cold_start_v13.run_one implementation through a
+process-local random/I/O adapter. No policy, KF, permission, feedback, note
+refresh, GP mean/covariance, budget or threshold is changed. New state includes
+explicit starting/numerical seed metadata. Use isolated per-seed response
+namespaces and one fresh gpt-6.1-terra medium child, fork none, per request;
+no response is reused across methods/seeds or copied from seed0. Same maximum
+three schema-only attempts, valid selected point locked. The separate bare
+Reasoning BO first-round JSON schema clarification used in seed0 is retained
+and recorded; it supplies no scientific guidance.
+
+Retain the seed0 cold rules: no GP/EI/incumbent on query1; native fitted GP from
+query2; common output scale1 for singleton/constant-valued prefixes; first
+knowledge editor atq2; at most4 edits, gap at least3, late reserve atq15;
+at most2 review queries. Accurate failure forecasts cannot restore positive
+recommendation permission. Both LLM methods operate on the same GP top-five
+interface and have no access to unqueried oracle outcomes.
+
+Before launch freeze source/protocol/input hashes and all existing seed0
+scientific evidence and reports. Verify seed0 historical warm-start guard.
+Numerical preflight uses synthetic prefixes only: seed0 first-round equality,
+24 new first-menu draws, exact frozen GP/acquisition equality for one/two/four
+observations under every new starting seed, and zero operator compilations in
+the round loop. Use three single-thread CPU workers; warm identical operators
+once and compile the official extractor before each worker's round loop.
+Share only exact-prefix native numerical caches, separate from preflight.
+
+Every selected point, own-prefix hash, GP arrays, note forecasts, LLM raw bytes
+and receipts must be committed BEFORE reading its true outcome. Replay every
+new decision and feedback transition; verify old evidence hashes at completion.
+Do not tune, reroll for performance, change baselines or add unregistered seeds.
+
+SearchAUC = mean of all20 post-query cumulative maxima, including the first
+paid query and every zero/nonimprovement. Also report final best and first
+query reaching each trajectory's final best. For each task report paired
+seed0/1/2/3 results, per-method mean and SAMPLE standard deviation, per-seed
+paired differences, win/tie/loss counts and worst paired difference. Never
+average raw objectives across tasks. Four starting seeds and one independent
+LLM trajectory per method/seed jointly probe starting-condition/LLM variability;
+they cannot isolate the separate variance components or establish broad
+statistical superiority. Preserve all positive and negative runs.

@@ -1,0 +1,36 @@
+V13 benefit-source decomposition: read-only, post-hoc accounting
+
+Population: all eight frozen historical cold-start tasks, starts 0,1,2,3,
+methods V13, local adapted Reasoning BO and BO; 96 complete 0+20 trajectories.
+Do not substitute development variants, warm API results or selected successes.
+Keep SearchAUC = mean of all 20 post-query cumulative maxima.
+
+Primary cutoff: query 10, inherited from the previous phase analysis. Also
+report cutoffs 5 and 15 as sensitivity accounting, without selecting a cutoff
+by the observed result. Decompose each paired SearchAUC difference into the
+weighted record increments originating before/at the cutoff and after it.
+For a common objective floor b, AUC = b + sum_j (21-j)/20 * (M_j-M_(j-1)),
+where M_0=b. This is exact accounting, not a causal module effect.
+
+Re-read native states and pre-outcome commits. Verify their hashes, budgets,
+candidate membership and recorded objectives against frozen evaluation tables.
+For each LLM decision, evaluate the chosen point and its own-prefix GP reference
+on the existing frozen table. Compare immediate incumbent improvements; this
+is a conditional one-step counterfactual, never a BO continuation or a causal
+estimate of the full optimization path. Query 1 has no GP and is labeled as a
+prior-menu comparison. Unqueried labels are used only in this offline evaluator.
+
+Relate record events to declared Note use, prior Note updates, menu coverage,
+and same-version next-query visibility. Feedback after an outcome cannot cause
+that outcome's selection. Absence of a declared forecast does not prove absence
+of indirect Insight, warning or free-form memory influence.
+
+Retain all six registered common-prefix contexts and all conditional contrasts.
+The fixed-KF/no-refresh controls start only after query 10 and inherit the
+prefix's knowledge and numerical state. They do not identify the contribution
+of the mechanisms before query 11. Distinct LLM realizations remain unpaired.
+
+No new LLM requests, GP fits, laboratory/simulator queries, model updates, or
+changes to frozen policies, prompts, thresholds, seeds, pools and old releases.
+Output lives in a separate experiments/reports namespace. Use bounded parallel
+I/O, then vectorized/local arithmetic; do not compile operators in query loops.

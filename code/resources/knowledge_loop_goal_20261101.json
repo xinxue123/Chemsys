@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "created_date": "2026-11-01",
+  "goal_status": "ACTIVE",
+  "phase": "BASELINE_ALIGNMENT_AND_LLM_PREFLIGHT",
+  "goal": "在P0、P1、SnAr+HPLC三组上实现可前瞻检验和修订的知识闭环，并逐任务/知识条件实测不弱于匹配纯BO。",
+  "groups": {
+    "P0": [
+      "Reizman_Suzuki_Case_1",
+      "Reizman_Suzuki_Case_2",
+      "Reizman_Suzuki_Case_3",
+      "Reizman_Suzuki_Case_4"
+    ],
+    "P1": [
+      "Perera_Suzuki",
+      "Doyle_Buchwald_Hartwig"
+    ],
+    "P2": [
+      "SnAr",
+      "HPLC"
+    ]
+  },
+  "knowledge_conditions": {
+    "P0": [
+      "agent_initial_terra",
+      "correct",
+      "wrong_category",
+      "mixed"
+    ],
+    "P1": [
+      "agent_initial_terra"
+    ],
+    "P2": [
+      "agent_initial_terra"
+    ]
+  },
+  "task_count": 8,
+  "agent_scenarios": 20,
+  "llm": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-terra",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "api": "responses",
+    "credential_file": "openai-key.txt",
+    "secret_in_protocol": false,
+    "max_calls_per_trajectory": 4,
+    "late_calls_reserved": 1,
+    "automatic_model_fallback": false
+  },
+  "budget": {
+    "development_seed": 0,
+    "initial_queries": 4,
+    "additional_queries": 16,
+    "tie_seed": 0,
+    "oracle_values_hidden_until_commit": true
+  },
+  "comparison": {
+    "base_acquisition": "qLogEI q=1, MC512; exact shared implementation within task",
+    "continuous_GP": "existing SingleTaskGP (continuous limit of Mixed GP)",
+    "categorical_GP": "shared nominal Mixed GP recipe to be source-pinned before running; any structure-kernel recovery must be shared by BO and agent",
+    "tie_policy": "same no-ID-rank rule for BO and agent; independent tie RNG",
+    "initialization": "each task own frozen four points; BO and agent start independently without protected optimized prefixes",
+    "historical_controls": "references until same-GP/same-tie equivalence verified",
+    "cross_unit_average": false
+  },
+  "acceptance": {
+    "performance": "For every one of 20 agent scenarios, SearchAUC >= matched BO and final_best >= matched BO, within 1e-9 numerical tolerance only; no empirical noninferiority margin",
+    "SearchAUC": "mean cumulative best over 16 added queries, including initialization in incumbent",
+    "mechanism": "all 6 steps audited; positive prospective knowledge evidence and an actual weighted-knowledge decision change must be observed in each of 3 groups; all-BO fallback alone is not knowledge-loop success",
+    "reporting": "separate 8 live-agent tasks from 12 artificial knowledge stress scenarios; initial synthetic correct/wrong/mixed priors may be outcome-informed and are not LLM discoveries",
+    "independence": "seed0 development is not independent confirmation; freeze code/prompts/thresholds then register a fresh held-out paired seed before any stability claim; never reuse failed holdout as confirmation",
+    "promotion": "no merge until agreed performance and mechanism gates pass; retain all failed variants"
+  },
+  "design": {
+    "steps": [
+      "提出有范围和语义身份的可检验知识",
+      "在结果揭示前保存基础GP和知识条件预测",
+      "提交选点后仅揭示该点真实反馈",
+      "按冻结预测相对GP的增量更新权重",
+      "依据反馈保留/修订/撤回，空覆盖则休眠",
+      "只在共同qLogEI机会预算内影响下一次选点"
+    ],
+    "coverage": "review all hypotheses before selecting one; require unqueried eligible support; evaluate whether allowed weight could change ranking; never enlarge scope after observing outcomes",
+    "verification": "prefer free shadow feedback at BO points; active tests are optional, require material extra information and another remaining actionable candidate; no out-of-gate exception in first prototype",
+    "versions": "retain semantic ID, version/parent, prequery evidence IDs and negative constraints; no double-count/relabel reset; revised claims cannot earn retrospective positive evidence",
+    "events": "feedback-driven refresh on exhausted actionable support, material counterevidence or stall, plus reserved late capacity; refresh and deployment independently logged",
+    "categorical": "real names/SMILES and equality/sets; no arithmetic direction or distance on arbitrary category codes",
+    "ablation": [
+      "shadow_only",
+      "controlled_deployment",
+      "controlled_deployment_plus_optional_validation"
+    ],
+    "llm_cache": "reuse same response for identical public prefix+prompt+model+effort+menu across ablations; never share across divergent histories",
+    "risk": "acquisition opportunity constraint is not a theorem of no realized loss"
+  },
+  "artifacts": {
+    "code": "code/chemist_system/chem/benchmarks/knowledge_*",
+    "reports": "experiments/reports/knowledge_loop_20261101",
+    "runs": "experiments/runs/knowledge_loop_20261101",
+    "logs": "experiments/logs/knowledge_loop_20261101"
+  },
+  "implementation_status": "Goal/protocol design only; optimization runner and matched-baseline adapters pending; do not claim performance achieved."
+}

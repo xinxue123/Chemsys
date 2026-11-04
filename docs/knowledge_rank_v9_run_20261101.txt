@@ -1,0 +1,19 @@
+V9-KF-Rank执行交付（2026-11-01）
+
+实现：GP正常随自身实验更新，知识不改动其均值/方差/噪声/qLogEI。当前基础BO最高5个候选构成LLM行动空间。每轮LLM评分；仅事件轮允许保留/添加/修订/撤回知识。规则事前预测P(目标超过固定自身已知参照)，其相对GP的Brier增益进入标量KF，直接控制排序权重；两次实质负反馈可暂停，四次可撤回；暂停至少2查询并有新正反馈才可恢复。初始.4权重为探索先验，不是已验证信用。
+
+保留的变更边界：V9使用top5限制替代V8逐轮收紧的机会门；Reasoning BO也同样5选1、相同Terra medium、同4初始化和16查询。官方置信排序AST不改，parameter_sets用候选ID作I/O映射。V8为只读旧参照，调用频率为4；两个新LLM臂各16轮评分调用。不能把整套策略的差异全归因于KF，也不能称为论文Ax批量5选3完整数值复现。
+
+结果：24条新轨迹全部完成，另读取8条V8 full；384次追加查询、51条事前知识预测反馈审计通过。原BO20点历史全部复现。V8受保护文件哈希不变。14个测试通过；原GP预测及采集数组逐轮前后哈希一致。独立公式检查覆盖KF、生命周期、排序、事件触发和反馈链；动作语法/作用域额外复用了生产验证函数，仅属一致性验证，未独立重新拟合GP。
+V9 vs BO：2胜4平2负；vs V8：3胜2平3负；vs同模型Reasoning BO：4胜4负。HPLC SearchAUC提高5.850%，Case1提高0.095%；Doyle降低1.185%，SnAr降低3.058%。未达到至少5/8严格AUC胜出的性能目标。
+实际记录：35次滤波器weight严格下降，5次自动暂停、3次自动撤回、0次自动恢复；7次选点偏离当轮BO；当前权重相对固定当前版本/状态但将active权重置回.4的影子选择不同7次。影子不是完整无KF消融，不能据此计算因果收益。恢复通路通过合成测试，本轮真实轨迹未触发。
+
+代码：code/experiment_tools/knowledge_rank_v9/；唯一新入口code/experiment_tools/run_knowledge_rank_v9.py。实验前核心提交74b0501，protocol SHA256 58169ae718a2f11155c0dbd5732a55ecd06752a6484262a25f31a1efba433d24。
+在仓库根目录PowerShell执行：
+& .\runtime\environments\.venv-official\Scripts\python.exe .\code\experiment_tools\run_knowledge_rank_v9.py status
+& .\runtime\environments\.venv-official\Scripts\python.exe .\code\experiment_tools\run_knowledge_rank_v9.py check
+& .\runtime\environments\.venv-official\Scripts\python.exe .\code\experiment_tools\run_knowledge_rank_v9.py report
+run --arm bo / reasoning_bo / kf_rank 可原前缀续跑；已完成的轨迹只返回汇总，不再查询。禁止在已有注册目录改规则后覆盖原结果。
+
+输出：experiments/reports/knowledge_loop_20261101/v9_comparison.csv包含全部4方法的AUC、最终最佳及首达轮次；v9_KF_updates.csv包含p_LLM/p_GP、Brier增益、KF增益、均值/方差、部署权重及状态变化；v9_decision_stages.csv包含每轮5候选的原qLogEI、BO秩、各规则概率/权重、融合秩和选点标志；v9_LLM_edits.csv为事件和知识操作。v9_audit.json为完整审计，v9_API_usage.json记录256轮有效调用及1次额外schema修复，无凭据。
+所有原提示与可见回复在experiments/runs/knowledge_loop_20261101/v9_kf_rank/requests/，预查询GP数组/commit在runs/<task>_<arm>/rounds/。调试可在engine.plan、kf.update、engine.feedback设置断点；每次KF前后的数据都已写入反馈回执，无需再次运行付费调用来查看。

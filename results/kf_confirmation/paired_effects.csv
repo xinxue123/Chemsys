@@ -1,0 +1,4 @@
+cell,SearchAUC_delta,SearchAUC_relative_delta,final_best_delta,fixed_first_target,dynamic_first_target,first_divergence
+perera1,0.0,0.0,0.0,,,
+hplc1,35.81611299999986,0.022093259143799417,0.0,,,9
+aryl0,-0.2715000000000316,-0.0036511074353496,-1.8100000000000023,,,14

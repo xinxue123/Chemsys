@@ -1,0 +1,30 @@
+Frozen-V12 publication supplement: Codex subagent execution amendment
+Registered on 2026-11-01 before any new subagent-selected outcome is revealed.
+
+Authorization and separation
+The user requested subagents to complete the remaining experiments after the configured API exhausted credits. This creates a new execution cohort, paper_v12_subagent. Preserve the original paper_v12 protocol, failed request prefixes, 15 completed pure-BO controls, all original API cohorts, and the delivered manuscript snapshot. Do not silently relabel subagent responses as API responses or fill the original protocol with them.
+
+Scientific invariants
+V12 and the matched Reasoning BO implementation remain frozen. Candidate inputs, native GP recipe, initial observations, numerical/tie/display streams, top-five qLogEI menu and four-plus-sixteen experimental budget remain as in the original supplement. Native no_KF and no_refresh wrappers retain their registered definitions. Only request transport and execution namespace change. No new candidate generation, GP mean modification, manual outcome lookup, best-run selection or performance-triggered reroll.
+
+Bounded matrix: 68 LLM trajectories
+Run all 56 originally outstanding LLM cells in separate namespaces. Add full V12 for Case2, Case4 and HPLC at initializations0,1,2,3: 12 cells. The seed0/3 additions match the ablation backend; seeds1/2/3 match the newly run Reasoning BO controls. Overlapping seed3 bridge cells are counted once.
+Totals: full V12 32 (eight tasks times four initializations), Reasoning BO 24 (eight tasks times initializations1,2,3), no_KF 6, no_refresh 6. Exactly1088 new post-initial experimental queries maximum. At most1246 logical LLM requests before the existing maximum three schema-only attempts per request. No new BO trajectories are required: reuse the exact matching original or newly completed pure-BO controls after initialization/first-prefix validation.
+
+Request-level isolation
+Each request attempt, including a schema repair, is answered by a newly created collaboration subagent with fork_turns=none, requested model gpt-6.1-terra, requested reasoning_effort=medium. A decision agent receives only the exact frozen system/public request packet and minimal file-transport instructions. It may read only its assigned request and write its own JSON response. No conversation history, prior result summaries, baseline metrics, other-arm data, unused candidate outcomes, repository searches, network retrieval or credentials are supplied or authorized.
+An orchestration agent may schedule workers and fresh decision agents but must never invent, amend or select their scientific responses. The first validated response is committed, irrespective of performance. A repair receives only the original public request plus the frozen validator's schema error. A persistent agent per trajectory is prohibited because it would preserve information outside the frozen retrieval policy and confound the no_refresh intervention.
+
+Provenance
+Seal each exact request and attempted raw response with SHA-256, along with per-attempt assignment, tool spawn request/result, unique agent ID, requested model/effort and fork policy. Save validation failures, transport interruptions and resumable prefixes. A local compatibility response ID must identify a subagent receipt, never masquerade as an HTTP response ID. Token counts, resolved model snapshot, billed API cost and independent effective-system-prompt equivalence are not attested by the collaboration tool; leave such fields unavailable, not zero or invented. Local hashes establish internal custody, not externally trusted timestamps or process-level access isolation.
+
+Execution efficiency
+Keep no more than two fresh decision agents active under one scheduling agent while the root prepares analyses; use two persistent CPU trajectory workers so fitted prefixes and precompiled operations remain in process. Each worker uses one Torch thread, the frozen CPU GP numerics and shared locked prefix caches. Precompile the unchanged official confidence extractor once per process, including the Reasoning BO path. No cluster/GPU conversion of the frozen numeric recipe is needed for this workload. Reuse already audited GP caches but never LLM responses.
+
+Audit and analysis
+Replay the native BO/V12/Reasoning BO numeric and state-transition audits, with independently reconstructed removal rules. Check registered initialization and identical first-prefix GP arrays, exact menu/tie/display choices, pre-outcome commitments, scoped forecasts, update/lifecycle rules, unique request-agent identity, actual saved tool dispatch settings and exact first/repair prompt custody. No new oracle calls or GP refits during audit.
+Primary new comparisons use this same subagent cohort: V12 versus BO and matched Reasoning BO across eight tasks and initializations1,2,3; ablations versus same-backend full V12 at focus seeds0,3. Report seed0 V12 versus matching BO separately. Historical seed0 API Reasoning BO and prior V12 are cross-backend descriptive references, not same-condition algorithm comparisons. API response repetitions remain a separate study of the original interface. Never pool the cohorts as additional equivalent replicates.
+Use the registered SearchAUC, final best, first-best-query, trajectory and lifecycle metrics. Report every cell, negative result and pending cell. The additional12 reference cells are required by backend matching, not chosen after observing performance. A single fresh trajectory per cell does not isolate LLM noise from module effects or establish population significance.
+
+Completion
+Complete all68 registered cells or retain an explicit external blocker and exact partial status. Update the manuscript with an execution-cohort distinction, all completed numerical results, paired uncertainty summaries and removal results. Preserve the prior PDF/source package. No publication, merge or push is authorized by this amendment.
