@@ -1,0 +1,195 @@
+--- code/chemist_system/chem/benchmarks/knowledge_study.py
++++ code/tools/staging/seed2_adapter/knowledge_study.py
+@@ -37,7 +37,7 @@
+ 
+ 
+ def components(variant):
+-    if variant == 'v5':
++    if variant in ('v5', 'v5_seed2_confirm'):
+         from . import knowledge_transfer_engine, knowledge_transfer_llm, knowledge_transfer_policy
+         return knowledge_transfer_engine, knowledge_transfer_llm, knowledge_transfer_policy
+     if variant == 'v4':
+@@ -56,19 +56,39 @@
+     return seed
+ 
+ 
+-def _confirmation_inputs(root):
+-    registry, rule = gpmod.seed1_registration(root)
+-    # Only the adapter and runner may change; the V3 mechanism/prompt stay fixed.
++def _registration_metadata(seed):
++    if seed == 1:
++        return (gpmod.SEED1_REGISTRY_PATH, gpmod.SEED1_REGISTRY_SHA256,
++                gpmod.SEED1_RULE_PATH, gpmod.SEED1_RULE_SHA256)
++    if seed == 2:
++        return (gpmod.SEED2_REGISTRY_PATH, gpmod.SEED2_REGISTRY_SHA256,
++                gpmod.SEED2_RULE_PATH, gpmod.SEED2_RULE_SHA256)
++    return (None,) * 4
++
++
++def _confirmation_inputs(root, seed=1):
++    registry, rule = (gpmod.seed1_registration(root) if seed == 1 else gpmod.seed2_registration(root))
++    # Only the adapter/runner may change; the selected mechanism/prompt stay fixed.
++    selected_llm = llm if seed == 1 else components('v5_seed2_confirm')[1]
++    if seed == 2:
++        protected = {'knowledge_transfer_engine.py', 'knowledge_transfer_policy.py', 'knowledge_transfer_llm.py',
++                     'knowledge_rule_math.py', 'knowledge_policy.py', 'knowledge_engine.py',
++                     'knowledge_domain_context.py', 'knowledge_openai_client.py', 'knowledge_llm.py'}
++        expected_paths = {'code/chemist_system/chem/benchmarks/' + name for name in protected}
++        if set(rule['core_source_sha256']) != expected_paths:
++            raise ValueError('Incomplete V5 confirmation core registration')
++        if rule['model'] != api.MODEL or rule['reasoning_effort'] != api.REASONING_EFFORT:
++            raise ValueError('Registered V5 model/effort changed')
+     for rel, expected in rule['core_source_sha256'].items():
+-        if rel.endswith('/knowledge_gp.py'):
++        if seed == 1 and rel.endswith('/knowledge_gp.py'):
+             continue
+         if sha(Path(root) / rel) != expected:
+-            raise ValueError('V3 policy or prompt changed after seed1 registration')
+-    if llm.digest(llm.SYSTEM) != rule['prompt_sha256']:
+-        raise ValueError('Registered V3 system prompt changed')
++            raise ValueError('Policy or prompt changed after confirmation registration')
++    if llm.digest(selected_llm.SYSTEM) != rule['prompt_sha256']:
++        raise ValueError('Registered confirmation system prompt changed')
+     rows = []
+     for row in registry['tasks']:
+-        pool = gpmod.load_task(root, row['task'], seed=1)
++        pool = gpmod.load_task(root, row['task'], seed=seed)
+         rows.append(dict(task=pool.task, group=pool.group, candidate_count=len(pool.ids),
+             initial_ids=list(pool.initial_ids), initial_features_sha256=row['initial_features_sha256'],
+             unit=pool.unit, knowledge_conditions=['agent_initial_terra'],
+@@ -82,28 +102,31 @@
+     gpmod.validate_trial_seed(seed)
+     if (seed == 1) != (variant == 'v3_seed1_confirm'):
+         raise ValueError('Seed1 requires the reserved v3_seed1_confirm variant')
++    if (seed == 2) != (variant == 'v5_seed2_confirm'):
++        raise ValueError('Seed2 requires the reserved v5_seed2_confirm variant')
+     # The workspace deliberately maps experiments/runs to the archive tree.
+     # Resolve that existing mapping, then reject escapes from the workspace.
+     directory = paths(root, variant).resolve()
+     if not directory.is_relative_to(root):
+         raise ValueError('Protocol path redirects outside the workspace')
+-    if seed == 1:
+-        inputs = _confirmation_inputs(root)
++    if seed in (1, 2):
++        inputs = _confirmation_inputs(root, seed)
+     else:
+         manifest = Path(root) / 'experiments/reports/knowledge_loop_20261101/baseline_inventory.json'
+         inputs = read(manifest)['tasks']
+     source = source_hashes(root)
++    registry_path, registry_sha, rule_path, rule_sha = _registration_metadata(seed)
+     protocol = dict(variant=variant, source_sha256=source, inputs=inputs,
+         goal_config_path='code/resources/knowledge_loop_goal_20261101_majority.json',
+         goal_config_sha256=sha(Path(root) / 'code/resources/knowledge_loop_goal_20261101_majority.json'),
+         parameters=run_engine.PARAMETERS, model=api.MODEL, reasoning_effort=api.REASONING_EFFORT,
+         seed=seed, trial_seed=seed, tie_seed=seed, numerical_seed=0, menu_seed=0,
+         numerical_seed_policy='P0 native cache seed0; P1/P2 existing fixed formulas',
+-        initial_registry_path=gpmod.SEED1_REGISTRY_PATH if seed else None,
+-        initial_registry_sha256=gpmod.SEED1_REGISTRY_SHA256 if seed else None,
+-        initial_registry_file_sha256=sha(Path(root)/gpmod.SEED1_REGISTRY_PATH) if seed else None,
+-        initial_rule_path=gpmod.SEED1_RULE_PATH if seed else None,
+-        initial_rule_sha256=gpmod.SEED1_RULE_SHA256 if seed else None,
++        initial_registry_path=registry_path,
++        initial_registry_sha256=registry_sha,
++        initial_registry_file_sha256=sha(Path(root)/registry_path) if seed else None,
++        initial_rule_path=rule_path,
++        initial_rule_sha256=rule_sha,
+         initial=4, queries=16, tasks=list(gpmod.TASKS),
+         GP='archived numerical recipes per task; identical BO/agent; no structural-kernel rescue',
+         tie='exact qLogEI then PCG64 mapped through sorted physical features',
+@@ -125,7 +148,7 @@
+             initial_commit='input-only initial_commit.json flushed and fsynced before initial outcome reads',
+             design_change='Only registered initial4 and tie stream change; V3 full policy, prompt, menu RNG and numerical GP fixed',
+             development_stage='frozen V3 full versus matched BO; one registered seed; no selection after outcomes')
+-    if variant in ('v4', 'v5'):
++    if variant in ('v4', 'v5', 'v5_seed2_confirm'):
+         protocol.update(mechanism='rule_probe_v4', supported_modes=['bo', 'full', 'deployment', 'shadow'],
+             covariance='unchanged GP latent/observation marginals; coherent F,Y,Z soft event at each new plus against a fixed observed reference',
+             design_document_path='docs/knowledge_rule_v4_design_20261101.txt',
+@@ -140,7 +163,7 @@
+             verification_adaptation='one unqueried plus suffices because its comparison endpoint is already observed; binary-sign information replaces continuous-contrast information',
+             approximation='Native MC512 qLogEI unchanged; conditional EI ratio uses GH64 truncated-variable quadrature with analytic conditional normal EI',
+             selected_prediction='normalized tempered expert density matching acquisition ratio; references frozen before query')
+-    if variant == 'v5':
++    if variant in ('v5', 'v5_seed2_confirm'):
+         protocol.update(mechanism='transfer_rule_v5',
+             supported_modes=['bo', 'full', 'verification'],
+             design_document_path='docs/knowledge_transfer_v5_design_20261101.txt',
+@@ -152,6 +175,20 @@
+             fact_credit='Only successful comparison plus positive current predictive gain can increase latent trust, by no more than tanh(gain/2)',
+             scope_contract='Optional named background bounds/true-label sets declared before outcomes; omitted axes keep V4 local scope; each probe still has comparable known reference',
+             interpretation='Full versus verification measures the effect of enabling evidence-weighted acquisition along complete diverging trajectories; it does not separately identify the two design changes')
++    if seed == 2:
++        _, rule = gpmod.seed2_registration(root)
++        protocol.update(stage='preregistered paired seed2 confirmation of selected V5 full',
++            supported_modes=['bo', 'full'], supported_conditions=['agent_initial_terra'],
++            development_arms=['full'], synthetic_prior_scope='not included in this registered confirmation',
++            initial_commit='input-only initial_commit.json flushed and fsynced before initial outcome reads',
++            initial_rule_file_sha256=sha(Path(root)/rule_path),
++            registered_candidate_protocol_sha256=rule['candidate_protocol_sha256'],
++            registered_core_source_sha256=rule['core_source_sha256'],
++            registered_base_GP_adapter_sha256=rule['base_GP_adapter_sha256'],
++            candidate_selection='V5 full was selected before this initialization; no post-outcome policy selection or retuning',
++            design_change='Only immutable registered initial4 and tie stream change to2; V5 full policy, prompt, GP numerical recipe and menu RNG unchanged',
++            development_stage='One registered additional paired initialization on the same8domains; not an unseen-dataset or multi-seed guarantee',
++            interpretation='Frozen V5 full versus matched BO on a new preregistered initialization; all SearchAUC/final-best losses and weighted choices reported')
+     protocol['protocol_sha256'] = llm.digest(protocol)
+     dest = directory / 'protocol.json'
+     if dest.exists():
+@@ -169,14 +206,25 @@
+     if p.get('design_document_path'):
+         assert sha(Path(root)/p['design_document_path']) == p['design_document_sha256'], 'Registered design changed'
+     seed = _trial_seed(p)
+-    if seed == 1:
+-        if (variant != 'v3_seed1_confirm' or p['initial_registry_path'] != gpmod.SEED1_REGISTRY_PATH or
+-                p['initial_registry_sha256'] != gpmod.SEED1_REGISTRY_SHA256 or
+-                p['initial_rule_path'] != gpmod.SEED1_RULE_PATH or p['initial_rule_sha256'] != gpmod.SEED1_RULE_SHA256 or
+-                p['initial_registry_file_sha256'] != sha(Path(root)/gpmod.SEED1_REGISTRY_PATH) or
++    if seed in (1, 2):
++        registry_path, registry_sha, rule_path, rule_sha = _registration_metadata(seed)
++        expected_variant = 'v3_seed1_confirm' if seed == 1 else 'v5_seed2_confirm'
++        if (variant != expected_variant or p['initial_registry_path'] != registry_path or
++                p['initial_registry_sha256'] != registry_sha or
++                p['initial_rule_path'] != rule_path or p['initial_rule_sha256'] != rule_sha or
++                p['initial_registry_file_sha256'] != sha(Path(root)/registry_path) or
+                 p['supported_modes'] != ['bo', 'full'] or p['supported_conditions'] != ['agent_initial_terra'] or
+-                p['inputs'] != _confirmation_inputs(root)):
++                p['inputs'] != _confirmation_inputs(root, seed)):
+             raise ValueError('Independent confirmation registration changed')
++        if seed == 2:
++            _, rule = gpmod.seed2_registration(root)
++            if (p['initial_rule_file_sha256'] != sha(Path(root)/rule_path)
++                    or p['registered_core_source_sha256'] != rule['core_source_sha256']
++                    or p['registered_candidate_protocol_sha256'] != rule['candidate_protocol_sha256']
++                    or p['registered_base_GP_adapter_sha256'] != rule['base_GP_adapter_sha256']
++                    or p['prompt_sha256'] != rule['prompt_sha256'] or p['model'] != rule['model']
++                    or p['reasoning_effort'] != rule['reasoning_effort']):
++                raise ValueError('Selected V5 confirmation metadata changed')
+     for task in p['inputs']:
+         for rel, expected in task['files_sha256'].items():
+             assert sha(Path(root)/rel) == expected, rel
+@@ -244,7 +292,7 @@
+         assert state['protocol_sha256'] == p['protocol_sha256']
+         if state['seed'] != trial or [h['candidate_id'] for h in state['history'][:4]] != list(pool.initial_ids):
+             raise ValueError('Resumed initialization/seed differs from registration')
+-        if trial == 1 or 'initial_commit_sha256' in state:
++        if trial in (1, 2) or 'initial_commit_sha256' in state:
+             init = initial_commit(directory, pool, p, mode, condition, create=False)
+             if state.get('initial_commit_sha256') != init['commit_sha256']:
+                 raise ValueError('Resumed initial commitment hash mismatch')
+@@ -276,13 +324,13 @@
+             else:
+                 context = cache.context(state['history'], t)
+                 prepared, pre_call_events = (run_engine.prepare_state(pool, cache, state, context, t)
+-                    if variant in ('v4', 'v5') else prepare_prompt_state(pool, state, context, t))
++                    if variant in ('v4', 'v5', 'v5_seed2_confirm') else prepare_prompt_state(pool, state, context, t))
+                 rows, _ = run_engine.coverage(pool, cache, context, prepared['hypotheses'], prepared['history'])
+                 proposal, receipt, menu = None, None, []
+                 if mode != 'bo' and run_engine.should_call(prepared, t, rows):
+                     menu = (run_llm.make_menu(pool, context, t, seed=0, history=prepared['history'])
+-                            if variant in ('v4', 'v5') else run_llm.make_menu(pool, context, t, seed=0))
+-                    if len(menu) >= (1 if variant in ('v4', 'v5') else 2):
++                            if variant in ('v4', 'v5', 'v5_seed2_confirm') else run_llm.make_menu(pool, context, t, seed=0))
++                    if len(menu) >= (1 if variant in ('v4', 'v5', 'v5_seed2_confirm') else 2):
+                         public = run_llm.public_payload(pool, prepared, t, menu, rows)
+                         receipt = run_llm.request(client, public, paths(root, variant)/'requests')
+                         proposal = receipt['proposal']

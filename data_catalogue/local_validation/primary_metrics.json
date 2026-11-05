@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ALL_PRIMARY_EXPORTED_METRICS",
+  "historical_warm_rows": 131,
+  "historical_cold_rows": 96,
+  "historical_continuation_and_transfer_rows": 75,
+  "KF_pilot_and_confirmation_rows": 25,
+  "latest_comparison_rows": 160,
+  "latest_rounds": 3200,
+  "latest_response_backends": {
+    "independent_collaboration_subagent": 552,
+    "openai_responses_api": 664
+  },
+  "historical_V13_SearchAUC_WTL": {
+    "warm_vs_bo": {
+      "loss": 15,
+      "win": 17
+    },
+    "warm_vs_reasoning_bo": {
+      "loss": 14,
+      "win": 11,
+      "tie": 7
+    },
+    "cold_vs_bo": {
+      "win": 22,
+      "loss": 9,
+      "tie": 1
+    },
+    "cold_vs_reasoning_bo": {
+      "loss": 14,
+      "win": 13,
+      "tie": 5
+    }
+  },
+  "full_V13_positive_prefix_cells_vs_fixed_KF_or_no_refresh": 0,
+  "current_hyp_SearchAUC_WTL": {
+    "bo": {
+      "win": 23,
+      "loss": 9
+    },
+    "first": {
+      "loss": 8,
+      "win": 8,
+      "tie": 16
+    }
+  },
+  "new_experiments": 0,
+  "new_GP_fits": 0,
+  "new_LLM_calls": 0
+}

@@ -1,0 +1,58 @@
+HYPOTHESIS-CONSTRAINED NATIVE qLogEI WITH FEEDBACK-TRIGGERED REFRESH
+
+Development study registered before experimental LLM calls, 5 November 2026.
+Eight tasks; seed=0; zero free initial observations, 20 paid experiments.
+Controls: immutable cold-start pure BO and grounded LLM first point then 19 native BO.
+The new arm locks the latter control's exact first physical input. A new isolated
+LLM, blind to its outcome, supplies hypotheses justifying that initial proposal.
+This pairing tests adding hypothesis restrictions and refresh, not changing the
+initial experiment. It is not a wholly independent end-to-end first-point repeat.
+
+The LLM receives verified reaction/process background, molecular identities,
+physical units and input-only examples. On refresh it receives all own measured
+experiments, prior locked predictions, KF evidence, permissions and event reasons.
+No current GP rankings, unqueried objectives, other trajectory, or post-hoc optimum
+comparison is given. Responses are fresh isolated gpt-6.1-terra medium subagents.
+Their actual assignment and raw response receipts are retained, not simulated.
+
+At most three explicit favour/avoid scopes use actual categories and physical
+bounds. At least four unqueried executable points must remain in the combined
+proposed region. After the first experiment the unchanged native GP maximizes
+native qLogEI in the intersection of eligible favour scopes minus avoid scopes.
+No global qLogEI-gap threshold applies. The gap to unrestricted BO is logged.
+If there is no eligible rule or no remaining joint candidate, fall back to native
+full-pool BO and request review subject to the call schedule. Refreshed LLM
+preferred prototypes are logged and mapped by input distance with categories
+preserved; they do not bypass within-scope qLogEI maximization.
+
+Separate predictive credibility from recommendation permission. A regional raw
+mean/SD is locked before each in-scope actual measurement. First-point residuals
+have no invented GP reference. Later KF updates estimate relative Brier skill
+for improving the current incumbent versus the unchanged GP predictive forecast.
+Prior variance .25, process variance .0025, measurement floor .0025, maximum
+reliability .8, exactly the frozen V13 calibration implementation. Permission is
+provisional/active/paused/probation. Favour requires improvement probability >=.5,
+avoid <=.5, and ordinary rules require reliability >=.2. Two negative skill updates,
+two >2SD misses, low credibility, or two genuinely constraint-caused nonimprovements
+pause guidance. Operational search failure is not universal chemical falsification.
+
+Equivalent finite-pool region+direction inherits evidence across new names,
+forecasts and repeated withdrawals. Accurate failure forecasts alone never restore
+positive guidance. After three stagnant queries an explicit LLM retest may grant
+one test per semantic rule. Positive recovery requires actual incumbent improvement
+and positive GP-relative Brier gain with adequate current credibility. Historical
+evidence is retained even when a successful explicit retest resets failure streaks.
+
+Initial plus at most three refresh calls, minimum gap three queries, one reserved
+for query15 or later, no refresh after query18. Refresh events: paused knowledge,
+no eligible guidance, exhausted/conflicting region or three-query stagnation.
+At most two fresh schema attempts per logical request; no manual scientific edits.
+Each choice and its predictions are durably committed before its oracle is read.
+Candidate tables preserve physical inputs, native mean/SD/qLogEI and scope flags.
+
+Numerics: frozen ColdGP, candidate pools, normalization, feature-keyed exact ties
+and GP training recipe. Eight persistent CPU workers, one BLAS thread per worker;
+warm native operators once per worker and Python precompile once. No runtime JIT.
+SearchAUC is the mean of 20 post-query cumulative maxima, including paid query1.
+Each task keeps its own original objective units. Single-seed development results
+do not establish stability or chemical correctness; audit success is not efficacy.

@@ -1,0 +1,3 @@
+# Native saved-decision audit; tested with CPython3.10.
+-r requirements-bo.txt
+rdkit==2024.9.6

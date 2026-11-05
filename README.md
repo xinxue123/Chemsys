@@ -1,60 +1,48 @@
-# Chem实验决策项目
+# Chem: feedback-guided experimental decisions
 
-GitHub检出说明见[代码包与实验归档](docs/GITHUB_EXPORT.md)。仓库只保存代码与必要文档；历史实验、环境和密钥留在本地，复现实验需另行恢复归档。
+**Working finding: later knowledge decisions have inconsistent incremental utility beyond initialization in the tested BO studies.** Positive, null and adverse results are retained. Knowledge-state updates, changes of action and improved search are distinct evidence requirements.
 
-代码、实验记录和运行环境已分开。日常修改代码请进入`code/`，运行使用本目录的`run.ps1`。原`chemist_system`路径保留为兼容入口，用于读取封存协议和历史实验，不再作为另一份开发副本。
+This GitHub edition synchronizes code, English documentation and compact result summaries from the sealed local `Chemsys-portable` workspace. It includes **487 primary comparison records**, covering historical 4+16, original V13 0+20, shared-prefix ablations, programmed-KF contrasts and the latest grounded eight-task comparison. Reused controls are identified; these records are not 487 independent new experiments.
 
-| 位置 | 内容 |
-|---|---|
-| `code/chemist_system/chem/benchmarks/` | 优化方法、GP、KF、知识检查与LLM接口；当前新方案为`continuous_r5_*` |
-| `code/chemist_system/` | 原Python入口、包、测试、脚本及官方第三方算法源码 |
-| `code/experiment_tools/research/` | 各阶段分析、导出、审计与TeX/PDF构建脚本，沿原研究目录分类 |
-| `experiments/datasets/` | 固定候选集与离线实验数据 |
-| `experiments/runs/` | 原生逐轮记录、候选评分、LLM公开提示与回复、GP缓存 |
-| `experiments/reports/` | 对比CSV、图、PDF、协议、验证回执与历史归档 |
-| `experiments/logs/` | 控制台日志、调试导出与排版中间文件 |
-| `runtime/environments/` | 原5套Python环境 |
-| `runtime/tools/`、`runtime/cache/` | RDKit、TeX工具与缓存 |
-| `docs/chemist_system/` | 方法、实现和历史说明文档 |
-| `runtime/layout_20261030/` | 本次迁移映射、验证和回退记录 |
+## Start here
 
-## 常用入口
+- [English research handoff](docs/RESEARCH_HANDOFF.md)
+- [Results and current comparison](results/README.md)
+- [Metrics, cohorts and units](docs/METRICS_AND_COHORTS.md)
+- [Code and data map](docs/DATA_AND_CODE_MAP.md)
+- [Reproduction instructions](docs/REPRODUCIBILITY.md)
+- [Local evidence requirements](LOCAL_DATA_REQUIREMENTS.md)
 
-从项目根目录运行，不需要先进入实验目录或激活环境：
+## Offline checks
 
-```powershell
-.\run.ps1 list
-.\run.ps1 r5 status
-.\run.ps1 r5 inspect --task HPLC --round 14
-.\run.ps1 p0 status
-.\run.ps1 p1 status --variant feedback_t0
-.\run.ps1 tests tests.test_continuous_r5 -v
+Python 3.10 or later is sufficient; no API key or scientific packages are needed:
+
+```sh
+python chemsys.py results
+python chemsys.py integrity
+python chemsys.py verify
 ```
 
-`r5`为SnAr/HPLC局部版R5，`p0`为Suzuki四Case阶段修订版，`p1`为Perera/Doyle Stage11。它们是不同版本，不互相覆盖结果。其他旧入口也可以使用文件名，例如`run.ps1 continuous_r4 status`。
+The checker recalculates SearchAUC/final-best summaries from **derived running-best curves**, verifies paired outcome counts and validates the published file hashes. It does not refit GP models, replay private decision-state chains, reconstruct discarded observations or call an LLM. Full native saved-evidence audits require the separately retained local evidence bundle.
 
-分析和报告脚本同样通过入口运行，参数使用原项目的相对路径：
+## Principal evidence
 
-```powershell
-.\run.ps1 script scripts/debug_suzuki_case.py --help
-```
+| Comparison | Records | SearchAUC evidence |
+|---|---:|---|
+| Historical 4+16 |131 |V13 vs BO 17 wins/0 ties/15 losses over 32 pairs. |
+| Original V13 0+20 |96 |V13 vs BO 22/1/9; vs Reasoning BO 13/5/14. |
+| V13 continuations and transfer |75 |Six shared prefixes; no positive mean continuation-AUC increment of full V13 over fixed KF or disabled refresh. Arm-specific LLM responses also differ. |
+| Programmatic KF pilot/confirmation |25 |Positive HPLC effects coexist with null Perera and adverse Direct Arylation results. |
+| Latest grounded comparison |160 |Current controller vs BO 23/0/9; vs **same-first BO 8/16/8**. |
 
-运行前可用`run.ps1 list`查入口；报告构建和`run`、`prepare`、`report`、`seal`等动作仍具有原来的写入行为。`status`和`inspect`用于查看已有结果。本次目录整理没有重新优化或调用LLM。
+The latest controller, LGBO and Reasoning BO exceed random-start BO in 6/8,7/8 and 5/8 task means, respectively. The same-first control is needed to assess later knowledge decisions. Experimental budgets match, while LLM computation differs. These are registered matched-interface adaptations, not full reproductions of every published framework.
 
-配置仍使用根目录的`config.txt`，没有放入代码目录；主要快捷入口自动传递其绝对路径。其他支持配置的入口可以显式传入`--config`。Git已忽略配置、实验、环境和旧兼容视图。
+The latest study preserves 552 independent-subagent responses and adds 664 stateless API responses, all requesting `gpt-6.1-terra`, medium. Initial knowledge and the LLM first point are fixed across four exact-tie streams; GP numerical seed remains 0. [Backend summaries](results/grounded_baselines_20261105/LLM_backend_by_trajectory.csv) make the transition explicit. The evidence is conditional on these settings.
 
-## 如何定位R5代码与日志
+## Published and local-only assets
 
-一次选点的断点主要位于`code/chemist_system/chem/benchmarks/continuous_r5_study.py`的`plan`和`apply_feedback`。方向检查、准入、验证、调度和反馈在`continuous_r5_engine.py`；公开LLM输入在`continuous_r5_llm.py`。
+Published: research code, English handoff/protocol explanations, dataset descriptions/hashes, complete primary metric tables, paired summaries, derived cumulative-best curves and the current comparison figure.
 
-对应原生记录在`experiments/runs/continuous_r5_20261030/runs/`；完整候选CSV与比较报告在`experiments/reports/continuous_r5_20261030/`；控制台日志在`experiments/logs/continuous_r5_run.log`。专家咨询稿在`experiments/reports/expert_consultation_20261030/`。
+Local-only: raw experiment/decision logs, original LLM packets, selected-condition histories, full candidate/oracle tables, GP arrays/checkpoints/caches,72 large evidence archives, detailed archive member/time indices, compiled RDKit support and Python environments. The complete local bundle is about 16.22 GB; its 399,703 archive members remain local. See [LOCAL_DATA_REQUIREMENTS.md](LOCAL_DATA_REQUIREMENTS.md) for restoration and provenance.
 
-## 兼容路径与数据完整性
-
-旧协议、调试脚本和封存清单包含原路径，因此保留`chemist_system`目录联接，以及归档中的源码硬链接兼容名。实验目录的四个便捷入口指向`experiments/chemist_system/`中的原归档结构，不复制数据。硬链接与`code/`的主文件共享同一份文件内容，不是复制的第二套源码；实验数据未放进`code/`。若编辑器以替换文件的方式保存，入口会在运行前重新绑定兼容名。所有科学哈希检查仍按原规则执行，修改算法后不会伪造旧协议通过。
-
-请不要单独删除兼容链接或在归档兼容名下另外开发。冻结目录中的历史源码快照属于证据材料，保留原名字和内容。迁移前后源码哈希和已封存实验清单由`code/tools/verify_layout.py`验证；文件映射及回退信息保存在`runtime/layout_20261030/`。
-
-## V13 与程序化 KF
-
-[结果索引](results/README.md)汇总冻结 V13 和两轮程序化 KF 对照。V13 的预测可信度与推荐权限实现位于 [cold_start_v13](code/experiment_tools/cold_start_v13)。程序化固定权重、动态 KF 和排序规则位于 [program_kf_weight](code/experiment_tools/program_kf_weight)。[独立验证入口](code/experiment_tools/run_program_kf_confirmation.py)使用原始归档，[结果校验脚本](code/analysis/verify_exported_kf_results.py)可直接复算已提交的结果表。
+The original repository history and historical source documentation remain available. Newly synchronized narrative documents are English. Three portable source adaptations and their exact native counterparts are documented; native source/hash audits use the full local source capture. Credentials are excluded. No experiment or model service starts automatically.

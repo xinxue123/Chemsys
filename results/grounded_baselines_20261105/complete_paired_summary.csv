@@ -1,0 +1,17 @@
+method,reference,metric,task_seed_pairs,seed_wins,seed_ties,seed_losses,tasks,task_mean_wins,task_mean_ties,task_mean_losses
+hyp,bo,SearchAUC,32,23,0,9,8,6,0,2
+hyp,bo,final_best,32,10,11,11,8,4,2,2
+hyp,first,SearchAUC,32,8,16,8,8,4,1,3
+hyp,first,final_best,32,4,24,4,8,2,3,3
+lgbo,bo,SearchAUC,32,24,0,8,8,7,0,1
+lgbo,bo,final_best,32,10,11,11,8,4,1,3
+lgbo,first,SearchAUC,32,14,0,18,8,3,0,5
+lgbo,first,final_best,32,10,10,12,8,3,1,4
+lgbo,hyp,SearchAUC,32,13,1,18,8,4,0,4
+lgbo,hyp,final_best,32,8,11,13,8,4,1,3
+rbo,bo,SearchAUC,32,19,0,13,8,5,0,3
+rbo,bo,final_best,32,9,8,15,8,3,2,3
+rbo,first,SearchAUC,32,15,0,17,8,4,0,4
+rbo,first,final_best,32,7,13,12,8,3,2,3
+rbo,hyp,SearchAUC,32,16,0,16,8,5,0,3
+rbo,hyp,final_best,32,7,13,12,8,3,1,4

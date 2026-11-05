@@ -1,0 +1,12 @@
+"""Launch the isolated condition-contrast study from the project root."""
+import os
+for _name in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMEXPR_NUM_THREADS'):
+    os.environ[_name] = '1'
+from pathlib import Path
+import sys
+ROOT = Path(__file__).resolve().parents[2]
+sys.path[:0] = [str(ROOT/'code/chemist_system'),str(ROOT/'code/experiment_tools')]
+from kernel_contrast_qlogei.study import main
+
+if __name__ == '__main__':
+    main()

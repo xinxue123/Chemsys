@@ -1,89 +1,32 @@
-预测可信度与推荐权限分离：已实现的状态控制组件
-日期：2026-11-02（Asia/Singapore）
+# V13 Feedback Design
 
-范围与状态
-用户要求先解决“预测可信度”和“推荐价值”共用同一个状态的问题。
-实现位于 code/experiment_tools/reasoning_memory_v13/，版本标识 v13_state_split_1。
-这是下一版可调用的状态控制器和逐轮决策适配器；尚未创建或注册新的完整优化实验。
-没有修改冻结V12、GP、候选池、原始结果、SearchAUC定义或已交付论文。
-不能将本组件的测试和历史回放称为新V13的优化结果。
+V13 separates predictive skill from permission to recommend an experiment. The implementation is in code/experiment_tools/reasoning_memory_v13/ and code/experiment_tools/cold_start_v13/.
 
-一、两个独立对象
-calibration.py 只保存预测技能的KF均值、方差、正技能概率、reliability及更新次数。
-沿用V12的Brier观测量和KF数值配方，删除active/paused/retracted、好坏连续计数及自动恢复逻辑。
-可靠性不是候选采集分数、不是推荐权重，也不是经过因果验证的化学真理。
+## Two independent state channels
 
-control.py 的 recommendation 独立保存正向推荐权限、方向试验记录、失败事实、
-准确失败证据数、复查事件和复查额度。没有把KF权重复制成另一个推荐权重。
-当前“推荐价值”的实现是可审计的方向证据和使用权限；不声称已经估计出相对BO的因果优化收益。
+The predictive channel tracks GP-relative Brier-score gain with a scalar Kalman filter. It stores the estimated mean and variance, probability of positive predictive skill, bounded reliability, and update count. In frozen V13, the estimate is shown as advisory context. It leaves the GP posterior and acquisition unchanged. The later programmatic KF studies use a separate candidate-level filter and explicitly deploy its weight in the ranker.
 
-正向权限状态：
-tentative：未验证假设，可明确声明一次方向试验，不可标成已验证支持。
-allowed：当前证据周期内至少两次事前声明的方向试验超过各轮实验前incumbent。
-suppressed：不允许正向支持或换成tentative_test绕过；仍可作范围内风险警告及影子预测。
-reviewing：停滞或相关条件变化已开放有限复查，尚未恢复正向支持。
-withdrawn：原版本停止新预测和正向使用，历史负事实仍可作为警告引用。
-avoid知识使用not_applicable表示没有正向促进权限；它可以积累警告证据。
+The recommendation channel records scoped directional trials, adverse observations, accurate failure forecasts, and review events. Its states determine how a structured Note may be used.
 
-二、反馈如何分开
-每轮先提交真实选中点的预测、当前incumbent、知识使用方式和状态/历史哈希，再接收实测反馈。
-1. KF更新概率可靠性，永远不直接改变正向权限。
-2. 未改善且p_LLM<0.5、相对GP的Brier增益为正：记录准确失败证据，并抑制promote知识。
-   预测越准确，其警告证据可以越强；正向权限不能因此恢复。
-3. 明确声明的方向试验取得实际改善：增加方向试验支持；即使该次Brier增益为负也不抹去实际改善。
-4. 未声明为方向试验的影子预测，不因恰好遇到改善而获得正向推荐信用。
-5. 两次连续未改善的明确方向试验也会抑制该方向，不依赖KF是否预测准确。
-这些是控制默认值，不是通过观察新实验结果调出的最佳参数。
+| State | Permitted use |
+|---|---|
+| tentative | Declare a prospective directional test |
+| allowed | Cite the Note as positive support after two declared tests improve their own pre-query incumbents |
+| suppressed | Use an in-scope warning or shadow forecast |
+| reviewing | Run an eligible, bounded review test |
+| withdrawn | Cite retained negative observations as historical warnings |
+| not_applicable | Record warning evidence for an avoidance Note |
 
-三、恢复与负证据继承
-解封事件仅来自已完成的自身历史或当前公开候选输入：
-- 停滞：最近3次查询均未产生新incumbent。
-- 条件变化：相对原负面实测点，涉及该知识focus的条件发生实质变化。
-  类别按真实标签比较；连续变量的最小变化幅度必须由调用者预先提供，代码不猜测阈值。
-  未提供连续变量阈值时，不通过这一变量开启条件变化复查。
+## Commit, observe, and update
 
-事件只开放reviewing。每条控制记录最多2次复查试验，新版本继承相关前序记录已消耗的额度。
-多条并行知识的整体查询预算仍需由上层实验执行器统一约束，不额外调用oracle。
-恢复要求本次复查中新获得两次明确方向试验的实际改善。暂停前成功计数清零，不能用于自动复活。
-复查失败即回到suppressed；同一次持续停滞不会每轮产生新的复查额度。
-第二个确认候选继续显示在LLM的可执行复查列表中，避免权限开放却无候选可执行。
-条件变化授权约束相应变化方向/类别，允许另一个不同点在同一新条件区间完成确认。
+Before observing the selected outcome, the adapter commits the actual selected point, the current incumbent, applicable forecasts, declared Note uses, and hashes of the prior history and state. The resulting observation updates predictive reliability and directional evidence separately. Accurate failure can strengthen a scoped warning and suppress positive use. A declared directional test can earn directional credit through actual improvement even when that forecast scores poorly. Two consecutive unsuccessful declared directional tests can suppress the direction. Improvement at a shadow-only forecast gives no positive recommendation credit.
 
-新ID或新版本若覆盖旧负面实测条件，会继承事实及已经消耗的相关复查事件/额度；
-同ID谱系保留自己的负事实。修改文字或focus不能洗掉这些记录。
-新版本预测KF重新初始化，不把不同预测目标的旧数值当成新测量。
-所有抑制均限定知识使用权限，不无条件删除候选、修改GP或封禁整个实验区域。
+After three queries without a new incumbent, or after a material change in the Note's focus conditions, suppressed knowledge can enter bounded review. Categorical conditions are compared by their labels. Continuous changes use a threshold supplied in advance by the caller. Review requires two new improving directional tests to restore positive use. Failed review returns the Note to suppression. Persistent stagnation grants no repeated allowance for the same event. Relevant adverse facts and consumed review allowance carry across revisions, while a new forecast version starts with a fresh numerical filter.
 
-四、接入下一版的逐轮接口
-adapter.public_context：在LLM提示中分开展示prediction_reliability和recommendation，
-并显示当前实际可执行的复查候选；查看可复查状态不会提前消耗额度。
-adapter.SYSTEM_APPENDIX：说明各状态允许的知识用途，禁止将可靠性当作正向推荐授权。
-adapter.commit_decision：校验原GP前5候选和官方置信排序结果；校验所有适用知识的事前预测，
-以及positive_support/tentative_test/review_test/warning用途；构造实验前提交对象。
-adapter.apply_feedback：核对提交和真实反馈，原子性地返回新的知识状态和独立的两类反馈记录。
+## Interfaces and evidence boundaries
 
-与V12的重要区别：不再把不合法的正向引用静默改名为exploratory_transfer。
-不合法用途或缺少必需预测，会在实验执行前报错；适配器不自行重问LLM、不替换所选候选。
-上层新实验执行器需保留失败响应并遵守原调用预算；该执行器尚未注册或启动。
-合法输入下保持原GP、前5菜单和官方选点提取函数；提取算子沿用每进程一次编译缓存。
+- adapter.public_context exposes scoped knowledge and executable review candidates.
+- adapter.commit_decision validates the official proposal, required forecasts, and declared uses before the outcome is read.
+- adapter.apply_feedback binds the observed result to the commitment and returns the updated states.
 
-五、验证与复现
-从项目根目录运行：
-& .\runtime\environments\.venv-official\Scripts\python.exe .\code\tools\check_v13_state_split.py
-
-输出目录：experiments/reports/v13_state_split_20261102/
-unit_tests.log：30项新状态控制测试及10项冻结V12流程回归，包含16轮合成接口检查。
-fixed_log_state_replay.csv：32条已完成V12轨迹中的197次原预测反馈，只重新计算状态。
-hplc_recovery_example.json：HPLC seed=1 第7—10轮的旧状态、新状态及新提示字段。
-audit.json：测试结果、来源哈希、冻结文件核对和执行边界。
-
-回放保留原始候选、概率、实测结果，不追溯授予新的review事件。
-原来已执行但在新权限下不合法的正向引用，只作为固定日志的影子反馈检查并显式标记，
-不表示新执行器会继续批准旧选点，也不构成反事实优化轨迹。
-HPLC原第10轮auto-resume的案例：预测可靠性仍约0.52552，正向推荐权限保持suppressed。
-该结果验证“准确失败预测不会恢复正向授权”，不能证明SearchAUC上升。
-
-仍需保留的边界
-结构化权限可以检查，但模型若不声明实际使用的理由，不能仅凭这些字段保证识别全部隐含影响。
-方向试验改善仍是观察证据，不是固定其他条件后的严格因果归因。
-本轮没有新增实验、LLM请求、GP拟合或完整新策略性能结论。
+These checks govern structured Note use. The same physical region may still be visited under a different eligible rationale. A declared test can support a direction, while isolating the contribution of a chemical variable requires a matched intervention. The selected experiment results and comparison limits are described in results/README.md.

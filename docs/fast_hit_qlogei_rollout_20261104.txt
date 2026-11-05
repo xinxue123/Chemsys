@@ -1,0 +1,63 @@
+Case 1: two-step rollout of the frozen qLogEI base policy
+
+This is a corrected acquisition implementation, with a separate namespace.
+The earlier analytic-EI rollout remains frozen and is not relabelled qLogEI.
+
+Ten starts are the same five low-yield and five middle-yield points used in
+fast_hit_bo_20261104. Each new trajectory spends one initial observation and
+seven subsequent experiments, including all eight outcomes. The matched
+qLogEI controls are reused byte-for-byte from that completed experiment.
+No LLM is used. The pool, shared Mixed GP recipe, fitting schedule, nugget,
+feature-based tie priorities and all computational budgets remain unchanged.
+
+The first-action shortlist is the union of 16 current qLogEI leaders, 16
+posterior-variance leaders and two input-only coverage points per catalyst.
+It contains at most 48 unqueried points and always includes the base-policy
+leader. This shortlist is an approximation; future actions search the whole
+unqueried pool. It does not enumerate every first action or eight-step path.
+
+Write a_t(x) = qLogExpectedImprovement_MC512(x | D_t). For each outer point x,
+draw 32 shared Sobol latent outcomes Y from its current GP marginal. Condition
+the current GP at (x,Y), retaining its current hyperparameters and fixed
+observation nugget. Evaluate the virtual next-step base policy with a fresh
+MC512 Sobol seed. The rollout value is
+
+  V_t(x) = exp(a_t(x))
+           + mean_Y[exp(max_z a_{t+1}(z | D_t union {(x,Y)}))].
+
+Both a_t and a_{t+1} are the native fat-tailed, smoothed MC qLogEI, q=1.
+The logarithms are exponentiated before adding improvement quantities.
+No analytic Gaussian EI is used for action values or future action selection.
+The acquisition best_f reproduces the frozen base policy's float32 storage
+of a Python-float incumbent, before casting to double posterior samples.
+Future tie priorities use the virtual next query index. The last real query
+uses exactly the frozen one-step qLogEI rule, with no beyond-budget rollout.
+
+Current MC seeds are 38112000 + query. Future MC seeds use query + 1.
+Fantasy seeds are 4112026 + query. There are 32 fantasies and 512 inner
+samples. The latent fantasies and noise-regularized conditioning match the
+previous experimental design. Hyperparameters are refitted only after real
+observations, according to the unchanged shared GP schedule.
+
+For efficiency, q=1 marginal MC maxima use rigorous candidate bounds. The
+finite-sample hard improvement, Jensen's inequality and the maximum sample
+bound the same smooth MC value. Only candidates that can meet the best lower
+bound require the native log-fatplus evaluation. This is numerical pruning,
+not an analytic-EI approximation or smaller future search space. Preflight
+must reproduce full-pool native BoTorch maxima and selected candidates, both
+on current posteriors and actual conditioned fantasy models, before outcomes.
+Persistent CPU workers warm kernels once; no JIT compilation is permitted
+inside the experiment loop. Identical observed-prefix fit caches may be
+copied from the frozen study, using its complete history hash as the key.
+
+All existing study sources, inputs, states, commits, GP arrays and reports
+are hash-guarded at registration. New decisions and arrays are committed
+before revealing each real oracle observation. The worker reads neither the
+evaluation threshold nor any unqueried true yield.
+
+Evaluation remains the frozen evaluator-only 85.09055023193359% threshold,
+95% of the Case 1 pool maximum. Report target hits within eight experiments,
+first hit when observed, capped hitting index (9 for unreached as a comparison
+penalty), terminal best and SearchAUC8 over eight cumulative-best observations.
+The threshold never enters the policy. Outcomes, negative results and all
+ten pairs are retained. The small study is descriptive, not a stability claim.

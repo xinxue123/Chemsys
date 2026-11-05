@@ -1,0 +1,11 @@
+--- code/chemist_system/knowledge_loop.py
++++ code/tools/staging/seed2_adapter/knowledge_loop.py
+@@ -15,7 +15,7 @@
+     ap = argparse.ArgumentParser()
+     ap.add_argument('action', choices=['prepare', 'run', 'status', 'check'])
+     ap.add_argument('--variant', default='v3')
+-    ap.add_argument('--seed', type=int, choices=[0, 1], default=None,
++    ap.add_argument('--seed', type=int, choices=[0, 1, 2], default=None,
+                     help='prepare: registered trial seed (default0); run: verify frozen seed or infer it')
+     ap.add_argument('--task', action='append', choices=TASKS)
+     ap.add_argument('--mode', choices=['bo','shadow','deployment','full','verification'], default='full')

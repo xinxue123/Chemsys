@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ISOLATED_NATIVE_RELOCATION_AUDIT",
+  "original_workspace_data_access_denied": true,
+  "network_and_helper_processes_denied": true,
+  "original_data_reads_blocked": 0,
+  "network_calls_blocked": 0,
+  "new_experiments": 0,
+  "new_GP_fits": 0,
+  "new_LLM_calls": 0
+}

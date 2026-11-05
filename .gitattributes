@@ -1,2 +1,7 @@
-# Preserve the original bytes used by archived scientific hash checks.
-* -text
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
+*.npz binary
+*.pt binary

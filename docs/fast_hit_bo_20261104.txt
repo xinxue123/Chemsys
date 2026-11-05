@@ -1,0 +1,58 @@
+Case 1 fast-hit comparison, 2026-11-04
+
+Scientific objective: reach a high-quality experiment earlier. No information
+gain acquisition, LLM, KF, or event editor is used in this experiment.
+
+Cells: the ten previously registered Case 1 starts, low and middle yield
+groups, seeds0–4. Each cell has two new trajectories: qLogEI and two-step
+Rollout. One shared initial observation plus seven new BO selections, eight
+total paid observations per trajectory. Run all twenty trajectories, including
+any that already hit the evaluation target. Threshold values are evaluator-only.
+
+Common model: BoTorch0.14 MixedSingleTaskGP, the existing three continuous
+features and nominal categorical catalyst dimension. Encode the original pool
+without changing any candidate input or response. Outputs use yield /100.
+Use outcome_transform=None and a fixed variance1e-6 nugget (0.1 percentage-point
+standard deviation). Initial GP mean=.5. The two outer kernel scales are .025,
+the nested categorical scale=.5, continuous lengthscales=.35, categorical
+lengthscales=1. The prior variance on a point before conditioning is .0625,
+corresponding to25 percentage-point standard deviation.
+
+Freeze these hyperparameters while n<4. For n>=4 fit exact marginal likelihood
+from the same initialization, with a Gamma(2,80) prior on the two outer scales
+and lower scale bound1e-5. Use the same fixed observation nugget. Hypothetical
+future observations condition the current GP without refitting its parameters.
+This shared recipe differs from the earlier singleton-MLE experiment; both
+current arms are therefore rerun. Old trajectories are contextual evidence.
+
+qLogEI: q=1,512 Sobol samples, all4,692 unqueried candidates. Original physical
+feature keyed exact tie priorities, seed0, indexed by total query number.
+
+Rollout: at each query with at least two paid choices remaining, evaluate
+EI(x) + E_y[max_z EI(z | D + (x,y))].
+The first EI and conditional EI are analytic, using BoTorch's stable LogEI
+numerics. Draw32 one-dimensional Sobol normal outcomes for y from the current
+latent posterior, sharing base samples across x. Conditional update includes
+the common nugget. Inner z maximization covers the full unqueried pool except x.
+The outer action set is the union of16 qLogEI leaders,16 posterior-SD leaders,
+and16 input-only coverage points (two per catalyst). The qLogEI leader is always
+included. The fixed coverage points use physical features only. All fantasy
+outcomes come from the GP, never from the oracle. Utility units are normalized
+yield. This is an approximate receding two-step policy with a restricted outer
+action set and an analytic-EI inner step. It does not optimize the full
+eight-step policy. On the final query use exactly the same qLogEI rule.
+Log the one-step analytic-EI shadow to expose differences from MC qLogEI.
+
+Primary endpoint: fraction reaching >=95% of the frozen Case 1 maximum
+(85.09055023193359%) by query8. The policy never receives this threshold or
+the maximum. Secondary speed endpoint: mean capped hitting index, assigning
+9 only as a comparison penalty when no hit occurs by8; retain right-censored
+status and never report9 as an actual observed hit. Also first-hit distribution,
+final best, and SearchAUC8. Report low/middle groups separately and paired cells.
+Five paired starts per group are descriptive and not a generalization claim.
+
+Persistent CPU workers, one Torch thread per worker, kernel warmup once,
+shared exact-prefix cache and immutable pre-outcome commitments. Preflight must
+verify the rank-one conditional posterior against BoTorch conditioning, the
+last-step qLogEI fallback, nondegenerate singleton posterior, zero in-loop JIT
+compilations, and correct initial IDs. Freeze source before new oracle outcomes.

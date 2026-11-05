@@ -1,0 +1,50 @@
+Grounded LLM first choice: zero observations and20 paid experiments
+
+The user explicitly selected0+20. The eight tasks and seed0 are retained.
+No historical four-point initialization or its observations enter the LLM prompt
+or this trajectory. The first actual experiment must be explicitly selected by
+an independent LLM with reaction/process background, true chemical identities,
+physical units and zero outcomes. No GP posterior, qLogEI, incumbent, unobserved
+target value or previous trajectory is supplied. In particular, do not make a
+GP shortlist and call the result an independent LLM proposal.
+
+Ask for one complete preferred condition, public reason,1..3 key assumptions,
+a subjective uncertain objective forecast in raw units, and a falsification
+criterion. Input-only examples are domain corner/center archetypes or physical-
+feature prior samples. They are not ranked by GP or yield and do not restrict
+the allowed original pool. Categorical identities remain exact and unordered.
+The Doyle CN1CCCN2C1=NCCC2 identity is MTBD, not DBU.
+
+If the LLM selects a real pool input exactly, seal that choice and its forecast.
+For a nonexact continuous proposal, identify five nearest existing inputs using
+normalized physical RMS distance, preserving all categorical identities. Then
+ask a SECOND fresh independent LLM to select the actual executable candidate
+and lock its forecast. This confirmation occurs before any objective is read
+or any observation-conditioned GP is constructed. No random or GP substitute
+may silently replace an invalid LLM first choice. At most two schema attempts
+are allowed per stage. Retain all failed attempts and projection details.
+
+This experiment isolates initialization: following19 decisions use the exact
+archived ColdGP native full-pool qLogEI, including its singleton/constant-value
+reporting convention and feature-keyed ties. Do not inject forecasts, regional
+shifts, KF weights or event refresh into these19 decisions. Those modules and
+their earlier results remain separate for a later module comparison.
+
+Reuse the eight completed cold0_20261102 pure-BO seed0 controls only after their
+entire original source recipe, candidate/oracle input hashes, first input-only
+priority, empty initialization and20 paid results have been verified. Do not
+use4+16 SearchAUC as a matched control. Here SearchAUC=mean of20 post-query
+cumulative best objectives, including the paid first point in each maximum.
+
+Precompile Python bytecode and warm native numerical operators once per
+persistent CPU worker. Use eight independent workers with one numeric thread
+each for these small GPs; do not recompile operators inside a query loop.
+Freeze protocol/source/input/control hashes before experimental LLM requests.
+Preserve initial proposal, input-only mapping, actual confirmation, first
+choice, posterior arrays and decision commits before querying objectives.
+LLM backend: fresh independent gpt-6.1-terra medium, fork_turns=none, at most
+16 logical requests and32 actual schema attempts. No API credentials needed.
+
+Entrypoint: run_grounded_first_start.py preflight; prepare; run; pending;
+dispatch --spawned <actual returned task names>; report. Existing protocols
+and old results must stay unchanged. One seed is development evidence only.

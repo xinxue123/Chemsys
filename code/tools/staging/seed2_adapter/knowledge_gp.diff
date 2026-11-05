@@ -1,0 +1,103 @@
+--- code/chemist_system/chem/benchmarks/knowledge_gp.py
++++ code/tools/staging/seed2_adapter/knowledge_gp.py
+@@ -31,6 +31,10 @@
+ SEED1_REGISTRY_SHA256 = '97235716a5a0bb9157b0c1f4da723af4145534a18438f8f3872513cdfc736937'
+ SEED1_RULE_PATH = 'experiments/reports/knowledge_loop_20261101/v3_seed1_rule_registration.json'
+ SEED1_RULE_SHA256 = '6897a3d08ad9842a2ad36487fd2c667c4037ec5a407e5873a9a17380b668b59b'
++SEED2_REGISTRY_PATH = 'experiments/reports/knowledge_loop_20261101/v5_seed2_input_registration.json'
++SEED2_REGISTRY_SHA256 = '265b57efbea49dd6ef2915a6fe92763fc9b6034f6dac772c854b2068a690a2b8'
++SEED2_RULE_PATH = 'experiments/reports/knowledge_loop_20261101/v5_seed2_rule_registration.json'
++SEED2_RULE_SHA256 = '2717c2aedafeff8b90e3b9301802079a7ca4feca20d32ed740b67fc0d642950d'
+ 
+ 
+ def input_digest(value):
+@@ -39,8 +43,8 @@
+ 
+ 
+ def validate_trial_seed(seed):
+-    if type(seed) is not int or seed not in (0, 1):
+-        raise ValueError('Only archived seed0 and preregistered seed1 are supported')
++    if type(seed) is not int or seed not in (0, 1, 2):
++        raise ValueError('Only archived seed0 and preregistered seed1/seed2 are supported')
+     return seed
+ 
+ 
+@@ -68,9 +72,41 @@
+     return registry, rule
+ 
+ 
+-def registered_initial_ids(pool):
++def seed2_registration(root):
++    """Read immutable seed2 input/rule declarations; never reveal an outcome."""
++    root = Path(root).resolve()
++    values = []
++    for rel, expected in ((SEED2_REGISTRY_PATH, SEED2_REGISTRY_SHA256),
++                          (SEED2_RULE_PATH, SEED2_RULE_SHA256)):
++        if not re.fullmatch(r'[0-9a-f]{64}', expected):
++            raise ValueError('Seed2 registration is not finalized')
++        path = (root / rel).resolve()
++        if not path.is_relative_to(root):
++            raise ValueError('Input registration escapes workspace')
++        value = json.loads(path.read_text(encoding='utf-8'))
++        actual = input_digest({k: v for k, v in value.items() if k != 'registration_sha256'})
++        if value.get('registration_sha256') != expected or actual != expected:
++            raise ValueError('Registered seed2 input/rule content changed')
++        if (value['initial_y_read'] is not False or value['oracle_access'] is not False
++                or value['LLM_calls'] != 0 or value['GP_fits'] != 0):
++            raise ValueError('Seed2 registration must precede target/model access')
++        if (value['trial_seed'], value['tie_seed'], value['numerical_seed'], value['menu_seed']) != (2, 2, 0, 0):
++            raise ValueError('Wrong seed2 registered random streams')
++        values.append(value)
++    registry, rule = values
++    if (registry['rule_registration_sha256'] != SEED2_RULE_SHA256
++            or rule['tasks'] != list(TASKS) or [r['task'] for r in registry['tasks']] != list(TASKS)
++            or rule['arms'] != ['bo', 'full'] or rule['condition'] != 'agent_initial_terra'
++            or rule['initial'] != 4 or rule['queries'] != 16):
++        raise ValueError('Wrong seed2 registered scope or budget')
++    return registry, rule
++
++
++def registered_initial_ids(pool, seed=1):
+     """Validate registered input identities/features without reading any outcome."""
+-    registry, _ = seed1_registration(pool.root)
++    if seed not in (1, 2):
++        raise ValueError('Registered initial IDs require seed1 or seed2')
++    registry, _ = (seed1_registration(pool.root) if seed == 1 else seed2_registration(pool.root))
+     row = next(r for r in registry['tasks'] if r['task'] == pool.task)
+     if (pool.source_path.relative_to(pool.root).as_posix() != row['input_pool'] or
+             sha256(pool.source_path.read_bytes()).hexdigest() != row['input_pool_sha256']):
+@@ -87,6 +123,14 @@
+             input_digest(features) != row['initial_features_sha256'] or
+             input_digest([list(x) for x in sorted(pool.features)]) != row['sorted_pool_features_sha256']):
+         raise ValueError('Registered initial physical features changed')
++    if seed == 2:
++        if len(set(pool.features)) != len(pool.ids):
++            raise ValueError('Seed2 physical-feature order must be unambiguous')
++        order = sorted(range(len(pool.ids)), key=lambda j: pool.features[j])
++        positions = np.random.default_rng(np.random.SeedSequence([2, 0])).choice(len(order), 4, replace=False)
++        expected_ids = tuple(pool.ids[order[int(j)]] for j in positions)
++        if ids != expected_ids or row['drawn_sorted_positions'] != list(map(int, positions)):
++            raise ValueError('Initial inputs do not match the preregistered seed2 draw')
+     return ids
+ 
+ 
+@@ -153,7 +197,7 @@
+         raise ValueError(f'Unknown task: {task}')
+     pool = Pool(task, group, tuple(p['ids']), axes, kinds, tuple(p['points']),
+                 features, initial, unit, scale, p, root, path)
+-    return replace(pool, initial_ids=registered_initial_ids(pool)) if seed == 1 else pool
++    return replace(pool, initial_ids=registered_initial_ids(pool, seed)) if seed in (1, 2) else pool
+ 
+ 
+ def read_observation(root, pool, candidate_id):
+@@ -230,8 +274,8 @@
+ class GPAdapter:
+     def __init__(self, pool, cache_dir, seed=0):
+         validate_trial_seed(seed)
+-        if seed == 1 and pool.initial_ids != registered_initial_ids(pool):
+-            raise ValueError('Seed1 GP requires the preregistered initial pool')
++        if seed in (1, 2) and pool.initial_ids != registered_initial_ids(pool, seed):
++            raise ValueError('Confirmation GP requires the preregistered initial pool')
+         import torch
+         self.pool, self.seed = pool, seed
+         self.directory = Path(cache_dir).resolve()

@@ -1,0 +1,49 @@
+FROZEN HYPOTHESIS-SCOPE POLICY: 0+20 MULTISEED STUDY
+
+Eight tasks; seed0 is immutable previously completed development evidence.
+New exact-tie streams:1,2,3. Three paired arms: pure native BO, fixed grounded
+LLM first point followed by BO, and frozen hypothesis constraints/KF/refresh.
+72 new trajectories,1440 paid table evaluations;480 belong to the new policy.
+Initial points count toward20; no free initial observations. SearchAUC averages
+all20 post-query cumulative maxima, including zeros and failed improvements.
+
+The grounded LLM first input and its BLINDED initial hypotheses are explicitly
+fixed to the previous independent seed0 outputs. These are shared scientific
+priors, not claimed to be freshly sampled for each seed. They contain no first
+outcome when initially elicited. Pure BO uses the feature-keyed random prior at
+query1. Thereafter each arm uses the SAME all-query tie stream [seed,query].
+Only EXACT qLogEI maxima are tied. No near-tie tolerance is introduced.
+
+Native GP fitting, normalization,512-MC acquisition, prefix-based fit/MC seeds
+remain numerical seed0. The source recipe and policy modules are unchanged.
+The adapter changes I/O namespace, seed metadata and feature-based tie priority.
+Each actual first experiment and every subsequent choice is committed before
+reading its objective. No past control source or result is rewritten.
+
+The frozen policy still intersects favour scopes, subtracts avoid scopes,
+uses its exact existing KF/recommendation gates, and schedules at most four
+logical LLM calls including the reused initial request. No diagnosis-motivated
+repairs are included. At most72 new logical refresh requests,144 schema attempts.
+Every refresh uses ALL of its own actual prefix and old forecasts/feedback.
+No response or cache is replayed across seeds; fresh gpt-6.1-terra medium
+subagents have isolated contexts. Current GP ranks and unmeasured outcomes
+remain excluded. Raw responses and actual dispatch receipts are preserved.
+Seal only after actual agent completion is acknowledged, avoiding a previous
+scratch-export/seal race. This custody adapter does not alter scientific prompts.
+
+Exact-prefix numeric caches may be copied/shared since model and MC streams
+are identical; unknown prefixes must fit from their OWN observations. Eight
+persistent CPU workers, one BLAS thread each; warm operators once, Python
+precompile once, no runtime operator compilation. Frozen CPU numerics remain.
+
+Older cold_s123 controls change only the zero-data first-menu stream and keep
+post-first ties at0. They cannot substitute for these all-query-seed controls.
+Recompute both control arms fairly for seeds1,2,3. Combine with unchanged seed0
+only after checking provenance. Report all per-seed values, per-task means and
+sample SD, paired differences and win/tie/loss; also report seeds1..3 separately.
+Do not average raw outcomes across tasks with different physical units.
+
+Inference is conditional on the fixed initial input/knowledge. It tests joint
+all-query tie-order and downstream LLM-refresh variation, not random initial
+chemical knowledge quality or isolated LLM variance. Four seeds, including one
+already diagnosed development seed, do not establish statistical superiority.

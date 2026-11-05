@@ -1,0 +1,23 @@
+{
+  "status": "COPIED_BASES_BEFORE_EDIT",
+  "created_utc": "2026-11-01T04:22:04.898729+00:00",
+  "files": [
+    {
+      "canonical_path": "code/chemist_system/chem/benchmarks/knowledge_gp.py",
+      "staged_path": "code/tools/staging/seed1_adapter/knowledge_gp.py",
+      "base_sha256": "7c54c65f04a8c7062a0b6f1d6a64f27b87f3bdb62a6b49e64c29ee01b19a32a4"
+    },
+    {
+      "canonical_path": "code/chemist_system/chem/benchmarks/knowledge_study.py",
+      "staged_path": "code/tools/staging/seed1_adapter/knowledge_study.py",
+      "base_sha256": "4c132c89641c45cb96f012c7b9c5953bc70885dd844e8cde854901a103afb7a3"
+    },
+    {
+      "canonical_path": "code/chemist_system/knowledge_loop.py",
+      "staged_path": "code/tools/staging/seed1_adapter/knowledge_loop.py",
+      "base_sha256": "18a4e4539ac1272a600528c23689c1ae19fe077c27c1ab6222b993628624b3f9"
+    }
+  ],
+  "canonical_modified": false,
+  "holdout_oracle_read": false
+}

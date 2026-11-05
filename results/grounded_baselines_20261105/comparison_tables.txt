@@ -1,0 +1,46 @@
+Complete matched comparison: eight tasks, four exact-tie seeds, 0+20 paid queries.
+Values are arithmetic mean +/- sample SD. Initial LLM point/knowledge are fixed across seeds.
+Backend continuation: 552 preserved independent subagent requests; remaining post-first responses use stateless API. Not a pure-API replication.
+No cross-task mean of raw objectives is computed.
+
+SearchAUC
+Task | Hypothesis/KF/events | LGBO | Reasoning BO | Pure BO | Same first + BO
+c1 | 71.35 +/- 1.80 | 74.74 +/- 4.89 | 72.30 +/- 1.01 | 59.70 +/- 4.76 | 72.62 +/- 3.79
+c2 | 32.27 +/- 1.62 | 31.34 +/- 2.95 | 33.02 +/- 2.01 | 25.29 +/- 6.53 | 32.16 +/- 2.63
+c3 | 88.63 +/- 0.59 | 86.68 +/- 0.55 | 89.29 +/- 0.42 | 74.71 +/- 12.47 | 88.63 +/- 0.60
+c4 | 89.11 +/- 3.96 | 88.61 +/- 2.14 | 89.23 +/- 3.01 | 89.71 +/- 4.79 | 89.07 +/- 3.97
+perera | 91.98 +/- 0.52 | 92.21 +/- 0.97 | 93.49 +/- 3.19 | 91.04 +/- 2.82 | 92.47 +/- 1.07
+doyle | 80.92 +/- 18.45 | 85.39 +/- 8.03 | 72.26 +/- 5.02 | 78.15 +/- 8.13 | 73.37 +/- 5.67
+snar | 9854.69 +/- 337.75 | 9665.05 +/- 48.93 | 9570.13 +/- 665.36 | 8571.71 +/- 1222.51 | 9854.07 +/- 337.55
+hplc | 1548.38 +/- 0.00 | 1779.94 +/- 270.12 | 769.13 +/- 246.96 | 1645.81 +/- 145.26 | 1548.38 +/- 0.00
+
+final_best
+Task | Hypothesis/KF/events | LGBO | Reasoning BO | Pure BO | Same first + BO
+c1 | 89.57 +/- 0.00 | 89.03 +/- 0.62 | 89.30 +/- 0.54 | 89.30 +/- 0.54 | 89.30 +/- 0.54
+c2 | 40.09 +/- 0.00 | 40.09 +/- 0.00 | 40.09 +/- 0.00 | 40.09 +/- 0.00 | 40.09 +/- 0.00
+c3 | 90.18 +/- 0.61 | 89.51 +/- 0.26 | 90.38 +/- 0.66 | 89.32 +/- 0.65 | 90.18 +/- 0.61
+c4 | 95.92 +/- 0.36 | 96.01 +/- 0.42 | 96.23 +/- 0.24 | 95.92 +/- 0.73 | 96.08 +/- 0.32
+perera | 93.91 +/- 1.45 | 94.92 +/- 2.23 | 95.12 +/- 3.86 | 94.93 +/- 1.46 | 94.53 +/- 0.96
+doyle | 85.68 +/- 20.20 | 94.44 +/- 4.78 | 85.40 +/- 3.14 | 92.21 +/- 8.28 | 86.08 +/- 6.17
+snar | 11404.28 +/- 310.65 | 10938.30 +/- 0.00 | 11093.62 +/- 310.65 | 11404.28 +/- 310.65 | 11391.85 +/- 303.28
+hplc | 2097.94 +/- 0.00 | 2308.19 +/- 297.06 | 1448.63 +/- 189.76 | 2004.27 +/- 186.01 | 2097.94 +/- 0.00
+
+Paired results (descriptive W/T/L; task-seed pairs are not all independent observations):
+hyp vs bo SearchAUC: 23/0/9 over32 task-seed pairs; task-mean 6/0/2 over8 tasks
+hyp vs bo final_best: 10/11/11 over32 task-seed pairs; task-mean 4/2/2 over8 tasks
+hyp vs first SearchAUC: 8/16/8 over32 task-seed pairs; task-mean 4/1/3 over8 tasks
+hyp vs first final_best: 4/24/4 over32 task-seed pairs; task-mean 2/3/3 over8 tasks
+lgbo vs bo SearchAUC: 24/0/8 over32 task-seed pairs; task-mean 7/0/1 over8 tasks
+lgbo vs bo final_best: 10/11/11 over32 task-seed pairs; task-mean 4/1/3 over8 tasks
+lgbo vs first SearchAUC: 14/0/18 over32 task-seed pairs; task-mean 3/0/5 over8 tasks
+lgbo vs first final_best: 10/10/12 over32 task-seed pairs; task-mean 3/1/4 over8 tasks
+lgbo vs hyp SearchAUC: 13/1/18 over32 task-seed pairs; task-mean 4/0/4 over8 tasks
+lgbo vs hyp final_best: 8/11/13 over32 task-seed pairs; task-mean 4/1/3 over8 tasks
+rbo vs bo SearchAUC: 19/0/13 over32 task-seed pairs; task-mean 5/0/3 over8 tasks
+rbo vs bo final_best: 9/8/15 over32 task-seed pairs; task-mean 3/2/3 over8 tasks
+rbo vs first SearchAUC: 15/0/17 over32 task-seed pairs; task-mean 4/0/4 over8 tasks
+rbo vs first final_best: 7/13/12 over32 task-seed pairs; task-mean 3/2/3 over8 tasks
+rbo vs hyp SearchAUC: 16/0/16 over32 task-seed pairs; task-mean 5/0/3 over8 tasks
+rbo vs hyp final_best: 7/13/12 over32 task-seed pairs; task-mean 3/1/4 over8 tasks
+
+This comparison does not isolate a causal KF or event-refresh effect. Backend differences, fixed initial knowledge, and initial-point choice remain interpretation limits. Same-first BO is required when discussing benefits after the shared first experiment.

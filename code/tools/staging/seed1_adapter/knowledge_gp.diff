@@ -1,0 +1,122 @@
+--- code/chemist_system/chem/benchmarks/knowledge_gp.py
++++ code/chemist_system/chem/benchmarks/knowledge_gp.py
+@@ -8,7 +8,7 @@
+ """
+ from __future__ import annotations
+ 
+-from dataclasses import dataclass, field
++from dataclasses import dataclass, field, replace
+ from hashlib import sha256
+ from importlib import import_module
+ from pathlib import Path
+@@ -27,6 +27,67 @@
+ }
+ _WARMED = False
+ COMPILE_COUNTS = {}
++SEED1_REGISTRY_PATH = 'experiments/reports/knowledge_loop_20261101/v3_seed1_input_registration.json'
++SEED1_REGISTRY_SHA256 = '97235716a5a0bb9157b0c1f4da723af4145534a18438f8f3872513cdfc736937'
++SEED1_RULE_PATH = 'experiments/reports/knowledge_loop_20261101/v3_seed1_rule_registration.json'
++SEED1_RULE_SHA256 = '6897a3d08ad9842a2ad36487fd2c667c4037ec5a407e5873a9a17380b668b59b'
++
++
++def input_digest(value):
++    return sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False,
++                            separators=(',', ':')).encode('utf-8')).hexdigest()
++
++
++def validate_trial_seed(seed):
++    if type(seed) is not int or seed not in (0, 1):
++        raise ValueError('Only archived seed0 and preregistered seed1 are supported')
++    return seed
++
++
++def seed1_registration(root):
++    """Read the two immutable input-only registrations; never sample new points."""
++    root = Path(root).resolve()
++    values = []
++    for rel, expected in ((SEED1_REGISTRY_PATH, SEED1_REGISTRY_SHA256),
++                          (SEED1_RULE_PATH, SEED1_RULE_SHA256)):
++        path = (root / rel).resolve()
++        if not path.is_relative_to(root):
++            raise ValueError('Input registration escapes workspace')
++        value = json.loads(path.read_text(encoding='utf-8'))
++        actual = input_digest({k:v for k,v in value.items() if k != 'registration_sha256'})
++        if value.get('registration_sha256') != expected or actual != expected:
++            raise ValueError('Registered input/rule content changed')
++        if value['initial_y_read'] is not False or value['oracle_access'] is not False:
++            raise ValueError('Registration must precede target access')
++        values.append(value)
++    registry, rule = values
++    if registry['rule_registration_sha256'] != SEED1_RULE_SHA256 or rule['tasks'] != list(TASKS):
++        raise ValueError('Wrong registered rule or task set')
++    if [r['task'] for r in registry['tasks']] != list(TASKS):
++        raise ValueError('Wrong registered initial task set')
++    return registry, rule
++
++
++def registered_initial_ids(pool):
++    """Validate registered input identities/features without reading any outcome."""
++    registry, _ = seed1_registration(pool.root)
++    row = next(r for r in registry['tasks'] if r['task'] == pool.task)
++    if (pool.source_path.relative_to(pool.root).as_posix() != row['input_pool'] or
++            sha256(pool.source_path.read_bytes()).hexdigest() != row['input_pool_sha256']):
++        raise ValueError('Registered candidate input file changed')
++    if (len(pool.ids) != row['candidate_count'] or list(pool.axes) != row['axes'] or
++            list(pool.kinds) != row['kinds']):
++        raise ValueError('Registered input schema changed')
++    ids = tuple(row['initial_ids'])
++    if len(ids) != 4 or len(set(ids)) != 4 or not set(ids) <= pool.ix.keys():
++        raise ValueError('Invalid registered initial IDs')
++    features = [list(pool.features[pool.ix[key]]) for key in ids]
++    points = [pool.points[pool.ix[key]] for key in ids]
++    if (features != row['initial_features'] or points != row['initial_points'] or
++            input_digest(features) != row['initial_features_sha256'] or
++            input_digest([list(x) for x in sorted(pool.features)]) != row['sorted_pool_features_sha256']):
++        raise ValueError('Registered initial physical features changed')
++    return ids
+ 
+ 
+ @dataclass
+@@ -56,8 +117,9 @@
+             raise ValueError('Feature axes are misaligned')
+ 
+ 
+-def load_task(root, task):
++def load_task(root, task, *, seed=0):
+     """Read only the public pool; neither oracle nor archived results are read."""
++    validate_trial_seed(seed)
+     root = Path(root).resolve()
+     match = re.fullmatch(r'(?:Reizman_Suzuki_Case_|Reizman_Suzuki_Case|Suzuki_Case|case)([1-4])', task)
+     if match:
+@@ -89,8 +151,9 @@
+         group, unit, scale = 'P2', p['objective_unit'], float(p['objective_scale'])
+     else:
+         raise ValueError(f'Unknown task: {task}')
+-    return Pool(task, group, tuple(p['ids']), axes, kinds, tuple(p['points']),
++    pool = Pool(task, group, tuple(p['ids']), axes, kinds, tuple(p['points']),
+                 features, initial, unit, scale, p, root, path)
++    return replace(pool, initial_ids=registered_initial_ids(pool)) if seed == 1 else pool
+ 
+ 
+ def read_observation(root, pool, candidate_id):
+@@ -166,8 +229,9 @@
+ 
+ class GPAdapter:
+     def __init__(self, pool, cache_dir, seed=0):
+-        if seed != 0:
+-            raise ValueError('This first frozen adapter supports the archived seed0 recipe only')
++        validate_trial_seed(seed)
++        if seed == 1 and pool.initial_ids != registered_initial_ids(pool):
++            raise ValueError('Seed1 GP requires the preregistered initial pool')
+         import torch
+         self.pool, self.seed = pool, seed
+         self.directory = Path(cache_dir).resolve()
+@@ -185,7 +249,7 @@
+         if pool.group == 'P0':
+             module = _legacy_import('mixed_kalman_suzuki_engine', pool.root)
+             self.cache = module.MixedKnowledgeCache(pool.raw_pool, self.directory,
+-                                                   int(pool.task[-1]), seed=seed, sources=())
++                                                   int(pool.task[-1]), seed=0, sources=())
+             self.X = self.cache.z
+         elif pool.group == 'P1':
+             module = _legacy_import('pointwise_hte_engine', pool.root)

@@ -1,0 +1,53 @@
+MATCHED GROUNDED LGBO AND REASONING BO, REGISTERED BEFORE NEW OUTCOMES
+
+Eight tasks, seeds0-3, zero free observations and20 paid sequential evaluations.
+Reuse the current hypothesis-scope study's candidate pools, unchanged native
+ColdGP/Mixed GP fitting, numerical/MC512 streams and all-query feature-keyed
+exact-tie streams. No near-tie tolerance or candidate-ID selection is added.
+
+The common, previously independent chemically grounded first input is paid
+query1 in every new trajectory. The same frozen BLINDED initial hypotheses are
+provided as uncertain text priors. No first outcome conditioned those initial
+hypotheses. This controls starting input and knowledge, not freshly sampled
+initial LLM quality. Scientific background includes the verified reaction and
+molecular definitions and Doyle MTBD correction. Prior outcomes/rankings and
+other-arm results are never supplied to experimental LLM requests.
+
+Each subsequent query gets a FRESH isolated gpt-6.1-terra medium subagent with
+fork none, complete own observation history and own method's preceding public
+responses. No response is reused across seeds or methods. At most two fresh
+schema attempts; invalid input repair sees no new experimental outcome. Each
+selected point and forecast/model arrays are committed before reading its label.
+Record actual child assignment, completion notification, raw response and SHA.
+
+LGBO retains official regional mean tilting with unchanged covariance, followed
+by unchanged native qLogEI over the entire frozen pool. Finite uniform region
+quadrature (cap512) replaces continuous grid sampling, admitting exact category
+sets without imposing ordinal distances. Point preferences use input-only
+nearest feasible projection with unchanged categories. Confidence uses the
+official3*Phi_inverse(c) mapping and official variance floor. The inherited
+cached covariance is correctly expressed through outcome stdvs squared.
+No KF, B4, hard scope, opportunity gate or event scheduler is added to LGBO.
+
+Reasoning BO uses the official unchanged Insight template and stable confidence
+sort, compiled ONCE before the round loop. Adaptation is5-to1 sequential choice
+instead of the paper's5-to3 batch, over the native qLogEI top5 with neutral
+display order. Shared blinded priors enter retrieved text, and full own Insight
+history is retained. There is no vector-database/KG editing agent, KF or event
+refresh in this comparator; all differences from the published system are logged.
+
+64 new trajectories,1280 paid table queries,1216 logical post-first LLM requests,
+up to2432 actual schema attempts. Existing BO, same-first BO and hypothesis-scope
+results are imported unchanged and hash-protected. Eight persistent single-BLAS-
+thread CPU workers share only exact-prefix numerical caches; compile/warm once,
+no runtime JIT/torch.compile, no model fitting repeated for identical prefixes.
+
+Preflight uses synthetic labels only: native acquisition reconstruction, official
+cached/uncached regional means and covariance, category/physical scope validity,
+official stable confidence extraction and exact tie semantics. No LLM or oracle
+evaluation is permitted before protocol registration. No performance rerolls.
+
+Primary SearchAUC is mean of ALL20 post-query cumulative maxima; final best and
+first attainment query are also reported, with means/sample SD per task, paired
+seed differences and all failures. No raw objective averaging across tasks.
+This is an exploratory matched adapter comparison, not a reproduction of papers.
