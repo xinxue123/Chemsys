@@ -1,0 +1,23 @@
+{
+  "task": "c3",
+  "full_task": "Reizman_Suzuki_Case_3",
+  "candidates": 4692,
+  "objective_unit": "simulated yield percent",
+  "axes": [
+    "t_res",
+    "temperature",
+    "catalyst_loading",
+    "catalyst"
+  ],
+  "input_kinds": [
+    "continuous",
+    "continuous",
+    "continuous",
+    "categorical"
+  ],
+  "pool_source": "experiments/runs/suzuki_guarded/inputs/case3/pool.json",
+  "input_sha256": "90a31c87cc29f2aa186d6a2ff1d234035f73f12709a75ba2b137b436162157bb",
+  "oracle_sha256": "c69938a875d3da5ae01dde9fcf23c2a05a28983b3f656a8463873be97baa26fa",
+  "objective_scale": 100.0,
+  "export": "Post-hoc full-table inspection only; never exposed to LLM decisions"
+}

@@ -1,0 +1,181 @@
+task,method,query,streams,mean_running_best_pct_of_max
+Borylation,Random-start BO,1,24,46.3216
+Borylation,Random-start BO,2,24,71.1221
+Borylation,Random-start BO,3,24,76.8685
+Borylation,Random-start BO,4,24,83.901
+Borylation,Random-start BO,5,24,88.0572
+Borylation,Random-start BO,6,24,89.614
+Borylation,Random-start BO,7,24,89.984
+Borylation,Random-start BO,8,24,90.7354
+Borylation,Random-start BO,9,24,91.4275
+Borylation,Random-start BO,10,24,91.4316
+Borylation,Random-start BO,11,24,92.3396
+Borylation,Random-start BO,12,24,92.3645
+Borylation,Random-start BO,13,24,92.4835
+Borylation,Random-start BO,14,24,92.4937
+Borylation,Random-start BO,15,24,93.4795
+Borylation,Random-start BO,16,24,93.971
+Borylation,Random-start BO,17,24,93.971
+Borylation,Random-start BO,18,24,94.0592
+Borylation,Random-start BO,19,24,94.2735
+Borylation,Random-start BO,20,24,94.5236
+Borylation,Scope controller,1,24,25.54
+Borylation,Scope controller,2,24,60.7379
+Borylation,Scope controller,3,24,67.5961
+Borylation,Scope controller,4,24,77.7917
+Borylation,Scope controller,5,24,81.2836
+Borylation,Scope controller,6,24,84.1778
+Borylation,Scope controller,7,24,84.552
+Borylation,Scope controller,8,24,86.3277
+Borylation,Scope controller,9,24,86.5845
+Borylation,Scope controller,10,24,87.0756
+Borylation,Scope controller,11,24,87.3219
+Borylation,Scope controller,12,24,87.8156
+Borylation,Scope controller,13,24,88.5733
+Borylation,Scope controller,14,24,89.0612
+Borylation,Scope controller,15,24,89.2331
+Borylation,Scope controller,16,24,90.5909
+Borylation,Scope controller,17,24,90.5909
+Borylation,Scope controller,18,24,91.425
+Borylation,Scope controller,19,24,92.2723
+Borylation,Scope controller,20,24,92.7217
+Borylation,LLM-start BO,1,24,25.54
+Borylation,LLM-start BO,2,24,51.1001
+Borylation,LLM-start BO,3,24,63.6786
+Borylation,LLM-start BO,4,24,71.494
+Borylation,LLM-start BO,5,24,75.0296
+Borylation,LLM-start BO,6,24,77.3429
+Borylation,LLM-start BO,7,24,78.9167
+Borylation,LLM-start BO,8,24,79.4141
+Borylation,LLM-start BO,9,24,81.2022
+Borylation,LLM-start BO,10,24,82.336
+Borylation,LLM-start BO,11,24,83.0713
+Borylation,LLM-start BO,12,24,83.8222
+Borylation,LLM-start BO,13,24,87.2279
+Borylation,LLM-start BO,14,24,88.381
+Borylation,LLM-start BO,15,24,88.427
+Borylation,LLM-start BO,16,24,88.5307
+Borylation,LLM-start BO,17,24,89.0376
+Borylation,LLM-start BO,18,24,89.328
+Borylation,LLM-start BO,19,24,89.9857
+Borylation,LLM-start BO,20,24,90.7274
+Pd coupling,Random-start BO,1,24,7.7001
+Pd coupling,Random-start BO,2,24,10.4873
+Pd coupling,Random-start BO,3,24,17.4171
+Pd coupling,Random-start BO,4,24,19.3366
+Pd coupling,Random-start BO,5,24,25.7505
+Pd coupling,Random-start BO,6,24,31.5059
+Pd coupling,Random-start BO,7,24,32.4908
+Pd coupling,Random-start BO,8,24,36.0274
+Pd coupling,Random-start BO,9,24,38.6053
+Pd coupling,Random-start BO,10,24,41.0062
+Pd coupling,Random-start BO,11,24,42.325
+Pd coupling,Random-start BO,12,24,45.0682
+Pd coupling,Random-start BO,13,24,45.3383
+Pd coupling,Random-start BO,14,24,45.713
+Pd coupling,Random-start BO,15,24,45.7266
+Pd coupling,Random-start BO,16,24,46.3064
+Pd coupling,Random-start BO,17,24,46.4571
+Pd coupling,Random-start BO,18,24,46.7355
+Pd coupling,Random-start BO,19,24,47.4598
+Pd coupling,Random-start BO,20,24,47.6911
+Pd coupling,Scope controller,1,24,3.9155
+Pd coupling,Scope controller,2,24,7.697
+Pd coupling,Scope controller,3,24,10.1074
+Pd coupling,Scope controller,4,24,16.943
+Pd coupling,Scope controller,5,24,22.0883
+Pd coupling,Scope controller,6,24,26.2131
+Pd coupling,Scope controller,7,24,31.2254
+Pd coupling,Scope controller,8,24,34.9378
+Pd coupling,Scope controller,9,24,37.0678
+Pd coupling,Scope controller,10,24,39.5137
+Pd coupling,Scope controller,11,24,40.3019
+Pd coupling,Scope controller,12,24,40.8336
+Pd coupling,Scope controller,13,24,44.2215
+Pd coupling,Scope controller,14,24,45.3498
+Pd coupling,Scope controller,15,24,45.9014
+Pd coupling,Scope controller,16,24,47.9224
+Pd coupling,Scope controller,17,24,48.8592
+Pd coupling,Scope controller,18,24,49.4442
+Pd coupling,Scope controller,19,24,50.2303
+Pd coupling,Scope controller,20,24,51.0226
+Pd coupling,LLM-start BO,1,24,3.9155
+Pd coupling,LLM-start BO,2,24,5.5074
+Pd coupling,LLM-start BO,3,24,10.0519
+Pd coupling,LLM-start BO,4,24,13.9224
+Pd coupling,LLM-start BO,5,24,19.5198
+Pd coupling,LLM-start BO,6,24,23.3505
+Pd coupling,LLM-start BO,7,24,25.5212
+Pd coupling,LLM-start BO,8,24,26.4789
+Pd coupling,LLM-start BO,9,24,30.4593
+Pd coupling,LLM-start BO,10,24,31.2076
+Pd coupling,LLM-start BO,11,24,32.6028
+Pd coupling,LLM-start BO,12,24,32.7388
+Pd coupling,LLM-start BO,13,24,33.9456
+Pd coupling,LLM-start BO,14,24,34.2041
+Pd coupling,LLM-start BO,15,24,35.6736
+Pd coupling,LLM-start BO,16,24,36.176
+Pd coupling,LLM-start BO,17,24,36.2691
+Pd coupling,LLM-start BO,18,24,38.6209
+Pd coupling,LLM-start BO,19,24,38.6209
+Pd coupling,LLM-start BO,20,24,39.4917
+Deoxyfluorination,Random-start BO,1,24,35.7311
+Deoxyfluorination,Random-start BO,2,24,50.8255
+Deoxyfluorination,Random-start BO,3,24,57.1148
+Deoxyfluorination,Random-start BO,4,24,62.7752
+Deoxyfluorination,Random-start BO,5,24,64.7799
+Deoxyfluorination,Random-start BO,6,24,65.8805
+Deoxyfluorination,Random-start BO,7,24,72.2484
+Deoxyfluorination,Random-start BO,8,24,73.1525
+Deoxyfluorination,Random-start BO,9,24,74.9214
+Deoxyfluorination,Random-start BO,10,24,75.9041
+Deoxyfluorination,Random-start BO,11,24,76.8082
+Deoxyfluorination,Random-start BO,12,24,78.1447
+Deoxyfluorination,Random-start BO,13,24,78.6557
+Deoxyfluorination,Random-start BO,14,24,81.2107
+Deoxyfluorination,Random-start BO,15,24,82.2327
+Deoxyfluorination,Random-start BO,16,24,82.5865
+Deoxyfluorination,Random-start BO,17,24,83.9623
+Deoxyfluorination,Random-start BO,18,24,84.3554
+Deoxyfluorination,Random-start BO,19,24,85.8098
+Deoxyfluorination,Random-start BO,20,24,85.8491
+Deoxyfluorination,Scope controller,1,24,26.4151
+Deoxyfluorination,Scope controller,2,24,46.0299
+Deoxyfluorination,Scope controller,3,24,61.2421
+Deoxyfluorination,Scope controller,4,24,68.239
+Deoxyfluorination,Scope controller,5,24,74.2138
+Deoxyfluorination,Scope controller,6,24,79.4418
+Deoxyfluorination,Scope controller,7,24,82.1934
+Deoxyfluorination,Scope controller,8,24,82.3506
+Deoxyfluorination,Scope controller,9,24,82.5472
+Deoxyfluorination,Scope controller,10,24,82.8223
+Deoxyfluorination,Scope controller,11,24,83.3333
+Deoxyfluorination,Scope controller,12,24,83.5299
+Deoxyfluorination,Scope controller,13,24,84.434
+Deoxyfluorination,Scope controller,14,24,84.7877
+Deoxyfluorination,Scope controller,15,24,85.4953
+Deoxyfluorination,Scope controller,16,24,85.5739
+Deoxyfluorination,Scope controller,17,24,85.6132
+Deoxyfluorination,Scope controller,18,24,85.6132
+Deoxyfluorination,Scope controller,19,24,86.7138
+Deoxyfluorination,Scope controller,20,24,86.7531
+Deoxyfluorination,LLM-start BO,1,24,26.4151
+Deoxyfluorination,LLM-start BO,2,24,37.0283
+Deoxyfluorination,LLM-start BO,3,24,47.956
+Deoxyfluorination,LLM-start BO,4,24,57.2327
+Deoxyfluorination,LLM-start BO,5,24,66.5881
+Deoxyfluorination,LLM-start BO,6,24,68.9859
+Deoxyfluorination,LLM-start BO,7,24,73.0739
+Deoxyfluorination,LLM-start BO,8,24,73.8601
+Deoxyfluorination,LLM-start BO,9,24,74.0959
+Deoxyfluorination,LLM-start BO,10,24,77.0047
+Deoxyfluorination,LLM-start BO,11,24,78.2626
+Deoxyfluorination,LLM-start BO,12,24,79.8742
+Deoxyfluorination,LLM-start BO,13,24,80.3066
+Deoxyfluorination,LLM-start BO,14,24,81.4859
+Deoxyfluorination,LLM-start BO,15,24,81.8789
+Deoxyfluorination,LLM-start BO,16,24,82.6651
+Deoxyfluorination,LLM-start BO,17,24,84.1588
+Deoxyfluorination,LLM-start BO,18,24,84.6305
+Deoxyfluorination,LLM-start BO,19,24,84.6305
+Deoxyfluorination,LLM-start BO,20,24,85.2594

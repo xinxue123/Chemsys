@@ -1,0 +1,61 @@
+{
+  "pairs": 24,
+  "enough_pairs": true,
+  "pool_maximum_raw": 3.134624572,
+  "capped_rows": 27,
+  "arms": {
+    "plain_bo": {
+      "mean_auc": 72.26484678489594,
+      "mean_final": 88.59185860769593
+    },
+    "controller": {
+      "mean_auc": 73.14444581069968,
+      "mean_final": 91.89606688009464,
+      "mean_calls": 4
+    }
+  },
+  "confirmatory": {
+    "contrast": "controller - plain BO",
+    "mean_auc": 0.8795990258037408,
+    "interval90": [
+      -5.042292470787328,
+      6.80149052239481
+    ],
+    "up": 9,
+    "down": 8,
+    "reading": "not separated, unresolved"
+  },
+  "secondary": {
+    "sign_flip_p": 0.8034259828700856,
+    "mean_final": 3.304208272398711,
+    "paper_rule_met": false,
+    "strata": {
+      "start_above_median": {
+        "pairs": 14,
+        "plain": 71.62672592306762,
+        "controller": 75.55962392854617
+      },
+      "start_at_or_below_median": {
+        "pairs": 10,
+        "plain": 73.15821599145559,
+        "controller": 69.76319644571458
+      }
+    },
+    "recall": {
+      "llm_first_mean_percentile": 71.84883720930233,
+      "llm_first_capped": 0,
+      "distinct_llm_first": 2,
+      "favour_scopes": 24,
+      "favour_scopes_holding_capped": 24,
+      "unreadable_scopes": 0
+    }
+  },
+  "api_usage": {
+    "requests": 120,
+    "total_tokens": 3201653,
+    "schema_retries": 1,
+    "models": [
+      "gpt-6.1-terra"
+    ]
+  }
+}

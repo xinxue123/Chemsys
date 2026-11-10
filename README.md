@@ -1,5 +1,16 @@
 # Chem: feedback-guided experimental decisions
 
+## Current paper companion
+
+[Chemsys-paper-clean](Chemsys-paper-clean/README.md) contains the current **Falsifiable Search Scopes** method (`hypothesis_scope_v2`), English documentation, all 13 paper-specific candidate/oracle pools and compact results, including the additional DeepSeek comparison. Start with its [handoff](Chemsys-paper-clean/docs/HANDOFF.md).
+
+```sh
+cd Chemsys-paper-clean
+python research.py verify
+```
+
+The companion publishes frozen datasets and derived result tables. Raw decision/LLM logs, fitted-model caches and the large evidence archives remain local. The historical root edition and its 4+16/0+20 summaries below are preserved; its local-only data statements refer to that earlier edition.
+
 **Working finding: later knowledge decisions have inconsistent incremental utility beyond initialization in the tested BO studies.** Positive, null and adverse results are retained. Knowledge-state updates, changes of action and improved search are distinct evidence requirements.
 
 This GitHub edition synchronizes code, English documentation and compact result summaries from the sealed local `Chemsys-portable` workspace. It includes **487 primary comparison records**, covering historical 4+16, original V13 0+20, shared-prefix ablations, programmed-KF contrasts and the latest grounded eight-task comparison. Reused controls are identified; these records are not 487 independent new experiments.

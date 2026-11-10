@@ -1,0 +1,1502 @@
+[
+  {
+    "path": "code/analysis/analyze_first_point_saved_evidence.py",
+    "source": "extrnal/code/analysis/analyze_first_point_saved_evidence.py",
+    "source_sha256": "7f1caa34ae36d61d6327012c5beaeead53adca53ad9e6e49f706cfb73b9167a6",
+    "packaged_sha256": "7f1caa34ae36d61d6327012c5beaeead53adca53ad9e6e49f706cfb73b9167a6"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_method.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_method.py",
+    "source_sha256": "ecdef2d685181afcfd7c33f695c1184e601cbe5d347b95d290fefddfecabbed9",
+    "packaged_sha256": "ecdef2d685181afcfd7c33f695c1184e601cbe5d347b95d290fefddfecabbed9"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2.py",
+    "source_sha256": "37011858ab14caf8501f0e74c123058fa877bd730bee588ff6877c26ca9cb424",
+    "packaged_sha256": "37011858ab14caf8501f0e74c123058fa877bd730bee588ff6877c26ca9cb424"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_contrast_search.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_contrast_search.py",
+    "source_sha256": "9e887e496c52b70301667a001021bf8a9f6c67c41c54683bda3285c7e84596fb",
+    "packaged_sha256": "9e887e496c52b70301667a001021bf8a9f6c67c41c54683bda3285c7e84596fb"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_cpa.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_cpa.py",
+    "source_sha256": "8996b58efd78e6eac0ffeaab4be91ab13b2b0798a1ebbacc7f9533d7242e2e97",
+    "packaged_sha256": "8996b58efd78e6eac0ffeaab4be91ab13b2b0798a1ebbacc7f9533d7242e2e97"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_first_point_crossover.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_first_point_crossover.py",
+    "source_sha256": "5e87d8710459bbab59ee8297e10574d8de582ef7a690043af1eae6d21930d28c",
+    "packaged_sha256": "5e87d8710459bbab59ee8297e10574d8de582ef7a690043af1eae6d21930d28c"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_first_point_streams.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_first_point_streams.py",
+    "source_sha256": "d1901e4b1e096033ad7d0b643321b384158bf2fee18db1790ca04621688a1f2b",
+    "packaged_sha256": "d1901e4b1e096033ad7d0b643321b384158bf2fee18db1790ca04621688a1f2b"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_gp_followups.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_gp_followups.py",
+    "source_sha256": "3d9edeefcd86e88eefb84c428b74975c360132a331cf4ee687d2e7993345c240",
+    "packaged_sha256": "3d9edeefcd86e88eefb84c428b74975c360132a331cf4ee687d2e7993345c240"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_heldout.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_heldout.py",
+    "source_sha256": "18d208f52228164867880048defb2bed5d3c612e3b0d53e77516fa3e737f3577",
+    "packaged_sha256": "18d208f52228164867880048defb2bed5d3c612e3b0d53e77516fa3e737f3577"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_heldout_named.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_heldout_named.py",
+    "source_sha256": "07d89a17a70af1f79b27eaa3027a42bce51f631bb0f44e4a043e0ef909997bad",
+    "packaged_sha256": "07d89a17a70af1f79b27eaa3027a42bce51f631bb0f44e4a043e0ef909997bad"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_lgbo.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_lgbo.py",
+    "source_sha256": "85231a20a38bdae47e82aa5887d5de1b4232bfb9b88705ee56fca7b92bfccc38",
+    "packaged_sha256": "85231a20a38bdae47e82aa5887d5de1b4232bfb9b88705ee56fca7b92bfccc38"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_mechanism.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_mechanism.py",
+    "source_sha256": "46a758563fc79a20d4087fe7159f0f11f877578e8500ff6a2d5eb940102bf2c3",
+    "packaged_sha256": "46a758563fc79a20d4087fe7159f0f11f877578e8500ff6a2d5eb940102bf2c3"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_noise_floor.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_noise_floor.py",
+    "source_sha256": "d8c93c3f8efa0b1353fb8d8dc71b7eeed4e77dde96b01ef4c3a5266dbfece35b",
+    "packaged_sha256": "d8c93c3f8efa0b1353fb8d8dc71b7eeed4e77dde96b01ef4c3a5266dbfece35b"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_paper_bo.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_paper_bo.py",
+    "source_sha256": "4315d1f240ee380fa42c5542cf80bd6ff487ea2260ac315807e4a0fd2356f29b",
+    "packaged_sha256": "4315d1f240ee380fa42c5542cf80bd6ff487ea2260ac315807e4a0fd2356f29b"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_random_start.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_random_start.py",
+    "source_sha256": "2a6de1ad62a179dbdff72f891a2b29ae287568c6c1b5a6c2689cfd1f1b7d3923",
+    "packaged_sha256": "2a6de1ad62a179dbdff72f891a2b29ae287568c6c1b5a6c2689cfd1f1b7d3923"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_screen.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_screen.py",
+    "source_sha256": "d574fff670f05dab7d4b17f36ff2d81bf74f20e9397f636b202f41d9876c573e",
+    "packaged_sha256": "d574fff670f05dab7d4b17f36ff2d81bf74f20e9397f636b202f41d9876c573e"
+  },
+  {
+    "path": "code/analysis/analyze_hypothesis_scope_v2_shared_start.py",
+    "source": "extrnal/code/analysis/analyze_hypothesis_scope_v2_shared_start.py",
+    "source_sha256": "78246e7185eb61d005e3fe94e8684ec5550dff47d22a850f201494c809bceb26",
+    "packaged_sha256": "78246e7185eb61d005e3fe94e8684ec5550dff47d22a850f201494c809bceb26"
+  },
+  {
+    "path": "code/analysis/analyze_start_quality_20261107.py",
+    "source": "extrnal/code/analysis/analyze_start_quality_20261107.py",
+    "source_sha256": "f22878599532dd033175613d076d0c0fc0c6958a6c25515af6dd5bf35ab3705b",
+    "packaged_sha256": "6c769022631659397bfaf6359eb26e86dfd874729643203b8200b21639350fe9"
+  },
+  {
+    "path": "code/chemist_system/chem/__init__.py",
+    "source": "extrnal/code/chemist_system/chem/__init__.py",
+    "source_sha256": "0d8ae3ba619338d6da717db4e1c68a2d058835294ea5df764e001d4d47e137cf",
+    "packaged_sha256": "0d8ae3ba619338d6da717db4e1c68a2d058835294ea5df764e001d4d47e137cf"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/__init__.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/__init__.py",
+    "source_sha256": "29c2edcf273f0e8d0ddf7ac43ee0d081ed290ff2e914d26354c65379ac22760b",
+    "packaged_sha256": "29c2edcf273f0e8d0ddf7ac43ee0d081ed290ff2e914d26354c65379ac22760b"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/agent_score_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/agent_score_suzuki_engine.py",
+    "source_sha256": "19a9a16fcb0799c7148913f587f68e5715df1bcba33e0eaa1d38ca0813d7a910",
+    "packaged_sha256": "19a9a16fcb0799c7148913f587f68e5715df1bcba33e0eaa1d38ca0813d7a910"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/agent_score_suzuki_study.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/agent_score_suzuki_study.py",
+    "source_sha256": "3fc3983d021f5d223fba7450aaf6748315c57fd00878dd31cc27bcba020c7f65",
+    "packaged_sha256": "3fc3983d021f5d223fba7450aaf6748315c57fd00878dd31cc27bcba020c7f65"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/continuous_benchmark_data.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/continuous_benchmark_data.py",
+    "source_sha256": "f9ed553b6ab4466540b4da6d3fa624486551408751314770648eb29f99db91a8",
+    "packaged_sha256": "f9ed553b6ab4466540b4da6d3fa624486551408751314770648eb29f99db91a8"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/continuous_benchmark_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/continuous_benchmark_engine.py",
+    "source_sha256": "52c1146483696bbb7fbe35f1bb3c8efa1a8e057072ca67920cb5299c9e5a26c2",
+    "packaged_sha256": "52c1146483696bbb7fbe35f1bb3c8efa1a8e057072ca67920cb5299c9e5a26c2"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/deepseek_agent_suzuki_study.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/deepseek_agent_suzuki_study.py",
+    "source_sha256": "f81ce159e0d678bd041ea8c56ab96568e7f5dc683a6fa5ce7bd50cf97fbcd766",
+    "packaged_sha256": "f81ce159e0d678bd041ea8c56ab96568e7f5dc683a6fa5ce7bd50cf97fbcd766"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/deepseek_small_suzuki_study.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/deepseek_small_suzuki_study.py",
+    "source_sha256": "45d11c0a203ef1ec8cd96602a22055a8c386fc10a08586260d8d5801f4762b6f",
+    "packaged_sha256": "45d11c0a203ef1ec8cd96602a22055a8c386fc10a08586260d8d5801f4762b6f"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/deepseek_suzuki_client.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/deepseek_suzuki_client.py",
+    "source_sha256": "30963e833089e8df8c3df22ee18cb72de8950d8076de72f43e322cb18831fc08",
+    "packaged_sha256": "30963e833089e8df8c3df22ee18cb72de8950d8076de72f43e322cb18831fc08"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/guarded_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/guarded_suzuki_engine.py",
+    "source_sha256": "54e07bcc6f5e4c34a4fc2d90891ae63ac5b5d5d6b86532dc48674d2aa1b165d3",
+    "packaged_sha256": "54e07bcc6f5e4c34a4fc2d90891ae63ac5b5d5d6b86532dc48674d2aa1b165d3"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/hte_workbook.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/hte_workbook.py",
+    "source_sha256": "4434c9adf90a2d005d7e076a086936beced4941b29f66aaf4985ba41b8a8a1b8",
+    "packaged_sha256": "4434c9adf90a2d005d7e076a086936beced4941b29f66aaf4985ba41b8a8a1b8"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/kalman_knowledge_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/kalman_knowledge_suzuki_engine.py",
+    "source_sha256": "9c8fff2490ef46840cbfb515a68ce5622da12071521b351e0f262340b2606185",
+    "packaged_sha256": "9c8fff2490ef46840cbfb515a68ce5622da12071521b351e0f262340b2606185"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/knowledge_domain_context.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/knowledge_domain_context.py",
+    "source_sha256": "fc74009435efe6d7644fca2e47fb79ae7efb65b8472d166191bed0cc766e7be7",
+    "packaged_sha256": "fc74009435efe6d7644fca2e47fb79ae7efb65b8472d166191bed0cc766e7be7"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/knowledge_gp.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/knowledge_gp.py",
+    "source_sha256": "f8125599a7533634e8595cb1940984fb62be7c97b27861fcef0bf5844116661f",
+    "packaged_sha256": "f8125599a7533634e8595cb1940984fb62be7c97b27861fcef0bf5844116661f"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/knowledge_llm.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/knowledge_llm.py",
+    "source_sha256": "9964e198615f79f9796676fac8d6bf7be3bb5d9c07839cdb71eee1ab313e0be4",
+    "packaged_sha256": "9964e198615f79f9796676fac8d6bf7be3bb5d9c07839cdb71eee1ab313e0be4"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/knowledge_openai_client.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/knowledge_openai_client.py",
+    "source_sha256": "767e719f4b014d732a5f238f1e2b74dbaddd28501891616a25f7deb2844d3ea6",
+    "packaged_sha256": "767e719f4b014d732a5f238f1e2b74dbaddd28501891616a25f7deb2844d3ea6"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/llinbo_guarded_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/llinbo_guarded_engine.py",
+    "source_sha256": "6abf0357e11b87858eec1df36bb464f771f6cd8759744d193d9d43f6e03eff2f",
+    "packaged_sha256": "6abf0357e11b87858eec1df36bb464f771f6cd8759744d193d9d43f6e03eff2f"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/mixed_comparison_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/mixed_comparison_suzuki_engine.py",
+    "source_sha256": "34aab4c962fce0a0322c64863651142a1ab0eadd06df8e7662674306a5b9e23d",
+    "packaged_sha256": "34aab4c962fce0a0322c64863651142a1ab0eadd06df8e7662674306a5b9e23d"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/mixed_kalman_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/mixed_kalman_suzuki_engine.py",
+    "source_sha256": "8d19493937b23b83525f588d27190c43d62a804c9e3990a947bfdb4db420dfbf",
+    "packaged_sha256": "8d19493937b23b83525f588d27190c43d62a804c9e3990a947bfdb4db420dfbf"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/official_suzuki_adapter.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/official_suzuki_adapter.py",
+    "source_sha256": "804ba44b0819dca5f0766b6d27923aa7a5c8928e267369ed8412ae37625161ff",
+    "packaged_sha256": "804ba44b0819dca5f0766b6d27923aa7a5c8928e267369ed8412ae37625161ff"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/pointwise_hte_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/pointwise_hte_engine.py",
+    "source_sha256": "ab25c8ec1c3e052882511b07d26b9311fb45da0c930092584fa87a5d7bf29fc2",
+    "packaged_sha256": "ab25c8ec1c3e052882511b07d26b9311fb45da0c930092584fa87a5d7bf29fc2"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/pointwise_hte_llm.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/pointwise_hte_llm.py",
+    "source_sha256": "a6e8817ac3475fe3dec58944dcde3976b11a6a3ecd2b2dc6f7b75409f8604d5c",
+    "packaged_sha256": "a6e8817ac3475fe3dec58944dcde3976b11a6a3ecd2b2dc6f7b75409f8604d5c"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/r2_region_trust_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/r2_region_trust_engine.py",
+    "source_sha256": "39e155b39fafbef0d69a51f170daee0d112bb1ef9be0b282abe751d531749c1c",
+    "packaged_sha256": "39e155b39fafbef0d69a51f170daee0d112bb1ef9be0b282abe751d531749c1c"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/reaction_transfer_data.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/reaction_transfer_data.py",
+    "source_sha256": "3952ca5b37b7257420ed5ef7311f3d3037c524ad1dedb8bc666c3cf7e1277e96",
+    "packaged_sha256": "3952ca5b37b7257420ed5ef7311f3d3037c524ad1dedb8bc666c3cf7e1277e96"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/reaction_transfer_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/reaction_transfer_engine.py",
+    "source_sha256": "45a3ecdf6d0cfb3ab82f4464c840203ab9e342cfe522b89e04b2783052bee6c9",
+    "packaged_sha256": "45a3ecdf6d0cfb3ab82f4464c840203ab9e342cfe522b89e04b2783052bee6c9"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/reaction_transfer_llm.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/reaction_transfer_llm.py",
+    "source_sha256": "e4cbb8ea7ee513757ab759af0a0cdbd073f4703f98f2fff62eaf2701422efb6f",
+    "packaged_sha256": "e4cbb8ea7ee513757ab759af0a0cdbd073f4703f98f2fff62eaf2701422efb6f"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/reasoning_bo_data.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/reasoning_bo_data.py",
+    "source_sha256": "cdecfbf3e995fb985d526cc04c2eade4c00730aaa0a9f71ca1083e2c52a5d898",
+    "packaged_sha256": "cdecfbf3e995fb985d526cc04c2eade4c00730aaa0a9f71ca1083e2c52a5d898"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/reasoning_bo_llm.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/reasoning_bo_llm.py",
+    "source_sha256": "511297e52e3a1af592ec99e7f496c6ada7040311a7c791be932ee8568339a2aa",
+    "packaged_sha256": "511297e52e3a1af592ec99e7f496c6ada7040311a7c791be932ee8568339a2aa"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/regional_ablation_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/regional_ablation_suzuki_engine.py",
+    "source_sha256": "82823275bf91a48c7d9913baf398b1695d87f65e30ad2d9ac5568497ac604a3f",
+    "packaged_sha256": "82823275bf91a48c7d9913baf398b1695d87f65e30ad2d9ac5568497ac604a3f"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_information_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_information_engine.py",
+    "source_sha256": "69d3ccea5e04a2e26aabc3f9ba7495a156c88b5cac7379b54b9d2fc2e006866e",
+    "packaged_sha256": "69d3ccea5e04a2e26aabc3f9ba7495a156c88b5cac7379b54b9d2fc2e006866e"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_productive_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_productive_engine.py",
+    "source_sha256": "304cf5dc51f327b7a4df34e537db8729737a091e74fadda00be493ac8ca66369",
+    "packaged_sha256": "304cf5dc51f327b7a4df34e537db8729737a091e74fadda00be493ac8ca66369"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_r2_fit.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_r2_fit.py",
+    "source_sha256": "d2d30b873707973f8bae4768a08fc624da0e8037a305b2b3d121eec034100e9a",
+    "packaged_sha256": "d2d30b873707973f8bae4768a08fc624da0e8037a305b2b3d121eec034100e9a"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_structure_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_structure_engine.py",
+    "source_sha256": "2f042ab1de45f73a431ed51bb264770d525a4d486bce6d2f295894676b05e3e6",
+    "packaged_sha256": "2f042ab1de45f73a431ed51bb264770d525a4d486bce6d2f295894676b05e3e6"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_structure_features.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_structure_features.py",
+    "source_sha256": "672aad0dc255799dd940b58bb010ba30eb053961d519bdfcbdf81cd2d8e0443b",
+    "packaged_sha256": "672aad0dc255799dd940b58bb010ba30eb053961d519bdfcbdf81cd2d8e0443b"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/stable_structure_fit.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/stable_structure_fit.py",
+    "source_sha256": "67404afade9a83d4fc7494df4f68b1c6ee694d978dadf327bd8451376c2cae83",
+    "packaged_sha256": "67404afade9a83d4fc7494df4f68b1c6ee694d978dadf327bd8451376c2cae83"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/suzuki_domain.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/suzuki_domain.py",
+    "source_sha256": "8f002c814e3613481d0f507367a5e378cfa06a7aa3e140d64f59826b3284b035",
+    "packaged_sha256": "8f002c814e3613481d0f507367a5e378cfa06a7aa3e140d64f59826b3284b035"
+  },
+  {
+    "path": "code/chemist_system/chem/benchmarks/uncertain_suzuki_engine.py",
+    "source": "extrnal/code/chemist_system/chem/benchmarks/uncertain_suzuki_engine.py",
+    "source_sha256": "bd169d88be41c0313f629a41849e248ba517e5225d3e30bd7a9d623e5366e131",
+    "packaged_sha256": "bd169d88be41c0313f629a41849e248ba517e5225d3e30bd7a9d623e5366e131"
+  },
+  {
+    "path": "code/chemist_system/chem/decision/__init__.py",
+    "source": "extrnal/code/chemist_system/chem/decision/__init__.py",
+    "source_sha256": "44efc248c2c22c039cc2a1506d1420a570e749a945096a3bb5bf578bdaeed86d",
+    "packaged_sha256": "44efc248c2c22c039cc2a1506d1420a570e749a945096a3bb5bf578bdaeed86d"
+  },
+  {
+    "path": "code/chemist_system/chem/decision/domain_guard.py",
+    "source": "extrnal/code/chemist_system/chem/decision/domain_guard.py",
+    "source_sha256": "5739238bef315f05827386f0f51a94867e1571cb82b51d49259e0b1a8aa6cd05",
+    "packaged_sha256": "5739238bef315f05827386f0f51a94867e1571cb82b51d49259e0b1a8aa6cd05"
+  },
+  {
+    "path": "code/chemist_system/chem/decision/hypothesis.py",
+    "source": "extrnal/code/chemist_system/chem/decision/hypothesis.py",
+    "source_sha256": "03da221d31784a602d2797fef778d51de399e841d64d3d80e64d4eb1b8264042",
+    "packaged_sha256": "03da221d31784a602d2797fef778d51de399e841d64d3d80e64d4eb1b8264042"
+  },
+  {
+    "path": "code/chemist_system/chem/decision/replay.py",
+    "source": "extrnal/code/chemist_system/chem/decision/replay.py",
+    "source_sha256": "faef3834a524d52ce44fb21b86ac2faf007cc0f6cd8c4360bd00c99123b2f926",
+    "packaged_sha256": "faef3834a524d52ce44fb21b86ac2faf007cc0f6cd8c4360bd00c99123b2f926"
+  },
+  {
+    "path": "code/experiment_tools/chemical_hypothesis_bo/__init__.py",
+    "source": "extrnal/code/experiment_tools/chemical_hypothesis_bo/__init__.py",
+    "source_sha256": "6f548d56e0bfe747aeacba0dd03443c9e9216b1911ef5b319c4967fce6d7e90c",
+    "packaged_sha256": "6f548d56e0bfe747aeacba0dd03443c9e9216b1911ef5b319c4967fce6d7e90c"
+  },
+  {
+    "path": "code/experiment_tools/chemical_hypothesis_bo/background.py",
+    "source": "extrnal/code/experiment_tools/chemical_hypothesis_bo/background.py",
+    "source_sha256": "4d7bb35e83b772f185106612366a7275416f1983a644bf0b6eaa28b00c7ceeb8",
+    "packaged_sha256": "4d7bb35e83b772f185106612366a7275416f1983a644bf0b6eaa28b00c7ceeb8"
+  },
+  {
+    "path": "code/experiment_tools/chemical_hypothesis_bo/experts.py",
+    "source": "extrnal/code/experiment_tools/chemical_hypothesis_bo/experts.py",
+    "source_sha256": "d9754a2a5ec806b4a88c23e89abd0f368b168d7b5b020255d9bf64b6e689f756",
+    "packaged_sha256": "d9754a2a5ec806b4a88c23e89abd0f368b168d7b5b020255d9bf64b6e689f756"
+  },
+  {
+    "path": "code/experiment_tools/chemical_hypothesis_bo/hypotheses.py",
+    "source": "extrnal/code/experiment_tools/chemical_hypothesis_bo/hypotheses.py",
+    "source_sha256": "3c9aca82cd375cd4695ef0ff1ddbce61a24741b471b8736c18b0436ffa1d89c3",
+    "packaged_sha256": "3c9aca82cd375cd4695ef0ff1ddbce61a24741b471b8736c18b0436ffa1d89c3"
+  },
+  {
+    "path": "code/experiment_tools/cold_start_v13/__init__.py",
+    "source": "extrnal/code/experiment_tools/cold_start_v13/__init__.py",
+    "source_sha256": "9f8efd9b6b01df6b9541604ba6e74605a11ad6bf299ea652009815ac39fb6105",
+    "packaged_sha256": "9f8efd9b6b01df6b9541604ba6e74605a11ad6bf299ea652009815ac39fb6105"
+  },
+  {
+    "path": "code/experiment_tools/cold_start_v13/gp.py",
+    "source": "extrnal/code/experiment_tools/cold_start_v13/gp.py",
+    "source_sha256": "5cc61ca2b375f64d879cebd5255713d547adc8b17ace6c5024a8457aba57d4a4",
+    "packaged_sha256": "5cc61ca2b375f64d879cebd5255713d547adc8b17ace6c5024a8457aba57d4a4"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/__init__.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/__init__.py",
+    "source_sha256": "bff6ec402c43995cb7f2225a41058df889289b8c5c80c7e326e0e9dae2531853",
+    "packaged_sha256": "bff6ec402c43995cb7f2225a41058df889289b8c5c80c7e326e0e9dae2531853"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/compat.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/compat.py",
+    "source_sha256": "88693c3f12194e2084c5a214954dad9f2c2f257aaf86b6d25af659036607ce16",
+    "packaged_sha256": "88693c3f12194e2084c5a214954dad9f2c2f257aaf86b6d25af659036607ce16"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/policy.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/policy.py",
+    "source_sha256": "ebc2d02d49ba5bc5ea6e4344f76643d9e28e6f687a6401bf39bf38486578552a",
+    "packaged_sha256": "ebc2d02d49ba5bc5ea6e4344f76643d9e28e6f687a6401bf39bf38486578552a"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/prompts.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/prompts.py",
+    "source_sha256": "b1670dcff0a773d93b245936576743b266145c5c0ccef07bb26a6f69f497e5bd",
+    "packaged_sha256": "b1670dcff0a773d93b245936576743b266145c5c0ccef07bb26a6f69f497e5bd"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/study.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/study.py",
+    "source_sha256": "7db6b518b2bc6a289d15565e1492cf7772b222f8ed96fa025868812cc3bb2540",
+    "packaged_sha256": "7db6b518b2bc6a289d15565e1492cf7772b222f8ed96fa025868812cc3bb2540"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/transport.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/transport.py",
+    "source_sha256": "aa7ca1f06931dd4ff9fe58ddc2df389ab5aaf4617d8a4a3f1ab4087d7387c21a",
+    "packaged_sha256": "aa7ca1f06931dd4ff9fe58ddc2df389ab5aaf4617d8a4a3f1ab4087d7387c21a"
+  },
+  {
+    "path": "code/experiment_tools/grounded_baselines/validation.py",
+    "source": "extrnal/code/experiment_tools/grounded_baselines/validation.py",
+    "source_sha256": "30b0abedb11a19c9391db26b57cf3fcf7ad55fc6f79c1f651790fc22268e3680",
+    "packaged_sha256": "30b0abedb11a19c9391db26b57cf3fcf7ad55fc6f79c1f651790fc22268e3680"
+  },
+  {
+    "path": "code/experiment_tools/grounded_first_start/__init__.py",
+    "source": "extrnal/code/experiment_tools/grounded_first_start/__init__.py",
+    "source_sha256": "eb84ba257251d901065082ae8d21cbedb8e79147157230cef812eb3a84c2b15c",
+    "packaged_sha256": "eb84ba257251d901065082ae8d21cbedb8e79147157230cef812eb3a84c2b15c"
+  },
+  {
+    "path": "code/experiment_tools/grounded_first_start/proposal.py",
+    "source": "extrnal/code/experiment_tools/grounded_first_start/proposal.py",
+    "source_sha256": "7f14bdff0b2349c5a02d0e01aeeb54266df245492e7170e1439c249f80a1cd3c",
+    "packaged_sha256": "7f14bdff0b2349c5a02d0e01aeeb54266df245492e7170e1439c249f80a1cd3c"
+  },
+  {
+    "path": "code/experiment_tools/grounded_first_start/study.py",
+    "source": "extrnal/code/experiment_tools/grounded_first_start/study.py",
+    "source_sha256": "85ec437e5c83175dc1907201610a5a9eaa7914638a09329c9ee4e759493366c5",
+    "packaged_sha256": "85ec437e5c83175dc1907201610a5a9eaa7914638a09329c9ee4e759493366c5"
+  },
+  {
+    "path": "code/experiment_tools/grounded_first_start/transport.py",
+    "source": "extrnal/code/experiment_tools/grounded_first_start/transport.py",
+    "source_sha256": "e11fd33c0a1a837e0d9e362e7abb7d8b1dff61b6200ddfa76bf129ff646245a3",
+    "packaged_sha256": "e11fd33c0a1a837e0d9e362e7abb7d8b1dff61b6200ddfa76bf129ff646245a3"
+  },
+  {
+    "path": "code/experiment_tools/grounded_first_start/validation.py",
+    "source": "extrnal/code/experiment_tools/grounded_first_start/validation.py",
+    "source_sha256": "6d59abd07377188dd0c04a4a57690c115f2901608d0eb1cca4babd54ad5313a3",
+    "packaged_sha256": "6d59abd07377188dd0c04a4a57690c115f2901608d0eb1cca4babd54ad5313a3"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/__init__.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/__init__.py",
+    "source_sha256": "5cc3a334816fb42711291b0a72159387d346e831a27d691767b29683f376c799",
+    "packaged_sha256": "5cc3a334816fb42711291b0a72159387d346e831a27d691767b29683f376c799"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/knowledge.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/knowledge.py",
+    "source_sha256": "58178c60f8a59a6bd67cf8d9cb4c4c91057edb7c9eee129255b406dbd215071b",
+    "packaged_sha256": "58178c60f8a59a6bd67cf8d9cb4c4c91057edb7c9eee129255b406dbd215071b"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/policy.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/policy.py",
+    "source_sha256": "c143de9d2575f5f14b3e59a82e849dee171bf0586cbbb3cb6d7b95a77c88b2a4",
+    "packaged_sha256": "c143de9d2575f5f14b3e59a82e849dee171bf0586cbbb3cb6d7b95a77c88b2a4"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/prompts.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/prompts.py",
+    "source_sha256": "9554a99e70c957d1a88c542c494c277ee3979dbd7c9c5bf1aced48225ec0c09f",
+    "packaged_sha256": "9554a99e70c957d1a88c542c494c277ee3979dbd7c9c5bf1aced48225ec0c09f"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/study.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/study.py",
+    "source_sha256": "1b77dfb012973ea487c8c77fe1a8b6a42b73914e77aacd6a17e1016b4ef49fd3",
+    "packaged_sha256": "1b77dfb012973ea487c8c77fe1a8b6a42b73914e77aacd6a17e1016b4ef49fd3"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/transport.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/transport.py",
+    "source_sha256": "042a4e5b11bbf7d103ee255ae6cb8a82dc1d59dd3678418547e00ccb53622ca7",
+    "packaged_sha256": "042a4e5b11bbf7d103ee255ae6cb8a82dc1d59dd3678418547e00ccb53622ca7"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_loop/validation.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_loop/validation.py",
+    "source_sha256": "df86f46f7d3ceb697c48681efd461ec4f3d3906d2b7122cd88e08fc084e2c836",
+    "packaged_sha256": "df86f46f7d3ceb697c48681efd461ec4f3d3906d2b7122cd88e08fc084e2c836"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_multiseed/__init__.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_multiseed/__init__.py",
+    "source_sha256": "a20f12baf3e8e3502de2196fc1e4d7a33d566ea7986f91e616064ea430a1b704",
+    "packaged_sha256": "a20f12baf3e8e3502de2196fc1e4d7a33d566ea7986f91e616064ea430a1b704"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_multiseed/study.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_multiseed/study.py",
+    "source_sha256": "914b616e8c6d8f6ed106ef1936cf39d37bb43476a1a0d954d8ede26820407285",
+    "packaged_sha256": "914b616e8c6d8f6ed106ef1936cf39d37bb43476a1a0d954d8ede26820407285"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_multiseed/transport.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_multiseed/transport.py",
+    "source_sha256": "ee2fedb8109528d3b9f9043c6ebdbc72cd238fac4c6b1bcbe5b48ef6782d42c1",
+    "packaged_sha256": "ee2fedb8109528d3b9f9043c6ebdbc72cd238fac4c6b1bcbe5b48ef6782d42c1"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_multiseed/validation.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_multiseed/validation.py",
+    "source_sha256": "77fcedcc63007af4bf65dc2ff1381367cba6bbf70a752864cd6282449a4b4521",
+    "packaged_sha256": "77fcedcc63007af4bf65dc2ff1381367cba6bbf70a752864cd6282449a4b4521"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/__init__.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/__init__.py",
+    "source_sha256": "f3e870cde8a02550dc4b79a7219a7e0575948498856a06da17a2f2643d12e246",
+    "packaged_sha256": "f3e870cde8a02550dc4b79a7219a7e0575948498856a06da17a2f2643d12e246"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/contrast_search.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/contrast_search.py",
+    "source_sha256": "f54459ec940a3c3f806bebdaf2569d8f06c072445a13705d694cc8c65f0ab1bb",
+    "packaged_sha256": "f54459ec940a3c3f806bebdaf2569d8f06c072445a13705d694cc8c65f0ab1bb"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/cpa.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/cpa.py",
+    "source_sha256": "0f86bfa134cc400e8913154c9a2e62359a403565975b9cb36a9f76b50fe43e39",
+    "packaged_sha256": "0f86bfa134cc400e8913154c9a2e62359a403565975b9cb36a9f76b50fe43e39"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/faithful_live.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/faithful_live.py",
+    "source_sha256": "3506479bd57acf4af2790a3fc2292d71d28a51c63443a67c043fce7f24253959",
+    "packaged_sha256": "3506479bd57acf4af2790a3fc2292d71d28a51c63443a67c043fce7f24253959"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/first_point_streams.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/first_point_streams.py",
+    "source_sha256": "8cd7ba07425f7e7a4fb7170696497ad5873741067a43d235833ef7d86f2bd649",
+    "packaged_sha256": "8cd7ba07425f7e7a4fb7170696497ad5873741067a43d235833ef7d86f2bd649"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/gp_followups.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/gp_followups.py",
+    "source_sha256": "1e5f44a43de641e283c9590a3716256a7db5e8ff9c91242c2943f5cc157b55b7",
+    "packaged_sha256": "1e5f44a43de641e283c9590a3716256a7db5e8ff9c91242c2943f5cc157b55b7"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/heldout.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/heldout.py",
+    "source_sha256": "7eab6c091c89f395a2f5e584ecbf38db2c3dcd9e282887f9d367e30458fe6dd7",
+    "packaged_sha256": "7eab6c091c89f395a2f5e584ecbf38db2c3dcd9e282887f9d367e30458fe6dd7"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/heldout_lgbo.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/heldout_lgbo.py",
+    "source_sha256": "23f55bb72b62b44e7b0b2c0b8ba8e77a125b34cee6d1f3517eb80e08d6724c46",
+    "packaged_sha256": "23f55bb72b62b44e7b0b2c0b8ba8e77a125b34cee6d1f3517eb80e08d6724c46"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/heldout_named.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/heldout_named.py",
+    "source_sha256": "3f10a2a6fa0ab4a661927d11a3c7a031aa3586a64c957f9c15033faf648a8e85",
+    "packaged_sha256": "3f10a2a6fa0ab4a661927d11a3c7a031aa3586a64c957f9c15033faf648a8e85"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/mechanism.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/mechanism.py",
+    "source_sha256": "1a04224b1ea337a9704a694fda7763a313a9d6839192ebf57c45405804375fef",
+    "packaged_sha256": "1a04224b1ea337a9704a694fda7763a313a9d6839192ebf57c45405804375fef"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/paper_bo.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/paper_bo.py",
+    "source_sha256": "6d733bfbab7d36abed9e230b61ed452ac040cd80e530b4f2ddd649dfd52debcd",
+    "packaged_sha256": "5f47f8bf59ba80f1141a126305ff2b7f027f1f1ef2b971dd8161593c1dff4d62"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/random_start.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/random_start.py",
+    "source_sha256": "808349b976f9a4c54afefad8ad1f923e7f652d62856af4385d7c73e11a42e35f",
+    "packaged_sha256": "808349b976f9a4c54afefad8ad1f923e7f652d62856af4385d7c73e11a42e35f"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/screen.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/screen.py",
+    "source_sha256": "73b4e9a12710d4974494cb986673a0208befaec024d283b506de72db75fa3f62",
+    "packaged_sha256": "ae5041809f82a13c3a496109ca28ce777af02f12fb3d01de43ac69281660983a"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/shared_start.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/shared_start.py",
+    "source_sha256": "860760175d081b06944cfcb4fe81bd6cf1415da901dc83fdf46f046673b65b66",
+    "packaged_sha256": "860760175d081b06944cfcb4fe81bd6cf1415da901dc83fdf46f046673b65b66"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/study.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/study.py",
+    "source_sha256": "066f8406c1571c90d64619fddc99cd8bc2dd87196e8a3b573d8e9de3ef88eae1",
+    "packaged_sha256": "066f8406c1571c90d64619fddc99cd8bc2dd87196e8a3b573d8e9de3ef88eae1"
+  },
+  {
+    "path": "code/experiment_tools/hypothesis_scope_v2/transport.py",
+    "source": "extrnal/code/experiment_tools/hypothesis_scope_v2/transport.py",
+    "source_sha256": "889db0c60265b9904df0b087aea76293926347fac454a2c0f767b8161bebe489",
+    "packaged_sha256": "889db0c60265b9904df0b087aea76293926347fac454a2c0f767b8161bebe489"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_qlogei/__init__.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_qlogei/__init__.py",
+    "source_sha256": "b3c862d7e6a9fc854ae818ff7e743e5197a90848e03394c5a53ddea901dd5a6f",
+    "packaged_sha256": "b3c862d7e6a9fc854ae818ff7e743e5197a90848e03394c5a53ddea901dd5a6f"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_qlogei/models.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_qlogei/models.py",
+    "source_sha256": "c4873910700440b6cc7630e88c3e40f1290b1c26b4f399ff71eab399c9e4fe5a",
+    "packaged_sha256": "c4873910700440b6cc7630e88c3e40f1290b1c26b4f399ff71eab399c9e4fe5a"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_qlogei/policy.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_qlogei/policy.py",
+    "source_sha256": "f69c610ef28bbede5cbe12734b50fd7b9e7fbf80d3dddbdab10b35fbb832d375",
+    "packaged_sha256": "f69c610ef28bbede5cbe12734b50fd7b9e7fbf80d3dddbdab10b35fbb832d375"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_qlogei/study.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_qlogei/study.py",
+    "source_sha256": "e200b5bfbb612979dd517ffdff2f9fa821972b94f5b3fe02b7816c1e512e2318",
+    "packaged_sha256": "e200b5bfbb612979dd517ffdff2f9fa821972b94f5b3fe02b7816c1e512e2318"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_revision/__init__.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_revision/__init__.py",
+    "source_sha256": "a10a0c8289f849b012b6f22c0ebee008791442e32a728752cffbc952fe9fcc5e",
+    "packaged_sha256": "a10a0c8289f849b012b6f22c0ebee008791442e32a728752cffbc952fe9fcc5e"
+  },
+  {
+    "path": "code/experiment_tools/kernel_contrast_revision/models.py",
+    "source": "extrnal/code/experiment_tools/kernel_contrast_revision/models.py",
+    "source_sha256": "a195beb5a7760112e9089d4f9eb253b21925c643f751ccb5f96e0d4e549aac36",
+    "packaged_sha256": "a195beb5a7760112e9089d4f9eb253b21925c643f751ccb5f96e0d4e549aac36"
+  },
+  {
+    "path": "code/experiment_tools/knowledge_rank_v9/__init__.py",
+    "source": "extrnal/code/experiment_tools/knowledge_rank_v9/__init__.py",
+    "source_sha256": "d6a60df6d21fc94c7f4b0ab9df59bcceb4f94d5e011a7065b0bcf8e6ca4ea5b9",
+    "packaged_sha256": "d6a60df6d21fc94c7f4b0ab9df59bcceb4f94d5e011a7065b0bcf8e6ca4ea5b9"
+  },
+  {
+    "path": "code/experiment_tools/knowledge_rank_v9/engine.py",
+    "source": "extrnal/code/experiment_tools/knowledge_rank_v9/engine.py",
+    "source_sha256": "0609b50b412fa6a877e99a06e65d80b2aa60e83ba292f36d70832aaa4da67367",
+    "packaged_sha256": "0609b50b412fa6a877e99a06e65d80b2aa60e83ba292f36d70832aaa4da67367"
+  },
+  {
+    "path": "code/experiment_tools/knowledge_rank_v9/kf.py",
+    "source": "extrnal/code/experiment_tools/knowledge_rank_v9/kf.py",
+    "source_sha256": "eb3253b6521823b8fd6af2ac32a105d13ad20628e3eec344cbe2d92cbac1bbff",
+    "packaged_sha256": "eb3253b6521823b8fd6af2ac32a105d13ad20628e3eec344cbe2d92cbac1bbff"
+  },
+  {
+    "path": "code/experiment_tools/knowledge_rank_v9/llm.py",
+    "source": "extrnal/code/experiment_tools/knowledge_rank_v9/llm.py",
+    "source_sha256": "63ca4bfb6da1c5828de44d46b480cb770a55897f05f3f256fdd57f97fc5eca7e",
+    "packaged_sha256": "63ca4bfb6da1c5828de44d46b480cb770a55897f05f3f256fdd57f97fc5eca7e"
+  },
+  {
+    "path": "code/experiment_tools/knowledge_rank_v9/policy.py",
+    "source": "extrnal/code/experiment_tools/knowledge_rank_v9/policy.py",
+    "source_sha256": "ae7f806cb3042ab8df79c20fe973ca88b5b41169a902fe194c749654ffb89906",
+    "packaged_sha256": "ae7f806cb3042ab8df79c20fe973ca88b5b41169a902fe194c749654ffb89906"
+  },
+  {
+    "path": "code/experiment_tools/reasoning_memory_v13/__init__.py",
+    "source": "extrnal/code/experiment_tools/reasoning_memory_v13/__init__.py",
+    "source_sha256": "f831f7b6deedf8c7233f14a94f2cfd0dd30282b0574313f992b375842672ffe0",
+    "packaged_sha256": "f831f7b6deedf8c7233f14a94f2cfd0dd30282b0574313f992b375842672ffe0"
+  },
+  {
+    "path": "code/experiment_tools/reasoning_memory_v13/calibration.py",
+    "source": "extrnal/code/experiment_tools/reasoning_memory_v13/calibration.py",
+    "source_sha256": "26d11e39d5af68c352ee890f2cbed8285ee281ebb2640309399b2a79a9fb9578",
+    "packaged_sha256": "26d11e39d5af68c352ee890f2cbed8285ee281ebb2640309399b2a79a9fb9578"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2.py",
+    "source_sha256": "c7d4abec9fad50218a7df3df7e4b49d36ab41eab663305426432e996cd602cd0",
+    "packaged_sha256": "c7d4abec9fad50218a7df3df7e4b49d36ab41eab663305426432e996cd602cd0"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_contrast_search.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_contrast_search.py",
+    "source_sha256": "e4375e4c781d5c4a96a5eca75e8670327dcf6024b92579071015caea521bf865",
+    "packaged_sha256": "e4375e4c781d5c4a96a5eca75e8670327dcf6024b92579071015caea521bf865"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_cpa.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_cpa.py",
+    "source_sha256": "b180a630c786672fd6fbef1be789124148fcea1e0a4a080b7fb1e642d5c5fa84",
+    "packaged_sha256": "b180a630c786672fd6fbef1be789124148fcea1e0a4a080b7fb1e642d5c5fa84"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_faithful_live.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_faithful_live.py",
+    "source_sha256": "2f2daccef4e4a9be960527ad56016e200b23106956936997226272bad6198aff",
+    "packaged_sha256": "2f2daccef4e4a9be960527ad56016e200b23106956936997226272bad6198aff"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_first_point_streams.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_first_point_streams.py",
+    "source_sha256": "3f7918a4abe65b0cc1650cbe5bbb09be7f41baf581fbe8113fbfdb41c54e96cc",
+    "packaged_sha256": "3f7918a4abe65b0cc1650cbe5bbb09be7f41baf581fbe8113fbfdb41c54e96cc"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_gp_followups.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_gp_followups.py",
+    "source_sha256": "9361b61f644e43f33c2a3ee18a46db0b65d9efaec89e3a37619d6858d06e34aa",
+    "packaged_sha256": "9361b61f644e43f33c2a3ee18a46db0b65d9efaec89e3a37619d6858d06e34aa"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_heldout.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_heldout.py",
+    "source_sha256": "cc715c0ff43061434d323ecf92ba96e560008fe8a82c52f3dc10409edf7354e0",
+    "packaged_sha256": "cc715c0ff43061434d323ecf92ba96e560008fe8a82c52f3dc10409edf7354e0"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_heldout_lgbo.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_heldout_lgbo.py",
+    "source_sha256": "6c959ff1c2a6b4434d2d7a664aa9a713a327dcff2fded283682aaf1e1c39bcdb",
+    "packaged_sha256": "6c959ff1c2a6b4434d2d7a664aa9a713a327dcff2fded283682aaf1e1c39bcdb"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_heldout_named.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_heldout_named.py",
+    "source_sha256": "f35590383059d6052ba2b366a9aa3d3127c427d2ca22e5f2f8999b9197fbece9",
+    "packaged_sha256": "f35590383059d6052ba2b366a9aa3d3127c427d2ca22e5f2f8999b9197fbece9"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_mechanism.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_mechanism.py",
+    "source_sha256": "de5c6889e482edb6c0d33b89589ab623ead948821d597ea5917c7c932730e05e",
+    "packaged_sha256": "de5c6889e482edb6c0d33b89589ab623ead948821d597ea5917c7c932730e05e"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_random_start.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_random_start.py",
+    "source_sha256": "4e4465a54faf3463e7d7f7894df188039b47c9cda4c47266920a89598e90ba4d",
+    "packaged_sha256": "4e4465a54faf3463e7d7f7894df188039b47c9cda4c47266920a89598e90ba4d"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_screen.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_screen.py",
+    "source_sha256": "493fb2c6c9459cdbdaf0ec6cfb4b8e26ed21552fcc41b7fb9ceb3ce190a5a16a",
+    "packaged_sha256": "493fb2c6c9459cdbdaf0ec6cfb4b8e26ed21552fcc41b7fb9ceb3ce190a5a16a"
+  },
+  {
+    "path": "code/experiment_tools/run_hypothesis_scope_v2_shared_start.py",
+    "source": "extrnal/code/experiment_tools/run_hypothesis_scope_v2_shared_start.py",
+    "source_sha256": "f5f0368f462dea8663e2bd88571e721ca2b8b5b8c4fbcd48444a054676d0d644",
+    "packaged_sha256": "f5f0368f462dea8663e2bd88571e721ca2b8b5b8c4fbcd48444a054676d0d644"
+  },
+  {
+    "path": "code/chemist_system/research/suzuki_official/sources.json",
+    "source": "experiments/chemist_system/research/suzuki_official/sources.json",
+    "source_sha256": "07e01cf19c3337e29fc77aecd222512680ba6106a79b96d36801666858a3762f",
+    "packaged_sha256": "07e01cf19c3337e29fc77aecd222512680ba6106a79b96d36801666858a3762f"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/llinbo/README.md",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/llinbo/README.md",
+    "source_sha256": "2e84a886d47dbcf48542a82e5511150705f4cafd805414df582141020f67a815",
+    "packaged_sha256": "2e84a886d47dbcf48542a82e5511150705f4cafd805414df582141020f67a815"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/llinbo/helper_func.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/llinbo/helper_func.py",
+    "source_sha256": "40d1f02d7fac8c671a3b376fdbaac504acdaa7d8e515626dd5c6ef888ee399eb",
+    "packaged_sha256": "40d1f02d7fac8c671a3b376fdbaac504acdaa7d8e515626dd5c6ef888ee399eb"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/llinbo/LLM_agent_BBFO.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/llinbo/LLM_agent_BBFO.py",
+    "source_sha256": "e97371d3a9e48bbb108e23f8bb6036da570f19d23aa613db956f72d1f4251dd9",
+    "packaged_sha256": "e97371d3a9e48bbb108e23f8bb6036da570f19d23aa613db956f72d1f4251dd9"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/llinbo/AM_par_func.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/llinbo/AM_par_func.py",
+    "source_sha256": "cee7c02da6883951c7663b3585da20f447b6a74a3b6f4e99b2ef46eb3d85d7ea",
+    "packaged_sha256": "cee7c02da6883951c7663b3585da20f447b6a74a3b6f4e99b2ef46eb3d85d7ea"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/README.md",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/README.md",
+    "source_sha256": "1e59ec2763a8374baa91559ddbbd3d3592c090368da9b8589cc5e5034e82219d",
+    "packaged_sha256": "1e59ec2763a8374baa91559ddbbd3d3592c090368da9b8589cc5e5034e82219d"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/requirements.txt",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/requirements.txt",
+    "source_sha256": "4fcb96a3c237c52ba99e49a25b5abb38be29ff9a24046a06bfe467986b7d639d",
+    "packaged_sha256": "4fcb96a3c237c52ba99e49a25b5abb38be29ff9a24046a06bfe467986b7d639d"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/lgbo_core.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/lgbo_core.py",
+    "source_sha256": "b64b1e449ecab461d94be952c730533b9e9c7042f9127257d8760627b8bf4ded",
+    "packaged_sha256": "b64b1e449ecab461d94be952c730533b9e9c7042f9127257d8760627b8bf4ded"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/boo.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/boo.py",
+    "source_sha256": "ab9ca0160bd983e993a1de62a9177647f40e7ab7566551bf2b6711f880540cf9",
+    "packaged_sha256": "ab9ca0160bd983e993a1de62a9177647f40e7ab7566551bf2b6711f880540cf9"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/decide.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/decide.py",
+    "source_sha256": "849c04b16655892615ae7a7ddeff460a5c0c247915824f2682fce19b5f00797f",
+    "packaged_sha256": "849c04b16655892615ae7a7ddeff460a5c0c247915824f2682fce19b5f00797f"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/prior.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/prior.py",
+    "source_sha256": "2ccd8a6f9559a743b7150aa1ac998c341f069db4a7a5af01145ee21887cc7f7d",
+    "packaged_sha256": "2ccd8a6f9559a743b7150aa1ac998c341f069db4a7a5af01145ee21887cc7f7d"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/prior_monte_carlo.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/prior_monte_carlo.py",
+    "source_sha256": "cc31067a8141e0b6f9efb05da77e9fba5ef0371376f63b94ee6d5bdaadd9a7dc",
+    "packaged_sha256": "cc31067a8141e0b6f9efb05da77e9fba5ef0371376f63b94ee6d5bdaadd9a7dc"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/prompt.py",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/prompt.py",
+    "source_sha256": "b8d2b47614edf1c1a96c38abfb3a6927643320c8a0c84a24afea3caf2b46c2d2",
+    "packaged_sha256": "b8d2b47614edf1c1a96c38abfb3a6927643320c8a0c84a24afea3caf2b46c2d2"
+  },
+  {
+    "path": "code/chemist_system/third_party/suzuki_official/lgbo/LICENSE",
+    "source": "extrnal/code/chemist_system/third_party/suzuki_official/lgbo/LICENSE",
+    "source_sha256": "fbdd3992972c3fc5988ca0485d4efb0c92437da306fcc89907bd1b71beb3b430",
+    "packaged_sha256": "fbdd3992972c3fc5988ca0485d4efb0c92437da306fcc89907bd1b71beb3b430"
+  },
+  {
+    "path": "code/chemist_system/third_party/reasoning_bo_official/SOURCE_PROVENANCE.json",
+    "source": "extrnal/code/chemist_system/third_party/reasoning_bo_official/SOURCE_PROVENANCE.json",
+    "source_sha256": "29f10f00f31125fd178a9aa776daf0e8da96537b2fe3e2f7f937beb9320b7b44",
+    "packaged_sha256": "29f10f00f31125fd178a9aa776daf0e8da96537b2fe3e2f7f937beb9320b7b44"
+  },
+  {
+    "path": "code/chemist_system/third_party/reasoning_bo_official/src/bo/reasoner/base.py",
+    "source": "extrnal/code/chemist_system/third_party/reasoning_bo_official/src/bo/reasoner/base.py",
+    "source_sha256": "33baeb00e86d35ed5dd1c872b943e06851056e7761398b1040d631bac654c415",
+    "packaged_sha256": "33baeb00e86d35ed5dd1c872b943e06851056e7761398b1040d631bac654c415"
+  },
+  {
+    "path": "code/chemist_system/third_party/reasoning_bo_official/src/prompts/test_prompts.json",
+    "source": "extrnal/code/chemist_system/third_party/reasoning_bo_official/src/prompts/test_prompts.json",
+    "source_sha256": "0c803bddc7e49389266135d4faf14c6a646cbd46e4f36dab590e3378b05e2c51",
+    "packaged_sha256": "0c803bddc7e49389266135d4faf14c6a646cbd46e4f36dab590e3378b05e2c51"
+  },
+  {
+    "path": "code/chemist_system/third_party/reasoning_bo_official/data/chemistry_data.zip",
+    "source": "extrnal/code/chemist_system/third_party/reasoning_bo_official/data/chemistry_data.zip",
+    "source_sha256": "e504dd845bc2d02a9a4df95c168c1b4a938e6007694dd3ed2d6f259d79612712",
+    "packaged_sha256": "e504dd845bc2d02a9a4df95c168c1b4a938e6007694dd3ed2d6f259d79612712"
+  },
+  {
+    "path": "data/dataset_registry.csv",
+    "source": "extrnal/data/dataset_registry.csv",
+    "source_sha256": "e7ee1f3b2f89556d70edd326c15ec52b562e4b763d856c11435d89113f1bb127",
+    "packaged_sha256": "e7ee1f3b2f89556d70edd326c15ec52b562e4b763d856c11435d89113f1bb127"
+  },
+  {
+    "path": "data/licenses/CurryBO_LICENSE.txt",
+    "source": "extrnal/data/licenses/CurryBO_LICENSE.txt",
+    "source_sha256": "64c5ebab8525b3f0cde78d3870add726f7644c80687516ff46f691002f92ae6a",
+    "packaged_sha256": "64c5ebab8525b3f0cde78d3870add726f7644c80687516ff46f691002f92ae6a"
+  },
+  {
+    "path": "data/pools/bor/oracle.npz",
+    "source": "extrnal/data/pools/bor/oracle.npz",
+    "source_sha256": "8707019ba151af8874ec5e37d7ea04b3dd1633f36b7897786674ce4280e50ba2",
+    "packaged_sha256": "8707019ba151af8874ec5e37d7ea04b3dd1633f36b7897786674ce4280e50ba2"
+  },
+  {
+    "path": "data/pools/bor/pool.json",
+    "source": "extrnal/data/pools/bor/pool.json",
+    "source_sha256": "a93d3a0c2bc2d6c87cbd2b6f4fd0d636db60592a2ae3abca4e6f8d1991590f57",
+    "packaged_sha256": "a93d3a0c2bc2d6c87cbd2b6f4fd0d636db60592a2ae3abca4e6f8d1991590f57"
+  },
+  {
+    "path": "data/pools/bor/receipt.json",
+    "source": "extrnal/data/pools/bor/receipt.json",
+    "source_sha256": "3b4305d713b2b9bbd56410e51ab62d7f7be7098aa6756df84790ae80c2958b7f",
+    "packaged_sha256": "3b4305d713b2b9bbd56410e51ab62d7f7be7098aa6756df84790ae80c2958b7f"
+  },
+  {
+    "path": "data/pools/c1/candidates.csv",
+    "source": "extrnal/data/pools/c1/candidates.csv",
+    "source_sha256": "4b37f841f61d0f231a061bc418a997df8d2d5af84537413fccec6b9093c963e0",
+    "packaged_sha256": "4b37f841f61d0f231a061bc418a997df8d2d5af84537413fccec6b9093c963e0"
+  },
+  {
+    "path": "data/pools/c1/oracle.npz",
+    "source": "extrnal/data/pools/c1/oracle.npz",
+    "source_sha256": "91f3ca7f7242a2ed5a683bdb5675f5072bccf553e38771553f5b45ddf6494634",
+    "packaged_sha256": "91f3ca7f7242a2ed5a683bdb5675f5072bccf553e38771553f5b45ddf6494634"
+  },
+  {
+    "path": "data/pools/c1/pool.json",
+    "source": "extrnal/data/pools/c1/pool.json",
+    "source_sha256": "73d08cf1937f6ce69b1787ab13652a84167063b1dae924f9f4c863b92a62f8dd",
+    "packaged_sha256": "73d08cf1937f6ce69b1787ab13652a84167063b1dae924f9f4c863b92a62f8dd"
+  },
+  {
+    "path": "data/pools/c1/provenance.json",
+    "source": "extrnal/data/pools/c1/provenance.json",
+    "source_sha256": "86e7971ffc6f6ce9157b79adf83c4f05c1c85a0b9e033eec9ec8404dfa54dc69",
+    "packaged_sha256": "86e7971ffc6f6ce9157b79adf83c4f05c1c85a0b9e033eec9ec8404dfa54dc69"
+  },
+  {
+    "path": "data/pools/c2/candidates.csv",
+    "source": "extrnal/data/pools/c2/candidates.csv",
+    "source_sha256": "5d43990e79c6ed87e7666a0f62b777d551228f2d8db49d8bf4f9a71de110cd53",
+    "packaged_sha256": "5d43990e79c6ed87e7666a0f62b777d551228f2d8db49d8bf4f9a71de110cd53"
+  },
+  {
+    "path": "data/pools/c2/oracle.npz",
+    "source": "extrnal/data/pools/c2/oracle.npz",
+    "source_sha256": "aca5894f0efb81cf7d65daa4dc2c3978bd36e99db90d3a7e535768c40bf658f3",
+    "packaged_sha256": "aca5894f0efb81cf7d65daa4dc2c3978bd36e99db90d3a7e535768c40bf658f3"
+  },
+  {
+    "path": "data/pools/c2/pool.json",
+    "source": "extrnal/data/pools/c2/pool.json",
+    "source_sha256": "d822952f4eb2748f1ea05d0156b1fd09b7d758212e695305b5ea3b24d6b8203a",
+    "packaged_sha256": "d822952f4eb2748f1ea05d0156b1fd09b7d758212e695305b5ea3b24d6b8203a"
+  },
+  {
+    "path": "data/pools/c2/provenance.json",
+    "source": "extrnal/data/pools/c2/provenance.json",
+    "source_sha256": "d8aa82da8d00af96bbe38f0332d2d1afc21493b3c3574157a3cf39b2d2c62a98",
+    "packaged_sha256": "d8aa82da8d00af96bbe38f0332d2d1afc21493b3c3574157a3cf39b2d2c62a98"
+  },
+  {
+    "path": "data/pools/c3/candidates.csv",
+    "source": "extrnal/data/pools/c3/candidates.csv",
+    "source_sha256": "d55871db519ee7283c66f6c7379796f58badff2345a97ce0d1a9a299302f3b2d",
+    "packaged_sha256": "d55871db519ee7283c66f6c7379796f58badff2345a97ce0d1a9a299302f3b2d"
+  },
+  {
+    "path": "data/pools/c3/oracle.npz",
+    "source": "extrnal/data/pools/c3/oracle.npz",
+    "source_sha256": "c69938a875d3da5ae01dde9fcf23c2a05a28983b3f656a8463873be97baa26fa",
+    "packaged_sha256": "c69938a875d3da5ae01dde9fcf23c2a05a28983b3f656a8463873be97baa26fa"
+  },
+  {
+    "path": "data/pools/c3/pool.json",
+    "source": "extrnal/data/pools/c3/pool.json",
+    "source_sha256": "90a31c87cc29f2aa186d6a2ff1d234035f73f12709a75ba2b137b436162157bb",
+    "packaged_sha256": "90a31c87cc29f2aa186d6a2ff1d234035f73f12709a75ba2b137b436162157bb"
+  },
+  {
+    "path": "data/pools/c3/provenance.json",
+    "source": "extrnal/data/pools/c3/provenance.json",
+    "source_sha256": "c075bbedee9ea0815d31db11b2a103ac410107deffb4fd0467c18b6ecfd840e1",
+    "packaged_sha256": "c075bbedee9ea0815d31db11b2a103ac410107deffb4fd0467c18b6ecfd840e1"
+  },
+  {
+    "path": "data/pools/c4/candidates.csv",
+    "source": "extrnal/data/pools/c4/candidates.csv",
+    "source_sha256": "479325e8bbeef762d97e0b0b6f0f11af17b6b5f61eaf052ec34739f44cdc4555",
+    "packaged_sha256": "479325e8bbeef762d97e0b0b6f0f11af17b6b5f61eaf052ec34739f44cdc4555"
+  },
+  {
+    "path": "data/pools/c4/oracle.npz",
+    "source": "extrnal/data/pools/c4/oracle.npz",
+    "source_sha256": "1e508eeca3076a25b889aaa4c589daf42e6a2796a23e2b83e6d7710e973ab7ce",
+    "packaged_sha256": "1e508eeca3076a25b889aaa4c589daf42e6a2796a23e2b83e6d7710e973ab7ce"
+  },
+  {
+    "path": "data/pools/c4/pool.json",
+    "source": "extrnal/data/pools/c4/pool.json",
+    "source_sha256": "b785a1dc366176d54f2582642adf39f6b5e344dc2106c8603237a4697cf564ca",
+    "packaged_sha256": "b785a1dc366176d54f2582642adf39f6b5e344dc2106c8603237a4697cf564ca"
+  },
+  {
+    "path": "data/pools/c4/provenance.json",
+    "source": "extrnal/data/pools/c4/provenance.json",
+    "source_sha256": "0315366084ffbc986071505359a2e60a6c7325750e80b72cf71505935aef92ea",
+    "packaged_sha256": "0315366084ffbc986071505359a2e60a6c7325750e80b72cf71505935aef92ea"
+  },
+  {
+    "path": "data/pools/chx/oracle.npz",
+    "source": "extrnal/data/pools/chx/oracle.npz",
+    "source_sha256": "b4b45ac511fce28a009e2ef5730f65ee5854f26d27487aa709308a280d407f62",
+    "packaged_sha256": "b4b45ac511fce28a009e2ef5730f65ee5854f26d27487aa709308a280d407f62"
+  },
+  {
+    "path": "data/pools/chx/pool.json",
+    "source": "extrnal/data/pools/chx/pool.json",
+    "source_sha256": "076987d64cdf080d10007ef5c009d45321ad011794d6574f62842298a36cd2e0",
+    "packaged_sha256": "076987d64cdf080d10007ef5c009d45321ad011794d6574f62842298a36cd2e0"
+  },
+  {
+    "path": "data/pools/chx/receipt.json",
+    "source": "extrnal/data/pools/chx/receipt.json",
+    "source_sha256": "cd32e691dc7c97551dee5b1f7cf7d71790a30633ed06c39a28bd11b9a68db76a",
+    "packaged_sha256": "cd32e691dc7c97551dee5b1f7cf7d71790a30633ed06c39a28bd11b9a68db76a"
+  },
+  {
+    "path": "data/pools/cpa/oracle.npz",
+    "source": "extrnal/data/pools/cpa/oracle.npz",
+    "source_sha256": "c4fbb9abd13ac661c770f799da134faae76bba16c82812f8e3d5f69d4cb2c680",
+    "packaged_sha256": "c4fbb9abd13ac661c770f799da134faae76bba16c82812f8e3d5f69d4cb2c680"
+  },
+  {
+    "path": "data/pools/cpa/pool.json",
+    "source": "extrnal/data/pools/cpa/pool.json",
+    "source_sha256": "7ae95649b8f50e1242eed4575e46fd2bac9c27ff9600314ad7414d9c836ed46b",
+    "packaged_sha256": "7ae95649b8f50e1242eed4575e46fd2bac9c27ff9600314ad7414d9c836ed46b"
+  },
+  {
+    "path": "data/pools/cpa/receipt.json",
+    "source": "extrnal/data/pools/cpa/receipt.json",
+    "source_sha256": "4c127a12454aa57eb0aa41e4e85490ab9a654c0a1fb49b1fddc15099b50ed637",
+    "packaged_sha256": "4c127a12454aa57eb0aa41e4e85490ab9a654c0a1fb49b1fddc15099b50ed637"
+  },
+  {
+    "path": "data/pools/dfl/oracle.npz",
+    "source": "extrnal/data/pools/dfl/oracle.npz",
+    "source_sha256": "ab46a618761f21d2806d1a7d1f5226a25c292e98a2c8f5a94339047010d552d7",
+    "packaged_sha256": "ab46a618761f21d2806d1a7d1f5226a25c292e98a2c8f5a94339047010d552d7"
+  },
+  {
+    "path": "data/pools/dfl/pool.json",
+    "source": "extrnal/data/pools/dfl/pool.json",
+    "source_sha256": "2f12bbbbcff120c1f90c4a5069393f08430329b3edf43456d09c9a5aefd6756b",
+    "packaged_sha256": "2f12bbbbcff120c1f90c4a5069393f08430329b3edf43456d09c9a5aefd6756b"
+  },
+  {
+    "path": "data/pools/dfl/receipt.json",
+    "source": "extrnal/data/pools/dfl/receipt.json",
+    "source_sha256": "06500142c603c093842c3f6456bdd4f785a682d0bbdb97a4c4d4a31419bd0a59",
+    "packaged_sha256": "06500142c603c093842c3f6456bdd4f785a682d0bbdb97a4c4d4a31419bd0a59"
+  },
+  {
+    "path": "data/pools/doyle/candidates.csv",
+    "source": "extrnal/data/pools/doyle/candidates.csv",
+    "source_sha256": "63c31adb8e074daecf6c53b02302475c98bcfd86b4b36cea13affea97ae84b25",
+    "packaged_sha256": "63c31adb8e074daecf6c53b02302475c98bcfd86b4b36cea13affea97ae84b25"
+  },
+  {
+    "path": "data/pools/doyle/oracle.npz",
+    "source": "extrnal/data/pools/doyle/oracle.npz",
+    "source_sha256": "c0ec9594cffa7b8ad17982624b6654138bab65eb50845d4379264e4fce69c705",
+    "packaged_sha256": "c0ec9594cffa7b8ad17982624b6654138bab65eb50845d4379264e4fce69c705"
+  },
+  {
+    "path": "data/pools/doyle/pool.json",
+    "source": "extrnal/data/pools/doyle/pool.json",
+    "source_sha256": "39c867aa3ea25683cdc324964b0ee8098fd0ed0c299e946523e58a7eeb508ca5",
+    "packaged_sha256": "39c867aa3ea25683cdc324964b0ee8098fd0ed0c299e946523e58a7eeb508ca5"
+  },
+  {
+    "path": "data/pools/doyle/provenance.json",
+    "source": "extrnal/data/pools/doyle/provenance.json",
+    "source_sha256": "c0a1ded7062b7eb44eec04e4d9114ced75dfea4a9b5f23994420cb33dfd28b01",
+    "packaged_sha256": "c0a1ded7062b7eb44eec04e4d9114ced75dfea4a9b5f23994420cb33dfd28b01"
+  },
+  {
+    "path": "data/pools/hplc/candidates.csv",
+    "source": "extrnal/data/pools/hplc/candidates.csv",
+    "source_sha256": "9563cfb6dc81e7c2c3e9283d268a1fcab2bcc5065c3947db7327fb33e6203b03",
+    "packaged_sha256": "9563cfb6dc81e7c2c3e9283d268a1fcab2bcc5065c3947db7327fb33e6203b03"
+  },
+  {
+    "path": "data/pools/hplc/oracle.npz",
+    "source": "extrnal/data/pools/hplc/oracle.npz",
+    "source_sha256": "b43315e9dd25dd79d1e3012fb4b61f13769395121e68dd2a03ce0fc7fd8094d7",
+    "packaged_sha256": "b43315e9dd25dd79d1e3012fb4b61f13769395121e68dd2a03ce0fc7fd8094d7"
+  },
+  {
+    "path": "data/pools/hplc/pool.json",
+    "source": "extrnal/data/pools/hplc/pool.json",
+    "source_sha256": "ec8d39d5ca519d13620b01a9c5a52d282b6ce64e1437d0b843d760797e483adf",
+    "packaged_sha256": "ec8d39d5ca519d13620b01a9c5a52d282b6ce64e1437d0b843d760797e483adf"
+  },
+  {
+    "path": "data/pools/hplc/provenance.json",
+    "source": "extrnal/data/pools/hplc/provenance.json",
+    "source_sha256": "2b92b804adfc17918ddacb084d0329e509d77aaa9ea397752eb154b74ec5048a",
+    "packaged_sha256": "2b92b804adfc17918ddacb084d0329e509d77aaa9ea397752eb154b74ec5048a"
+  },
+  {
+    "path": "data/pools/perera/candidates.csv",
+    "source": "extrnal/data/pools/perera/candidates.csv",
+    "source_sha256": "f7afa1473de340efc9495c8d1ed70441a56a0486331c5b1e77f18f4a193e9ea5",
+    "packaged_sha256": "f7afa1473de340efc9495c8d1ed70441a56a0486331c5b1e77f18f4a193e9ea5"
+  },
+  {
+    "path": "data/pools/perera/oracle.npz",
+    "source": "extrnal/data/pools/perera/oracle.npz",
+    "source_sha256": "b6450d0c4d7d84d853d7ffa9055ca5422602bc9e2c9fd8b84ff8859201bbe5c1",
+    "packaged_sha256": "b6450d0c4d7d84d853d7ffa9055ca5422602bc9e2c9fd8b84ff8859201bbe5c1"
+  },
+  {
+    "path": "data/pools/perera/pool.json",
+    "source": "extrnal/data/pools/perera/pool.json",
+    "source_sha256": "8381f44db7b0ef83a110bfef57c00faff2de76825575adbd280db83b19c45598",
+    "packaged_sha256": "8381f44db7b0ef83a110bfef57c00faff2de76825575adbd280db83b19c45598"
+  },
+  {
+    "path": "data/pools/perera/provenance.json",
+    "source": "extrnal/data/pools/perera/provenance.json",
+    "source_sha256": "973d257befc9dff241a6c9a7441264601e6c11316e21e4e2f8097cd3b7db34fb",
+    "packaged_sha256": "973d257befc9dff241a6c9a7441264601e6c11316e21e4e2f8097cd3b7db34fb"
+  },
+  {
+    "path": "data/pools/snar/candidates.csv",
+    "source": "extrnal/data/pools/snar/candidates.csv",
+    "source_sha256": "eb5d076f30b5d4960b37f7347f13cf1e12bc44c2437141130f9e25ce9d0beefd",
+    "packaged_sha256": "eb5d076f30b5d4960b37f7347f13cf1e12bc44c2437141130f9e25ce9d0beefd"
+  },
+  {
+    "path": "data/pools/snar/oracle.npz",
+    "source": "extrnal/data/pools/snar/oracle.npz",
+    "source_sha256": "c85d1995ab6725d25f4c185f899157666a2c477d63a25514da491af2f2ffea2c",
+    "packaged_sha256": "c85d1995ab6725d25f4c185f899157666a2c477d63a25514da491af2f2ffea2c"
+  },
+  {
+    "path": "data/pools/snar/pool.json",
+    "source": "extrnal/data/pools/snar/pool.json",
+    "source_sha256": "2303c7e9d9c431a2e7c5961a1c6db5ea6a502d0d0faa1c1a9f8864507e69bc39",
+    "packaged_sha256": "2303c7e9d9c431a2e7c5961a1c6db5ea6a502d0d0faa1c1a9f8864507e69bc39"
+  },
+  {
+    "path": "data/pools/snar/provenance.json",
+    "source": "extrnal/data/pools/snar/provenance.json",
+    "source_sha256": "8c15d7092eb36cd0bfa073b033b685e7473997fff792ee9f55b7d06ad250edc6",
+    "packaged_sha256": "8c15d7092eb36cd0bfa073b033b685e7473997fff792ee9f55b7d06ad250edc6"
+  },
+  {
+    "path": "data/README.md",
+    "source": "extrnal/data/README.md",
+    "source_sha256": "d8de3804b84eba3797c158ca0ceee8a2fa186a4496277383ce83927587707453",
+    "packaged_sha256": "d8de3804b84eba3797c158ca0ceee8a2fa186a4496277383ce83927587707453"
+  },
+  {
+    "path": "data/transfer/Direct_Arylation/oracle.npz",
+    "source": "extrnal/data/transfer/Direct_Arylation/oracle.npz",
+    "source_sha256": "190f94795504c5d0ea2b39e0e37159a3d9554817904b6c166c8f4a0914b0f7a7",
+    "packaged_sha256": "190f94795504c5d0ea2b39e0e37159a3d9554817904b6c166c8f4a0914b0f7a7"
+  },
+  {
+    "path": "data/transfer/Direct_Arylation/pool.json",
+    "source": "extrnal/data/transfer/Direct_Arylation/pool.json",
+    "source_sha256": "c09896abe291d746745afdfe849595f093c1099775c58d064e55a0541b807ba6",
+    "packaged_sha256": "c09896abe291d746745afdfe849595f093c1099775c58d064e55a0541b807ba6"
+  },
+  {
+    "path": "data/transfer/Direct_Arylation/provenance.json",
+    "source": "extrnal/data/transfer/Direct_Arylation/provenance.json",
+    "source_sha256": "77f87c5db99342e288ff21089a600fa9d5df4c2d744fae16f02392cea36d7f32",
+    "packaged_sha256": "77f87c5db99342e288ff21089a600fa9d5df4c2d744fae16f02392cea36d7f32"
+  },
+  {
+    "path": "data/transfer/Direct_Arylation/receipt.json",
+    "source": "extrnal/data/transfer/Direct_Arylation/receipt.json",
+    "source_sha256": "9d4edee0914800271c3910d0a3a16cce7b265944566d317a06b877c46605fc48",
+    "packaged_sha256": "9d4edee0914800271c3910d0a3a16cce7b265944566d317a06b877c46605fc48"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/main.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/main.tex",
+    "source_sha256": "6ab37655087f3035cd49b7a895d5f06d434e5547d64b7ddcbd2cccca6c5a855a",
+    "packaged_sha256": "6ab37655087f3035cd49b7a895d5f06d434e5547d64b7ddcbd2cccca6c5a855a"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/si.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/si.tex",
+    "source_sha256": "2925c3286ccbe1d0992542c5d4818d55510c0d2025ac5600eefe1bec1146c745",
+    "packaged_sha256": "2925c3286ccbe1d0992542c5d4818d55510c0d2025ac5600eefe1bec1146c745"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/references.bib",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/references.bib",
+    "source_sha256": "db2200b35a124203bd56b1fb6f8e9b4e59c3c8bc8061fef10b15c53871db0a82",
+    "packaged_sha256": "db2200b35a124203bd56b1fb6f8e9b4e59c3c8bc8061fef10b15c53871db0a82"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/acs-si.bib",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/acs-si.bib",
+    "source_sha256": "5b54c4fa125df16a7faec7b6fdad80e767ff91baa80bc6e4c33e97f2ed4c24c1",
+    "packaged_sha256": "5b54c4fa125df16a7faec7b6fdad80e767ff91baa80bc6e4c33e97f2ed4c24c1"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/main.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/main.pdf",
+    "source_sha256": "c21480a78ad8ffc42a90b10ba531a661d114bb5ad0564248968145c408badd1d",
+    "packaged_sha256": "c21480a78ad8ffc42a90b10ba531a661d114bb5ad0564248968145c408badd1d"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/si.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/si.pdf",
+    "source_sha256": "60e7dfe43edc25411541110c68ba58c5846c4abf8f8f6cd73c673ee2a2a19cb0",
+    "packaged_sha256": "60e7dfe43edc25411541110c68ba58c5846c4abf8f8f6cd73c673ee2a2a19cb0"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figures/fig2_development.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figures/fig2_development.pdf",
+    "source_sha256": "f35944c99a083aec76e92a134b7694b7d1917f133fda41e78e3d605f40ea3e2e",
+    "packaged_sha256": "f35944c99a083aec76e92a134b7694b7d1917f133fda41e78e3d605f40ea3e2e"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figures/fig3_heldout_shared.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figures/fig3_heldout_shared.pdf",
+    "source_sha256": "6fc90a8602b1abf786737fa0e111ae3900fcb2242e1d2da93f743674405e697b",
+    "packaged_sha256": "6fc90a8602b1abf786737fa0e111ae3900fcb2242e1d2da93f743674405e697b"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figures/fig4_screen.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figures/fig4_screen.pdf",
+    "source_sha256": "1ae2dc14c9ee7813d19fee04bb5ba37c541dce1c7b57b7cc0d578b2a4acd3a3c",
+    "packaged_sha256": "1ae2dc14c9ee7813d19fee04bb5ba37c541dce1c7b57b7cc0d578b2a4acd3a3c"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figures/fig5_first_point.pdf",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figures/fig5_first_point.pdf",
+    "source_sha256": "4af1d1e1ec26577145fede66b85ba7107c94d8252247afc5daef7e00de961c5f",
+    "packaged_sha256": "4af1d1e1ec26577145fede66b85ba7107c94d8252247afc5daef7e00de961c5f"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig2_development/panel_a_by_task.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig2_development/panel_a_by_task.csv",
+    "source_sha256": "24ae1e8268b9765bd57b0421b54cbdd69df2fd2bea783816074a00a655fc503f",
+    "packaged_sha256": "24ae1e8268b9765bd57b0421b54cbdd69df2fd2bea783816074a00a655fc503f"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig2_development/panel_a_summary.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig2_development/panel_a_summary.csv",
+    "source_sha256": "41154b1dda6920b7b64538e5c8f990bccd354537b1814b0260bdc9c2bac8b1ca",
+    "packaged_sha256": "41154b1dda6920b7b64538e5c8f990bccd354537b1814b0260bdc9c2bac8b1ca"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig2_development/panel_b_running_best_gap.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig2_development/panel_b_running_best_gap.csv",
+    "source_sha256": "a028ab58d7f8bd1d80dc1aa80439efb458516cd28cc0924889b609e330b6d9b8",
+    "packaged_sha256": "a028ab58d7f8bd1d80dc1aa80439efb458516cd28cc0924889b609e330b6d9b8"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig3_models/difference_summary.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig3_models/difference_summary.csv",
+    "source_sha256": "6b5582443771c3191939bb15b375ebd3a883cdca4db6a17b79bceb3b25a08993",
+    "packaged_sha256": "6b5582443771c3191939bb15b375ebd3a883cdca4db6a17b79bceb3b25a08993"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig3_models/mean_running_best.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig3_models/mean_running_best.csv",
+    "source_sha256": "6743ccaaff7f863034908ca602162344912f49ac864e019ed4c392328c9908d4",
+    "packaged_sha256": "6743ccaaff7f863034908ca602162344912f49ac864e019ed4c392328c9908d4"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig3_models/paired_differences.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig3_models/paired_differences.csv",
+    "source_sha256": "87fc16affb2deb55201d7f129c9dc077c867653aa111e4223186a9ba5f2270a3",
+    "packaged_sha256": "87fc16affb2deb55201d7f129c9dc077c867653aa111e4223186a9ba5f2270a3"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig3_models/provenance.json",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig3_models/provenance.json",
+    "source_sha256": "8819b2fdc3871987299c65c96b77604f168c9aec12ed0096691ae74c82d266ef",
+    "packaged_sha256": "8819b2fdc3871987299c65c96b77604f168c9aec12ed0096691ae74c82d266ef"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig4_screen/panel_a_pick_percentile_vs_gain.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig4_screen/panel_a_pick_percentile_vs_gain.csv",
+    "source_sha256": "bac400de8ea8249609b012bc6f98b204047f594b2c4ab25b16b66b3a42be8cbc",
+    "packaged_sha256": "bac400de8ea8249609b012bc6f98b204047f594b2c4ab25b16b66b3a42be8cbc"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig4_screen/panels_b_d_mean_running_best.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig4_screen/panels_b_d_mean_running_best.csv",
+    "source_sha256": "1fe0b4cdbc961a718d8b02d8b7bb37b485ba26982dca9e9fa52599d95a039aa8",
+    "packaged_sha256": "1fe0b4cdbc961a718d8b02d8b7bb37b485ba26982dca9e9fa52599d95a039aa8"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig4_screen/panels_b_d_trajectories.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig4_screen/panels_b_d_trajectories.csv",
+    "source_sha256": "fb249ecaa70d0b064349ec54736b8f0048e6670880919d6b76d80dbf85e673d1",
+    "packaged_sha256": "fb249ecaa70d0b064349ec54736b8f0048e6670880919d6b76d80dbf85e673d1"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig5_first_point/group_summary.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig5_first_point/group_summary.csv",
+    "source_sha256": "b192d087529dee4e524ab1dccf67c3aacf3552090ec8e2843c28f8f231a7b8e0",
+    "packaged_sha256": "b192d087529dee4e524ab1dccf67c3aacf3552090ec8e2843c28f8f231a7b8e0"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig5_first_point/llm_first_points.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig5_first_point/llm_first_points.csv",
+    "source_sha256": "e94b9cd29c2b798d24c04ca76106db2e867ba3a868693a1461164677fd7a7250",
+    "packaged_sha256": "e94b9cd29c2b798d24c04ca76106db2e867ba3a868693a1461164677fd7a7250"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/fig5_first_point/points_by_first_point.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/fig5_first_point/points_by_first_point.csv",
+    "source_sha256": "70bb0cbacf9e2cece63da5d3200f03ba052e201af75c2b3a00e0e6e91b057ef2",
+    "packaged_sha256": "70bb0cbacf9e2cece63da5d3200f03ba052e201af75c2b3a00e0e6e91b057ef2"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/README.md",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/README.md",
+    "source_sha256": "3140cd8c5280e6e8701b612645b1d3ca0e0b878cc77152e0027985970f82b8e6",
+    "packaged_sha256": "3140cd8c5280e6e8701b612645b1d3ca0e0b878cc77152e0027985970f82b8e6"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/table4_deepseek/paired_results.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/table4_deepseek/paired_results.csv",
+    "source_sha256": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c",
+    "packaged_sha256": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/table4_deepseek/results.json",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/table4_deepseek/results.json",
+    "source_sha256": "99702bce3759ecc1fee5e3cbc7527348d99c7e4872df2847f900d3296878ab02",
+    "packaged_sha256": "99702bce3759ecc1fee5e3cbc7527348d99c7e4872df2847f900d3296878ab02"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/figure_data/table4_deepseek/table4_model_extension.csv",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figure_data/table4_deepseek/table4_model_extension.csv",
+    "source_sha256": "3247147efcc6fd15e7d1cef733cc8ce762f5078a83781160fdb6d4af0eb1511e",
+    "packaged_sha256": "3247147efcc6fd15e7d1cef733cc8ce762f5078a83781160fdb6d4af0eb1511e"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/claim_verdicts.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/claim_verdicts.tex",
+    "source_sha256": "9722fc1863272b7fabc1a8e6b75bf5b1355838f0081851b188eccf94392d348b",
+    "packaged_sha256": "9722fc1863272b7fabc1a8e6b75bf5b1355838f0081851b188eccf94392d348b"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/designs.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/designs.tex",
+    "source_sha256": "e525096f2d396355c2db06ed10eabd2ab0a5eb16e3dfcaef52ad82d8f1396f63",
+    "packaged_sha256": "e525096f2d396355c2db06ed10eabd2ab0a5eb16e3dfcaef52ad82d8f1396f63"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/first_points.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/first_points.tex",
+    "source_sha256": "048b7b999db61cf1decd2d0d256b5d919c415927b7763eeccb732f5d6c5fa013",
+    "packaged_sha256": "048b7b999db61cf1decd2d0d256b5d919c415927b7763eeccb732f5d6c5fa013"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/forecasts.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/forecasts.tex",
+    "source_sha256": "4b1adb00ba23a4a167bbb1cff5d8f84192ab7564c1731d3ea2dec2b51ab2976a",
+    "packaged_sha256": "4b1adb00ba23a4a167bbb1cff5d8f84192ab7564c1731d3ea2dec2b51ab2976a"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/per_task.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/per_task.tex",
+    "source_sha256": "74016f49c1670a959104cf2fb638958281e690a4a788adcccd9e51f2d5182a0b",
+    "packaged_sha256": "74016f49c1670a959104cf2fb638958281e690a4a788adcccd9e51f2d5182a0b"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/prompts/first_point.txt",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/first_point.txt",
+    "source_sha256": "6e0a62517641787baa9e74da174c2939d2a17c622de3b94a41481696866c8496",
+    "packaged_sha256": "6e0a62517641787baa9e74da174c2939d2a17c622de3b94a41481696866c8496"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/prompts/first_point_confirm.txt",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/first_point_confirm.txt",
+    "source_sha256": "076263f09896b048f1a221346589faeb42e46ec67c506855f0e57cd834cb7ae8",
+    "packaged_sha256": "076263f09896b048f1a221346589faeb42e46ec67c506855f0e57cd834cb7ae8"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/prompts/hypotheses.txt",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/hypotheses.txt",
+    "source_sha256": "7da2c9af7f2646af221cc7808417ec8fca36b998de1ce4b8fb6ec6b7cbd099b8",
+    "packaged_sha256": "7da2c9af7f2646af221cc7808417ec8fca36b998de1ce4b8fb6ec6b7cbd099b8"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/prompts/hypotheses_faithful.txt",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/hypotheses_faithful.txt",
+    "source_sha256": "b8475618371fc23ba2936ebbdf121a600aba22ab1e1df3b6653d35daae03a265",
+    "packaged_sha256": "b8475618371fc23ba2936ebbdf121a600aba22ab1e1df3b6653d35daae03a265"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/test_f.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/test_f.tex",
+    "source_sha256": "801c1302f8f43fbe63c99a186ad2d33bf1b55ab3151c91ea93c3d661ea125915",
+    "packaged_sha256": "801c1302f8f43fbe63c99a186ad2d33bf1b55ab3151c91ea93c3d661ea125915"
+  },
+  {
+    "path": "paper/hypothesis_scope_jcim/generated/test_g.tex",
+    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/test_g.tex",
+    "source_sha256": "e00b9173b287b5270be48f87c445962a47763182fccf58138b063049074221f8",
+    "packaged_sha256": "e00b9173b287b5270be48f87c445962a47763182fccf58138b063049074221f8"
+  },
+  {
+    "path": "results/grounded_baselines_20261105/per_seed_results.csv",
+    "source": "Chemsys-portable/results/grounded_baselines_20261105/per_seed_results.csv",
+    "source_sha256": "2598d024635ca4b4de8e20e604628b7ed771f1dafd8fe86888a35b44c4a169ae",
+    "packaged_sha256": "2598d024635ca4b4de8e20e604628b7ed771f1dafd8fe86888a35b44c4a169ae"
+  },
+  {
+    "path": "results/hypothesis_scope_loop_20261105/comparison.csv",
+    "source": "Chemsys-portable/results/hypothesis_scope_loop_20261105/comparison.csv",
+    "source_sha256": "57cfaf0690b8d7416cefd3801c555611b07dc721ae18502b99e6311b7d774f82",
+    "packaged_sha256": "57cfaf0690b8d7416cefd3801c555611b07dc721ae18502b99e6311b7d774f82"
+  },
+  {
+    "path": "results/hypothesis_scope_multiseed_20261105/per_seed_results.csv",
+    "source": "Chemsys-portable/results/hypothesis_scope_multiseed_20261105/per_seed_results.csv",
+    "source_sha256": "46bc94e42a6cf3b365f130281242c7ac63455f2d9c93917ee80165eff9b78e04",
+    "packaged_sha256": "46bc94e42a6cf3b365f130281242c7ac63455f2d9c93917ee80165eff9b78e04"
+  },
+  {
+    "path": "results/hypothesis_scope_multiseed_20261105/metric_validation.json",
+    "source": "Chemsys-portable/results/hypothesis_scope_multiseed_20261105/metric_validation.json",
+    "source_sha256": "9d12073ef124912968b5c7cc99e7e8387344860235c7e2a051fdb772082ebc05",
+    "packaged_sha256": "9d12073ef124912968b5c7cc99e7e8387344860235c7e2a051fdb772082ebc05"
+  },
+  {
+    "path": "results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json",
+    "source": "Chemsys-paper-clean/experiments/runs/hypothesis_scope_v2_20261105/gp_followup/claim_coding.json",
+    "source_sha256": "f1bf8c507894986005d635a8461e999086ef9e1eeb30101e45c1176dc191cab1",
+    "packaged_sha256": "f1bf8c507894986005d635a8461e999086ef9e1eeb30101e45c1176dc191cab1"
+  },
+  {
+    "path": "results/deepseek_table4_20261110/paired_results.csv",
+    "source": "runtime/research/deepseek_table4_20261110/analysis/paired_results.csv",
+    "source_sha256": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c",
+    "packaged_sha256": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c"
+  },
+  {
+    "path": "results/deepseek_table4_20261110/results.json",
+    "source": "runtime/research/deepseek_table4_20261110/analysis/results.json",
+    "source_sha256": "99702bce3759ecc1fee5e3cbc7527348d99c7e4872df2847f900d3296878ab02",
+    "packaged_sha256": "99702bce3759ecc1fee5e3cbc7527348d99c7e4872df2847f900d3296878ab02"
+  },
+  {
+    "path": "results/deepseek_table4_20261110/table4_model_extension.csv",
+    "source": "runtime/research/deepseek_table4_20261110/analysis/table4_model_extension.csv",
+    "source_sha256": "3247147efcc6fd15e7d1cef733cc8ce762f5078a83781160fdb6d4af0eb1511e",
+    "packaged_sha256": "3247147efcc6fd15e7d1cef733cc8ce762f5078a83781160fdb6d4af0eb1511e"
+  },
+  {
+    "path": "code/extensions/deepseek/run_study.py",
+    "source": "runtime/research/deepseek_table4_20261110/run_study.py",
+    "source_sha256": "7331f781ece2f7e7e0db6dacfbf9612c93ec454ca79168f4423f7d83ef8e3ce4",
+    "packaged_sha256": "ad2bd1d9227814939d7ec5d7d79ddddae18c82827063fac9eb68fe64afacf9e3"
+  },
+  {
+    "path": "code/extensions/deepseek/deepseek_transport.py",
+    "source": "runtime/research/deepseek_table4_20261110/deepseek_transport.py",
+    "source_sha256": "c5772c2fb8379d772c529fba45aa53d4d7c2d3f0c8616951844617fcc775dd4d",
+    "packaged_sha256": "ce37a1c95f21932b5d57b1cc6e6ce26d42902ec9c29833f2b1393385821d54f3"
+  },
+  {
+    "path": "environment/requirements.txt",
+    "source": "Chemsys-portable/requirements-bo.txt",
+    "source_sha256": "16ea82bdde1fd7fe6c24b03f867bae93fb74793737e782640b7b81f44a9eda12",
+    "packaged_sha256": "16ea82bdde1fd7fe6c24b03f867bae93fb74793737e782640b7b81f44a9eda12"
+  },
+  {
+    "path": "environment/recorded_environment.json",
+    "source": "runtime/research/deepseek_table4_20261110/environment.json",
+    "source_sha256": "fdd0413aa654a092d48147968c1c4700ec84e7add7f0e96617115b7b4a6df785",
+    "packaged_sha256": "fdd0413aa654a092d48147968c1c4700ec84e7add7f0e96617115b7b4a6df785"
+  },
+  {
+    "path": "data/study_designs/deepseek_shared_starts.json",
+    "source": "runtime/research/deepseek_table4_20261110/frozen/shared_starts.json",
+    "source_sha256": "23cc7108860be3c916cbc7d9b0225f15042ce3de54a9d99ee9e980a1199c08a2",
+    "packaged_sha256": "23cc7108860be3c916cbc7d9b0225f15042ce3de54a9d99ee9e980a1199c08a2"
+  }
+]

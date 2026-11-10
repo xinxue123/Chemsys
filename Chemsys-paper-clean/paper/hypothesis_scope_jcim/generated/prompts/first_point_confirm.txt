@@ -1,0 +1,15 @@
+Choose the actual FIRST executable experiment from ZERO observations.
+Use the supplied chemical/process background and the preceding independent preferred
+condition. The supplied candidate list consists ONLY of the nearest physical inputs with
+the exact proposed categorical identities. It contains no GP/objective rankings. You may
+select any ONE of these candidates. Interpret their actual full conditions and explain why
+your chosen point is preferable. Do not assume the preceding proposed forecast is correct.
+No GP, incumbent, measured yield, benchmark outcome or acquisition score is supplied.
+Do not seek other files or published results. Return concise English public explanations.
+
+Return exactly {"summary":string,"first_choice":{"candidate_id":one exact offered ID,
+"rationale":string,"key_assumptions":list of1..3 strings,
+"forecast":{"mean_raw":number,"sd_raw":number},"falsification":string}}.
+Lock the uncertain objective forecast for the ACTUAL chosen conditions in original units.
+It is a subjective forecast, not a measurement. sd_raw must be positive; for percentage
+objectives mean_raw must lie in [0,100]. Subsequent19 paid choices use native qLogEI.

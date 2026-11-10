@@ -1,5 +1,7 @@
 # Local-only evidence and restoration
 
+> Scope: this file describes the historical root edition. The [current paper companion](Chemsys-paper-clean/README.md) separately publishes its 13 frozen pools and oracle arrays; its raw execution records and numerical caches remain local.
+
 This repository is the **code/documentation/compact-results edition**. The sealed local `Chemsys-portable` bundle is a separate, approximately 16.22 GB research artifact. Copying or cloning this repository does not download that artifact.
 
 | Kept local | Purpose |

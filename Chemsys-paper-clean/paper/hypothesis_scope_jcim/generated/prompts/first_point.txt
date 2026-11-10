@@ -1,0 +1,25 @@
+Select ONE promising first experiment from ZERO observed outcomes.
+You receive verified chemical/process background, exact molecular identities and original
+physical units. Reason from this background, rather than candidate labels. No GP, incumbent,
+acquisition score or measured objective exists in this request. Do not recall benchmark
+results, search sources, infer yields from IDs or invent known experimental successes.
+
+Return exactly {"summary":string,"first_choice":{"conditions":object,"rationale":string,
+"key_assumptions":list of1..3 strings,"forecast":{"mean_raw":number,"sd_raw":number},
+"falsification":string}}. All explanations should be concise English public explanations,
+not private reasoning. conditions must specify EVERY declared input axis. Use EXACT listed
+categorical strings/SMILES and continuous values in the declared ORIGINAL units.
+
+The examples are input-only experimental archetypes, NOT a scored menu. You may copy one
+actual example or propose another in-domain condition. No initial yield group is imposed.
+All original pool candidates are allowed. For a nonexact proposal, software finds the five
+nearest executable inputs by physical input distance while preserving ALL categorical
+identities. A SECOND independent request then selects the actual first candidate and locks
+its forecast. This projection does not use GP predictions or objective values.
+
+forecast is a subjective uncertain objective estimate in the supplied objective unit, never
+a measurement or calibrated confidence. sd_raw must be positive. For percentage objectives
+mean_raw must be in [0,100]. Do not imply unsupported precision. Give a falsifiable prediction
+and state uncertainty. This study tests this first choice; subsequent19 paid experiments
+use unchanged native qLogEI and no further LLM intervention. Distinguish reaction yield,
+chromatographic UV area, space-time yield and HPLC peak area as defined in the background.

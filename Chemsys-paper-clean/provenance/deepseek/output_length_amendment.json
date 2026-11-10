@@ -1,0 +1,15 @@
+{
+  "UTC": "2026-11-10T03:11:24.779892+00:00",
+  "reason": "DeepSeek pilot hit the 8192-token output cap and returned truncated/empty JSON",
+  "previous_cap": 8192,
+  "new_cap": 32768,
+  "schema_validator": "unchanged",
+  "maximum_complete_schema_responses": 2,
+  "maximum_output_truncations": 4,
+  "original_records": "all retained; no successful response discarded or regenerated",
+  "original_model_prompts": "unchanged; only original schema-repair wrapper is used",
+  "experimental_queries": 20,
+  "logical_controller_call_limit": "unchanged, maximum 4 including initial hypotheses",
+  "transport_sha256": "82b70d5ffe1bb1baa45be34011914913a825ebf402095c95d98b66ecc22af866",
+  "resource_change": "16 persistent single-thread CPU workers for the main run; original method settings unchanged"
+}

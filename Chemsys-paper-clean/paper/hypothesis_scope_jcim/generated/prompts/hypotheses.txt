@@ -1,0 +1,56 @@
+Propose a concrete preferred experiment AND falsifiable chemical/process hypotheses.
+Use only the supplied scientific background and this trajectory's observed experiments.
+Do not browse, recall benchmark outcomes, infer objectives from IDs, inspect other files,
+or assume an unmeasured input has an observed objective. Give concise English scientific
+explanations, not private reasoning. Interpret original physical units and exact molecular
+identities. Background unknowns remain unknown (especially the HPLC response scale).
+
+Return exactly {"summary":string,"preferred_experiment":{
+"conditions":object,"basis_ids":list of hypothesis IDs,"rationale":string} or null,
+"hypotheses":[{"id":short string,"claim":string,"direction":"favour" or "avoid",
+"scope":{axis:{"allowed":[exact categorical values]} or {"bounds":[lo,hi]}},
+"forecast":{"mean_raw":number,"sd_raw":positive number},"falsification":string,
+"supporting_observation_ids":[observed IDs],"review_action":"new" or "keep" or "revise" or "retest"}]}.
+At most 3 hypotheses. Each scope must contain at least 4 executable inputs, constrain at
+least one real axis and exclude some pool inputs. All favour scopes are INTERSECTED;
+all avoid scopes are SUBTRACTED. Choose compatible, useful, not needlessly narrow scopes;
+their combined unmeasured region must contain at least 4 inputs. Scope bounds use original
+units; categorical strings must match supplied identities exactly. Omitted axes are free.
+forecast is a subjective absolute objective distribution for experiments INSIDE that scope,
+including avoid scopes. Percentage means must lie in [0,100]; all means nonnegative.
+Do not give a positive effect size as an absolute objective forecast. sd_raw must be >0.
+Supply a concrete testable claim and operational falsification criterion. An unqueried
+preferred condition must specify EVERY input axis and lie in the combined region, using
+exact categorical identities. Examples are input-only, not an objective-ranked menu;
+other feasible inputs may be proposed. The software maps a physical prototype to the
+nearest unqueried executable input with identical categories, using INPUT DISTANCE only.
+
+INITIAL: this paired experiment locks a previously independent, zero-data LLM first input.
+Return that exact preferred input and at least one favour hypothesis justifying it. You
+have NO measured outcomes or current GP scores. Your hypotheses are locked BEFORE the
+first observation is accessed. Their new forecasts need not copy a previous estimate.
+
+AFTER THE FIRST: the unchanged native GP maximizes native qLogEI INSIDE eligible scopes.
+Your preferred prototype is a scientific proposal, NOT guaranteed to be executed; the GP
+chooses the best executable point within your constraints. There is NO global qLogEI-gap
+gate in this experiment. GP predictions and training targets are never edited. A favour
+scope may guide only while its forecast probability of improving the current incumbent
+is >=0.5 and its GP-relative KF credibility is >=0.2 (initial credibility 0.4). An avoid
+scope may suppress only while its improvement probability is <=0.5 and credibility >=0.2.
+Only predictions locked before an actual in-scope observation receive feedback. KF uses
+relative Brier score of improvement against the GP; it is distinct from permission to
+recommend. Two negative relative forecasts, two >2SD misses, low credibility, or two
+nonimprovements genuinely caused by favour constraints pause guidance. These operational
+failures do not establish that the chemical claim is universally false.
+
+ON REFRESH: you receive ALL own experiments, locked predictions, KF updates, permissions,
+and event reasons. Retain, revise or withdraw claims from this evidence and propose a new
+preferred point. Return only hypotheses you want to keep; omissions withdraw old claims.
+You may abstain with hypotheses=[] and preferred_experiment=null. Renaming/rewording the
+same finite-input region and direction inherits its failure evidence, KF and retest count.
+A paused rule never resumes merely because it predicts failure correctly. Only explicit
+review_action='retest' during >=3-query stagnation permits ONE test of that semantic rule;
+restoration then requires an actual incumbent improvement and positive GP-relative skill.
+New regions are new provisional claims, not validated discoveries. Supporting IDs must
+refer only to provided own observations. Current GP rankings/scores are deliberately
+withheld so your chemical hypotheses and preferred proposal are independent of them.

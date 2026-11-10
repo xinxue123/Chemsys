@@ -1,0 +1,472 @@
+{
+  "status": "EXPLORATORY_SAVED_EVIDENCE",
+  "new_model_calls": 0,
+  "new_GP_fits": 0,
+  "new_oracle_queries": 0,
+  "claims": {
+    "hypotheses": 99,
+    "runs_evaluated": 123,
+    "kind": {
+      "contrast": 62,
+      "level": 37
+    },
+    "kind_by_origin": {
+      "pre-data": {
+        "contrast": 14,
+        "level": 2
+      },
+      "refreshed": {
+        "contrast": 48,
+        "level": 35
+      }
+    },
+    "contrasts": 68,
+    "molecular_language": {
+      "n": 99,
+      "count": 41
+    },
+    "hedged": {
+      "n": 99,
+      "count": 49
+    },
+    "molecular_and_hedged": {
+      "n": 41,
+      "count": 17
+    },
+    "pool_verdicts": {
+      "supported": 37,
+      "mixed": 21,
+      "no_contrast": 3,
+      "contradicted": 1
+    },
+    "pool_verdicts_development": {
+      "supported": 22,
+      "mixed": 13,
+      "no_contrast": 3,
+      "contradicted": 1
+    },
+    "pool_verdicts_held_out": {
+      "mixed": 8,
+      "supported": 15
+    },
+    "pool_verdicts_pre_data": {
+      "supported": 7,
+      "mixed": 7
+    },
+    "pool_verdicts_refreshed": {
+      "supported": 30,
+      "mixed": 14,
+      "no_contrast": 3,
+      "contradicted": 1
+    },
+    "pool_verdicts_emulator": {
+      "supported": 15,
+      "mixed": 3,
+      "no_contrast": 3,
+      "contradicted": 1
+    },
+    "pool_verdicts_measured": {
+      "supported": 18,
+      "mixed": 8
+    },
+    "pool_verdicts_by_task": {
+      "aryl": {
+        "mixed": 8,
+        "supported": 15
+      },
+      "c1": {
+        "supported": 7,
+        "mixed": 3
+      },
+      "c2": {
+        "supported": 4,
+        "no_contrast": 3
+      },
+      "c3": {
+        "supported": 4,
+        "contradicted": 1
+      },
+      "doyle": {
+        "supported": 2
+      },
+      "hplc": {
+        "mixed": 8,
+        "supported": 3
+      },
+      "perera": {
+        "supported": 1
+      },
+      "snar": {
+        "mixed": 2,
+        "supported": 1
+      }
+    },
+    "contrast_verdicts": {
+      "supported": 43,
+      "mixed": 19,
+      "no_contrast": 3,
+      "contradicted": 3
+    },
+    "contrast_verdicts_by_axis": {
+      "Arylhalide": {
+        "supported": 2
+      },
+      "Base_SMILES": {
+        "mixed": 6
+      },
+      "Concentration": {
+        "supported": 3
+      },
+      "Electrophile_SMILES": {
+        "supported": 1
+      },
+      "Ligand_SMILES": {
+        "supported": 8,
+        "mixed": 1
+      },
+      "Solvent_SMILES": {
+        "supported": 2
+      },
+      "Temp_C": {
+        "supported": 2,
+        "mixed": 1
+      },
+      "additional_volume": {
+        "mixed": 1
+      },
+      "catalyst": {
+        "supported": 3,
+        "no_contrast": 3,
+        "contradicted": 1
+      },
+      "catalyst_loading": {
+        "supported": 2
+      },
+      "conc_dfnb": {
+        "supported": 1
+      },
+      "equiv_pldn": {
+        "contradicted": 1
+      },
+      "push_speed": {
+        "mixed": 2
+      },
+      "sample_flow": {
+        "supported": 2,
+        "mixed": 1
+      },
+      "sample_loop": {
+        "mixed": 1
+      },
+      "t_res": {
+        "supported": 4,
+        "mixed": 3
+      },
+      "tau": {
+        "supported": 2
+      },
+      "temperature": {
+        "supported": 10,
+        "contradicted": 1
+      },
+      "tubing_volume": {
+        "supported": 1
+      },
+      "wait_time": {
+        "mixed": 3
+      }
+    },
+    "contrast_verdicts_caliper_5": {
+      "supported": 41,
+      "mixed": 12,
+      "no_contrast": 13,
+      "contradicted": 2
+    },
+    "contrast_verdicts_caliper_20": {
+      "supported": 41,
+      "mixed": 21,
+      "no_contrast": 3,
+      "contradicted": 3
+    },
+    "level_verdicts": {
+      "exists_above": {
+        "supported": 8
+      },
+      "mean_above": {
+        "contradicted": 2,
+        "supported": 1
+      },
+      "none_above": {
+        "supported": 10
+      },
+      "typical_above": {
+        "supported": 6,
+        "contradicted": 2
+      },
+      "typical_below": {
+        "supported": 10
+      }
+    },
+    "in_run": {
+      "claim_runs": 83,
+      "none": 58,
+      "one": 11,
+      "two_or_more": 14,
+      "verdicts": {
+        "unresolved": 73,
+        "retained": 7,
+        "refuted": 3
+      },
+      "mean_prospective": 0.5903614457831325
+    },
+    "in_run_development": {
+      "claim_runs": 60,
+      "two_or_more": 9,
+      "verdicts": {
+        "unresolved": 52,
+        "retained": 6,
+        "refuted": 2
+      }
+    },
+    "in_run_held_out": {
+      "claim_runs": 23,
+      "two_or_more": 5,
+      "verdicts": {
+        "retained": 1,
+        "unresolved": 21,
+        "refuted": 1
+      }
+    },
+    "in_run_vs_pool": {
+      "decided": 10,
+      "with_clear_pool_verdict": 2,
+      "agree": 2,
+      "table": {
+        "retained|supported": 2,
+        "retained|mixed": 5,
+        "refuted|mixed": 3
+      }
+    },
+    "gate_vs_pool": {
+      "supported": {
+        "claim_runs": 52,
+        "paused": 37,
+        "mean_queries_active": 3.826923076923077
+      },
+      "mixed": {
+        "claim_runs": 27,
+        "paused": 22,
+        "mean_queries_active": 2.185185185185185
+      },
+      "contradicted": {
+        "claim_runs": 1,
+        "paused": 1,
+        "mean_queries_active": 1
+      },
+      "no_contrast": {
+        "claim_runs": 3,
+        "paused": 3,
+        "mean_queries_active": 1
+      }
+    }
+  },
+  "translation": {
+    "all": {
+      "n": 46,
+      "scope_share": 0.0625,
+      "dominated_share": 0.03239556692242114,
+      "scope_ceiling": 88.56582610709347,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 9,
+      "dominance_keeps_maximum": 40,
+      "scope_top5_kept": 0.13273001508295626,
+      "dominance_top5_kept": 0.9829666876178504,
+      "scope_lift": 1.226474358974359
+    },
+    "pre_data": {
+      "n": 14,
+      "scope_share": 0.10416666666666666,
+      "dominated_share": 0.08333333333333333,
+      "scope_ceiling": 90.52464680773922,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 4,
+      "dominance_keeps_maximum": 12,
+      "scope_top5_kept": 0.313953488372093,
+      "dominance_top5_kept": 0.9186046511627907,
+      "scope_lift": 0.7790697674418605
+    },
+    "refreshed": {
+      "n": 32,
+      "scope_share": 0.046781756180733165,
+      "dominated_share": 0.01736999147485081,
+      "scope_ceiling": 83.43863992194882,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 5,
+      "dominance_keeps_maximum": 28,
+      "scope_top5_kept": 0.10683760683760683,
+      "dominance_top5_kept": 0.9935897435897436,
+      "scope_lift": 1.6688292952358967
+    },
+    "supported": {
+      "n": 24,
+      "scope_share": 0.05573316283034953,
+      "dominated_share": 0.013888888888888888,
+      "scope_ceiling": 78.53863992194881,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 4,
+      "dominance_keeps_maximum": 24,
+      "scope_top5_kept": 0.06976744186046512,
+      "dominance_top5_kept": 1.0,
+      "scope_lift": 1.7128849780012572
+    },
+    "mixed": {
+      "n": 18,
+      "scope_share": 0.10416666666666666,
+      "dominated_share": 0.31825447570332477,
+      "scope_ceiling": 94.15485699555953,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 5,
+      "dominance_keeps_maximum": 12,
+      "scope_top5_kept": 0.261025641025641,
+      "dominance_top5_kept": 0.3941679235796883,
+      "scope_lift": 1.1487356321839082
+    },
+    "supported_pre_data": {
+      "n": 7,
+      "scope_share": 0.07011935208866155,
+      "dominated_share": 0.05555555555555555,
+      "scope_ceiling": 89.17,
+      "dominance_ceiling": 100.0,
+      "scope_keeps_maximum": 1,
+      "dominance_keeps_maximum": 7,
+      "scope_top5_kept": 0.14594594594594595,
+      "dominance_top5_kept": 1.0,
+      "scope_lift": 1.6744186046511627
+    }
+  },
+  "forecasts": {
+    "forecasts": 224,
+    "within_1sd": 0.6830357142857143,
+    "within_2sd": 0.9107142857142857,
+    "mean_z": 0.7084923469358685,
+    "gp_within_2sd": 0.6902173913043478,
+    "llm_within_2sd_same_points": 0.9130434782608695,
+    "by_origin": {
+      "pre-data": {
+        "n": 94,
+        "within_2sd": 0.8936170212765957,
+        "mean_z": 1.0412012157880668
+      },
+      "refreshed": {
+        "n": 130,
+        "within_2sd": 0.9230769230769231,
+        "mean_z": 0.4679182417658175
+      }
+    },
+    "tasks": 9,
+    "log_gain_mean": 54.10086441902966,
+    "log_tasks_up": 5,
+    "log_tasks_down": 4,
+    "log_sign_flip_p": 0.16015625,
+    "brier_gain_mean": -0.07968224559064357,
+    "brier_tasks_up": 1,
+    "brier_tasks_down": 8,
+    "brier_sign_flip_p": 0.01171875,
+    "rank_llm_mean_vs_outcome": 0.43311183956742155,
+    "rank_gp_mean_vs_outcome": 0.670049866992512,
+    "rank_pairs": 184
+  },
+  "ceilings": {
+    "runs": 40,
+    "hit_ceiling": 24,
+    "above_ceiling": 0,
+    "by_task": {
+      "c1": {
+        "ceiling": 55.63,
+        "gate_gain": 27.01,
+        "no_gate_final": 55.63
+      },
+      "c2": {
+        "ceiling": 49.15,
+        "gate_gain": 30.78,
+        "no_gate_final": 49.15
+      },
+      "c3": {
+        "ceiling": 100.0,
+        "gate_gain": -0.52,
+        "no_gate_final": 100.0
+      },
+      "c4": {
+        "ceiling": 90.49,
+        "gate_gain": 0.35,
+        "no_gate_final": 90.49
+      },
+      "perera": {
+        "ceiling": 97.83,
+        "gate_gain": -1.47,
+        "no_gate_final": 96.07
+      },
+      "doyle": {
+        "ceiling": 55.57,
+        "gate_gain": 27.74,
+        "no_gate_final": 55.24
+      },
+      "snar": {
+        "ceiling": 98.17,
+        "gate_gain": -0.02,
+        "no_gate_final": 98.17
+      },
+      "hplc": {
+        "ceiling": 91.88,
+        "gate_gain": 13.55,
+        "no_gate_final": 81.64
+      }
+    },
+    "rank_gap_vs_gain_dev": 0.9047619047619048,
+    "rank_gap_vs_gain_held": 0.20868716185960043,
+    "rank_gap_vs_gain_all": 0.5040938532208139,
+    "mean_gate_queries_dev": 0.375,
+    "mean_gate_queries_held": 1.75,
+    "median_gate_queries": 0.5
+  },
+  "variance": {
+    "aryl": {
+      "candidates": 1728,
+      "additive_r2": 0.6037945774680702,
+      "pairwise_r2": 0.8431231086278794,
+      "axis_share": {
+        "Base_SMILES": 0.01349053408332493,
+        "Ligand_SMILES": 0.4762492509186934,
+        "Solvent_SMILES": 0.08224864765736321,
+        "Concentration": 0.0015937542112695316,
+        "Temp_C": 0.030212390597419096
+      },
+      "share_zero": 0.28587962962962965
+    },
+    "doyle": {
+      "candidates": 3955,
+      "additive_r2": 0.7067915967992731,
+      "pairwise_r2": 0.9043138844085347,
+      "axis_share": {
+        "Ligand": 0.08440422262250488,
+        "Additive": 0.1461873488000096,
+        "Base": 0.05031420338095379,
+        "Arylhalide": 0.42591714670493475
+      },
+      "share_zero": 0.059671302149178256
+    },
+    "perera": {
+      "candidates": 3696,
+      "additive_r2": 0.5500061488017831,
+      "pairwise_r2": 0.8115584337548815,
+      "axis_share": {
+        "Electrophile_SMILES": 0.22210191895263917,
+        "Nucleophile_SMILES": 0.18039726053933167,
+        "Ligand_SMILES": 0.11125089883080058,
+        "Base_SMILES": 0.00680440342710343,
+        "Solvent_SMILES": 0.029451667051908333
+      },
+      "share_zero": 0.0035173160173160175
+    }
+  }
+}

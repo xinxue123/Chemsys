@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-11-10T03:22:25.941126+00:00",
+  "reason": "Different tokenization and additional billed technical attempts require larger resource guardrails; query and logical-call limits unchanged",
+  "arylation_tokens": 48000000,
+  "arylation_attempts": 6000,
+  "cpa_tokens": 16000000,
+  "cpa_attempts": 1000,
+  "controller_logical_calls_including_initial": 4,
+  "queries_per_trajectory": 20,
+  "planned_resume": "If in-flight old guards stop, resume all pending jobs from sealed checkpoints; never select by score",
+  "runner_sha256": "7331f781ece2f7e7e0db6dacfbf9612c93ec454ca79168f4423f7d83ef8e3ce4"
+}

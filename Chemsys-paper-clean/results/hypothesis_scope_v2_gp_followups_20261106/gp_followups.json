@@ -1,0 +1,118 @@
+{
+  "test_F": {
+    "aryl": {
+      "axis": "Solvent_SMILES",
+      "best_level": "CC(N(C)C)=O",
+      "points_per_group": 30,
+      "mean_auc_inside": 52.195541666666664,
+      "mean_auc_outside": 62.65535,
+      "gap_outside_minus_inside": 10.459808333333335,
+      "interval90_bootstrap": [
+        4.206491666666665,
+        16.811341666666657
+      ],
+      "permutation_p": 0.00903990960090399,
+      "final_inside": 79.27183333333333,
+      "final_outside": 84.75916666666667,
+      "share_inside": 17.77777777777778,
+      "share_outside": 43.333333333333336,
+      "q2_share_inside": 0,
+      "q2_share_outside": 40.0,
+      "meets_rule": true
+    },
+    "doyle": {
+      "axis": "Base",
+      "best_level": "CN1CCCN2C1=NCCC2",
+      "points_per_group": 20,
+      "mean_auc_inside": 66.15427932986168,
+      "mean_auc_outside": 70.59619007359277,
+      "gap_outside_minus_inside": 4.441910743731086,
+      "interval90_bootstrap": [
+        1.0080779777165532,
+        7.997397710238516
+      ],
+      "permutation_p": 0.046799532004679956,
+      "final_inside": 81.39297119854712,
+      "final_outside": 87.57504504550451,
+      "share_inside": 28.055555555555557,
+      "share_outside": 58.05555555555555,
+      "q2_share_inside": 0,
+      "q2_share_outside": 50.0
+    },
+    "perera": {
+      "axis": "Electrophile_SMILES",
+      "best_level": "IC1=CC=C(N=CC=C2)C2=C1",
+      "points_per_group": 20,
+      "mean_auc_inside": 80.558575,
+      "mean_auc_outside": 71.68485,
+      "gap_outside_minus_inside": -8.873725000000007,
+      "interval90_bootstrap": [
+        -14.6391,
+        -3.5673374999999936
+      ],
+      "permutation_p": 0.008749912500874991,
+      "final_inside": 95.437,
+      "final_outside": 90.818,
+      "share_inside": 5.833333333333333,
+      "share_outside": 23.333333333333332,
+      "q2_share_inside": 0,
+      "q2_share_outside": 12.5
+    },
+    "llm_points": {
+      "a00102": {
+        "first_value": 0.0,
+        "streams": 8,
+        "mean_auc": 59.702687499999996,
+        "sd_auc": 23.665433343859956,
+        "mean_final": 87.7725,
+        "best_solvent_share_q2_10": 6.944444444444445
+      },
+      "a00493": {
+        "first_value": 1.62,
+        "streams": 8,
+        "mean_auc": 56.3119375,
+        "sd_auc": 12.500820462895055,
+        "mean_final": 80.65375,
+        "best_solvent_share_q2_10": 20.833333333333332
+      },
+      "a00499": {
+        "first_value": 0.0,
+        "streams": 8,
+        "mean_auc": 48.515125,
+        "sd_auc": 14.867757700930275,
+        "mean_final": 76.02,
+        "best_solvent_share_q2_10": 15.277777777777777
+      }
+    },
+    "same_first_reestimate": {
+      "draws": {
+        "a00102": 5,
+        "a00493": 1,
+        "a00499": 2
+      },
+      "weighted_auc": 56.481953125000004,
+      "weighted_final": 83.94453125,
+      "unweighted_auc": 54.84325
+    },
+    "second_query_moves": {
+      "aryl": {
+        "runs": 142,
+        "axes": 5,
+        "mean_shared_levels": 0,
+        "runs_sharing_no_level": 142
+      },
+      "doyle": {
+        "runs": 80,
+        "axes": 4,
+        "mean_shared_levels": 0,
+        "runs_sharing_no_level": 80
+      },
+      "perera": {
+        "runs": 80,
+        "axes": 5,
+        "mean_shared_levels": 0,
+        "runs_sharing_no_level": 80
+      }
+    }
+  }
+}

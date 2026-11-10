@@ -1,0 +1,439 @@
+{
+  "repository": "little1d/Reasoning-BO",
+  "commit": "4df3cd64abd1be1aab533627578523610f89788c",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10276,
+      "git_blob_sha1": "d6f1961000ae80354fd0dbeff1964524eb8af627",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/README.md",
+      "local_sha256": "67427ff33538cde81ccfe2a374e95252c8a340eb79b56588e903fc9536129fd9",
+      "sanitizations": []
+    },
+    {
+      "path": "data/chemistry_data.zip",
+      "bytes": 132939,
+      "git_blob_sha1": "d62144d34dfcf9c83f8b604ccd03b386009e1701",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/data/chemistry_data.zip",
+      "local_sha256": "e504dd845bc2d02a9a4df95c168c1b4a938e6007694dd3ed2d6f259d79612712",
+      "sanitizations": []
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 935,
+      "git_blob_sha1": "90f829f8d66c5b9110c5a4a32056c8db722232b0",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/pyproject.toml",
+      "local_sha256": "3495b03d82d52d68d803e4e33650efe6cd1df2305d17bdd7324e9e09f8d17f86",
+      "sanitizations": []
+    },
+    {
+      "path": "scripts/experiment.py",
+      "bytes": 34222,
+      "git_blob_sha1": "07b196ac7683772c3656a1e29c398f5fc1cc06c5",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/scripts/experiment.py",
+      "local_sha256": "98ff5db3c41f9cedf12055f45bde553903d80e25cb157dedc8cc070796b10cf4",
+      "sanitizations": [
+        {
+          "kind": "external_webhook",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/__init__.py",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/agents/__init__.py",
+      "bytes": 154,
+      "git_blob_sha1": "f2dabbc340172ed7198f22fada6ce999d46bce86",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/agents/__init__.py",
+      "local_sha256": "c1da0053f46117ae0c70fb82cec16e50cc79227f14ff9e0984a73ee0ae0d565c",
+      "sanitizations": []
+    },
+    {
+      "path": "src/agents/kg_agent.py",
+      "bytes": 5899,
+      "git_blob_sha1": "f2c969badd758964a9b85eea64d458f90afb3f6f",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/agents/kg_agent.py",
+      "local_sha256": "1eac7405c4cdd356d3230be89ede1122c9710d5b6f03bb9a5073abd38d61d4df",
+      "sanitizations": []
+    },
+    {
+      "path": "src/agents/milvus_agent.py",
+      "bytes": 2856,
+      "git_blob_sha1": "72d7952024e4055890a36b9bbcc788fc0a483fdd",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/agents/milvus_agent.py",
+      "local_sha256": "568314008455d1fe56f7c71eedf2307c0c8c20c2978be3be904d57d67b43bf9e",
+      "sanitizations": []
+    },
+    {
+      "path": "src/agents/notes_agent.py",
+      "bytes": 13158,
+      "git_blob_sha1": "5736d00ebaf75a125fee0c6144ec7ba07066fab5",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/agents/notes_agent.py",
+      "local_sha256": "9ccc99eccb923140cc7f86f4efc9504180e71638f530ee3bd7f751c97d934925",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/__init__.py",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/__init__.py",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/models.py",
+      "bytes": 2281,
+      "git_blob_sha1": "9f9b43bde48f6c5e27ae6437ebe5d48414a207b9",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/models.py",
+      "local_sha256": "9ce4ffaf855512c25fa3c8c6efb19f67892a8ed5d5bcc4598875277554f4b040",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/reasoner/base.py",
+      "bytes": 12019,
+      "git_blob_sha1": "fcab350b551ea9a5308431219499bbd42c3cdf82",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/reasoner/base.py",
+      "local_sha256": "33baeb00e86d35ed5dd1c872b943e06851056e7761398b1040d631bac654c415",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/reasoner/deepseek.py",
+      "bytes": 281,
+      "git_blob_sha1": "07bf0f54a623fb68984e8c840f9babc64d660d8a",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/reasoner/deepseek.py",
+      "local_sha256": "3b7ef77c676db25c527198fcf89767b7f15be900c2bff2fd8ebd46875b87327a",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/reasoner/local_lm.py",
+      "bytes": 311,
+      "git_blob_sha1": "65e3d8a5ce34405945513775605fa9b26dd82b27",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/reasoner/local_lm.py",
+      "local_sha256": "c74538c21257eb6f1aa68c12bd8cbb8da0e08bb26002790f10cb42870662f807",
+      "sanitizations": []
+    },
+    {
+      "path": "src/bo/reasoner/qwq.py",
+      "bytes": 267,
+      "git_blob_sha1": "477bc164551f48c58190614859337873309f7d6b",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/bo/reasoner/qwq.py",
+      "local_sha256": "817d392f63246616e29759b16c99bf929abc7b92d98279bb77229ee03dc78ec3",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/__init__.py",
+      "bytes": 27,
+      "git_blob_sha1": "cca5d9bdf546da4569dcda7d2c0a38d3b61716ef",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/__init__.py",
+      "local_sha256": "22eef9fb0f7f9e53e69c1fea280ee761a69a1dfef1b53ac398af0de2fd96577e",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/ackley_15d_config.json",
+      "bytes": 4353,
+      "git_blob_sha1": "a43453abc5fb198e6d8380041920de3d591565dc",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/ackley_15d_config.json",
+      "local_sha256": "ec0f382872649d76456a56eade73a3a9ba172086feee347d5415e417b563f66f",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/ackley_config.json",
+      "bytes": 1279,
+      "git_blob_sha1": "a37882cf2afcf5794845b119abd103233ed9f8a0",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/ackley_config.json",
+      "local_sha256": "cebd2c573e932e52c0169dc7d1a8b22d01d8ba21cb53385ae55311d06953a062",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/buchwald_config.json",
+      "bytes": 3929,
+      "git_blob_sha1": "efb71b73d44a234c54f1565be782e41b8a1eefd7",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/buchwald_config.json",
+      "local_sha256": "602c3cb4f35b9e6c15743b843a1afba5d918b26ac1b770f59ad84308606e3477",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/config.py",
+      "bytes": 1141,
+      "git_blob_sha1": "acb835f73b5281d852fff327b2d12488d34fac70",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/config.py",
+      "local_sha256": "9d73e487e53f057ae84006cb3b0dce48fede7d51856761bd2b3a596add5b0e7e",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/cpa_config.json",
+      "bytes": 7380,
+      "git_blob_sha1": "16a0f4bdfa2fc459bcd28e9e7cd7f0d8affabf8a",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/cpa_config.json",
+      "local_sha256": "cd8d3adee4502933700dd4f5dd03776ccabd1b3a18af5e94a46a14ed31488392",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/direct_arylation_config.json",
+      "bytes": 3375,
+      "git_blob_sha1": "e403d73ed7155383b6722dfc0c2821735851c08c",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/direct_arylation_config.json",
+      "local_sha256": "ff3911fbc30a5b3c926bfd58a907e72524d3f7fff10993a8c30ef503320b4d0b",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/experiment_config.json",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/experiment_config.json",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/hartmann_config.json",
+      "bytes": 2034,
+      "git_blob_sha1": "3b60d9771573202c2cb00f1d8aea912bfa5c5699",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/hartmann_config.json",
+      "local_sha256": "d9e4b20129889897ba786626fda6049a172c5485fa1e13efcb069bfa9e8282e2",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/levy_config.json",
+      "bytes": 1849,
+      "git_blob_sha1": "1fa33df40b14154324ee18f97bb4ffefe178df20",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/levy_config.json",
+      "local_sha256": "29188cb3c8f51c2b50ad706e5662ab6eb6f5ed889409096145dffc5141376512",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/lunar_config.json",
+      "bytes": 4811,
+      "git_blob_sha1": "d8ba6bc5d3989631b9099db1a8da7dbf2a6f75c4",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/lunar_config.json",
+      "local_sha256": "856c9dcc3930ea011c15e0017ee69924b583f988446deaff1200c023fbef3f22",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/new_ackley_config.json",
+      "bytes": 1238,
+      "git_blob_sha1": "2e2b65ea1d2e41eff16de360d27f1fc3eb4f7319",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/new_ackley_config.json",
+      "local_sha256": "8fad9a572e6a67409c4cbd456ab169c57f32f7640ad38602426f9f4a6249321d",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/new_hartmann_config.json",
+      "bytes": 2073,
+      "git_blob_sha1": "4aa48f9fcf31eb3fe15631e720380b9e6424a563",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/new_hartmann_config.json",
+      "local_sha256": "909632ec840689c95734e0caba20d08cc2965b5ee8c42cbb683afcdfaa23c5ff",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/new_levy_config.json",
+      "bytes": 1817,
+      "git_blob_sha1": "2b7cdb9b29d9974e1df141b0fd757769a6400068",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/new_levy_config.json",
+      "local_sha256": "d53f6bb9f7da0f04cf432b1ad6e71eb96737f6b3be4a218d1b922c2ab31c0d52",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/new_rosenbrock_config.json",
+      "bytes": 1522,
+      "git_blob_sha1": "79def04203219a46956bd42576164e5495d8eca0",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/new_rosenbrock_config.json",
+      "local_sha256": "0dcd1af9d2b20808e13b8649c497a1b045f350b017642b8f05a6d39a116efe7a",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/rosenbrock_config.json",
+      "bytes": 1512,
+      "git_blob_sha1": "e496e5a8d1a8d1e5451b878191e3ef4e59577737",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/rosenbrock_config.json",
+      "local_sha256": "a5d7157b71e2772fa871397df1dea4fa86e2e642563a5222ec4998117e7e7ad7",
+      "sanitizations": []
+    },
+    {
+      "path": "src/config/suzuki_config.json",
+      "bytes": 3496,
+      "git_blob_sha1": "1097f61ffd49d0fc0739708332aa7a172caaf5ea",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/config/suzuki_config.json",
+      "local_sha256": "5127d5747dfb52c3ca8b4b543e09eeac0ac028ffe6e959288b2831f460be25cb",
+      "sanitizations": []
+    },
+    {
+      "path": "src/llms/__init__.py",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/llms/__init__.py",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/llms/deepseek.py",
+      "bytes": 4854,
+      "git_blob_sha1": "95157a0acf953d253639b15355e02ae1e0bc7c32",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/llms/deepseek.py",
+      "local_sha256": "f9edccf3f47461e8f3bb6b75823e3456aca4e6e04c8ebac73f2de52a3a90407b",
+      "sanitizations": []
+    },
+    {
+      "path": "src/llms/local_lm.py",
+      "bytes": 2451,
+      "git_blob_sha1": "757014d685f8c5d5f3c5a65f1f4964c669167a98",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/llms/local_lm.py",
+      "local_sha256": "c7d215bf830679588e814247dd327a1d187e2e22fdd2ef608aa0850127aed46d",
+      "sanitizations": []
+    },
+    {
+      "path": "src/llms/qwq.py",
+      "bytes": 4223,
+      "git_blob_sha1": "22bd13315e116efa1962c43527bdc38c3971daad",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/llms/qwq.py",
+      "local_sha256": "cab0f4ace095f1cc45bc2e20c71b7669e60b4f29491662df6df4583d04d6451a",
+      "sanitizations": []
+    },
+    {
+      "path": "src/prompts/__init__.py",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/prompts/__init__.py",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/prompts/agent_prompts.json",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/prompts/agent_prompts.json",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/prompts/base.py",
+      "bytes": 3016,
+      "git_blob_sha1": "c7c8da13338873bb2a5807487ce946d0ffca5b45",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/prompts/base.py",
+      "local_sha256": "9d1229c0c2d63512b4746d028e7ff19b51da9351b65df6afd29cb136a56a2088",
+      "sanitizations": []
+    },
+    {
+      "path": "src/prompts/llm_prompts.json",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/prompts/llm_prompts.json",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/prompts/test_prompts.json",
+      "bytes": 10756,
+      "git_blob_sha1": "80a82a411301a1f0d496789f70aa61cbb454cf81",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/prompts/test_prompts.json",
+      "local_sha256": "0c803bddc7e49389266135d4faf14c6a646cbd46e4f36dab590e3378b05e2c51",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/README.md",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/README.md",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/__init__.py",
+      "bytes": 409,
+      "git_blob_sha1": "47d56284e15f58591d22149e04710127198af612",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/__init__.py",
+      "local_sha256": "dd369ada0846ee191be483eede1573d1b8414f66f698c745a4fb5aa4cd4965b2",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/chemistry/chemistry.py",
+      "bytes": 7328,
+      "git_blob_sha1": "91c65c7c35bd4c875f44236636db86df4e75aa99",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/chemistry/chemistry.py",
+      "local_sha256": "caa2749606594b62846531e9fb5d418cb3d9573f406ae8ab937ad4e5bf78bc63",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/lunar/lunar.py",
+      "bytes": 3516,
+      "git_blob_sha1": "1715fa3882724add228a6f24306ab409adbcd247",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/lunar/lunar.py",
+      "local_sha256": "a61dd57f87c48203870155c0b30c09a6ddc409e54a58a4ef7ee2b0e7ccb86351",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/lunar/lunar_utils.py",
+      "bytes": 17095,
+      "git_blob_sha1": "df02468fecc4945d05377fac4ca66cdbfcd3bf40",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/lunar/lunar_utils.py",
+      "local_sha256": "c51b12bf60c69ca76c93ac2673359676441e31b1ccf8a2f4eb7f7136bd736279",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/maths/ackley.py",
+      "bytes": 4414,
+      "git_blob_sha1": "72912c5ad4a1e6f9452b40458aa1bd24042ff1ed",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/maths/ackley.py",
+      "local_sha256": "0f79e625af4b22b89b6f83489f57d97e37758c0cc3781a930f180e4c110cd7ac",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/maths/hartmann6.py",
+      "bytes": 4223,
+      "git_blob_sha1": "a00cb9f9ed6064bc50b908af2f6586d6fba754ff",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/maths/hartmann6.py",
+      "local_sha256": "8d7e2cfe78d56d5acb81fcef7eaf6136986a735af359e644161f51fafd0c5ec0",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/maths/levy.py",
+      "bytes": 3917,
+      "git_blob_sha1": "28466133448ad574c83d4b44be9e7f9e64855265",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/maths/levy.py",
+      "local_sha256": "218460b4988e197881b6918b5a6b7cce69f5b4674376d2994345a7faa80193b5",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/maths/rosenbrock.py",
+      "bytes": 3877,
+      "git_blob_sha1": "8e4fc350a201078d70500fbd85b204dfecad3b98",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/maths/rosenbrock.py",
+      "local_sha256": "6872de37d9efc78256049a57e9fbb31273c95ded62d9b4865c4d6705bf69d4ef",
+      "sanitizations": []
+    },
+    {
+      "path": "src/tasks/objective.py",
+      "bytes": 1816,
+      "git_blob_sha1": "e2e78f9a6186573c76a27ac3e443ee6565376938",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/tasks/objective.py",
+      "local_sha256": "1e17305b1147a6bc07fe168de7552d4ebb3215379d5894677fbccdd376494880",
+      "sanitizations": []
+    },
+    {
+      "path": "src/utils/jsonl.py",
+      "bytes": 1629,
+      "git_blob_sha1": "6ae3b49c5f68dcb58293ff6573ee31fd8be58424",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/utils/jsonl.py",
+      "local_sha256": "2ee1a17b3e03aa0833d5c26f87c7d4449b3c4edb5f24d1926baf2ca851739d2a",
+      "sanitizations": []
+    },
+    {
+      "path": "src/utils/metric.py",
+      "bytes": 5610,
+      "git_blob_sha1": "7f2fdf135947171e594b745180a45c7423d168bf",
+      "url": "https://raw.githubusercontent.com/little1d/Reasoning-BO/4df3cd64abd1be1aab533627578523610f89788c/src/utils/metric.py",
+      "local_sha256": "d434bf290c05151a1818416e577c6ae22d5a53ee62690f6fbd8541178a464261",
+      "sanitizations": []
+    }
+  ],
+  "omitted": [
+    "scripts/start_optimization.sh (external telemetry credential)"
+  ],
+  "execution": "Only reviewed optimizer/reasoner functions are called; no SwanLab, webhook, or DB connection is launched."
+}

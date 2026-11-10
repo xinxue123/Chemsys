@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "edition": "GitHub paper companion",
+  "datasets": {
+    "c1": {
+      "candidates": 4692,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "c2": {
+      "candidates": 4692,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "c3": {
+      "candidates": 4692,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "c4": {
+      "candidates": 4692,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "perera": {
+      "candidates": 3696,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "doyle": {
+      "candidates": 3955,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "snar": {
+      "candidates": 4096,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "hplc": {
+      "candidates": 1007,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "aryl": {
+      "candidates": 1728,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "cpa": {
+      "candidates": 1075,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "dfl": {
+      "candidates": 740,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "bor": {
+      "candidates": 1518,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    },
+    "chx": {
+      "candidates": 1536,
+      "pool_oracle_hashes_and_ID_order": "PASS"
+    }
+  },
+  "sources": {
+    "published_source_records": 250,
+    "filesystem_adaptations_documented": true,
+    "scientific_algorithm_changes": 0,
+    "Python_syntax": "PASS"
+  },
+  "results": {
+    "development_trajectories": 160,
+    "development_method_task_cells": 40,
+    "heldout_model_pairs": 288,
+    "Table_4_rows": 12,
+    "knowledge_hypotheses": 99,
+    "comparative_contrasts": 68,
+    "Table_6_rows": 11,
+    "scope": "Arithmetic from published derived curves and tables; raw decision chains, GP fitting and LLM execution are not replayed."
+  },
+  "credentials": "PASS",
+  "manifest": "PASS",
+  "raw_native_replay": false,
+  "new_model_calls": 0,
+  "new_GP_fits": 0,
+  "new_experimental_queries": 0,
+  "publication_security_scan": "PASS",
+  "authored_document_links": "PASS",
+  "full_local_package_unchanged": true
+}
