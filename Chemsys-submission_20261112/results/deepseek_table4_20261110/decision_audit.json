@@ -1,0 +1,9 @@
+{
+  "status": "PASS_DECISION_ARRAY_AUDIT",
+  "trajectories_seen": 96,
+  "complete_trajectories": 96,
+  "post_start_decisions_checked": 1824,
+  "source_recipe_own_prefix_only": true,
+  "unqueried_only": true,
+  "MC_samples": 512
+}

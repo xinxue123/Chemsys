@@ -1,0 +1,161 @@
+task,seed,method,SearchAUC,final_best,first_value,first_final_best_query,post_first_logical_LLM_calls,objective_unit,ln_sum_cumulative_best,state_path
+c1,0,bo,58.983252143859865,89.56900024414062,0.0,19,0,simulated yield percent,7.072985815194799,experiments/runs/cold0_20261102/runs/c1_bo/state.json
+c1,0,first,74.70830574035645,88.4963150024414,49.01631164550781,18,0,simulated yield percent,7.309323547468419,experiments/runs/grounded_first_start_20261105/runs/c1/state.json
+c1,0,hyp,70.18583793640137,89.56900024414062,49.01631164550781,20,3,simulated yield percent,7.246878825436046,experiments/runs/hypothesis_scope_loop_20261105/runs/c1/state.json
+c1,1,bo,53.44835081100464,88.4963150024414,14.859441757202148,19,0,simulated yield percent,6.974448055750235,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c1_bo/state.json
+c1,1,first,73.21754398345948,89.56900024414062,49.01631164550781,18,0,simulated yield percent,7.289167337709718,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c1_first/state.json
+c1,1,hyp,71.15779991149903,89.56900024414062,49.01631164550781,19,3,simulated yield percent,7.260632218384899,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c1_hyp/state.json
+c1,2,bo,61.74433183670044,89.56900024414062,8.001569747924805,14,0,simulated yield percent,7.1187344527307115,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c1_bo/state.json
+c1,2,first,75.43650093078614,89.56900024414062,49.01631164550781,19,0,simulated yield percent,7.319023528655922,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c1_first/state.json
+c1,2,hyp,73.95935325622558,89.56900024414062,49.01631164550781,19,3,simulated yield percent,7.299247935527186,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c1_hyp/state.json
+c1,3,bo,64.61970028877258,89.56900024414062,12.895298957824707,18,0,simulated yield percent,7.164251595882834,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c1_bo/state.json
+c1,3,first,67.09859447479248,89.56900024414062,49.01631164550781,17,0,simulated yield percent,7.201895370587837,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c1_first/state.json
+c1,3,hyp,70.10494842529297,89.56900024414062,49.01631164550781,12,3,simulated yield percent,7.245725656048803,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c1_hyp/state.json
+c2,0,bo,19.077569699287416,40.0853157043457,1.809207201004028,19,0,simulated yield percent,5.9442455572101585,experiments/runs/cold0_20261102/runs/c2_bo/state.json
+c2,0,first,28.399120712280272,40.0853157043457,19.700252532958984,13,0,simulated yield percent,6.342090457406653,experiments/runs/grounded_first_start_20261105/runs/c2/state.json
+c2,0,hyp,32.00172309875488,40.0853157043457,19.700252532958984,10,3,simulated yield percent,6.461522021740119,experiments/runs/hypothesis_scope_loop_20261105/runs/c2/state.json
+c2,1,bo,27.87757897377014,40.0853157043457,8.984981536865234,12,0,simulated yield percent,6.323555018293024,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c2_bo/state.json
+c2,1,first,33.96979675292969,40.0853157043457,19.700252532958984,7,0,simulated yield percent,6.521204072574339,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c2_first/state.json
+c2,1,hyp,32.00172309875488,40.0853157043457,19.700252532958984,10,3,simulated yield percent,6.461522021740119,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c2_hyp/state.json
+c2,2,bo,33.26583956480026,40.0853157043457,1.0385797023773193,7,0,simulated yield percent,6.50026330511266,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c2_bo/state.json
+c2,2,first,33.96979675292969,40.0853157043457,19.700252532958984,7,0,simulated yield percent,6.521204072574339,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c2_first/state.json
+c2,2,hyp,34.48616762161255,40.0853157043457,19.700252532958984,7,3,simulated yield percent,6.5362905786899885,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c2_hyp/state.json
+c2,3,bo,20.95028548538685,40.0853157043457,0.3440190255641937,12,0,simulated yield percent,6.037884546816731,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c2_bo/state.json
+c2,3,first,32.28502836227417,40.0853157043457,19.700252532958984,9,0,simulated yield percent,6.4703358781289895,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c2_first/state.json
+c2,3,hyp,30.581278610229493,40.0853157043457,19.700252532958984,11,3,simulated yield percent,6.416120285156922,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c2_hyp/state.json
+c3,0,bo,70.07096300125122,89.6449966430664,10.319856643676758,19,0,simulated yield percent,7.245240759259308,experiments/runs/cold0_20261102/runs/c3_bo/state.json
+c3,0,first,87.77775382995605,89.6449966430664,84.08183288574219,20,0,simulated yield percent,7.4705403688555165,experiments/runs/grounded_first_start_20261105/runs/c3/state.json
+c3,0,hyp,87.77775382995605,89.6449966430664,84.08183288574219,20,3,simulated yield percent,7.4705403688555165,experiments/runs/hypothesis_scope_loop_20261105/runs/c3/state.json
+c3,1,bo,83.3519189119339,88.34562683105469,5.539583683013916,5,0,simulated yield percent,7.418803904824523,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c3_bo/state.json
+c3,1,first,88.91106224060059,90.70992279052734,84.08183288574219,16,0,simulated yield percent,7.483368842984926,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c3_first/state.json
+c3,1,hyp,88.91106224060059,90.70992279052734,84.08183288574219,16,3,simulated yield percent,7.483368842984926,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c3_hyp/state.json
+c3,2,bo,59.24462547302246,89.6449966430664,19.73282814025879,11,0,simulated yield percent,7.077407340138816,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c3_bo/state.json
+c3,2,first,88.7169033050537,89.6449966430664,84.08183288574219,10,0,simulated yield percent,7.481182711850935,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c3_first/state.json
+c3,2,hyp,88.7169033050537,89.6449966430664,84.08183288574219,10,3,simulated yield percent,7.481182711850935,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c3_hyp/state.json
+c3,3,bo,86.17068748474121,89.6449966430664,76.18229675292969,10,0,simulated yield percent,7.4520623410115245,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c3_bo/state.json
+c3,3,first,89.12982902526855,90.70992279052734,84.08183288574219,14,0,simulated yield percent,7.485826333432335,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c3_first/state.json
+c3,3,hyp,89.098193359375,90.70992279052734,84.08183288574219,11,3,simulated yield percent,7.485471331274958,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c3_hyp/state.json
+c4,0,bo,92.84635009765626,96.51583099365234,84.43182373046875,13,0,simulated yield percent,7.526678250915615,experiments/runs/cold0_20261102/runs/c4_bo/state.json
+c4,0,first,88.04708786010742,96.23372650146484,72.24531555175781,19,0,simulated yield percent,7.473604034242359,experiments/runs/grounded_first_start_20261105/runs/c4/state.json
+c4,0,hyp,88.2182014465332,95.62606811523438,72.24531555175781,18,3,simulated yield percent,7.475545580883236,experiments/runs/hypothesis_scope_loop_20261105/runs/c4/state.json
+c4,1,bo,83.11523008346558,95.02649688720703,9.664915084838867,11,0,simulated yield percent,7.415960232791996,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c4_bo/state.json
+c4,1,first,94.44279441833496,96.23372650146484,72.24531555175781,11,0,simulated yield percent,7.543726574684828,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c4_first/state.json
+c4,1,hyp,94.44279441833496,96.23372650146484,72.24531555175781,11,3,simulated yield percent,7.543726574684828,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/c4_hyp/state.json
+c4,2,bo,93.62309799194335,96.51583099365234,85.00672912597656,12,0,simulated yield percent,7.535009400012184,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c4_bo/state.json
+c4,2,first,88.8846649169922,96.23372650146484,72.24531555175781,18,0,simulated yield percent,7.483071903072765,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c4_first/state.json
+c4,2,hyp,88.8846649169922,96.23372650146484,72.24531555175781,18,3,simulated yield percent,7.483071903072765,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/c4_hyp/state.json
+c4,3,bo,89.25287590026855,95.62606811523438,65.95784759521484,18,0,simulated yield percent,7.487205916666787,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c4_bo/state.json
+c4,3,first,84.90334205627441,95.6003189086914,72.24531555175781,20,0,simulated yield percent,7.437245730716955,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c4_first/state.json
+c4,3,hyp,84.90334205627441,95.6003189086914,72.24531555175781,20,2,simulated yield percent,7.437245730716955,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/c4_hyp/state.json
+doyle,0,bo,67.95428734849999,83.93941968,47.67937659,14,0,reported experimental reaction yield percent,7.214567507797195,experiments/runs/cold0_20261102/runs/doyle_bo/state.json
+doyle,0,first,67.95428734849999,83.93941968,47.67937659,14,0,reported experimental reaction yield percent,7.214567507797195,experiments/runs/grounded_first_start_20261105/runs/doyle/state.json
+doyle,0,hyp,89.645473257,94.54981251,47.67937659,6,3,reported experimental reaction yield percent,7.491594978822206,experiments/runs/hypothesis_scope_loop_20261105/runs/doyle/state.json
+doyle,1,bo,75.37000354350002,86.23315653,23.19251783,14,0,reported experimental reaction yield percent,7.3181416384240965,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/doyle_bo/state.json
+doyle,1,first,77.48915737899998,85.53405964,47.67937659,18,0,reported experimental reaction yield percent,7.3458702953386075,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/doyle_first/state.json
+doyle,1,hyp,93.73222300500001,98.84920594,47.67937659,3,3,reported experimental reaction yield percent,7.536174299144124,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/doyle_hyp/state.json
+doyle,2,bo,85.71658218750001,99.03446213,33.0062022,16,0,reported experimental reaction yield percent,7.44677857154342,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/doyle_bo/state.json
+doyle,2,first,69.05726767000002,80.13587028,47.67937659,9,0,reported experimental reaction yield percent,7.2306684001516155,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/doyle_first/state.json
+doyle,2,hyp,53.594238315,55.565858889999994,47.67937659,6,3,reported experimental reaction yield percent,6.977173841729706,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/doyle_hyp/state.json
+doyle,3,bo,83.56542525800002,99.61910732,38.91690391,20,0,reported experimental reaction yield percent,7.4213621346306535,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/doyle_bo/state.json
+doyle,3,first,78.981239175,94.69105416,47.67937659,19,0,reported experimental reaction yield percent,7.364942619020989,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/doyle_first/state.json
+doyle,3,hyp,86.72573240400001,93.74857618,47.67937659,16,3,reported experimental reaction yield percent,7.458482911505307,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/doyle_hyp/state.json
+hplc,0,bo,1796.4752484999997,1914.92896,1125.23755,4,0,peak area (source arbitrary units),10.489314102389496,experiments/runs/cold0_20261102/runs/hplc_bo/state.json
+hplc,0,first,1548.3804635000001,2097.93604,92.85756,16,0,peak area (source arbitrary units),10.340697074960113,experiments/runs/grounded_first_start_20261105/runs/hplc/state.json
+hplc,0,hyp,1548.3804635000001,2097.93604,92.85756,16,3,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_loop_20261105/runs/hplc/state.json
+hplc,1,bo,1656.9491819999998,2206.26367,346.01578,9,0,peak area (source arbitrary units),10.408465621831926,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/hplc_bo/state.json
+hplc,1,first,1548.3804635000001,2097.93604,92.85756,16,0,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/hplc_first/state.json
+hplc,1,hyp,1548.3804635000001,2097.93604,92.85756,16,3,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/hplc_hyp/state.json
+hplc,2,bo,1447.8822315,1791.95044,81.96245,16,0,peak area (source arbitrary units),10.273589511355024,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/hplc_bo/state.json
+hplc,2,first,1548.3804635000001,2097.93604,92.85756,16,0,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/hplc_first/state.json
+hplc,2,hyp,1548.3804635000001,2097.93604,92.85756,16,3,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/hplc_hyp/state.json
+hplc,3,bo,1681.919805,2103.95093,178.48611,12,0,peak area (source arbitrary units),10.42342343459114,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/hplc_bo/state.json
+hplc,3,first,1548.3804635000001,2097.93604,92.85756,16,0,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/hplc_first/state.json
+hplc,3,hyp,1548.3804635000001,2097.93604,92.85756,16,3,peak area (source arbitrary units),10.340697074960113,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/hplc_hyp/state.json
+perera,0,bo,87.72650000000002,93.69,69.04,20,0,UV chromatographic product area percent,7.469956293765658,experiments/runs/cold0_20261102/runs/perera_bo/state.json
+perera,0,first,92.35549999999998,95.8,89.74,17,0,UV chromatographic product area percent,7.521377534462666,experiments/runs/grounded_first_start_20261105/runs/perera/state.json
+perera,0,hyp,92.35549999999998,95.8,89.74,17,2,UV chromatographic product area percent,7.521377534462666,experiments/runs/hypothesis_scope_loop_20261105/runs/perera/state.json
+perera,1,bo,90.77799999999999,96.74,67.92,14,0,UV chromatographic product area percent,7.504149239055194,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/perera_bo/state.json
+perera,1,first,93.88,94.74,89.74,5,0,UV chromatographic product area percent,7.537749644536814,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/perera_first/state.json
+perera,1,hyp,91.904,92.27,89.74,5,3,UV chromatographic product area percent,7.516476827539695,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/perera_hyp/state.json
+perera,2,bo,94.60799999999999,95.49,92.03,19,0,UV chromatographic product area percent,7.545474312632465,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/perera_bo/state.json
+perera,2,first,92.37249999999999,93.79,89.74,8,0,UV chromatographic product area percent,7.521561588856672,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/perera_first/state.json
+perera,2,hyp,92.37249999999999,93.79,89.74,8,3,UV chromatographic product area percent,7.521561588856672,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/perera_hyp/state.json
+perera,3,bo,91.03299999999999,93.79,48.4,7,0,UV chromatographic product area percent,7.506954351696442,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/perera_bo/state.json
+perera,3,first,91.2765,93.78,89.74,20,0,UV chromatographic product area percent,7.509625634814396,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/perera_first/state.json
+perera,3,hyp,91.2765,93.78,89.74,20,3,UV chromatographic product area percent,7.509625634814396,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/perera_hyp/state.json
+snar,0,bo,8189.135120962375,11559.605121586614,3366.097061192545,11,0,kg m^-3 h^-1,12.006295842988743,experiments/runs/cold0_20261102/runs/snar_bo/state.json
+snar,0,first,9931.420781018041,11509.90563280664,3556.0432331465936,14,0,kg m^-3 h^-1,12.19919110001771,experiments/runs/grounded_first_start_20261105/runs/snar/state.json
+snar,0,hyp,9933.905755457039,11559.605121586614,3556.0432331465936,20,3,kg m^-3 h^-1,12.199441282107333,experiments/runs/hypothesis_scope_loop_20261105/runs/snar/state.json
+snar,1,bo,8327.944293785022,11559.605121586614,1843.0622221213264,16,0,kg m^-3 h^-1,12.02310419479965,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/snar_bo/state.json
+snar,1,first,9360.56455696002,10938.297984808696,3556.0432331465936,8,0,kg m^-3 h^-1,12.139993157121229,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/snar_first/state.json
+snar,1,hyp,9360.56455696002,10938.297984808696,3556.0432331465936,8,3,kg m^-3 h^-1,12.139993157121229,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s1/snar_hyp/state.json
+snar,2,bo,10313.453872427543,11559.605121586614,9954.748918207855,20,0,kg m^-3 h^-1,12.236936796639617,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/snar_bo/state.json
+snar,2,first,10115.584607182356,11559.605121586614,3556.0432331465936,5,0,kg m^-3 h^-1,12.217564817549214,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/snar_first/state.json
+snar,2,hyp,10115.584607182356,11559.605121586614,3556.0432331465936,5,3,kg m^-3 h^-1,12.217564817549214,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s2/snar_hyp/state.json
+snar,3,bo,7456.318174054855,10938.297984808696,1554.8363116728528,11,0,kg m^-3 h^-1,11.912549302567786,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/snar_bo/state.json
+snar,3,first,10008.69191762021,11559.605121586614,3556.0432331465936,19,0,kg m^-3 h^-1,12.206941459763783,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/snar_first/state.json
+snar,3,hyp,10008.69191762021,11559.605121586614,3556.0432331465936,19,3,kg m^-3 h^-1,12.206941459763783,experiments/runs/hypothesis_scope_multiseed_20261105/runs/s3/snar_hyp/state.json
+c1,0,lgbo,69.49584465026855,88.4963150024414,49.01631164550781,20,19,simulated yield percent,7.236999235132522,experiments/runs/grounded_baselines_20261105/runs/s0/c1_lgbo/state.json
+c1,0,rbo,72.72618293762207,88.4963150024414,49.01631164550781,18,19,simulated yield percent,7.282433743703581,experiments/runs/grounded_baselines_20261105/runs/s0/c1_rbo/state.json
+c1,1,lgbo,74.54131336212158,88.4963150024414,49.01631164550781,18,19,simulated yield percent,7.30708578701148,experiments/runs/grounded_baselines_20261105/runs/s1/c1_lgbo/state.json
+c1,1,rbo,71.69167022705078,89.56900024414062,49.01631164550781,18,19,simulated yield percent,7.268106839055746,experiments/runs/grounded_baselines_20261105/runs/s1/c1_rbo/state.json
+c1,2,lgbo,73.63837471008301,89.56900024414062,49.01631164550781,17,19,simulated yield percent,7.29489855892684,experiments/runs/grounded_baselines_20261105/runs/s2/c1_lgbo/state.json
+c1,2,rbo,71.2637565612793,89.56900024414062,49.01631164550781,17,19,simulated yield percent,7.2621201486105305,experiments/runs/grounded_baselines_20261105/runs/s2/c1_rbo/state.json
+c1,3,lgbo,81.29755973815918,89.56900024414062,49.01631164550781,8,19,simulated yield percent,7.3938482741364835,experiments/runs/grounded_baselines_20261105/runs/s3/c1_lgbo/state.json
+c1,3,rbo,73.50488777160645,89.56900024414062,49.01631164550781,18,19,simulated yield percent,7.2930841778557,experiments/runs/grounded_baselines_20261105/runs/s3/c1_rbo/state.json
+c2,0,lgbo,34.040229415893556,40.0853157043457,19.700252532958984,8,19,simulated yield percent,6.5232753168337965,experiments/runs/grounded_baselines_20261105/runs/s0/c2_lgbo/state.json
+c2,0,rbo,32.83936195373535,40.0853157043457,19.700252532958984,9,19,simulated yield percent,6.487360129013279,experiments/runs/grounded_baselines_20261105/runs/s0/c2_rbo/state.json
+c2,1,lgbo,33.67700080871582,40.0853157043457,19.700252532958984,8,19,simulated yield percent,6.512547409340512,experiments/runs/grounded_baselines_20261105/runs/s1/c2_lgbo/state.json
+c2,1,rbo,34.49565830230713,40.0853157043457,19.700252532958984,7,19,simulated yield percent,6.536565743362056,experiments/runs/grounded_baselines_20261105/runs/s1/c2_rbo/state.json
+c2,2,lgbo,29.38990182876587,40.0853157043457,19.700252532958984,12,19,simulated yield percent,6.376383413685461,experiments/runs/grounded_baselines_20261105/runs/s2/c2_lgbo/state.json
+c2,2,rbo,34.49565830230713,40.0853157043457,19.700252532958984,7,19,simulated yield percent,6.536565743362056,experiments/runs/grounded_baselines_20261105/runs/s2/c2_rbo/state.json
+c2,3,lgbo,28.243317794799804,40.0853157043457,19.700252532958984,14,19,simulated yield percent,6.336589164929685,experiments/runs/grounded_baselines_20261105/runs/s3/c2_lgbo/state.json
+c2,3,rbo,30.237031364440917,40.0853157043457,19.700252532958984,11,19,simulated yield percent,6.404799650881102,experiments/runs/grounded_baselines_20261105/runs/s3/c2_rbo/state.json
+c3,0,lgbo,86.62162399291992,89.6449966430664,84.08183288574219,15,19,simulated yield percent,7.457281757639899,experiments/runs/grounded_baselines_20261105/runs/s0/c3_lgbo/state.json
+c3,0,rbo,88.77800712585449,89.3839340209961,84.08183288574219,4,19,simulated yield percent,7.481871225375817,experiments/runs/grounded_baselines_20261105/runs/s0/c3_rbo/state.json
+c3,1,lgbo,87.4735263824463,89.6449966430664,84.08183288574219,10,19,simulated yield percent,7.467068465509186,experiments/runs/grounded_baselines_20261105/runs/s1/c3_lgbo/state.json
+c3,1,rbo,89.16082725524902,90.70992279052734,84.08183288574219,10,19,simulated yield percent,7.486174060351283,experiments/runs/grounded_baselines_20261105/runs/s1/c3_rbo/state.json
+c3,2,lgbo,86.35293846130371,89.6449966430664,84.08183288574219,18,19,simulated yield percent,7.454175107229567,experiments/runs/grounded_baselines_20261105/runs/s2/c3_lgbo/state.json
+c3,2,rbo,89.76308135986328,90.70992279052734,84.08183288574219,5,19,simulated yield percent,7.492906043614637,experiments/runs/grounded_baselines_20261105/runs/s2/c3_rbo/state.json
+c3,3,lgbo,86.25233154296875,89.11766052246094,84.08183288574219,20,19,simulated yield percent,7.453009361482338,experiments/runs/grounded_baselines_20261105/runs/s3/c3_lgbo/state.json
+c3,3,rbo,89.44462890625,90.70992279052734,84.08183288574219,9,19,simulated yield percent,7.489352035940109,experiments/runs/grounded_baselines_20261105/runs/s3/c3_rbo/state.json
+c4,0,lgbo,86.48866386413575,95.51268005371094,72.24531555175781,19,19,simulated yield percent,7.455745625309746,experiments/runs/grounded_baselines_20261105/runs/s0/c4_lgbo/state.json
+c4,0,rbo,87.20243453979492,95.92137145996094,72.24531555175781,16,19,simulated yield percent,7.463964523113542,experiments/runs/grounded_baselines_20261105/runs/s0/c4_rbo/state.json
+c4,1,lgbo,87.1845531463623,96.0889892578125,72.24531555175781,19,19,simulated yield percent,7.463759445960337,experiments/runs/grounded_baselines_20261105/runs/s1/c4_lgbo/state.json
+c4,1,rbo,93.48633499145508,96.23372650146484,72.24531555175781,9,19,simulated yield percent,7.533547549343696,experiments/runs/grounded_baselines_20261105/runs/s1/c4_rbo/state.json
+c4,2,lgbo,89.73206672668456,96.51583099365234,72.24531555175781,9,19,simulated yield percent,7.4925604673267205,experiments/runs/grounded_baselines_20261105/runs/s2/c4_lgbo/state.json
+c4,2,rbo,89.2479377746582,96.23372650146484,72.24531555175781,14,19,simulated yield percent,7.487150587780493,experiments/runs/grounded_baselines_20261105/runs/s2/c4_rbo/state.json
+c4,3,lgbo,91.0416145324707,95.92137145996094,72.24531555175781,18,19,simulated yield percent,7.5070489780945175,experiments/runs/grounded_baselines_20261105/runs/s3/c4_lgbo/state.json
+c4,3,rbo,86.98656311035157,96.51583099365234,72.24531555175781,16,19,simulated yield percent,7.461485933272954,experiments/runs/grounded_baselines_20261105/runs/s3/c4_rbo/state.json
+perera,0,lgbo,92.28049999999999,92.65,89.74,20,19,UV chromatographic product area percent,7.520565125137019,experiments/runs/grounded_baselines_20261105/runs/s0/perera_lgbo/state.json
+perera,0,rbo,97.64500000000001,100.0,89.74,6,19,UV chromatographic product area percent,7.577070726288737,experiments/runs/grounded_baselines_20261105/runs/s0/perera_rbo/state.json
+perera,1,lgbo,92.76249999999999,97.29,89.74,18,19,UV chromatographic product area percent,7.525774736850243,experiments/runs/grounded_baselines_20261105/runs/s1/perera_lgbo/state.json
+perera,1,rbo,91.48299999999999,92.52,89.74,14,19,UV chromatographic product area percent,7.511885436224203,experiments/runs/grounded_baselines_20261105/runs/s1/perera_rbo/state.json
+perera,2,lgbo,90.8215,93.44,89.74,18,19,UV chromatographic product area percent,7.504628315273267,experiments/runs/grounded_baselines_20261105/runs/s2/perera_lgbo/state.json
+perera,2,rbo,94.27650000000001,96.38,89.74,9,19,UV chromatographic product area percent,7.5419642274708005,experiments/runs/grounded_baselines_20261105/runs/s2/perera_rbo/state.json
+perera,3,lgbo,92.9665,96.3,89.74,18,19,UV chromatographic product area percent,7.527971486760457,experiments/runs/grounded_baselines_20261105/runs/s3/perera_lgbo/state.json
+perera,3,rbo,90.56799999999998,91.58,89.74,12,19,UV chromatographic product area percent,7.5018332233297995,experiments/runs/grounded_baselines_20261105/runs/s3/perera_rbo/state.json
+doyle,0,lgbo,89.06601816100002,94.54981251,47.67937659,14,19,reported experimental reaction yield percent,7.4851101453953675,experiments/runs/grounded_baselines_20261105/runs/s0/doyle_lgbo/state.json
+doyle,0,rbo,74.25865411449999,88.40427326,47.67937659,19,19,reported experimental reaction yield percent,7.303286598175581,experiments/runs/grounded_baselines_20261105/runs/s0/doyle_rbo/state.json
+doyle,1,lgbo,93.73222300500001,98.84920594,47.67937659,3,19,reported experimental reaction yield percent,7.536174299144124,experiments/runs/grounded_baselines_20261105/runs/s1/doyle_lgbo/state.json
+doyle,1,rbo,73.92316021899998,83.29437838,47.67937659,7,19,reported experimental reaction yield percent,7.298758451853995,experiments/runs/grounded_baselines_20261105/runs/s1/doyle_rbo/state.json
+doyle,2,lgbo,75.0104186025,96.59121826,47.67937659,14,19,reported experimental reaction yield percent,7.313359292142548,experiments/runs/grounded_baselines_20261105/runs/s2/doyle_lgbo/state.json
+doyle,2,rbo,76.0050060585,87.75322874,47.67937659,18,19,reported experimental reaction yield percent,7.326531480861831,experiments/runs/grounded_baselines_20261105/runs/s2/doyle_rbo/state.json
+doyle,3,lgbo,83.75559343200001,87.76406197,47.67937659,3,19,reported experimental reaction yield percent,7.423635229276759,experiments/runs/grounded_baselines_20261105/runs/s3/doyle_lgbo/state.json
+doyle,3,rbo,64.85426886900002,82.13737482,47.67937659,15,19,reported experimental reaction yield percent,7.167875008965683,experiments/runs/grounded_baselines_20261105/runs/s3/doyle_rbo/state.json
+snar,0,lgbo,9705.69655890042,10938.297984808696,3556.0432331465936,6,19,kg m^-3 h^-1,12.176200539780954,experiments/runs/grounded_baselines_20261105/runs/s0/snar_lgbo/state.json
+snar,0,rbo,10354.669041229463,11559.605121586614,3556.0432331465936,9,19,kg m^-3 h^-1,12.240925085620317,experiments/runs/grounded_baselines_20261105/runs/s0/snar_rbo/state.json
+snar,1,lgbo,9607.481897324638,10938.297984808696,3556.0432331465936,6,19,kg m^-3 h^-1,12.166029711767914,experiments/runs/grounded_baselines_20261105/runs/s1/snar_lgbo/state.json
+snar,1,rbo,8986.207687086284,10938.297984808696,3556.0432331465936,10,19,kg m^-3 h^-1,12.09917847521239,experiments/runs/grounded_baselines_20261105/runs/s1/snar_rbo/state.json
+snar,2,lgbo,9641.317388625701,10938.297984808696,3556.0432331465936,7,19,kg m^-3 h^-1,12.169545310392781,experiments/runs/grounded_baselines_20261105/runs/s2/snar_lgbo/state.json
+snar,2,rbo,9050.586857361002,10938.297984808696,3556.0432331465936,9,19,kg m^-3 h^-1,12.106317154262783,experiments/runs/grounded_baselines_20261105/runs/s2/snar_rbo/state.json
+snar,3,lgbo,9705.69655890042,10938.297984808696,3556.0432331465936,6,19,kg m^-3 h^-1,12.176200539780954,experiments/runs/grounded_baselines_20261105/runs/s3/snar_lgbo/state.json
+snar,3,rbo,9889.07614974632,10938.297984808696,3556.0432331465936,6,19,kg m^-3 h^-1,12.194918281243956,experiments/runs/grounded_baselines_20261105/runs/s3/snar_rbo/state.json
+hplc,0,lgbo,1782.7838580000002,2360.53809,92.85756,14,19,peak area (source arbitrary units),10.48166366028879,experiments/runs/grounded_baselines_20261105/runs/s0/hplc_lgbo/state.json
+hplc,0,rbo,669.0844240000001,1323.07825,92.85756,20,19,peak area (source arbitrary units),9.501642520040267,experiments/runs/grounded_baselines_20261105/runs/s0/hplc_rbo/state.json
+hplc,1,lgbo,2028.7382389999998,2569.87964,92.85756,19,19,peak area (source arbitrary units),10.610901595200247,experiments/runs/grounded_baselines_20261105/runs/s1/hplc_lgbo/state.json
+hplc,1,rbo,668.6072450000001,1313.53467,92.85756,15,19,peak area (source arbitrary units),9.500929083556661,experiments/runs/grounded_baselines_20261105/runs/s1/hplc_rbo/state.json
+hplc,2,lgbo,1904.4443995000001,2419.6665,92.85756,10,19,peak area (source arbitrary units),10.547677864769776,experiments/runs/grounded_baselines_20261105/runs/s2/hplc_lgbo/state.json
+hplc,2,rbo,602.2698480000001,1437.46814,92.85756,19,19,peak area (source arbitrary units),9.396437870919371,experiments/runs/grounded_baselines_20261105/runs/s2/hplc_rbo/state.json
+hplc,3,lgbo,1403.7991574999996,1882.65906,92.85756,15,19,peak area (source arbitrary units),10.242669797693415,experiments/runs/grounded_baselines_20261105/runs/s3/hplc_lgbo/state.json
+hplc,3,rbo,1136.571223,1720.45679,92.85756,12,19,peak area (source arbitrary units),10.03150358360274,experiments/runs/grounded_baselines_20261105/runs/s3/hplc_rbo/state.json

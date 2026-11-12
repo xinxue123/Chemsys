@@ -1,0 +1,25 @@
+{
+  "task": "perera",
+  "full_task": "Perera_Suzuki",
+  "candidates": 3696,
+  "objective_unit": "UV chromatographic product area percent",
+  "axes": [
+    "Electrophile_SMILES",
+    "Nucleophile_SMILES",
+    "Ligand_SMILES",
+    "Base_SMILES",
+    "Solvent_SMILES"
+  ],
+  "input_kinds": [
+    "categorical",
+    "categorical",
+    "categorical",
+    "categorical",
+    "categorical"
+  ],
+  "pool_source": "experiments/datasets/reasoning_bo/Perera_Suzuki/pool.json",
+  "input_sha256": "8381f44db7b0ef83a110bfef57c00faff2de76825575adbd280db83b19c45598",
+  "oracle_sha256": "b6450d0c4d7d84d853d7ffa9055ca5422602bc9e2c9fd8b84ff8859201bbe5c1",
+  "objective_scale": 100.0,
+  "export": "Post-hoc full-table inspection only; never exposed to LLM decisions"
+}

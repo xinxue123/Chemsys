@@ -1,0 +1,278 @@
+{
+  "controller_post_first_usage": {
+    "requests": 24,
+    "total_tokens": 325186
+  },
+  "arms": {
+    "lgbo": {
+      "mean_auc": 54.850375,
+      "sd_auc": 16.32066645993443,
+      "mean_final": 75.89125
+    },
+    "h1": {
+      "mean_auc": 68.1238125,
+      "sd_auc": 15.11588515421891,
+      "mean_final": 89.29875
+    },
+    "first": {
+      "mean_auc": 48.0021875,
+      "sd_auc": 18.29707090910123,
+      "mean_final": 78.78375
+    },
+    "bo": {
+      "mean_auc": 76.0489375,
+      "sd_auc": 12.506353749301931,
+      "mean_final": 89.66125
+    }
+  },
+  "primary": {
+    "contrast": "controller - LGBO",
+    "mean_auc": 13.273437499999996,
+    "interval90": [
+      4.218652968481175,
+      22.32822203151882
+    ],
+    "up": 7,
+    "down": 1,
+    "sign_flip_p": 0.03125,
+    "mean_final": 13.407499999999997,
+    "by_stream": [
+      2.902,
+      8.079,
+      32.505,
+      21.788,
+      13.294,
+      1.028,
+      -3.322,
+      29.912
+    ]
+  },
+  "registered_reading": "controller ahead",
+  "secondary": [
+    {
+      "contrast": "LGBO - same-first BO",
+      "mean_auc": 6.848187500000002,
+      "interval90": [
+        -5.16366085379175,
+        18.860035853791754
+      ],
+      "up": 6,
+      "down": 2,
+      "sign_flip_p": 0.328125,
+      "mean_final": -2.8924999999999974,
+      "by_stream": [
+        17.327,
+        32.307,
+        -28.14,
+        10.204,
+        10.68,
+        6.989,
+        12.924,
+        -7.505
+      ]
+    },
+    {
+      "contrast": "LGBO - pure BO",
+      "mean_auc": -21.1985625,
+      "interval90": [
+        -39.19239224998417,
+        -3.204732750015836
+      ],
+      "up": 1,
+      "down": 7,
+      "sign_flip_p": 0.046875,
+      "mean_final": -13.769999999999996,
+      "by_stream": [
+        -34.058,
+        11.646,
+        -36.645,
+        -74.05,
+        -7.896,
+        -3.793,
+        -20.775,
+        -4.016
+      ]
+    }
+  ],
+  "lgbo_modes": {
+    "region": 150,
+    "point": 2
+  },
+  "lgbo_changed_from_BO": 95,
+  "lgbo_decisions": 152,
+  "lgbo_best_solvent_share_q2_10": 15.277777777777779,
+  "running_best": {
+    "lgbo": [
+      0.2,
+      24.1,
+      30.16,
+      36.84,
+      39.72,
+      40.33,
+      48.85,
+      52.16,
+      55.93,
+      61.29,
+      62.74,
+      65.22,
+      67.35,
+      67.93,
+      68.24,
+      74.11,
+      74.73,
+      75.31,
+      75.89,
+      75.89
+    ],
+    "h1": [
+      0.2,
+      31.17,
+      42.76,
+      50.56,
+      53.59,
+      55.61,
+      57.96,
+      64.89,
+      66.24,
+      74.78,
+      75.97,
+      84.93,
+      86.03,
+      87.18,
+      87.18,
+      88.1,
+      88.2,
+      88.7,
+      89.13,
+      89.3
+    ],
+    "first": [
+      0.2,
+      1.7,
+      15.17,
+      21.14,
+      23.0,
+      31.17,
+      34.95,
+      43.15,
+      44.46,
+      50.7,
+      62.53,
+      63.3,
+      67.38,
+      67.38,
+      68.51,
+      69.22,
+      69.24,
+      70.45,
+      77.62,
+      78.78
+    ],
+    "bo": [
+      34.99,
+      47.9,
+      60.38,
+      61.65,
+      66.29,
+      73.3,
+      79.86,
+      81.75,
+      82.31,
+      82.33,
+      82.33,
+      83.19,
+      83.19,
+      83.31,
+      84.65,
+      85.09,
+      85.09,
+      86.86,
+      86.86,
+      89.66
+    ]
+  },
+  "by_stream": [
+    {
+      "stream": 0,
+      "first": "a00499",
+      "lgbo": 53.851,
+      "controller": 56.753,
+      "same_first": 36.524,
+      "lgbo_final": 91.19,
+      "controller_final": 66.9
+    },
+    {
+      "stream": 1,
+      "first": "a00102",
+      "lgbo": 75.194,
+      "controller": 83.273,
+      "same_first": 42.887,
+      "lgbo_final": 86.14,
+      "controller_final": 100.0
+    },
+    {
+      "stream": 2,
+      "first": "a00102",
+      "lgbo": 40.123,
+      "controller": 72.629,
+      "same_first": 68.263,
+      "lgbo_final": 58.13,
+      "controller_final": 89.71
+    },
+    {
+      "stream": 3,
+      "first": "a00102",
+      "lgbo": 25.169,
+      "controller": 46.956,
+      "same_first": 14.965,
+      "lgbo_final": 36.32,
+      "controller_final": 87.59
+    },
+    {
+      "stream": 4,
+      "first": "a00102",
+      "lgbo": 59.574,
+      "controller": 72.868,
+      "same_first": 48.894,
+      "lgbo_final": 86.37,
+      "controller_final": 87.83
+    },
+    {
+      "stream": 5,
+      "first": "a00493",
+      "lgbo": 72.615,
+      "controller": 73.642,
+      "same_first": 65.626,
+      "lgbo_final": 86.43,
+      "controller_final": 91.11
+    },
+    {
+      "stream": 6,
+      "first": "a00499",
+      "lgbo": 53.837,
+      "controller": 50.515,
+      "same_first": 40.913,
+      "lgbo_final": 78.93,
+      "controller_final": 91.27
+    },
+    {
+      "stream": 7,
+      "first": "a00102",
+      "lgbo": 58.441,
+      "controller": 88.353,
+      "same_first": 65.945,
+      "lgbo_final": 83.62,
+      "controller_final": 99.98
+    }
+  ],
+  "api_usage": {
+    "requests": 152,
+    "input_tokens": 1476852,
+    "output_tokens": 77181,
+    "total_tokens": 1554033,
+    "schema_retries": 0,
+    "models": [
+      "gpt-6.1-terra"
+    ]
+  }
+}

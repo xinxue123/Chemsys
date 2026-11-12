@@ -5,3 +5,6 @@
 *.zip binary
 *.npz binary
 *.pt binary
+
+# Preserve the submission's recorded data and source bytes.
+Chemsys-submission_20261112/** -text !eol

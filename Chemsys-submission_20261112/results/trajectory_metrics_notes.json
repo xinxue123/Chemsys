@@ -1,0 +1,38 @@
+{
+  "complete_included_states": 1624,
+  "excluded_incomplete_states": [
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/c1/state.json",
+      "status": "RUNNING",
+      "observations": 9
+    },
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/c2/state.json",
+      "status": "RUNNING",
+      "observations": 6
+    },
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/c3/state.json",
+      "status": "RUNNING",
+      "observations": 6
+    },
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/c4/state.json",
+      "status": "RUNNING",
+      "observations": 9
+    },
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/doyle/state.json",
+      "status": "RUNNING",
+      "observations": 6
+    },
+    {
+      "location": "experiments/runs/hypothesis_scope_v2_20261105/runs/ex1/s1/perera/state.json",
+      "status": "RUNNING",
+      "observations": 6
+    }
+  ],
+  "N": 20,
+  "formula": "mean(cumulative_maximum(raw_values)); normalized by the full-pool maximum only in evaluation",
+  "cohorts_are_not_pooled": true
+}

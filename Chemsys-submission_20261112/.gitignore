@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+config.txt
+openai-key.txt
+openai-apikey.txt
+output/
+*.log
+*.aux
+*.blg
+*.lock
