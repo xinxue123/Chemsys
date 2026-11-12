@@ -1,0 +1,6 @@
+method,tasks,mean_searchauc,ci90_low,ci90_high,llm_calls_after_first_point
+LGBO,8,84.9323,79.2239,90.6407,19
+Scope controller,8,83.5743,75.8725,91.2762,2.9
+LLM-start BO,8,82.8281,74.747,90.9092,0
+Reasoning BO,8,79.0547,64.6202,93.4891,19
+Random-start BO,8,76.555,68.7261,84.3839,0

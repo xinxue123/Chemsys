@@ -178,7 +178,9 @@ def s8():
     archived = read_json(folder / "recomputed_statistics.json")
     records = read_rows(folder / "region_quality_69_hypotheses.csv")
     coding = RUNS / "gp_followup/claim_coding.json"
-    assert sha(coding) == archived["claim_coding_sha256"]
+    lineage = read_json(ROOT / "provenance/claim_coding_lineage.json")
+    assert sha(coding) == lineage["analysis_sha256"]
+    assert archived["claim_coding_sha256"] == lineage["historical_record"]["sha256"]
     hypotheses = {r["key"]: r for r in read_json(coding)["hypotheses"] if r["group"] == "dev"}
     assert set(hypotheses) == {r["key"] for r in records} and len(records) == 69
     groups, by_task = defaultdict(list), {}

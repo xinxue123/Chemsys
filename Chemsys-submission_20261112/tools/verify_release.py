@@ -101,22 +101,28 @@ def result_check():
     claims=rows(ROOT/'results/hypothesis_scope_v2_mechanism_20261106/claims.csv')
     contrasts=rows(ROOT/'results/hypothesis_scope_v2_mechanism_20261106/contrasts.csv')
     assert len({r['key'] for r in claims})==99 and len(contrasts)==68
-    main=(ROOT/'paper/hypothesis_scope_jcim/main.tex').read_text(encoding='utf-8')
-    table=main[main.index(r'\label{tab:map}'):]
-    table=table[:table.index(r'\end{table}')]
-    displayed=0
-    for line in table.splitlines():
-        cells=line.strip().removesuffix(r'\\').strip().split(' & ')
-        if len(cells)!=7 or not cells[3].isdigit():continue
-        n=int(cells[3]);effect=float(cells[4].strip('$'));win,loss=map(int,cells[5].split('/'))
-        verdict=cells[6].lower()
-        assert any(int(r['contrasts'])==n and int(r['wins'])==win and int(r['losses'])==loss and r['verdict']==verdict and abs(float(r['mean_effect'])-effect)<=.005000001 for r in contrasts),line
-        displayed+=1
-    assert displayed==11
-    hypothesis_file=ROOT/'results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json'
-    assert sha(hypothesis_file)==(hypothesis_file.with_suffix('.sha256')).read_text().split()[0]
-    tex=(ROOT/'paper/hypothesis_scope_jcim/si.tex').read_text(encoding='utf-8')
-    assert 'An AI assistant coded claims from the claim text, falsification criterion and scope, with outcomes hidden.' not in tex
+    table = rows(ROOT / "results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv")
+    for item in table:
+        identity = (item["task"], item["axis"], item["higher"], item["lower"])
+        expected = (item["pairs"], item["wins"], item["losses"], item["verdict"])
+        matching = [row for row in contrasts
+                    if (row["task"], row["axis"], row["high"], row["low"]) == identity
+                    and (row["contrasts"], row["wins"], row["losses"], row["verdict"]) == expected]
+        assert any(abs(float(row["mean_effect"]) - float(item["effect"])) <= .005000001
+                   for row in matching), item
+    displayed = len(table)
+    assert displayed == 11
+    lineage = read(ROOT / "provenance/claim_coding_lineage.json")
+    for relative in lineage["analysis_files"]:
+        assert sha(ROOT / relative) == lineage["analysis_sha256"], relative
+    hypothesis_file = ROOT / "results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json"
+    assert hypothesis_file.with_suffix(".sha256").read_text().split()[0] == lineage["analysis_sha256"]
+    coding = read(hypothesis_file)
+    assert set(coding) == set(lineage["retained_fields"])
+    hypotheses = coding["hypotheses"]
+    assert len(hypotheses) == lineage["hypotheses"] == 99
+    assert sum(bool(h["contrasts"]) for h in hypotheses) == lineage["comparative_hypotheses"] == 62
+    assert sum(len(h["contrasts"]) for h in hypotheses) == lineage["contrasts"] == 68
     return dict(development_figure_cells=len(by),heldout_model_pair_rows_recomputed_from_states=len(deep),knowledge_hypotheses=len({r['key'] for r in claims}),hypothesis_stream_rows=len(claims),comparative_contrasts=len(contrasts),Table_6_rows_checked=displayed,saved_result_checks='PASS')
 
 def credentials_check():

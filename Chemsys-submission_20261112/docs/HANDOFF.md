@@ -27,7 +27,7 @@ Useful files:
 
 Treat `data/`, `experiments/`, `evidence/`, the two archive subsets and the frozen paper figures as read-only evidence. New computations belong in `output/` or another explicitly named new study directory. Rebuilding saved analyses writes only derived tables and logs. Do not treat a numerical replay or a successful import as evidence of optimization improvement.
 
-The primary-model cohorts and the additional DeepSeek cohort retain their original model, request and source metadata. Responses are not relabeled or regenerated. The original claim coding and its hash are retained.
+The r2 evidence records retain the original analysis inputs. Usage records contain the model, attempt and token counts. The analysis copies retain all 99 frozen hypothesis records. [The coding lineage](../provenance/claim_coding_lineage.json) links their checksum to the historical record.
 
 ## Transfer checklist already performed
 

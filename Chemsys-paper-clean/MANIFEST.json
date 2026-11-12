@@ -1295,8 +1295,8 @@
     },
     {
       "path": "provenance/source_index.json",
-      "bytes": 85647,
-      "sha256": "e743347790a57ae5f9d57cd8810a3faccb1bbe249d788c03f09fae44db02c2c2"
+      "bytes": 85883,
+      "sha256": "000834a7eb6f82eddfbebb56fb9326c0e7116101f9c6fec830cbf1cdbb7db09a"
     },
     {
       "path": "README.md",
@@ -1445,13 +1445,13 @@
     },
     {
       "path": "results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json",
-      "bytes": 116171,
-      "sha256": "f1bf8c507894986005d635a8461e999086ef9e1eeb30101e45c1176dc191cab1"
+      "bytes": 116082,
+      "sha256": "2eb27111e27c6cb3cf245d9a6bd7c4e0e53840381009bb3b44d2cee860fa968c"
     },
     {
       "path": "results/hypothesis_scope_v2_mechanism_20261106/claim_coding.sha256",
-      "bytes": 85,
-      "sha256": "1aa8a3460a906288df4893e1d1ade4e6320d1492b17c87be448775faa33d6b37"
+      "bytes": 84,
+      "sha256": "a4eb39bec8821cd738500cc6abd6e7ad76e0a848e82cdb0925e4bb5a795e5efe"
     },
     {
       "path": "results/hypothesis_scope_v2_mechanism_20261106/claims.csv",

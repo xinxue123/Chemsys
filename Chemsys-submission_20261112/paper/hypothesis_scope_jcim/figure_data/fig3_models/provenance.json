@@ -1,0 +1,17 @@
+{
+  "sources_sha256": {
+    "trajectories.csv": "74a348fd00114d80679e0a96d7a673a3aeab012d274023ed8f41500ded3c9ce2",
+    "paired_results.csv": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c",
+    "results.json": "99702bce3759ecc1fee5e3cbc7527348d99c7e4872df2847f900d3296878ab02"
+  },
+  "layout": "primary model a-c; DeepSeek d-f; common corresponding axes",
+  "pairs_per_model_and_task": 24,
+  "queries_per_trajectory": 20,
+  "normalization": "percent of task pool maximum, unchanged from frozen records",
+  "SearchAUC": "mean of the 20 post-query running maxima, including the shared start",
+  "curve_intervals": "pointwise 90% percentile bootstrap over pairs; 10000 resamples per query",
+  "bootstrap_seed_per_model": 20261106,
+  "difference_intervals": "paired 90% t interval; df=23; original critical value=1.714",
+  "BO_reference": "corresponding model, task and pair, as in Table 4",
+  "source_checks": "5760 observations, 288 paired summaries and all 12 Table 4 rows agree"
+}

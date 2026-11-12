@@ -1,0 +1,20 @@
+{
+  "edition": "submission-20261112-r2",
+  "source_r2_archive_sha256": "f1ad8f0fbc40367501eb3745062f37040c42800898d8405914224b6de6761cc3",
+  "release_data_archive": "Chemsys-submission_20261112-r2-evidence.zip",
+  "release_data_sha256": "23f548aef24efb1283b7a2dc95c752d3260199995ae7c292c69098a2a8c8aefb",
+  "main_files": 332,
+  "release_data_files": 3292,
+  "offline_checks": [
+    "verify",
+    "rebuild-results all",
+    "check_submission_evidence --snar",
+    "build_figures"
+  ],
+  "table_6_reference": "CSV of the 11 displayed manuscript rows",
+  "usage_record_fields": [
+    "attempt",
+    "resolved_model",
+    "usage"
+  ]
+}
