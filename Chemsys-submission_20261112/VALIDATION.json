@@ -1,7 +1,7 @@
 {
-  "edition": "submission-20261112-r2",
+  "edition": "submission-20261112-r3",
   "source_r2_archive_sha256": "f1ad8f0fbc40367501eb3745062f37040c42800898d8405914224b6de6761cc3",
-  "release_data_archive": "Chemsys-submission_20261112-r2-evidence.zip",
+  "release_data_archive": "Chemsys-submission_20261112-r3-evidence.zip",
   "release_data_sha256": "23f548aef24efb1283b7a2dc95c752d3260199995ae7c292c69098a2a8c8aefb",
   "main_files": 332,
   "release_data_files": 3292,
@@ -16,5 +16,59 @@
     "attempt",
     "resolved_model",
     "usage"
-  ]
+  ],
+  "screen_reporting": {
+    "status": "PASS",
+    "script": {
+      "path": "code/analysis/analyze_hypothesis_scope_v2_screen.py",
+      "before_sha256": "d574fff670f05dab7d4b17f36ff2d81bf74f20e9397f636b202f41d9876c573e",
+      "sha256": "1f0d9e92c71510efe026680d38620e2e57b67f3f9cce6fa04425bb59e04c92dc"
+    },
+    "result": {
+      "path": "results/hypothesis_scope_v2_screen_20261107/screen.json",
+      "before_sha256": "c036f0554413941fcf5204c1f50d8caa9d8cd8ae4c3e8f196d109ad2ac34d1e9",
+      "sha256": "a729a13b1fba3793038b9c6d8ac4fc20876a6470192f59cce726f7695b198326"
+    },
+    "predictions_sha256": "e61f2c19af1daf7e7de294d629b623be208ee98d9ffe6b2f5cc25a3dddfb8f2b",
+    "only_json_changes": [
+      "task field name",
+      "overall wording"
+    ],
+    "byte_identical_rebuilt_csv": {
+      "pairs.csv": "7dd260f0f3ad53188ff688a7193252b981ff516428490e800675c8d530476c18",
+      "trajectories.csv": "100ad71522e9a0c334dba915a4f2f21082cbf04c7ff2158f09d1bd93564e9cdb"
+    },
+    "tasks": {
+      "dfl": {
+        "reading": "not separated",
+        "consistent_with_screen_rule": true,
+        "difference": -1.38,
+        "interval90": [
+          -4.63,
+          1.87
+        ]
+      },
+      "bor": {
+        "reading": "random start leads",
+        "consistent_with_screen_rule": true,
+        "difference": -9.44,
+        "interval90": [
+          -13.36,
+          -5.53
+        ]
+      },
+      "chx": {
+        "reading": "random start leads",
+        "consistent_with_screen_rule": true,
+        "difference": -8.54,
+        "interval90": [
+          -14.7,
+          -2.39
+        ]
+      }
+    },
+    "new_model_calls": 0,
+    "new_GP_fits": 0,
+    "new_experimental_queries": 0
+  }
 }

@@ -10,12 +10,12 @@
     {
       "path": "README.md",
       "bytes": 1325,
-      "sha256": "ba86abee588740e3b95e3fb29ce5892f24f0c0e3818b877076ff200696ee050c"
+      "sha256": "df0fd9b0f4fd42c77af3dd731790b3c84e8b47926db77ef0e4448b7df053b0e5"
     },
     {
       "path": "RELEASE_DATA.json",
       "bytes": 755004,
-      "sha256": "17c06ffd4a36c9c6b00bc26a74841d3089380105d37fcf1af9cfc134265809b4"
+      "sha256": "3300791e02ebbf237b1d405d1adc9c1c07b25c249c8d13b146345ec377aa6413"
     },
     {
       "path": "archives/run__hypothesis_scope_loop_20261105.zip",
@@ -104,8 +104,8 @@
     },
     {
       "path": "code/analysis/analyze_hypothesis_scope_v2_screen.py",
-      "bytes": 6396,
-      "sha256": "d574fff670f05dab7d4b17f36ff2d81bf74f20e9397f636b202f41d9876c573e"
+      "bytes": 7419,
+      "sha256": "1f0d9e92c71510efe026680d38620e2e57b67f3f9cce6fa04425bb59e04c92dc"
     },
     {
       "path": "code/analysis/analyze_hypothesis_scope_v2_shared_start.py",
@@ -1090,7 +1090,7 @@
     {
       "path": "docs/SUBMISSION_HANDOFF.md",
       "bytes": 737,
-      "sha256": "b73949a37078fb5965456506c151ef3108cca2ed00f29fe5e0bb1eb5ded6fb35"
+      "sha256": "d1f3f3e06a9802d93cb5fead07a34ccf2b448ce55a102f843c66df1701b5fea1"
     },
     {
       "path": "environment/recorded_environment.json",
@@ -17730,7 +17730,7 @@
     {
       "path": "provenance/source_index.json",
       "bytes": 735724,
-      "sha256": "60af721fc07cb92b57772b80e0eaf1ba9d22f4d7ea86a2496b75baf2cd847474"
+      "sha256": "9378a996ec55c21e37b68bbf04dd931782a2006b229a829ef287a0a87415e31e"
     },
     {
       "path": "requirements.txt",
@@ -18004,8 +18004,8 @@
     },
     {
       "path": "results/hypothesis_scope_v2_screen_20261107/screen.json",
-      "bytes": 3232,
-      "sha256": "c036f0554413941fcf5204c1f50d8caa9d8cd8ae4c3e8f196d109ad2ac34d1e9"
+      "bytes": 3383,
+      "sha256": "a729a13b1fba3793038b9c6d8ac4fc20876a6470192f59cce726f7695b198326"
     },
     {
       "path": "results/hypothesis_scope_v2_screen_20261107/trajectories.csv",
@@ -18069,8 +18069,8 @@
     },
     {
       "path": "tools/attach_release_data.py",
-      "bytes": 3307,
-      "sha256": "8e9d89c3fb9ce82c75834870dab5c214ecb9cacf014a58040f9c473ce8676e48"
+      "bytes": 3313,
+      "sha256": "a70d6bcc9d6541897cabae684392bdecb56c7536a825c7394ae319fca68f4277"
     },
     {
       "path": "tools/build_figure3.py",

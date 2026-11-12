@@ -1,4 +1,4 @@
-"""Verify and install the data attachment for the r2 evidence checkout."""
+"""Verify and install the data attachment for the versioned evidence checkout."""
 import argparse
 import hashlib
 import json

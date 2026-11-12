@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from analyze_hypothesis_scope_v2_first_point_streams import read, sign_flip
 
 TASKS = ('dfl', 'bor', 'chx')
+TASK_NAMES = {'dfl': 'deoxyfluorination', 'bor': 'borylation', 'chx': 'Pd coupling'}
 STREAMS = range(24)
 T90_23 = 1.714
 PREDICTIONS_SHA = 'e61f2c19af1daf7e7de294d629b623be208ee98d9ffe6b2f5cc25a3dddfb8f2b'
@@ -51,10 +52,10 @@ def main():
         low, high = mean - half, mean + half
         reading = 'LLM start leads' if low > 1.0 else 'random start leads' if high < -1.0 else 'not separated'
         predicted = predictions[short]['prediction']
-        confirmed = None if predicted == 'no prediction' else (reading == 'LLM start leads') if predicted == 'gain' else (reading != 'LLM start leads')
+        consistent = None if predicted == 'no prediction' else (reading == 'LLM start leads') if predicted == 'gain' else (reading != 'LLM start leads')
         summary[short] = dict(prediction=predicted, mean_pick_percentile=predictions[short]['mean_pick_percentile'],
                               llm_start_auc=round(st.mean(llm_auc), 2), random_start_auc=round(st.mean(bo_auc), 2),
-                              difference=round(mean, 2), interval90=[round(low, 2), round(high, 2)], reading=reading, prediction_confirmed=confirmed,
+                              difference=round(mean, 2), interval90=[round(low, 2), round(high, 2)], reading=reading, consistent_with_screen_rule=consistent,
                               up=sum(d > 1e-9 for d in diffs), down=sum(d < -1e-9 for d in diffs), tied=sum(abs(d) <= 1e-9 for d in diffs),
                               sign_flip_p=round(sign_flip(diffs), 4), final_best_difference=round(st.mean(finals), 2))
     for short in TASKS:  # Step 4 (exploratory): the controller from the LLM pick, if its runs exist.
@@ -78,14 +79,27 @@ def main():
                 row.update(controller_auc=round(c[0], 4), controller_final=round(c[1], 4))
         curves += [dict(task=short, stream=t, arm='controller', query=q + 1, running_best=round(v, 4)) for t, c in enumerate(ctrl) for q, v in enumerate(c[2])]
         summary[short]['step4_exploratory'] = step4
-    tested = {s: v for s, v in summary.items() if v['prediction_confirmed'] is not None}
+    tested = {s: v for s, v in summary.items() if v['consistent_with_screen_rule'] is not None}
     kinds = {v['prediction'] for v in tested.values()}
-    if not all(v['prediction_confirmed'] for v in tested.values()):
-        overall = 'Any predicted task fails: the rule did not generalise'
+    if not all(v['consistent_with_screen_rule'] for v in tested.values()):
+        overall = 'At least one outcome was inconsistent with the original screen rule.'
     elif kinds == {'gain', 'no gain'}:
-        overall = 'Every predicted task confirmed, with both kinds: the rule predicted on new tasks'
+        overall = 'Both branches were tested. All outcomes were consistent with the original screen rule.'
+    elif kinds == {'no gain'}:
+        count = 'three ' if len(tested) == 3 else ''
+        overall = f'Only the no-gain branch was tested. All {count}outcomes were consistent with the original screen rule.'
+        random_leads = [TASK_NAMES[task] for task, result in tested.items() if result['reading'] == 'random start leads']
+        inconclusive = [TASK_NAMES[task] for task, result in tested.items() if result['reading'] == 'not separated']
+        if random_leads:
+            overall += f" Random-start BO led on {' and '.join(random_leads)}."
+        if len(inconclusive) == 1:
+            overall += f' The {inconclusive[0]} result was inconclusive under the interval criterion.'
+        elif inconclusive:
+            overall += f" The interval criterion left the results inconclusive on {' and '.join(inconclusive)}."
+    elif kinds == {'gain'}:
+        overall = 'Only the gain branch was tested. All outcomes were consistent with the original screen rule.'
     else:
-        overall = 'Every predicted task confirmed, but all predictions are of one kind: only half the rule was tested'
+        overall = 'No branch was tested.'
     record = dict(tasks=summary, overall=overall, no_task_reached_90=all(v['mean_pick_percentile'] < 90 for v in summary.values()),
                   predictions_sha256=PREDICTIONS_SHA, note='Registered readings; no model calls, queries or GP fits in this analysis.')
     (out/'screen.json').write_text(json.dumps(record, indent=1), encoding='utf-8')
