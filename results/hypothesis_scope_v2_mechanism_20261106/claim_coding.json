@@ -1,0 +1,3849 @@
+{
+ "status": "FROZEN_BEFORE_VERDICTS",
+ "hypotheses": [
+  {
+   "key": "c1|all|H1",
+   "group": "dev",
+   "task": "c1",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "26ed467a227c392e73b5e9af",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L2"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "With the P1-SPhos precatalyst, elevated temperature of 70–110 °C may increase coupling yield relative to 30 °C at matched residence time and catalyst loading, provided degradation does not dominate.",
+   "falsification": "Compare matched P1-L2 experiments at 110 °C and 30 °C at the same residence time and loading; repeated lower or equal yields at 110 °C would contradict the proposed temperature advantage under those conditions.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      70,
+      110
+     ],
+     "low": [
+      30,
+      38
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|0|H2",
+   "group": "dev",
+   "task": "c1",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "631fd7b17535b756e634c4c5",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "temperature": {
+     "bounds": [
+      90.0,
+      110.0
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      300.0,
+      600.0
+     ]
+    }
+   },
+   "claim": "At 90–110 °C, residence times of 300–600 s may give higher yield than 60 s at matched catalyst and loading if conversion continues faster than degradation.",
+   "falsification": "Compare 600 s and 60 s at 110 °C with the same catalyst and loading; repeated equal or lower yields at 600 s across matched pairs would contradict the proposed advantage in those conditions.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      300,
+      600
+     ],
+     "low": [
+      60,
+      114
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|0|H3",
+   "group": "dev",
+   "task": "c1",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "6a39e56cddef0cb0b5017468",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1",
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      100.0,
+      110.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      2.0,
+      2.5
+     ]
+    }
+   },
+   "claim": "At 100–110 °C and 2.0–2.5 mol% loading, P1-XPhos or P1-RuPhos may outperform P1-SPhos for this heteroaryl coupling at matched conditions, because changing the electron-rich biaryl phosphine can alter catalyst activity or stability.",
+   "falsification": "Matched tests at 110 °C and 2.5 mol% that consistently yield no more than P1-SPhos at the same residence times would contradict the proposed advantage under those conditions.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L1",
+      "P1-L3"
+     ],
+     "low": [
+      "P1-L2"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|0|H4",
+   "group": "dev",
+   "task": "c1",
+   "seed": "0",
+   "id": "H4",
+   "semantic_key": "4d07405cf97baa353a63ffff",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L4"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      60.0
+     ]
+    }
+   },
+   "claim": "For P1-Xantphos, 30–60 °C is unlikely to surpass the current 88.44% incumbent because reduced thermal activation may limit coupling within 60–600 s; the observed temperature contrast is only at 600 s and 2.5 mol%.",
+   "falsification": "An in-scope P1-Xantphos experiment exceeding 88.44% yield falsifies the specific prediction that this region does not surpass the current incumbent.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 88.44
+   }
+  },
+  {
+   "key": "c1|1|H2",
+   "group": "dev",
+   "task": "c1",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "3c921e9b8bb5fbbcc404467a",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "t_res": {
+     "bounds": [
+      400.0,
+      600.0
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      90.0,
+      110.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      1.5,
+      2.5
+     ]
+    }
+   },
+   "claim": "For coupling 3-bromoquinoline with 3,5-dimethylisoxazole-4-boronic acid pinacol ester, residence times of 400–600 s, temperatures of 90–110 °C and loadings of 1.5–2.5 mol% may give higher yield than shorter, cooler and more dilute catalyst conditions, if productive turnover benefits from exposure more than decomposition does. This process hypothesis is provisional across the supplied catalysts.",
+   "falsification": "At matched catalyst and other inputs, compare high-exposure conditions with shorter time, lower temperature, or lower loading. Repeated equal or lower yields in the high-exposure tests would contradict the corresponding proposed advantage under those conditions.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      400,
+      600
+     ],
+     "low": [
+      60,
+      399
+     ]
+    },
+    {
+     "axis": "temperature",
+     "high": [
+      90,
+      110
+     ],
+     "low": [
+      30,
+      89
+     ]
+    },
+    {
+     "axis": "catalyst_loading",
+     "high": [
+      1.5,
+      2.5
+     ],
+     "low": [
+      0.5,
+      1.49
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|1|H3",
+   "group": "dev",
+   "task": "c1",
+   "seed": "1",
+   "id": "H3",
+   "semantic_key": "122512d4beb65a49822d7c6c",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1"
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      400.0,
+      600.0
+     ]
+    }
+   },
+   "claim": "For the fixed 3-bromoquinoline and 3,5-dimethylisoxazole-4-boronic acid pinacol ester coupling with P1-XPhos, 400–600 s residence may permit greater productive conversion than shorter residence at matched temperature and loading, provided catalyst deactivation and side reactions do not dominate. The single P1-XPhos observation is consistent with, but does not demonstrate, this time effect.",
+   "falsification": "At matched P1-L1 temperature and loading, repeated comparisons giving equal or lower yield at 400–600 s than at shorter residence would contradict the proposed local time advantage.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      400,
+      600
+     ],
+     "low": [
+      60,
+      399
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|2|H2",
+   "group": "dev",
+   "task": "c1",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "ba35c530d3c9a7fa87ab18c9",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "t_res": {
+     "bounds": [
+      450.0,
+      600.0
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      85.0,
+      110.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      2.0,
+      2.5
+     ]
+    }
+   },
+   "claim": "At 85–110 °C, residence times of 450–600 s and catalyst loadings of 2.0–2.5 mol% may give greater yield than shorter or lower-loading conditions for this coupling, provided catalyst or product degradation does not dominate; the effect may depend on precatalyst identity.",
+   "falsification": "At matched catalyst and temperature, compare 600 s and 2.5 mol% against 60 s and 2.5 mol%, and against 600 s and 0.5 mol%; repeated equal or lower yields at the high-time or high-loading setting would contradict the respective proposed advantage in the tested conditions.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      450,
+      600
+     ],
+     "low": [
+      60,
+      114
+     ]
+    },
+    {
+     "axis": "catalyst_loading",
+     "high": [
+      2.0,
+      2.5
+     ],
+     "low": [
+      0.5,
+      0.7
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|2|H3",
+   "group": "dev",
+   "task": "c1",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "8d8c066cc238d80a91c8cdb2",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "t_res": {
+     "bounds": [
+      60.0,
+      200.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      0.5,
+      1.0
+     ]
+    }
+   },
+   "claim": "At residence times of 60–200 s and catalyst loading of 0.5–1.0 mol%, insufficient catalyst exposure may limit yield for this fixed coupling; the size of this effect can depend on temperature and catalyst identity.",
+   "falsification": "At matched catalyst and temperature, compare low-loading experiments at 60 s versus 600 s; repeated equal or higher yields at 60 s would contradict the proposed residence-time limitation under those conditions. A yield above 71.31% in the scoped region would also challenge its use as an avoidance rule.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      546,
+      600
+     ],
+     "low": [
+      60,
+      200
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|3|H2",
+   "group": "dev",
+   "task": "c1",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "2e4df082486deb68faad154d",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "temperature": {
+     "bounds": [
+      100.0,
+      110.0
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      400.0,
+      600.0
+     ]
+    }
+   },
+   "claim": "At 100–110 °C and 400–600 s, the fixed Suzuki coupling may achieve higher yields than at matched shorter residence times because longer exposure can increase conversion, provided catalyst deactivation or product loss does not dominate. The P1-SPhos observations are compatible with a useful hot, long condition but do not isolate residence time or establish the effect for other catalysts.",
+   "falsification": "At the same catalyst, loading and temperature within 100–110 °C, compare 600 s against 60 s; repeated matched comparisons with no yield increase at 600 s would contradict the proposed residence-time advantage in those tested conditions.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      400,
+      600
+     ],
+     "low": [
+      60,
+      114
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|3|H3",
+   "group": "dev",
+   "task": "c1",
+   "seed": "3",
+   "id": "H3",
+   "semantic_key": "78a5b458a4499b3385b91669",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1",
+      "P1-L2",
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      100.0,
+      110.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      2.0,
+      2.5
+     ]
+    }
+   },
+   "claim": "At 100–110 °C and 2.0–2.5 mol% loading, P1 precatalysts bearing XPhos, SPhos or RuPhos may give higher yield than P1-PPh3 at matched residence time, temperature and loading. The single matched SPhos versus PPh3 comparison supports only a local association; extrapolation to XPhos and RuPhos is a mechanistic hypothesis.",
+   "falsification": "Matched comparisons at 100–110 °C and 2.0–2.5 mol% that repeatedly show the selected biaryl ligand yielding no more than P1-PPh3 at the same residence time would contradict the proposed advantage for the tested conditions.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L1",
+      "P1-L2",
+      "P1-L3"
+     ],
+     "low": [
+      "P1-L6"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c1|3|H4",
+   "group": "dev",
+   "task": "c1",
+   "seed": "3",
+   "id": "H4",
+   "semantic_key": "ef0bb729feabad6dc8acd875",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L2"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      85.0
+     ]
+    }
+   },
+   "claim": "For the fixed coupling using P1-SPhos, 30–85 °C is likely to give less yield than hotter conditions at matched residence time and loading, possibly because reaction rates fall. The observed 81.2 °C result is low, but residence time and loading also differ from the hotter results, so this is not an isolated temperature effect.",
+   "falsification": "Matched P1-SPhos comparisons at the same residence time and loading repeatedly yielding at least as much at 30–85 °C as at 100–110 °C would contradict the proposed temperature relationship at those conditions.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      100,
+      110
+     ],
+     "low": [
+      30,
+      85
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|all|H1",
+   "group": "dev",
+   "task": "c2",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "489ba243c8afd83347a9f791",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L2"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "With the P1-SPhos precatalyst, increasing temperature from 30 to 110 degC will improve yield at matched residence time and catalyst loading if activation is rate-limiting and thermal degradation does not dominate.",
+   "falsification": "A matched P1-L2 comparison at 30 and 110 degC with the same residence time and loading that gives lower yield at 110 degC would contradict the proposed local temperature relationship.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      70,
+      110
+     ],
+     "low": [
+      30,
+      38
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|0|H2",
+   "group": "dev",
+   "task": "c2",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "3ea8614dd4e0455205a9d31c",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1",
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "At 70–110 degC, P1-XPhos or P1-RuPhos may produce yields exceeding 19.70% in this coupling because bulky electron-rich biaryl monophosphines can support aryl chloride activation; this is a provisional expectation, not an observed ligand advantage.",
+   "falsification": "Matched P1-L1 or P1-L3 tests at 600 s, 110 degC and 2.5 mol% yielding no more than 19.70%, together with further representative in-scope nonimprovements, would challenge this proposed improvement region.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 19.7
+   }
+  },
+  {
+   "key": "c2|0|H3",
+   "group": "dev",
+   "task": "c2",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "4e23cc582876c3b8bd5248f0",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P2-L1"
+     ]
+    }
+   },
+   "claim": "For this coupling, the P2 chloride/XPhos precatalyst may produce a yield above 23.33% at 600 s, 110 degC and 2.5 mol%, because its activation or catalyst speciation may differ from P1 methanesulfonate/XPhos. The direction of this scaffold effect is uncertain; no P2 result has been observed.",
+   "falsification": "A P2-L1 measurement at 600 s, 110 degC and 2.5 mol% at or below the matched P1-L1 result of 23.3325% would contradict the predicted improvement at that condition; representative additional P2 nonimprovements would challenge the broader guidance.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P2-L1"
+     ],
+     "low": [
+      "P1-L1"
+     ],
+     "within": {
+      "t_res": {
+       "bounds": [
+        546,
+        600
+       ]
+      },
+      "temperature": {
+       "bounds": [
+        102,
+        110
+       ]
+      },
+      "catalyst_loading": {
+       "bounds": [
+        2.3,
+        2.5
+       ]
+      }
+     }
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|0|H4",
+   "group": "dev",
+   "task": "c2",
+   "seed": "0",
+   "id": "H4",
+   "semantic_key": "dc86d144a50beba497e65653",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L6"
+     ]
+    }
+   },
+   "claim": "For this fixed coupling, P1-PPh3 may be less likely to exceed the current 40.09% incumbent across the tested operating range than the more electron-rich P1-PCy3 system, although the evidence is limited to one matched point.",
+   "falsification": "An unqueried P1-PPh3 experiment exceeding 40.09% would contradict the proposed low-improvement caution for that condition; repeated high yields at other conditions would challenge the broader scope.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 40.09
+   }
+  },
+  {
+   "key": "c2|1|H2",
+   "group": "dev",
+   "task": "c2",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "26bf91f55016af087a75615d",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1"
+     ]
+    }
+   },
+   "claim": "For coupling 3-chloropyridine with 3,5-dimethylisoxazole-4-boronic acid pinacol ester, P1-XPhos can support a higher yield than P1-SPhos at matched residence time, temperature and loading; differences in the biaryl phosphine environment may affect catalytic turnover. This is a mechanistic conjecture, not an observed catalyst ranking.",
+   "falsification": "A matched comparison at 600 s, 110 degC and 2.5 mol% yielding at most 19.70% with P1-L1 contradicts the claimed advantage at those conditions; further matched comparisons would assess its broader scope.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L1"
+     ],
+     "low": [
+      "P1-L2"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|1|H3",
+   "group": "dev",
+   "task": "c2",
+   "seed": "1",
+   "id": "H3",
+   "semantic_key": "92794f6fb886a51684a8db4c",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70,
+      110
+     ]
+    }
+   },
+   "claim": "For this 3-chloropyridine and isoxazole boronic ester coupling, P1-RuPhos at 110 degC, 600 s and 2.5 mol% may exceed the 23.33% yield observed with P1-XPhos at those same conditions; its electron-rich bulky biaryl monophosphine could alter turnover. This is an untested mechanistic conjecture, not an observed RuPhos ranking.",
+   "falsification": "A measured yield at 110 degC, 600 s and 2.5 mol% of at most 23.33% falsifies the proposed matched-condition improvement in this emulator; a single result does not establish a ranking across the full scope.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L3"
+     ],
+     "low": [
+      "P1-L1"
+     ],
+     "within": {
+      "t_res": {
+       "bounds": [
+        546,
+        600
+       ]
+      },
+      "temperature": {
+       "bounds": [
+        102,
+        110
+       ]
+      },
+      "catalyst_loading": {
+       "bounds": [
+        2.3,
+        2.5
+       ]
+      }
+     }
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|1|H4",
+   "group": "dev",
+   "task": "c2",
+   "seed": "1",
+   "id": "H4",
+   "semantic_key": "f2ea362a623920859bbab52e",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L6",
+      "P1-L4",
+      "P1-L7"
+     ]
+    }
+   },
+   "claim": "For this fixed 3-chloropyridine and 3,5-dimethylisoxazole-4-boronic ester coupling, P1-PPh3, P1-Xantphos and P1-PtBu3 conditions are unlikely to exceed the current 40.09% incumbent; ligand-dependent activity is a plausible but unproven explanation for the matched-condition differences.",
+   "falsification": "An observed yield above 40.09% with any of these catalysts falsifies the proposed avoidance for that tested condition; further matched tests are needed to assess generality.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 40.09
+   }
+  },
+  {
+   "key": "c2|2|H2",
+   "group": "dev",
+   "task": "c2",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "e08697e984bed4a07ab5e543",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1",
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70.0,
+      110.0
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      300.0,
+      600.0
+     ]
+    }
+   },
+   "claim": "At 70–110 degC and 300–600 s, P1-XPhos or P1-RuPhos can improve on the 19.70% incumbent for this fixed aryl chloride and heteroaryl boronate coupling; their electron-rich bulky biaryl monophosphines may support catalytic turnover. This is a provisional mechanistic expectation, not an observed ligand ranking.",
+   "falsification": "At 600 s, 110 degC and 2.5 mol%, yields at or below 19.70% for both P1-L1 and P1-L3 would falsify the proposed matched-condition improvement for those two catalysts; broader scope performance remains separately testable.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 19.7
+   }
+  },
+  {
+   "key": "c2|2|H3",
+   "group": "dev",
+   "task": "c2",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "b405462c562693cc007fdc7d",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L5",
+      "P1-L7"
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      300.0,
+      600.0
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      70.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "For the fixed 3-chloropyridine and 3,5-dimethylisoxazole-4-boronic acid pinacol ester coupling, electron-rich trialkyl monophosphines PCy3 or tri-tert-butylphosphine may provide sufficient turnover at 300–600 s and 70–110 degC to exceed the present 23.14% incumbent. This is an unverified mechanistic expectation, not an observed ligand ranking.",
+   "falsification": "At 600 s, 110 degC and 2.5 mol%, yields of 23.14% or less for both P1-L5 and P1-L7 would contradict the proposed improvement at those matched conditions; it would not exclude improvement elsewhere in the scope.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 23.14
+   }
+  },
+  {
+   "key": "c2|2|H4",
+   "group": "dev",
+   "task": "c2",
+   "seed": "2",
+   "id": "H4",
+   "semantic_key": "b7f5cee0b801018f249ac2d6",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L4",
+      "P1-L6"
+     ]
+    }
+   },
+   "claim": "For this fixed 3-chloropyridine and heteroaryl boronate coupling, P1-Xantphos and P1-PPh3 conditions are unlikely to exceed the 40.09% incumbent over the supplied operating range. At 600 s, 110 degC and 2.5 mol% they gave 13.82% and 7.00%, respectively, versus 40.09% with P1-PCy3; extrapolation to other conditions is uncertain.",
+   "falsification": "Any P1-L4 or P1-L6 experiment in the registered input range yielding more than 40.0853157043457% contradicts the proposed inability to exceed the present incumbent.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 40.0853157
+   }
+  },
+  {
+   "key": "c2|3|H2",
+   "group": "dev",
+   "task": "c2",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "d789b1922417ce2ddd8cb611",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1",
+      "P2-L1",
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      80.0,
+      110.0
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      300.0,
+      600.0
+     ]
+    }
+   },
+   "claim": "For coupling 3-chloropyridine with the isoxazole boronic ester, XPhos or RuPhos precatalysts at 80–110 degC and 300–600 s may reach higher yields than under otherwise matched shorter or cooler conditions if productive coupling dominates catalyst deactivation.",
+   "falsification": "For a given listed precatalyst and loading, a matched 600 s, 110 degC measurement yielding no more than the corresponding 60 s or 30 degC comparison contradicts the proposed local increase for that comparison; repeated such matched failures would undermine the broader claim.",
+   "contrasts": [
+    {
+     "axis": "t_res",
+     "high": [
+      300,
+      600
+     ],
+     "low": [
+      60,
+      114
+     ]
+    },
+    {
+     "axis": "temperature",
+     "high": [
+      80,
+      110
+     ],
+     "low": [
+      30,
+      38
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|3|H3",
+   "group": "dev",
+   "task": "c2",
+   "seed": "3",
+   "id": "H3",
+   "semantic_key": "11c03e3f57dce4e652f0c4b3",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      80.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "For 3-chloropyridine and 3,5-dimethylisoxazole-4-boronic acid pinacol ester, P1-RuPhos at 600 s, 110 degC and 2.5 mol% may give a higher yield than P1-SPhos under the same conditions because ligand environment can alter the balance of productive coupling and deactivation. This ligand comparison is untested, and the broader high-temperature scope is provisional.",
+   "falsification": "A measured P1-L3 yield at 600 s, 110 degC and 2.5 mol% at or below the matched P1-L2 result of 19.7002525% contradicts the specific predicted ligand advantage at that condition; further matched comparisons are needed for a broader conclusion.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L3"
+     ],
+     "low": [
+      "P1-L2"
+     ],
+     "within": {
+      "t_res": {
+       "bounds": [
+        546,
+        600
+       ]
+      },
+      "temperature": {
+       "bounds": [
+        102,
+        110
+       ]
+      },
+      "catalyst_loading": {
+       "bounds": [
+        2.3,
+        2.5
+       ]
+      }
+     }
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c2|3|H4",
+   "group": "dev",
+   "task": "c2",
+   "seed": "3",
+   "id": "H4",
+   "semantic_key": "b9ea2b53585be580aa335025",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L5"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      75.0
+     ]
+    }
+   },
+   "claim": "For the fixed 3-chloropyridine and isoxazole boronic ester coupling using P1-PCy3, 30–75 degC may give lower yield than 110 degC at matched residence time and loading, because productive conversion may be slower at lower temperature. The 0% result at 30 degC also differs in residence time and loading and does not establish this temperature effect.",
+   "falsification": "At 600 s and 2.5 mol% P1-PCy3, a 30 degC yield at or above the observed 40.0853% at 110 degC contradicts the predicted local temperature ordering; other matched comparisons are needed to assess its breadth.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      102,
+      110
+     ],
+     "low": [
+      30,
+      75
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c3|all|H1",
+   "group": "dev",
+   "task": "c3",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "73397c41a3b89050a05759e4",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L1"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      65.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "For P1-XPhos with the fixed substrates, DBU and THF/water, heating to at least 65 degC may improve conversion relative to 30 degC at matched residence time and catalyst loading, provided catalyst and boronic acid remain sufficiently stable.",
+   "falsification": "Compare matched P1-L1 experiments at 30 degC and at least 65 degC; repeated lower or equal yields under heating would contradict the proposed improvement in the tested conditions.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      65,
+      110
+     ],
+     "low": [
+      30,
+      38
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c3|0|H2",
+   "group": "dev",
+   "task": "c3",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "2eb045b26fd84f67f0a0ace5",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L4"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      60.0
+     ]
+    }
+   },
+   "claim": "With P1-Xantphos and the fixed reactants, DBU and THF/water, temperatures from 30 to 60 degC are unlikely to exceed the current 87.87% incumbent because coupling may be slow; catalyst stability and activation remain uncertain.",
+   "falsification": "An independently selected P1-L4 experiment at 30–60 degC exceeding 87.87% yield would falsify the stated prediction at that condition; multiple high-yield tests would undermine its regional generality.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 87.87
+   }
+  },
+  {
+   "key": "c3|1|H2",
+   "group": "dev",
+   "task": "c3",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "974aeb22161052825bd94eca",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "temperature": {
+     "bounds": [
+      30.0,
+      65.0
+     ]
+    }
+   },
+   "claim": "For coupling 3-chloropyridine with benzofuran-2-boronic acid under the supplied DBU and THF/water conditions, residence temperatures of 30–65 degC may give lower yield than higher temperatures at matched catalyst, loading and residence time, because reaction rates may be limiting. Thermal degradation or catalyst differences could reverse this expectation.",
+   "falsification": "Compare several matched low- and high-temperature conditions across the accessible catalysts; repeated equal or higher yields at 30–65 degC would contradict the proposed temperature relationship in those conditions.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      66,
+      110
+     ],
+     "low": [
+      30,
+      65
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c3|2|H2",
+   "group": "dev",
+   "task": "c3",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "49d318f04faefa21bc1c1c10",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "temperature": {
+     "bounds": [
+      30.0,
+      40.0
+     ]
+    }
+   },
+   "claim": "For the fixed 3-chloropyridine and benzofuran-2-boronic acid reaction, operation at 30–40 degC may give lower yield than at 110 degC under otherwise matched conditions because reaction rates may be slower; the magnitude and catalyst dependence are unknown.",
+   "falsification": "Compare matched 30 degC and 110 degC conditions at the same catalyst, residence time and loading; repeated equal or higher 30 degC yields across tested pairs would contradict the proposed low-temperature disadvantage in those conditions.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      102,
+      110
+     ],
+     "low": [
+      30,
+      40
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c3|3|H2",
+   "group": "dev",
+   "task": "c3",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "3a6e471faa18082dca0f0911",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L2"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      100.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "With the fixed reactants, DBU and THF/water, P1-SPhos at 110 degC, 600 s and 2.5 mol% will give greater yield than the matched P1-XPhos observation of 84.08%; more generally the hot P1-SPhos region may contain conditions exceeding the current 87.87% incumbent. The electron-rich biaryl monophosphine is a mechanistic motivation, not evidence of superiority.",
+   "falsification": "A yield at or below 84.08% for the specified matched 110 degC, 600 s, 2.5 mol% P1-SPhos experiment contradicts the specific comparison; repeated hot P1-SPhos observations failing to exceed 87.87% would weaken the regional improvement hypothesis.",
+   "contrasts": [
+    {
+     "axis": "catalyst",
+     "high": [
+      "P1-L2"
+     ],
+     "low": [
+      "P1-L1"
+     ],
+     "within": {
+      "t_res": {
+       "bounds": [
+        546,
+        600
+       ]
+      },
+      "temperature": {
+       "bounds": [
+        102,
+        110
+       ]
+      },
+      "catalyst_loading": {
+       "bounds": [
+        2.3,
+        2.5
+       ]
+      }
+     }
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c3|3|H3",
+   "group": "dev",
+   "task": "c3",
+   "seed": "3",
+   "id": "H3",
+   "semantic_key": "4c07f93c866823a04270304f",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L2"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      80.0
+     ]
+    }
+   },
+   "claim": "For P1-SPhos with the fixed reactants, DBU and THF/water, conditions at 30–80 degC tend to give lower yield than otherwise matched conditions near 110 degC and are unlikely to exceed the current 90.71% incumbent. Lower temperature may slow coupling, but the existing SPhos observations are unmatched and cannot establish a causal temperature effect.",
+   "falsification": "Matched P1-SPhos comparisons at equal residence time and loading in which 30–80 degC repeatedly matches or exceeds 110 degC contradict the proposed temperature relationship; an in-scope yield above 90.71% contradicts the specific incumbent threshold for that experiment.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      102,
+      110
+     ],
+     "low": [
+      30,
+      80
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "c4|all|H1",
+   "group": "dev",
+   "task": "c4",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "1940ce5853151d73f8f4f68a",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    }
+   },
+   "claim": "Under the fixed DBU and THF/water conditions, the P1-RuPhos precatalyst can give useful yield across accessible residence times, temperatures and loadings for this heteroaryl coupling.",
+   "falsification": "Reconsider this broad claim if at least three P1-L3 experiments spanning different conditions each yield below 20%, or if matched comparisons consistently show lower yield than alternative precatalysts.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 20
+   }
+  },
+  {
+   "key": "c4|0|H2",
+   "group": "dev",
+   "task": "c4",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "438f946fea75581b48742652",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      85.0,
+      110.0
+     ]
+    }
+   },
+   "claim": "With P1-RuPhos at 85–110 °C, faster coupling may allow yields above the current 84.09% incumbent, although residence time and catalyst loading can alter the outcome.",
+   "falsification": "Reconsider the high-temperature opportunity if three new in-scope experiments spanning residence times and loadings all fail to exceed 84.09% yield, or if matched lower-temperature tests consistently yield more.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 84.09
+   }
+  },
+  {
+   "key": "c4|0|H3",
+   "group": "dev",
+   "task": "c4",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "af5ce8935e345d2311888218",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      90.0,
+      110.0
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      350.0,
+      600.0
+     ]
+    },
+    "catalyst_loading": {
+     "bounds": [
+      2.0,
+      2.5
+     ]
+    }
+   },
+   "claim": "For P1-RuPhos at 90–110 °C, 350–600 s and 2.0–2.5 mol% catalyst, increased catalyst availability and reaction time may yield above 85.58%; the proposed relationship is uncertain because the available observations are not matched comparisons.",
+   "falsification": "Reconsider the improvement claim if three new in-scope experiments spanning the available residence times and loadings all fail to exceed 85.58%, or if matched shorter-time or lower-loading comparisons consistently outperform them.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 85.58
+   }
+  },
+  {
+   "key": "c4|1|H2",
+   "group": "dev",
+   "task": "c4",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "0f5b29db5f4bb8c79ac6e233",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "temperature": {
+     "bounds": [
+      30.0,
+      40.0
+     ]
+    }
+   },
+   "claim": "At 30–40 °C, turnover for coupling 2-chloropyridine with N-Boc-pyrrole-2-boronic acid under the fixed DBU and THF/water conditions is likely too slow to beat the current 95.10% incumbent across the accessible catalyst, loading and residence-time choices.",
+   "falsification": "Reconsider this avoidance if a pre-locked in-scope experiment exceeds 95.10% yield; matched cold and warmer experiments can test whether the temperature association is reproducible.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 95.1
+   }
+  },
+  {
+   "key": "c4|2|H2",
+   "group": "dev",
+   "task": "c4",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "aea27504eb94e1ac3faf01a2",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L3"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      90,
+      110
+     ]
+    }
+   },
+   "claim": "For the fixed 2-chloropyridine and N-Boc-pyrrole-2-boronic acid coupling, P1-RuPhos at 90–110 °C can give yields above 84.09% across some residence times and loadings; heating may accelerate coupling but could also promote degradation.",
+   "falsification": "Reconsider the local hypothesis if three independently selected in-scope experiments spanning residence time and loading all yield at or below 84.09%, or if matched lower-temperature comparisons consistently outperform them.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 84.09
+   }
+  },
+  {
+   "key": "c4|2|H3",
+   "group": "dev",
+   "task": "c4",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "f53daf570c95cc9b590fe4f7",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L6"
+     ]
+    },
+    "t_res": {
+     "bounds": [
+      60,
+      100
+     ]
+    }
+   },
+   "claim": "For the fixed 2-chloropyridine and N-Boc-pyrrole-2-boronic acid coupling, P1-PPh3 at 60–100 s is unlikely to exceed the current 85.10% incumbent; short contact time may limit conversion, though catalyst, temperature and loading effects are not isolated.",
+   "falsification": "Reconsider this local avoidance rule if two new in-scope conditions exceed 85.10% yield, or if matched longer-residence P1-PPh3 conditions consistently fail to improve yield.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 85.1
+   }
+  },
+  {
+   "key": "c4|3|H2",
+   "group": "dev",
+   "task": "c4",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "0bcd2f908ed48bda22ba76d2",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "catalyst": {
+     "allowed": [
+      "P1-L7"
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      40.0
+     ]
+    }
+   },
+   "claim": "For the fixed 2-chloropyridine and N-Boc-pyrrole-2-boronic acid coupling with P1-L7, temperatures of 30–40 °C may limit conversion during the available residence time, making yield below the current 80.72% incumbent likely. The single low-temperature observation supports only a local association, not a matched temperature effect.",
+   "falsification": "Reconsider the low-yield hypothesis if two independently selected in-scope conditions each exceed 80.72% yield, or if matched low-versus-higher-temperature comparisons repeatedly show no low-temperature disadvantage.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 80.72
+   }
+  },
+  {
+   "key": "perera|all|H1",
+   "group": "dev",
+   "task": "perera",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "5174344089d4c4950a14fcb0",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    }
+   },
+   "claim": "With the specified boronic acid under otherwise matched conditions, the bromo heteroarene tends to give a higher product UV area percentage than the corresponding chloro heteroarene, consistent with more accessible oxidative addition; ligand and medium can change the outcome.",
+   "falsification": "Across at least three matched ligand, base and solvent comparisons, revise this local claim if the mean bromo minus chloro product UV area is zero or negative in percentage points; a single comparison is insufficient to establish generality.",
+   "contrasts": [
+    {
+     "axis": "Electrophile_SMILES",
+     "high": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ],
+     "low": [
+      "ClC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "perera|0|H2",
+   "group": "dev",
+   "task": "perera",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "3a486a51f52697157c7cf3f3",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "O=S(OC1=CC=C(N=CC=C2)C2=C1)(C(F)(F)F)=O"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B4OC(C)(C)C(C)(C)O4"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)(C)P(C(C)(C)C)C1=CC=C(N(C)C)C=C1"
+     ]
+    }
+   },
+   "claim": "For the specified heteroaryl triflate, pinacol boronate ester and aminoaryl di-tert-butylphosphine combination, product UV area will often fall below the current 89.74% incumbent across base and solvent choices. Incomplete boronate activation or catalyst compatibility could contribute, but this mechanism is untested.",
+   "falsification": "Revise this local low-response claim if at least two independently chosen base/solvent conditions in the scope exceed 89.74% product UV area; test activation separately with matched boron-partner comparisons.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 89.74
+   }
+  },
+  {
+   "key": "perera|1|H2",
+   "group": "dev",
+   "task": "perera",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "01e1fc1e08641197cfab3fc7",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    },
+    "Base_SMILES": {
+     "allowed": [
+      "[K+].[OH-]"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CO"
+     ]
+    }
+   },
+   "claim": "For the specified bromo heteroarene and boronic acid with potassium hydroxide in methanol, the median product UV area across the available phosphine ligands will be at least 85%; the base and solvent may support boron activation, although their individual contributions are untested.",
+   "falsification": "Revise the local claim if the median product UV area across at least five distinct available ligands tested in this exact substrate, base and solvent regime is below 85%; the selected ligands may not represent the whole set.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 85
+   }
+  },
+  {
+   "key": "perera|1|H3",
+   "group": "dev",
+   "task": "perera",
+   "seed": "1",
+   "id": "H3",
+   "semantic_key": "8ece39cf39e3f56290ae0448",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC1(C)C2=C(OC3=C1C=CC=C3P(C4=CC=CC=C4)C5=CC=CC=C5)C(P(C6=CC=CC=C6)C7=CC=CC=C7)=CC=C2"
+     ]
+    },
+    "Base_SMILES": {
+     "allowed": [
+      "[K+].[OH-]"
+     ]
+    }
+   },
+   "claim": "For the specified bromo heteroarene and boronic acid with potassium hydroxide and the supplied xanthene-based diphosphine, at least two of the three untested solvents will give less than 50% product UV area; the very low methanol result suggests a ligand-dependent limitation, but solvent effects remain unknown.",
+   "falsification": "Falsify this local prediction if at least two of the three remaining solvent conditions give product UV area at or above 50%; this does not establish a universal ligand effect.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 50
+   }
+  },
+  {
+   "key": "perera|2|H2",
+   "group": "dev",
+   "task": "perera",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "59f20aed8eb8653de5a05fed",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1CCCCC1)(C2CCCCC2)C3CCCCC3"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CO"
+     ]
+    }
+   },
+   "claim": "For the bromo heteroarene and specified boronic acid with PCy3 in methanol, changing among the available bases can retain high product UV area; the two observed potassium bases each gave at least 88 percent. Base-dependent speciation and solubility could nevertheless change the result substantially.",
+   "falsification": "Revise the local high-area claim if two newly measured, distinct bases in this region each give product UV area below 70 percent; retain individual results and do not generalize the result beyond this region.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 70
+   }
+  },
+  {
+   "key": "perera|2|H3",
+   "group": "dev",
+   "task": "perera",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "4287c1d5958affc14ba696ab",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "ClC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1[B-](F)(F)F"
+     ]
+    }
+   },
+   "claim": "The chloro heteroarene paired with the specified organotrifluoroborate often produces less than 70 percent product UV area across the supplied ligand, base and solvent choices. Slow activation or boron speciation may contribute, but the two observations do not identify a cause.",
+   "falsification": "Revise the local low-area claim if two newly measured distinct combinations in this region each reach at least 70 percent product UV area; matched comparisons would be needed to test the proposed mechanism.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 70
+   }
+  },
+  {
+   "key": "perera|3|H2",
+   "group": "dev",
+   "task": "perera",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "1cf298a9ac5f286cc77d786b",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "BrC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CO"
+     ]
+    }
+   },
+   "claim": "For the specified bromo heteroarene and boronic acid in methanol, the product UV area will typically be at least 75%, although ligand and base can alter the result. This is a local process hypothesis, not a claim of isolated yield or an established ligand effect.",
+   "falsification": "Revise the local typical-response claim if the median product UV area of at least three additional distinct in-scope conditions is below 75%; compare the proposed ligand with p00257 separately to test the ligand effect.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 75
+   }
+  },
+  {
+   "key": "perera|3|H3",
+   "group": "dev",
+   "task": "perera",
+   "seed": "3",
+   "id": "H3",
+   "semantic_key": "53f0b6130b77510dc9a87f60",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "Electrophile_SMILES": {
+     "allowed": [
+      "ClC1=CC=C(N=CC=C2)C2=C1"
+     ]
+    },
+    "Nucleophile_SMILES": {
+     "allowed": [
+      "CC1=CC=C(N(C2CCCCO2)N=C3)C3=C1B(O)O"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1CCCCC1)(C2CCCCC2)C3CCCCC3"
+     ]
+    }
+   },
+   "claim": "For the chloro heteroarene with the specified boronic acid and PCy3, product UV area tends to remain below the 92.24% incumbent across the available bases and solvents; poorer oxidative addition than for the corresponding bromide is a possible explanation, not an established cause.",
+   "falsification": "Withdraw the below-incumbent prediction if any independently measured in-scope condition exceeds 92.24% product UV area; compare matched chloride and bromide conditions before assigning a leaving-group effect.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 92.24
+   }
+  },
+  {
+   "key": "doyle|all|H1",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "6c91c343ba8f365cb8143279",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "IC1=CC=C(C(F)(F)F)C=C1"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, para-trifluoromethyl aryl iodide combinations will generally give higher reported amination yields than matched para-trifluoromethyl aryl chloride combinations because oxidative addition may be easier; additive and base effects may override this trend.",
+   "falsification": "With at least four matched ligand, additive and base comparisons, reject the proposed local advantage if the median iodide-minus-chloride yield is zero or negative in percentage points; repeated in-scope yields below 10% would also challenge the absolute forecast.",
+   "contrasts": [
+    {
+     "axis": "Arylhalide",
+     "high": [
+      "IC1=CC=C(C(F)(F)F)C=C1"
+     ],
+     "low": [
+      "ClC1=CC=C(C(F)(F)F)C=C1"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "doyle|0|H2",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "104183d786d2967c137fc9eb",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "IC1=CN=CC=C1"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, the supplied 3-iodopyridine can give high reported amination yields across some ligand, base and additive combinations, although heterocycle coordination or inhibition may strongly alter the outcome.",
+   "falsification": "Challenge the high-yield generalization if at least three further independently selected in-scope conditions have a median reported yield below 60%; matched additive and base comparisons are needed to identify individual effects.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 60
+   }
+  },
+  {
+   "key": "doyle|0|H3",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "77e18ca2d34338e8b3fdcddd",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "IC1=CC=C(C(F)(F)F)C=C1"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, combinations with the supplied para-trifluoromethyl aryl iodide tend to yield below the current 94.55% incumbent, although ligand, base and additive may change this outcome.",
+   "falsification": "Challenge the low-yield generalization if at least two of four further independently selected in-scope conditions exceed 94.55% reported yield; matched conditions are needed to establish a substrate effect.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 94.55
+   }
+  },
+  {
+   "key": "doyle|1|H2",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "77e18ca2d34338e8b3fdcddd",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "IC1=CC=C(C(F)(F)F)C=C1"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, combinations using para-trifluoromethyl aryl iodide will generally yield less than the current 98.849% incumbent, with substantial variation across ligand, additive and base. The two observed yields support only a provisional association, not a causal substrate effect.",
+   "falsification": "Challenge this local claim if two of the next four independently selected in-scope measurements exceed the current 98.849% incumbent; compare matched substrate pairs before attributing any difference to substrate identity.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 98.849
+   }
+  },
+  {
+   "key": "doyle|2|H2",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "367b67deb0f792dac82a0b30",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "ClC1=CC=C(OC)C=C1"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, para-methoxy aryl chloride combinations may generally give lower amination yields than their matched para-methoxy aryl iodide counterparts, because the aryl chloride can be harder to activate; ligand, base and additive may override this trend.",
+   "falsification": "Across at least four matched ligand, additive and base pairs, a median chloride-minus-iodide reported yield of zero or more percentage points would contradict the proposed local advantage of iodide. Repeated chloride yields above 75% would also challenge the absolute forecast.",
+   "contrasts": [
+    {
+     "axis": "Arylhalide",
+     "high": [
+      "IC1=CC=C(OC)C=C1"
+     ],
+     "low": [
+      "ClC1=CC=C(OC)C=C1"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "doyle|3|H2",
+   "group": "dev",
+   "task": "doyle",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "77e18ca2d34338e8b3fdcddd",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "Arylhalide": {
+     "allowed": [
+      "IC1=CC=C(C(F)(F)F)C=C1"
+     ]
+    }
+   },
+   "claim": "Under this fixed protocol, combinations using para-trifluoromethyl aryl iodide will often yield less than the current 87.76% incumbent; heterogeneous ligand, base and additive effects could produce exceptions. This is an empirical local prioritization hypothesis, not evidence that iodide is intrinsically worse than chloride.",
+   "falsification": "Challenge the prioritization if at least two of the next four independently selected in-scope experiments exceed 87.76406197% reported yield; assess matched halide comparisons separately before making a leaving-group claim.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 87.76
+   }
+  },
+  {
+   "key": "snar|all|H1",
+   "group": "dev",
+   "task": "snar",
+   "seed": "all",
+   "id": "H1",
+   "semantic_key": "10715008d7e9b61efe0b6f2d",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "conc_dfnb": {
+     "bounds": [
+      0.3,
+      0.5
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      80.0,
+      120.0
+     ]
+    },
+    "tau": {
+     "bounds": [
+      0.5,
+      1.2
+     ]
+    }
+   },
+   "claim": "At substrate concentration at least 0.3 mol/L, temperature at least 80 degC, and residence time at most 1.2 min, sufficient substitution may occur for high throughput to produce higher STY than otherwise comparable lower-temperature or longer-residence conditions; selectivity and conversion may instead limit this advantage.",
+   "falsification": "Compare matched conditions differing in temperature or residence time: repeated lower STY within this region than the matched outside-region conditions would contradict the proposed advantage; report conversion or selectivity if available to distinguish causes.",
+   "contrasts": [
+    {
+     "axis": "temperature",
+     "high": [
+      80,
+      120
+     ],
+     "low": [
+      30,
+      79.9
+     ]
+    },
+    {
+     "axis": "tau",
+     "high": [
+      0.5,
+      1.2
+     ],
+     "low": [
+      1.21,
+      2.0
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "snar|0|H2",
+   "group": "dev",
+   "task": "snar",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "4b9d745c9e9fea4e1a2b9b4f",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "tau": {
+     "bounds": [
+      0.5,
+      0.5
+     ]
+    },
+    "conc_dfnb": {
+     "bounds": [
+      0.5,
+      0.5
+     ]
+    },
+    "equiv_pldn": {
+     "bounds": [
+      2.7,
+      5.0
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      68.58
+     ]
+    }
+   },
+   "claim": "At 0.5 min and 0.5 mol/L, a lower temperature of 30–68.57 degC with 2.7–5.0 equivalents of pyrrolidine may yield STY above the current incumbent, if conversion and selectivity remain sufficient despite the shorter reaction time. The observed increase toward 68.57 degC is confounded by changes in temperature and equivalents and does not establish either causal effect.",
+   "falsification": "Repeated measurements in this region below 10695.1 kg m^-3 h^-1 would contradict the proposed incumbent-beating advantage; matched comparisons across temperature and equivalents would separately test their effects.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 10695.1
+   }
+  },
+  {
+   "key": "snar|0|H3",
+   "group": "dev",
+   "task": "snar",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "c4a9a8d0e40c4feb95ec9582",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "tau": {
+     "bounds": [
+      0.714,
+      2.0
+     ]
+    },
+    "conc_dfnb": {
+     "bounds": [
+      0.5,
+      0.5
+     ]
+    },
+    "equiv_pldn": {
+     "bounds": [
+      3.28,
+      5.0
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      42.86
+     ]
+    }
+   },
+   "claim": "At 0.5 mol/L 2,4-dinitrofluorobenzene, 3.28-5.0 equivalents of pyrrolidine and 30-42.86 degC, residence times of at least 0.714 min may yield lower STY than otherwise matched 0.5 min conditions: any gain in product formation may not offset the longer residence time. This is a provisional process expectation; the available longer-time comparison also changes pyrrolidine equivalents.",
+   "falsification": "Compare matched pairs at 0.5 min and a longer in-scope residence time with identical equivalents, concentration and temperature. Repeated longer-time STY exceeding the matched 0.5 min values would contradict the proposed relationship; an in-scope observation above 11509.91 kg m^-3 h^-1 would also defeat the current-incumbent suppression rationale.",
+   "contrasts": [
+    {
+     "axis": "tau",
+     "high": [
+      0.5,
+      0.5
+     ],
+     "low": [
+      0.714,
+      2.0
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "snar|1|H2",
+   "group": "dev",
+   "task": "snar",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "784ddc40149980f0aa0287aa",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "conc_dfnb": {
+     "bounds": [
+      0.1,
+      0.16
+     ]
+    },
+    "tau": {
+     "bounds": [
+      1.14,
+      2.0
+     ]
+    }
+   },
+   "claim": "At inlet 2,4-dinitrofluorobenzene concentration 0.10–0.16 mol/L and residence time 1.14–2.00 min, space-time yield is expected to be below the current incumbent because less substrate is fed per reactor volume and time, even if substitution with pyrrolidine proceeds efficiently. Temperature, conversion and selectivity may change the result.",
+   "falsification": "An in-scope measurement above 3922.644 kg m^-3 h^-1 falsifies the stated below-incumbent prediction; matched comparisons at equal temperature and pyrrolidine equivalents can test the proposed throughput explanation.",
+   "contrasts": [],
+   "level": {
+    "stat": "none_above",
+    "threshold": 3922.644
+   }
+  },
+  {
+   "key": "snar|2|H2",
+   "group": "dev",
+   "task": "snar",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "99bfbc9a0d8d1e7acea3cadc",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "conc_dfnb": {
+     "bounds": [
+      0.4,
+      0.5
+     ]
+    },
+    "equiv_pldn": {
+     "bounds": [
+      4.0,
+      5.0
+     ]
+    }
+   },
+   "claim": "At 2,4-dinitrofluorobenzene concentrations of 0.4–0.5 mol/L and pyrrolidine equivalents of 4.0–5.0, substrate throughput and nucleophile availability may support high space-time yield, provided conversion and selectivity remain adequate across the residence-time and temperature range; this is a mechanistic expectation rather than an isolated effect demonstrated by the observations.",
+   "falsification": "At matched residence time and temperature, compare repeated conditions inside this region against lower concentration or lower pyrrolidine equivalents; consistently lower STY inside the region would contradict the proposed advantage. Track product conversion and selectivity if available.",
+   "contrasts": [
+    {
+     "axis": "conc_dfnb",
+     "high": [
+      0.4,
+      0.5
+     ],
+     "low": [
+      0.1,
+      0.399
+     ]
+    },
+    {
+     "axis": "equiv_pldn",
+     "high": [
+      4.0,
+      5.0
+     ],
+     "low": [
+      1.0,
+      3.99
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "snar|2|H3",
+   "group": "dev",
+   "task": "snar",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "52a6bfdd9d6caea41fe4347b",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "tau": {
+     "bounds": [
+      0.5,
+      0.7143
+     ]
+    },
+    "conc_dfnb": {
+     "bounds": [
+      0.442,
+      0.5
+     ]
+    },
+    "temperature": {
+     "bounds": [
+      30.0,
+      42.9
+     ]
+    },
+    "equiv_pldn": {
+     "bounds": [
+      3.8,
+      5.0
+     ]
+    }
+   },
+   "claim": "At 0.5–0.7143 min, 0.442–0.5 mol/L 2,4-dinitrofluorobenzene and 30–42.9 degC, high substrate throughput with sufficient pyrrolidine may yield STY near or above the current 11559.6 kg m^-3 h^-1 incumbent. This extrapolation is uncertain: two observations at 0.5 min, 0.5 mol/L and 30 degC were 11358.3 and 11559.6, and do not establish an optimum or a causal temperature effect.",
+   "falsification": "The proposed near-incumbent productivity is challenged if three independent unqueried in-scope conditions each yield below 9000 kg m^-3 h^-1; matched comparisons across residence time, concentration and temperature are needed to test the suggested process relationship.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 9000
+   }
+  },
+  {
+   "key": "snar|3|H2",
+   "group": "dev",
+   "task": "snar",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "c1b58670c0d048303ac9aa0a",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "tau": {
+     "bounds": [
+      0.5,
+      0.5
+     ]
+    },
+    "conc_dfnb": {
+     "bounds": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   "claim": "At 0.5 min residence and 0.5 mol/L inlet 2,4-dinitrofluorobenzene, high throughput may yield STY exceeding 9382 kg m^-3 h^-1 for some pyrrolidine equivalents and temperatures, provided substitution remains sufficiently fast and selective. Temperature and equivalents may materially affect this outcome.",
+   "falsification": "The existence claim is falsified for this finite scope if every remaining executable condition in it is measured and none exceeds 9382.018 kg m^-3 h^-1; repeated low results would weaken the throughput expectation earlier. Matched temperature comparisons can test the proposed dependence separately.",
+   "contrasts": [],
+   "level": {
+    "stat": "exists_above",
+    "threshold": 9382.018
+   }
+  },
+  {
+   "key": "hplc|all|loop_mass",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "all",
+   "id": "loop_mass",
+   "semantic_key": "da93eaf20a249bfda15ecba9",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "sample_loop": {
+     "bounds": [
+      0.05,
+      0.08
+     ]
+    }
+   },
+   "claim": "If filling and transfer are effective and detector response is unsaturated, a sample loop of 0.05–0.08 mL can yield greater peak area than a smaller loop under otherwise comparable conditions.",
+   "falsification": "Compare replicated or closely matched smaller- and larger-loop conditions; consistently lower or indistinguishable peak area for larger loops would challenge the claimed advantage in the tested range.",
+   "contrasts": [
+    {
+     "axis": "sample_loop",
+     "high": [
+      0.05,
+      0.08
+     ],
+     "low": [
+      null,
+      0.0499
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|0|wait_transfer",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "0",
+   "id": "wait_transfer",
+   "semantic_key": "d1e3773557205b2dbc63bcc9",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "wait_time": {
+     "bounds": [
+      8.0,
+      10.0
+     ]
+    }
+   },
+   "claim": "If transfer completion limits the measured peak, waiting 8–10 s may improve peak area relative to shorter waits at otherwise comparable injection settings.",
+   "falsification": "Closely matched or replicated longer- versus shorter-wait experiments that consistently show no increase in peak area would challenge this relationship over the tested settings.",
+   "contrasts": [
+    {
+     "axis": "wait_time",
+     "high": [
+      8,
+      10
+     ],
+     "low": [
+      null,
+      7.99
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|0|moderate_draw",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "0",
+   "id": "moderate_draw",
+   "semantic_key": "bf560d3d5df850d73f7af8bf",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "sample_flow": {
+     "bounds": [
+      1.0,
+      1.6
+     ]
+    }
+   },
+   "claim": "If draw rate affects reliable loop filling, sample flow of 1.0–1.6 mL/min may produce larger peak areas than slower draw rates under otherwise comparable transfer conditions. The observed association is confounded by other settings.",
+   "falsification": "Replicated or closely matched comparisons showing no increase in peak area at 1.0–1.6 mL/min compared with slower flows would challenge the claim over the tested settings.",
+   "contrasts": [
+    {
+     "axis": "sample_flow",
+     "high": [
+      1.0,
+      1.6
+     ],
+     "low": [
+      null,
+      0.99
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|0|fast_push",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "0",
+   "id": "fast_push",
+   "semantic_key": "25b13c2093a08cd6a7c3449c",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "push_speed": {
+     "bounds": [
+      120,
+      150
+     ]
+    }
+   },
+   "claim": "If rapid pushing reduces effective sample transfer, push frequencies of 120–150 Hz may produce lower peak areas than 85–100 Hz under otherwise comparable filling and transport conditions. The observed differences are confounded by other settings.",
+   "falsification": "Closely matched or replicated comparisons in which 120–150 Hz consistently gives peak areas at least as high as 85–100 Hz would challenge this relationship in the tested conditions.",
+   "contrasts": [
+    {
+     "axis": "push_speed",
+     "high": [
+      85,
+      100
+     ],
+     "low": [
+      120,
+      150
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|1|settling_wait",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "1",
+   "id": "settling_wait",
+   "semantic_key": "63622f8e4d5569cec47159e9",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "wait_time": {
+     "bounds": [
+      7,
+      10
+     ]
+    }
+   },
+   "claim": "If the injection sequence benefits from settling before transfer, waiting 7–10 s may improve peak area versus shorter waits under otherwise comparable settings; longer waits could also be neutral or detrimental.",
+   "falsification": "Test replicated or closely matched conditions differing primarily in wait time; consistently equal or lower peak area at 7–10 s than at shorter waits would challenge the proposed advantage in that tested setting.",
+   "contrasts": [
+    {
+     "axis": "wait_time",
+     "high": [
+      7,
+      10
+     ],
+     "low": [
+      null,
+      6.99
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|1|slow_draw",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "1",
+   "id": "slow_draw",
+   "semantic_key": "aad98777c9a7b1fa3fda1f9e",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "sample_flow": {
+     "bounds": [
+      0.5,
+      0.9
+     ]
+    }
+   },
+   "claim": "If slow drawing impairs filling or delivery in this apparatus, draw rates of 0.5–0.9 mL/min will tend to produce lower peak area than moderately faster rates under otherwise comparable injection settings.",
+   "falsification": "Replicate or closely match settings across draw rates; consistently equal or greater peak area at 0.5–0.9 mL/min than at moderately faster rates would challenge the claim in the tested setting.",
+   "contrasts": [
+    {
+     "axis": "sample_flow",
+     "high": [
+      0.91,
+      1.6
+     ],
+     "low": [
+      0.5,
+      0.9
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|2|settling_wait",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "2",
+   "id": "settling_wait",
+   "semantic_key": "63622f8e4d5569cec47159e9",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "wait_time": {
+     "bounds": [
+      7,
+      10
+     ]
+    }
+   },
+   "claim": "If waiting allows the sample and fluid path to settle before transfer, waiting 7–10 s may improve peak area relative to shorter waits at otherwise comparable injection settings; the observed contrast is confounded and does not establish this effect.",
+   "falsification": "Compare repeated or closely matched conditions differing principally in wait time, including waits below 7 s and in 7–10 s; consistently equal or lower peak area for the longer waits would challenge the proposed advantage in the tested range.",
+   "contrasts": [
+    {
+     "axis": "wait_time",
+     "high": [
+      7,
+      10
+     ],
+     "low": [
+      null,
+      6.99
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|2|draw_volume",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "2",
+   "id": "draw_volume",
+   "semantic_key": "95ee1175368d7237a8daf7c0",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "additional_volume": {
+     "bounds": [
+      0.045,
+      0.06
+     ]
+    }
+   },
+   "claim": "If a larger additional draw volume improves loop filling, additional volumes of 0.045–0.060 mL may produce larger peak areas than lower volumes at otherwise comparable injection settings; the available high-area observations are confounded by the other settings.",
+   "falsification": "Compare replicated or closely matched injections inside and below the specified additional-volume range; consistently equal or lower peak areas inside the range would challenge the proposed filling advantage in those tested conditions.",
+   "contrasts": [
+    {
+     "axis": "additional_volume",
+     "high": [
+      0.045,
+      0.06
+     ],
+     "low": [
+      null,
+      0.0449
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|2|push_transfer",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "2",
+   "id": "push_transfer",
+   "semantic_key": "25b13c2093a08cd6a7c3449c",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "push_speed": {
+     "bounds": [
+      120,
+      150
+     ]
+    }
+   },
+   "claim": "If higher pump frequency impairs transfer under these injection conditions, push speeds of 120–150 Hz may produce lower peak area than speeds below 120 Hz under otherwise comparable conditions. The observed contrast is confounded and does not identify a causal speed effect.",
+   "falsification": "In replicated or closely matched injections varying primarily push speed, consistently equal or higher peak areas at 120–150 Hz than below 120 Hz would challenge this proposed transfer disadvantage in the tested range.",
+   "contrasts": [
+    {
+     "axis": "push_speed",
+     "high": [
+      null,
+      119.9
+     ],
+     "low": [
+      120,
+      150
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|3|slow_draw",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "3",
+   "id": "slow_draw",
+   "semantic_key": "c4cd765a9b793291bc1b21b7",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "sample_flow": {
+     "bounds": [
+      0.5,
+      1.0
+     ]
+    }
+   },
+   "claim": "At sample-pump draw rates of 0.5–1.0 mL/min, incomplete or dispersed filling and transfer may produce lower peak area than at moderately higher draw rates when other settings are comparable; the existing observations are confounded and do not establish causality.",
+   "falsification": "Compare several closely matched conditions with draw rates inside and above this range; repeated comparable or higher peak areas at low flow would challenge the proposed disadvantage over those tested conditions.",
+   "contrasts": [
+    {
+     "axis": "sample_flow",
+     "high": [
+      1.01,
+      1.6
+     ],
+     "low": [
+      0.5,
+      1.0
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "hplc|3|long_tubing",
+   "group": "dev",
+   "task": "hplc",
+   "seed": "3",
+   "id": "long_tubing",
+   "semantic_key": "68b2c70c301fc51c7c01b8e2",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "tubing_volume": {
+     "bounds": [
+      0.65,
+      0.9
+     ]
+    }
+   },
+   "claim": "For otherwise comparable injection settings, tubing volumes of 0.65–0.9 mL may reduce peak area relative to approximately 0.3–0.4 mL if longer transfer promotes sample dispersion or incomplete delivery. The existing comparisons change other settings and cannot establish the mechanism.",
+   "falsification": "Compare several closely matched settings across the two tubing-volume ranges, preferably with replicates; consistently comparable or larger peak areas with 0.65–0.9 mL would challenge the proposed disadvantage in the tested settings.",
+   "contrasts": [
+    {
+     "axis": "tubing_volume",
+     "high": [
+      0.3,
+      0.4
+     ],
+     "low": [
+      0.65,
+      0.9
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|0|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "0",
+   "id": "H1",
+   "semantic_key": "ca5bd8c3ef0dadaaad0659c8",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)(C)P(C1=CC=CC=C1)C(C)(C)C",
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "At 105–120 °C with either specified bulky phosphine, pivalate may give higher yields than acetate with the same counterion and otherwise matched conditions, potentially through carboxylate-assisted C–H activation.",
+   "falsification": "Across three matched pivalate-versus-acetate comparisons with the same counterion and other inputs, revise the claim if the mean pivalate-minus-acetate yield is at most −5 percentage points and at least two comparisons favor acetate.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ],
+     "low": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ],
+     "pairs": [
+      [
+       "O=C([O-])C(C)(C)C.[Cs+]",
+       "O=C([O-])C.[Cs+]"
+      ],
+      [
+       "O=C([O-])C(C)(C)C.[K+]",
+       "O=C([O-])C.[K+]"
+      ]
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|0|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "0",
+   "id": "H2",
+   "semantic_key": "8c7d29d8cd60f7be18f7e2b8",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O"
+     ]
+    }
+   },
+   "claim": "With the specified bulky dicyclohexyl biaryl phosphine and potassium or cesium pivalate, butyl acetate may give higher yield than p-xylene under otherwise matched conditions. The single matched comparison supports this possibility for potassium pivalate at 105 °C and 0.1 mol/L; extension to other settings is untested.",
+   "falsification": "Revise the solvent claim if, across three matched butyl acetate versus p-xylene comparisons with this ligand and either pivalate salt, at least two favor p-xylene and the mean butyl acetate-minus-p-xylene yield is at most −5 percentage points.",
+   "contrasts": [
+    {
+     "axis": "Solvent_SMILES",
+     "high": [
+      "CCCCOC(C)=O"
+     ],
+     "low": [
+      "CC1=CC=C(C)C=C1"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|0|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "0",
+   "id": "H3",
+   "semantic_key": "5959b4aa95a9d936ca8d49a2",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[K+]",
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "With the specified bulky dicyclohexyl biaryl phosphine and potassium or cesium pivalate, 120 °C may give higher yield than 105 °C under otherwise matched conditions. The temperature effect is unmeasured; the 105 °C observations establish only a starting point.",
+   "falsification": "Revise the temperature claim if, across three matched 120 versus 105 °C comparisons within these base and ligand choices, at least two favor 105 °C and the mean 120-minus-105 °C yield is at most −5 percentage points.",
+   "contrasts": [
+    {
+     "axis": "Temp_C",
+     "high": [
+      "120"
+     ],
+     "low": [
+      "105"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|0|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "0",
+   "id": "H4",
+   "semantic_key": "e9b294d7a83d56cb025b7cfc",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[K+]",
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)(C)P(C1=CC=CC=C1)C(C)(C)C",
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC(N(C)C)=O"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "At 120 °C, N,N-dimethylacetamide may give yields below 40% with either specified bulky phosphine and potassium or cesium pivalate. This is an uncertain solvent-dependent association, not an established general inhibition mechanism; concentrations other than 0.057 mol/L are untested.",
+   "falsification": "Revise the low-yield claim if two additional in-scope experiments each report at least 40% yield.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 40
+   }
+  },
+  {
+   "key": "aryl|1|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "1",
+   "id": "H1",
+   "semantic_key": "6db2412cc4e12622a8ed5c73",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    }
+   },
+   "claim": "For these fixed, unspecified coupling partners, the selected bulky dicyclohexyl biaryl phosphines may give higher yields than triphenylphosphine under otherwise matched conditions.",
+   "falsification": "Test at least four matched pairs spanning more than one base or solvent, each comparing a scoped ligand with triphenylphosphine at the same concentration and temperature. A nonpositive median scoped-ligand minus triphenylphosphine yield difference would falsify the proposed advantage over those tested conditions.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ],
+     "low": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|1|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "1",
+   "id": "H2",
+   "semantic_key": "7e6f319fa168b94b8586d44b",
+   "installed_query": 4,
+   "direction": "avoid",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1=CC=CO1)(C2=CC=CO2)C3=CC=CO3"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "With potassium acetate in butyl acetate at 105–120 °C, the specified tris(furyl) phosphine may give lower yields than the specified bulky dicyclohexyl biaryl phosphine at matched concentrations. This is a local extrapolation from one matched pair.",
+   "falsification": "Compare the two ligands in at least three matched concentration–temperature pairs within the stated base and solvent. A median tris(furyl) minus biaryl yield difference of zero or greater would falsify the proposed advantage over those tested pairs.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ],
+     "low": [
+      "P(C1=CC=CO1)(C2=CC=CO2)C3=CC=CO3"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|1|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "1",
+   "id": "H3",
+   "semantic_key": "f89b5320ee88e08e56e24801",
+   "installed_query": 9,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "C[C@]1(O2)O[C@](C[C@]2(C)P3C4=CC=CC=C4)(C)O[C@]3(C)C1"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC(N(C)C)=O"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.1",
+      "0.153"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "90",
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "With cesium pivalate, the specified caged phosphine and N,N-dimethylacetamide, raising concentration from 0.1 to 0.153 mol/L may increase yield at matched temperatures between 90 and 120 °C. The concentration trend observed with a different ligand and base may not transfer.",
+   "falsification": "Measure both concentrations at each of the three temperatures. A median yield difference, 0.153 minus 0.1 mol/L, of zero or less falsifies the proposed increase over these tested pairs.",
+   "contrasts": [
+    {
+     "axis": "Concentration",
+     "high": [
+      "0.153"
+     ],
+     "low": [
+      "0.1"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|2|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "2",
+   "id": "H1",
+   "semantic_key": "d92d16b61a3e46bd96254bc3",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    }
+   },
+   "claim": "For these fixed but unspecified substrates, pivalate may support higher yields than acetate through carboxylate-assisted C–H activation, when counterion and other conditions are matched.",
+   "falsification": "Reject this working preference if, in three distinct matched condition pairs, pivalate yields are each at least 10 percentage points below the corresponding acetate yields.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ],
+     "low": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ],
+     "pairs": [
+      [
+       "O=C([O-])C(C)(C)C.[Cs+]",
+       "O=C([O-])C.[Cs+]"
+      ],
+      [
+       "O=C([O-])C(C)(C)C.[K+]",
+       "O=C([O-])C.[K+]"
+      ]
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|2|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "2",
+   "id": "H2",
+   "semantic_key": "5c8185582c0e691851ea920b",
+   "installed_query": 5,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC1=CC=C(C)C=C1"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.1",
+      "0.153"
+     ]
+    }
+   },
+   "claim": "With cesium pivalate, p-xylene, and the specified dicyclohexylphosphine-substituted biaryl ligand, concentrations of 0.1–0.153 mol/L may outperform 0.057 mol/L across the tested temperatures. At 105 °C, the observed yields were 39.81% at 0.057 mol/L and 73.93% at 0.153 mol/L; extension to other temperatures and 0.1 mol/L is untested.",
+   "falsification": "Withdraw the proposed temperature-general concentration preference if matched measurements at both 90 and 120 °C show that 0.153 mol/L yields no more than 5 percentage points above 0.057 mol/L.",
+   "contrasts": [
+    {
+     "axis": "Concentration",
+     "high": [
+      "0.1",
+      "0.153"
+     ],
+     "low": [
+      "0.057"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|2|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "2",
+   "id": "H3",
+   "semantic_key": "425d4e7e6e1b692fb84c1aad",
+   "installed_query": 8,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC1=CC=C(C)C=C1"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.153"
+     ]
+    }
+   },
+   "claim": "At 0.153 mol/L in p-xylene with the specified dicyclohexylphosphine-substituted biaryl ligand, cesium acetate, cesium pivalate and potassium acetate may often give yields above 60% across 90–120 °C. At 105 °C the two cesium salts gave 76.63% and 73.93%; cesium pivalate gave 68.31% at 120 °C. Potassium acetate and the remaining temperatures are untested.",
+   "falsification": "Withdraw the proposed robustness if at least two of the next three distinct, previously unmeasured conditions in this scope yield below 60%.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 60
+   }
+  },
+  {
+   "key": "aryl|2|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "2",
+   "id": "H4",
+   "semantic_key": "91a4358277d6e1dcf11eaa96",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(OC1=C(P(C2CCCCC2)C3CCCCC3)C(OC(C)C)=CC=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC(N(C)C)=O",
+      "CC1=CC=C(C)C=C1"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "90"
+     ]
+    }
+   },
+   "claim": "With potassium pivalate at 90 °C, the two specified bulky phosphines may tend to give yields below 50% in N,N-dimethylacetamide or p-xylene across the available concentrations. Both observed combinations gave 0%, but solvent, ligand and concentration effects are not separately established.",
+   "falsification": "Withdraw the low-yield tendency if at least two of the next three distinct previously unmeasured conditions in this scope yield 50% or more.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 50
+   }
+  },
+  {
+   "key": "aryl|3|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "3",
+   "id": "H1",
+   "semantic_key": "0e7da5351dac113332578ea9",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    }
+   },
+   "claim": "Potassium pivalate may provide an effective carboxylate-assisted pathway for this fixed coupling. As an operational forecast, four diverse potassium-pivalate conditions will average at least 25% reported yield.",
+   "falsification": "Test four preselected potassium-pivalate conditions spanning at least two ligands and two solvents. An average reported yield below 25% falsifies the operational forecast for that set, not the proposed mechanism universally.",
+   "contrasts": [],
+   "level": {
+    "stat": "mean_above",
+    "threshold": 25
+   }
+  },
+  {
+   "key": "aryl|3|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "3",
+   "id": "H2",
+   "semantic_key": "746281d0ab5bccb3217b464d",
+   "installed_query": 5,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    }
+   },
+   "claim": "For this fixed coupling, triphenylphosphine may outperform methyldiphenylphosphine under otherwise matched conditions. At potassium pivalate, butanenitrile, 0.153 mol/L and 120 °C, the respective reported yields were 15.64% and 0%; generalization beyond that single comparison is uncertain.",
+   "falsification": "Preselect four previously unmeasured matched settings spanning at least two solvents and two temperatures, and measure both ligands at each. A nonpositive mean triphenylphosphine-minus-methyldiphenylphosphine yield difference falsifies the operational claim for that set.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ],
+     "low": [
+      "CP(C1=CC=CC=C1)C2=CC=CC=C2"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|3|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "3",
+   "id": "H3",
+   "semantic_key": "c299df221fadcd5f73d37e3b",
+   "installed_query": 8,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[Cs+]"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCC#N"
+     ]
+    }
+   },
+   "claim": "In butanenitrile, cesium acetate may give higher yield than potassium pivalate at otherwise matched conditions. At 0.153 mol/L and 120 °C with triphenylphosphine, the observed yields were 19.64% and 15.64%, respectively. Salt-dependent solubility or carboxylate chemistry could contribute, but the two salt components are confounded.",
+   "falsification": "Preselect four previously unmeasured matched salt comparisons in butanenitrile at 120 °C, spanning two ligands and two concentrations. A nonpositive mean cesium-acetate-minus-potassium-pivalate yield difference falsifies the claim for that test set.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C.[Cs+]"
+     ],
+     "low": [
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|3|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "3",
+   "id": "H4",
+   "semantic_key": "07d48a480deedef149c88e51",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCC#N"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "With triphenylphosphine in butanenitrile at 120 °C, at least three of four preselected unmeasured base–concentration combinations will give less than 40% yield. Solvent-dependent salt availability or catalyst behaviour may contribute, but the mechanism is unproven.",
+   "falsification": "Preselect four unmeasured in-scope combinations spanning at least two bases. Two or more yields of 40% or higher falsify the stated four-test claim.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 40
+   }
+  },
+  {
+   "key": "aryl|4|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "4",
+   "id": "H1",
+   "semantic_key": "695e9136f82dda72a7a5f265",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    }
+   },
+   "claim": "With a bulky dicyclohexyl biaryl phosphine, pivalate may give higher yield than the corresponding acetate under otherwise matched conditions, through carboxylate-assisted C–H activation.",
+   "falsification": "Revise the preference if three matched pivalate-versus-acetate comparisons, holding counterion, ligand, solvent, concentration and temperature fixed within each pair, each give pivalate yields at least 5 percentage points lower.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ],
+     "low": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ],
+     "pairs": [
+      [
+       "O=C([O-])C(C)(C)C.[Cs+]",
+       "O=C([O-])C.[Cs+]"
+      ],
+      [
+       "O=C([O-])C(C)(C)C.[K+]",
+       "O=C([O-])C.[K+]"
+      ]
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|4|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "4",
+   "id": "H2",
+   "semantic_key": "3eeea33b5757e1d8f48a1245",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC1=CC=C(C)C=C1"
+     ]
+    }
+   },
+   "claim": "In p-xylene, a bulky dicyclohexyl biaryl phosphine may give a higher yield than triphenylphosphine under otherwise matched conditions. One matched comparison supports this possibility, but it does not establish an advantage for both biaryl ligands or across all other settings.",
+   "falsification": "Revise the preference if two further matched comparisons in p-xylene, each holding base, concentration and temperature fixed, give the biaryl phosphine at least 5 percentage points lower yield than triphenylphosphine.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ],
+     "low": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|4|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "4",
+   "id": "H3",
+   "semantic_key": "7e8f884a75303dae15f80e56",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC1=CC=C(C)C=C1"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.153"
+     ]
+    }
+   },
+   "claim": "With acetate, the specified dicyclohexyl biaryl phosphine and p-xylene, 0.153 mol/L may yield more than 0.057 mol/L under otherwise matched conditions. The two observed high-concentration acetate yields are encouraging, but comparisons with low-concentration pivalate also change the base and therefore do not establish a concentration effect.",
+   "falsification": "Revise the concentration preference if two matched acetate comparisons, each holding counterion, ligand, solvent and temperature fixed, show that 0.153 mol/L yields at least 5 percentage points less than 0.057 mol/L.",
+   "contrasts": [
+    {
+     "axis": "Concentration",
+     "high": [
+      "0.153"
+     ],
+     "low": [
+      "0.057"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|4|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "4",
+   "id": "H4",
+   "semantic_key": "55305bfed2b769bc87370162",
+   "installed_query": 15,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[K+]",
+      "O=C([O-])C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "FC(F)(F)C1=CC(P(C2=C(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C(OC)=CC=C2OC)C4=CC(C(F)(F)F)=CC(C(F)(F)F)=C4)=CC(C(F)(F)F)=C1"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC(N(C)C)=O"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105"
+     ]
+    }
+   },
+   "claim": "At 105 °C, the specified fluorinated biaryl phosphine with acetate in N,N-dimethylacetamide may retain high yield across the available concentrations and either acetate counterion. The cesium and concentration extrapolations are unmeasured.",
+   "falsification": "Revise the high-yield claim if two of the next three unmeasured in-scope conditions yield below 80%.",
+   "contrasts": [],
+   "level": {
+    "stat": "typical_above",
+    "threshold": 80
+   }
+  },
+  {
+   "key": "aryl|5|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "5",
+   "id": "H1",
+   "semantic_key": "0045d2baec437f5b5e2016b5",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C)(C)P(C1=CC=CC=C1)C(C)(C)C",
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "At 105–120 °C, the selected bulky phosphines may support higher palladium-catalysed arylation yields than triphenylphosphine under otherwise matched conditions.",
+   "falsification": "Test at least four matched pairs against triphenylphosphine, covering at least two selected ligands. The proposed advantage is contradicted if the mean paired yield difference is zero or negative.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "CC(C)(C)P(C1=CC=CC=C1)C(C)(C)C",
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC",
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ],
+     "low": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|5|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "5",
+   "id": "H2",
+   "semantic_key": "ce102ed11ad0bc9f5f9fdcc8",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O"
+     ]
+    }
+   },
+   "claim": "With cesium pivalate and butyl acetate, the non-methoxylated dicyclohexylphosphino triisopropylbiphenyl ligand gives higher yield on average than its dimethoxy analogue at matched concentrations and temperatures. The single observed matched pair supports this local association, not a general mechanistic conclusion.",
+   "falsification": "Compare at least three matched ligand pairs in this base and solvent across different concentration or temperature settings, including the existing pair. The claim is contradicted if the mean yield difference, non-methoxylated minus dimethoxy, is zero or negative.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ],
+     "low": [
+      "CC(C)C1=CC(C(C)C)=C(C(C(C)C)=C1)C2=C(P(C3CCCCC3)C4CCCCC4)C(OC)=CC=C2OC"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|5|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "5",
+   "id": "H3",
+   "semantic_key": "a5f63de6d34c22ed9d9b8b4a",
+   "installed_query": 7,
+   "direction": "avoid",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "CC(C1=C(C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C(C)C)=CC(C(C)C)=C1)C"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O",
+      "CC1=CC=C(C)C=C1"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.1",
+      "0.153"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "90"
+     ]
+    }
+   },
+   "claim": "For the specified dicyclohexylphosphino triisopropylbiphenyl ligand with cesium or potassium pivalate, yields at 90 °C will average lower than at 105 °C under matched solvent and concentration conditions. The single matched cesium pivalate/butyl acetate pair gave 3.00% at 90 °C versus 59.92% at 105 °C; extension to the other settings is provisional.",
+   "falsification": "Test at least four matched 90 °C versus 105 °C pairs, including the existing pair and covering both bases and both solvents. The claim is contradicted if the mean paired yield difference, 90 °C minus 105 °C, is zero or positive.",
+   "contrasts": [
+    {
+     "axis": "Temp_C",
+     "high": [
+      "105"
+     ],
+     "low": [
+      "90"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|6|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "6",
+   "id": "H1",
+   "semantic_key": "d92d16b61a3e46bd96254bc3",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    }
+   },
+   "claim": "Under the fixed protocol, pivalate bases may give higher mean yields than acetate bases at matched cation, ligand, solvent, concentration and temperature, potentially through carboxylate-assisted C–H activation.",
+   "falsification": "Test at least four preselected matched pivalate–acetate pairs spanning different ligands or solvents. The proposed average advantage is contradicted if the mean pivalate-minus-acetate yield difference is zero or negative.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ],
+     "low": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ],
+     "pairs": [
+      [
+       "O=C([O-])C(C)(C)C.[Cs+]",
+       "O=C([O-])C.[Cs+]"
+      ],
+      [
+       "O=C([O-])C(C)(C)C.[K+]",
+       "O=C([O-])C.[K+]"
+      ]
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|6|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "6",
+   "id": "H2",
+   "semantic_key": "b4938b01a6effd74c8a44a90",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C.[Cs+]"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "With cesium acetate in butyl acetate, raising temperature from 90 to 105 or 120 °C may increase yield at matched ligand and concentration by accelerating reaction steps, although catalyst deactivation could offset this benefit.",
+   "falsification": "Test at least four preselected matched pairs at 90 °C versus either 105 or 120 °C, spanning different ligands or concentrations. The proposed average benefit is contradicted if the mean higher-temperature-minus-90 °C yield difference is zero or negative.",
+   "contrasts": [
+    {
+     "axis": "Temp_C",
+     "high": [
+      "105",
+      "120"
+     ],
+     "low": [
+      "90"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|6|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "6",
+   "id": "H3",
+   "semantic_key": "40437eba7ac2b896115c1921",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCCOC(C)=O"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "In butyl acetate at 105–120 °C, triphenylphosphine may give a higher average yield than methyldiphenylphosphine at matched base and concentration, potentially because the ligand substitution changes palladium coordination. The observed advantage at one cesium acetate condition may not generalize.",
+   "falsification": "Measure at least four additional preselected matched ligand pairs spanning bases or concentrations within 105–120 °C. A mean triphenylphosphine-minus-methyldiphenylphosphine yield difference of zero or less contradicts the proposed average advantage in those pairs.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ],
+     "low": [
+      "CP(C1=CC=CC=C1)C2=CC=CC=C2"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|6|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "6",
+   "id": "H4",
+   "semantic_key": "8d032741905d6c6d8feebfe9",
+   "installed_query": 15,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CC(N(C)C)=O"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.1",
+      "0.153"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "With triphenylphosphine in N,N-dimethylacetamide at 120 °C and 0.1 or 0.153 mol/L, the remaining carboxylate-base conditions may average at least 75% yield. Solvent effects on the reaction environment are a possible explanation, not an established mechanism.",
+   "falsification": "Preselect and measure four previously unmeasured conditions in the scope. An average yield below 75% contradicts the proposed high-yield expectation for that set.",
+   "contrasts": [],
+   "level": {
+    "stat": "mean_above",
+    "threshold": 75
+   }
+  },
+  {
+   "key": "aryl|7|H1",
+   "group": "held",
+   "task": "aryl",
+   "seed": "7",
+   "id": "H1",
+   "semantic_key": "d92d16b61a3e46bd96254bc3",
+   "installed_query": 1,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ]
+    }
+   },
+   "claim": "For these fixed, unspecified substrates, pivalate may give higher yields than acetate with the same counterion and otherwise matched conditions, if carboxylate-assisted C–H cleavage is important.",
+   "falsification": "Test at least three pivalate–acetate pairs matched on counterion and all other inputs; an average pivalate-minus-acetate yield difference of zero or less would contradict the proposed advantage in those tested conditions.",
+   "contrasts": [
+    {
+     "axis": "Base_SMILES",
+     "high": [
+      "O=C([O-])C(C)(C)C.[Cs+]",
+      "O=C([O-])C(C)(C)C.[K+]"
+     ],
+     "low": [
+      "O=C([O-])C.[Cs+]",
+      "O=C([O-])C.[K+]"
+     ],
+     "pairs": [
+      [
+       "O=C([O-])C(C)(C)C.[Cs+]",
+       "O=C([O-])C.[Cs+]"
+      ],
+      [
+       "O=C([O-])C(C)(C)C.[K+]",
+       "O=C([O-])C.[K+]"
+      ]
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|7|H2",
+   "group": "held",
+   "task": "aryl",
+   "seed": "7",
+   "id": "H2",
+   "semantic_key": "c8fb390ade59f57d95359014",
+   "installed_query": 4,
+   "direction": "favour",
+   "scope": {
+    "Base_SMILES": {
+     "allowed": [
+      "O=C([O-])C(C)(C)C.[Cs+]"
+     ]
+    },
+    "Ligand_SMILES": {
+     "allowed": [
+      "C[C@]1(O2)O[C@](C[C@]2(C)P3C4=CC=CC=C4)(C)O[C@]3(C)C1"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCC#N"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "105",
+      "120"
+     ]
+    }
+   },
+   "claim": "With cesium pivalate and the specified cyclic phosphine, butanenitrile may give higher yields than butyl acetate at 105–120 °C across the available concentrations. Solvent effects on catalyst speciation or base availability are possible explanations, not established mechanisms.",
+   "falsification": "Across at least three matched nitrile–butyl acetate pairs within these temperatures and concentrations, an average nitrile-minus-ester yield difference of zero or less would contradict the proposed advantage. Ester comparisons require tests outside the favour scope.",
+   "contrasts": [
+    {
+     "axis": "Solvent_SMILES",
+     "high": [
+      "CCCC#N"
+     ],
+     "low": [
+      "CCCCOC(C)=O"
+     ]
+    }
+   ],
+   "level": null
+  },
+  {
+   "key": "aryl|7|H3",
+   "group": "held",
+   "task": "aryl",
+   "seed": "7",
+   "id": "H3",
+   "semantic_key": "626b460fb1a62170eb6678f7",
+   "installed_query": 7,
+   "direction": "favour",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "C[C@]1(O2)O[C@](C[C@]2(C)P3C4=CC=CC=C4)(C)O[C@]3(C)C1"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCC#N"
+     ]
+    },
+    "Concentration": {
+     "allowed": [
+      "0.057",
+      "0.1"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "At 120 °C in butanenitrile and 0.057–0.1 mol/L, the specified cyclic phosphine may typically give at least 70% yield across the available carboxylate bases and outperform triphenylphosphine in matched conditions. Ligand-dependent catalyst speciation is a possible, unestablished explanation.",
+   "falsification": "An average yield below 70% across at least three distinct in-scope conditions would contradict the yield claim. An average cyclic-phosphine-minus-triphenylphosphine difference of zero or less across at least three matched pairs would contradict the ligand advantage; those controls require tests outside the favour scope.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "C[C@]1(O2)O[C@](C[C@]2(C)P3C4=CC=CC=C4)(C)O[C@]3(C)C1"
+     ],
+     "low": [
+      "P(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+     ]
+    }
+   ],
+   "level": {
+    "stat": "mean_above",
+    "threshold": 70
+   }
+  },
+  {
+   "key": "aryl|7|H4",
+   "group": "held",
+   "task": "aryl",
+   "seed": "7",
+   "id": "H4",
+   "semantic_key": "cf41e1ccb84eeb7530877128",
+   "installed_query": 15,
+   "direction": "avoid",
+   "scope": {
+    "Ligand_SMILES": {
+     "allowed": [
+      "FC(F)(F)C1=CC(P(C2=C(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C(OC)=CC=C2OC)C4=CC(C(F)(F)F)=CC(C(F)(F)F)=C4)=CC(C(F)(F)F)=C1"
+     ]
+    },
+    "Solvent_SMILES": {
+     "allowed": [
+      "CCCC#N"
+     ]
+    },
+    "Temp_C": {
+     "allowed": [
+      "120"
+     ]
+    }
+   },
+   "claim": "At 120 °C in butanenitrile, the specified fluorinated phosphine may typically yield below 60% across carboxylate bases and concentrations, and may underperform the specified cyclic phosphine. Ligand-dependent catalyst speciation is a possible but unestablished explanation.",
+   "falsification": "A mean yield of at least 60% across three distinct in-scope base–concentration conditions would contradict the yield claim. A cyclic-phosphine-minus-fluorinated-phosphine mean difference of zero or less across three matched pairs would contradict the comparative claim; those controls are outside the avoid scope.",
+   "contrasts": [
+    {
+     "axis": "Ligand_SMILES",
+     "high": [
+      "C[C@]1(O2)O[C@](C[C@]2(C)P3C4=CC=CC=C4)(C)O[C@]3(C)C1"
+     ],
+     "low": [
+      "FC(F)(F)C1=CC(P(C2=C(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C(OC)=CC=C2OC)C4=CC(C(F)(F)F)=CC(C(F)(F)F)=C4)=CC(C(F)(F)F)=C1"
+     ]
+    }
+   ],
+   "level": {
+    "stat": "typical_below",
+    "threshold": 60
+   }
+  }
+ ]
+}

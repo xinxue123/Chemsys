@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+config.txt
+openai-key.txt
+openai-apikey.txt
+output/
+*.log
+*.aux
+*.blg
+*.lock
+
+/archives/
+/evidence/
+/experiments/
+/Chemsys-submission_20261112-r3-evidence.zip

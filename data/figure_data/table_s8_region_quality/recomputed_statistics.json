@@ -1,0 +1,108 @@
+{
+  "cohort": "The same 69 development hypotheses in gp_followup/claim_coding.json",
+  "scope_fingerprints_verified": 69,
+  "registered_input_hashes_verified": {
+    "experiments/datasets/continuous_20261029/HPLC/oracle.npz": "b43315e9dd25dd79d1e3012fb4b61f13769395121e68dd2a03ce0fc7fd8094d7",
+    "experiments/datasets/continuous_20261029/HPLC/pool.json": "ec8d39d5ca519d13620b01a9c5a52d282b6ce64e1437d0b843d760797e483adf",
+    "experiments/datasets/continuous_20261029/SnAr/oracle.npz": "c85d1995ab6725d25f4c185f899157666a2c477d63a25514da491af2f2ffea2c",
+    "experiments/datasets/continuous_20261029/SnAr/pool.json": "2303c7e9d9c431a2e7c5961a1c6db5ea6a502d0d0faa1c1a9f8864507e69bc39",
+    "experiments/datasets/reasoning_bo/Doyle_Buchwald_Hartwig/oracle.npz": "c0ec9594cffa7b8ad17982624b6654138bab65eb50845d4379264e4fce69c705",
+    "experiments/datasets/reasoning_bo/Doyle_Buchwald_Hartwig/pool.json": "39c867aa3ea25683cdc324964b0ee8098fd0ed0c299e946523e58a7eeb508ca5",
+    "experiments/datasets/reasoning_bo/Perera_Suzuki/oracle.npz": "b6450d0c4d7d84d853d7ffa9055ca5422602bc9e2c9fd8b84ff8859201bbe5c1",
+    "experiments/datasets/reasoning_bo/Perera_Suzuki/pool.json": "8381f44db7b0ef83a110bfef57c00faff2de76825575adbd280db83b19c45598",
+    "experiments/runs/suzuki_guarded/inputs/case1/oracle.npz": "91f3ca7f7242a2ed5a683bdb5675f5072bccf553e38771553f5b45ddf6494634",
+    "experiments/runs/suzuki_guarded/inputs/case1/pool.json": "73d08cf1937f6ce69b1787ab13652a84167063b1dae924f9f4c863b92a62f8dd",
+    "experiments/runs/suzuki_guarded/inputs/case2/oracle.npz": "aca5894f0efb81cf7d65daa4dc2c3978bd36e99db90d3a7e535768c40bf658f3",
+    "experiments/runs/suzuki_guarded/inputs/case2/pool.json": "d822952f4eb2748f1ea05d0156b1fd09b7d758212e695305b5ea3b24d6b8203a",
+    "experiments/runs/suzuki_guarded/inputs/case3/oracle.npz": "c69938a875d3da5ae01dde9fcf23c2a05a28983b3f656a8463873be97baa26fa",
+    "experiments/runs/suzuki_guarded/inputs/case3/pool.json": "90a31c87cc29f2aa186d6a2ff1d234035f73f12709a75ba2b137b436162157bb",
+    "experiments/runs/suzuki_guarded/inputs/case4/oracle.npz": "1e508eeca3076a25b889aaa4c589daf42e6a2796a23e2b83e6d7710e973ab7ce",
+    "experiments/runs/suzuki_guarded/inputs/case4/pool.json": "b785a1dc366176d54f2582642adf39f6b5e344dc2106c8603237a4697cf564ca"
+  },
+  "input_protocol_sha256": "7df0f2dfdeffe44964d5dd012244ab7456ece3594305450e25ffd2004333bbbd",
+  "archive_sha256": "984970e5a47bec2f85907c2df6bbfb107b415c5129e24fafa81dcd279b716ab4",
+  "claim_coding_sha256": "f1bf8c507894986005d635a8461e999086ef9e1eeb30101e45c1176dc191cab1",
+  "top5_definition": "All pool outcomes at or above the 95th percentile, including ties",
+  "lift_definition": "(top5 candidates in scope / all candidates in scope) / (top5 candidates in pool / all candidates in pool)",
+  "denominator": "Full task pool; no experimental outcomes or candidate scopes changed",
+  "grouping": "Shared initial hypothesis counted once per task; refreshed hypotheses counted by task, stream and ID",
+  "groups": {
+    "initial_favor": {
+      "n": 8,
+      "median_lift": 0.8703786907078852,
+      "above_one": 4,
+      "above_one_percent": 50.0,
+      "contains_maximum": 1
+    },
+    "refreshed_favor": {
+      "n": 32,
+      "median_lift": 3.09018899672407,
+      "above_one": 27,
+      "above_one_percent": 84.375,
+      "contains_maximum": 8
+    },
+    "avoid": {
+      "n": 29,
+      "median_lift": 0.0,
+      "above_one": 1,
+      "above_one_percent": 3.4482758620689653,
+      "contains_maximum": 0
+    }
+  },
+  "pools": {
+    "c1": {
+      "n": 4692,
+      "threshold95": 0.54712082862854,
+      "top_count": 235,
+      "top_fraction": 0.05008525149190111
+    },
+    "c2": {
+      "n": 4692,
+      "threshold95": 0.16091218090057374,
+      "top_count": 235,
+      "top_fraction": 0.05008525149190111
+    },
+    "c3": {
+      "n": 4692,
+      "threshold95": 0.7096152038574217,
+      "top_count": 235,
+      "top_fraction": 0.05008525149190111
+    },
+    "c4": {
+      "n": 4692,
+      "threshold95": 0.8794919548034668,
+      "top_count": 235,
+      "top_fraction": 0.05008525149190111
+    },
+    "perera": {
+      "n": 3696,
+      "threshold95": 0.9249749999999999,
+      "top_count": 185,
+      "top_fraction": 0.05005411255411255
+    },
+    "doyle": {
+      "n": 3955,
+      "threshold95": 0.8321074319899997,
+      "top_count": 198,
+      "top_fraction": 0.050063211125158026
+    },
+    "snar": {
+      "n": 4096,
+      "threshold95": 7133.722929026532,
+      "top_count": 205,
+      "top_fraction": 0.050048828125
+    },
+    "hplc": {
+      "n": 1007,
+      "threshold95": 1642.5450109999995,
+      "top_count": 51,
+      "top_fraction": 0.0506454816285998
+    }
+  },
+  "Direct_Arylation_mean_midrank": 16.66304976851852,
+  "confirmatory_count_definition": "Four comparison rows already marked confirmatory in SI: CPA plus three screening tasks",
+  "original_registration_chronology_not_newly_verified": true,
+  "no_experiments": true,
+  "no_GP_fits": true,
+  "no_LLM_calls": true
+}

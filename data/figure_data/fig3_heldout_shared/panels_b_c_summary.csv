@@ -1,0 +1,5 @@
+task,method,pairs,mean_difference,ci90_low,ci90_high
+Direct Arylation,Scope controller,24,2.2094,-3.47,7.8888
+Direct Arylation,Reasoning BO,24,1.093,-5.1735,7.3595
+Direct Arylation,LGBO,24,-6.8315,-14.2792,0.6162
+CPA,Scope controller,24,0.8796,-5.0423,6.8015

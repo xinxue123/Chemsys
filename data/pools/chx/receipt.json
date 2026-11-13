@@ -1,0 +1,15 @@
+{
+  "task": "CHX_Pd_Heterocoupling",
+  "rows": 1536,
+  "levels": {
+    "Nucleophile": 16,
+    "Precatalyst": 16,
+    "Base": 6
+  },
+  "grid_coverage": 100.0,
+  "source_converted_from_fraction": false,
+  "pool_sha256": "076987d64cdf080d10007ef5c009d45321ad011794d6574f62842298a36cd2e0",
+  "oracle_sha256": "b4b45ac511fce28a009e2ef5730f65ee5854f26d27487aa709308a280d407f62",
+  "source_sha256": "c933b99c64d97f52d4c5cad21beecda1aebb84cafcf511afdc1b38eb89927234",
+  "outcome_access": "oracle written by code; no outcome statistic printed before predictions"
+}

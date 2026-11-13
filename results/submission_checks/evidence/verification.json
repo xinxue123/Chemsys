@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "screen_sources": {
+    "dfl": {
+      "rows": 740,
+      "response": "yield",
+      "minimum": 0.0,
+      "mean": 40.417567567567566,
+      "maximum": 106.0,
+      "values_over_100": [
+        101.0,
+        104.0,
+        105.0,
+        106.0,
+        106.0
+      ]
+    },
+    "bor": {
+      "rows": 1518,
+      "response": "yield",
+      "minimum": 0.0,
+      "mean": 45.46236559639724,
+      "maximum": 100.0,
+      "values_over_100": []
+    },
+    "chx": {
+      "rows": 1536,
+      "response": "Conversion",
+      "minimum": 0.0,
+      "mean": 2.0506901041666667,
+      "maximum": 39.81,
+      "values_over_100": []
+    }
+  },
+  "table_s8": {
+    "hypotheses_recomputed_from_candidate_pools": 69,
+    "groups": {
+      "initial_favor": {
+        "n": 8,
+        "median_lift": 0.8703786907078852,
+        "above_one": 4,
+        "above_one_percent": 50.0,
+        "contains_maximum": 1
+      },
+      "refreshed_favor": {
+        "n": 32,
+        "median_lift": 3.09018899672407,
+        "above_one": 27,
+        "above_one_percent": 84.375,
+        "contains_maximum": 8
+      },
+      "avoid": {
+        "n": 29,
+        "median_lift": 0.0,
+        "above_one": 1,
+        "above_one_percent": 3.4482758620689653,
+        "contains_maximum": 0
+      }
+    }
+  },
+  "test_g": {
+    "pairs": 40,
+    "state_files_checked": 80,
+    "cohorts": {
+      "development": {
+        "pairs": 32,
+        "analysis_units": 8,
+        "analysis_unit": "task (mean of four streams)",
+        "mean_difference_points": 12.177497474670835,
+        "ci90_low_points": 2.5489625002264393,
+        "ci90_high_points": 21.80603244911523,
+        "exact_sign_flip_p": 0.109375,
+        "mean_differences_by_task_points": {
+          "c1": 27.005767595333147,
+          "c2": 30.782976268363768,
+          "c3": -0.5154422197141386,
+          "c4": 0.346686160722367,
+          "perera": -1.4720000000000013,
+          "doyle": 27.74143045239305,
+          "snar": -0.021942342753831667,
+          "hplc": 13.552503883022318
+        }
+      },
+      "direct_arylation": {
+        "pairs": 8,
+        "analysis_units": 8,
+        "analysis_unit": "matched stream",
+        "mean_difference_points": 9.1125,
+        "ci90_low_points": -1.6413736251957545,
+        "ci90_high_points": 19.866373625195756,
+        "exact_sign_flip_p": 0.0703125
+      }
+    }
+  },
+  "deoxyfluorination_sensitivity": {
+    "original": {
+      "response_cap": null,
+      "pool_denominator": 106.0,
+      "pairs": 24,
+      "difference": -1.3777515723270441,
+      "interval90": [
+        -4.626115884317393,
+        1.8706127396633045
+      ],
+      "verdict": "not separated"
+    },
+    "cap_and_renormalize": {
+      "response_cap": 100,
+      "pool_denominator": 100,
+      "pairs": 24,
+      "difference": -1.6770833333333328,
+      "interval90": [
+        -5.065407584153331,
+        1.7112409174866647
+      ],
+      "verdict": "not separated"
+    },
+    "cap_with_original_denominator": {
+      "response_cap": 100,
+      "pool_denominator": 106.0,
+      "pairs": 24,
+      "difference": -1.5821540880503153,
+      "interval90": [
+        -4.778686400144653,
+        1.6143782240440225
+      ],
+      "verdict": "not separated"
+    }
+  },
+  "snar_sensitivity": {
+    "source": "https://gosummit.readthedocs.io/en/latest/_modules/summit/benchmarks/snar.html",
+    "scipy_version": "1.15.3",
+    "normalization_pool_maximum_sty": 11559.605121586614,
+    "simulated_grid_points": 1536,
+    "largest_baseline_sty_difference": 2.1582309273071587e-09,
+    "contrasts": {
+      "temperature": {
+        "matched_groups": 128,
+        "baseline": -11.431540982759604,
+        "kc_off": 3.1889528325541425
+      },
+      "equiv_pldn": {
+        "matched_groups": 128,
+        "baseline": -8.369539172473186,
+        "kc_off": 1.6718292923040883
+      }
+    }
+  }
+}

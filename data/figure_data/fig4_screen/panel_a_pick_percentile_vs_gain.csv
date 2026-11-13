@@ -1,0 +1,13 @@
+task,role,llm_pick_pool_percentile,llm_start_minus_random_start_searchauc
+Reizman 1,development,92.72,14.42
+Reizman 2,development,97.99,17.12
+Reizman 3,development,99.33,15.35
+Reizman 4,development,78.02,-0.66
+Perera,development,91.42,1.43
+Doyle,development,70.51,-4.78
+SnAr,development,76.4,11.09
+HPLC,development,40.96,-3.79
+Direct Arylation,held-out,16.66,-15.28
+Deoxyfluorination,new task (screen),36.42,-1.38
+Borylation,new task (screen),27.6,-9.44
+Pd coupling,new task (screen),77.0,-8.54

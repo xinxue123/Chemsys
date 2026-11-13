@@ -1,0 +1,15 @@
+{
+  "task": "DFL_Deoxyfluorination",
+  "rows": 740,
+  "levels": {
+    "Alcohol": 37,
+    "Sulfonyl_fluoride": 5,
+    "Base": 4
+  },
+  "grid_coverage": 100.0,
+  "source_converted_from_fraction": false,
+  "pool_sha256": "2f12bbbbcff120c1f90c4a5069393f08430329b3edf43456d09c9a5aefd6756b",
+  "oracle_sha256": "ab46a618761f21d2806d1a7d1f5226a25c292e98a2c8f5a94339047010d552d7",
+  "source_sha256": "1c6b0f2401e2d945fc8f0fc0a905249eb2eb7e42fdc92782e85ab2cbb4c90e85",
+  "outcome_access": "oracle written by code; no outcome statistic printed before predictions"
+}

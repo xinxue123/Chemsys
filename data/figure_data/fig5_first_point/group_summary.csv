@@ -1,0 +1,4 @@
+task,best_level_axis,mean_searchauc_failed_on_level,mean_searchauc_failed_elsewhere,gap,gap_ci90_low,gap_ci90_high,permutation_p,share_q2_10_on_level_pct_failed_on_level,share_q2_10_on_level_pct_failed_elsewhere
+Direct Arylation,Solvent_SMILES,52.1955,62.6553,10.4598,4.2065,16.8113,0.009,17.78,43.33
+Doyle,Base,66.1543,70.5962,4.4419,1.0081,7.9974,0.0468,28.06,58.06
+Perera,Electrophile_SMILES,80.5586,71.6848,-8.8737,-14.6391,-3.5673,0.0087,5.83,23.33

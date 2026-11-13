@@ -1,0 +1,23 @@
+{
+  "task": "snar",
+  "full_task": "SnAr",
+  "candidates": 4096,
+  "objective_unit": "kg m^-3 h^-1",
+  "axes": [
+    "tau",
+    "equiv_pldn",
+    "conc_dfnb",
+    "temperature"
+  ],
+  "input_kinds": [
+    "continuous",
+    "continuous",
+    "continuous",
+    "continuous"
+  ],
+  "pool_source": "experiments/datasets/continuous_20261029/SnAr/pool.json",
+  "input_sha256": "2303c7e9d9c431a2e7c5961a1c6db5ea6a502d0d0faa1c1a9f8864507e69bc39",
+  "oracle_sha256": "c85d1995ab6725d25f4c185f899157666a2c477d63a25514da491af2f2ffea2c",
+  "objective_scale": 13000.0,
+  "export": "Post-hoc full-table inspection only; never exposed to LLM decisions"
+}

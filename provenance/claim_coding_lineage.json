@@ -1,0 +1,21 @@
+{
+  "historical_record": {
+    "archive": "Chemsys-submission_20261112.zip",
+    "release": "submission-20261112-r1",
+    "archive_sha256": "c47bafa41526a245fe97f4d6e9fa852439ab49b6c5a3919d3c15f5f9132e9c4e",
+    "member": "Chemsys-submission_20261112/experiments/runs/hypothesis_scope_v2_20261105/gp_followup/claim_coding.json",
+    "sha256": "f1bf8c507894986005d635a8461e999086ef9e1eeb30101e45c1176dc191cab1"
+  },
+  "analysis_files": [
+    "results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json",
+    "experiments/runs/hypothesis_scope_v2_20261105/gp_followup/claim_coding.json"
+  ],
+  "analysis_sha256": "2eb27111e27c6cb3cf245d9a6bd7c4e0e53840381009bb3b44d2cee860fa968c",
+  "retained_fields": [
+    "status",
+    "hypotheses"
+  ],
+  "hypotheses": 99,
+  "comparative_hypotheses": 62,
+  "contrasts": 68
+}

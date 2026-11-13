@@ -1,0 +1,38 @@
+[
+  {
+    "file": "code/experiment_tools/hypothesis_scope_v2/paper_bo.py",
+    "before": "BASE = Path(r'C:\\ChemFollowup\\experiments\\runs\\hypothesis_scope_v2_20261105')",
+    "after": "BASE = Path(__file__).resolve().parents[3]/'experiments/runs/hypothesis_scope_v2_20261105'",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  },
+  {
+    "file": "code/experiment_tools/hypothesis_scope_v2/screen.py",
+    "before": "RAW = Path(r'C:\\ChemFollowup\\experiments\\datasets\\new_task_screen_20261107\\raw')",
+    "after": "RAW = ROOT/'data/source_tables/new_task_screen'",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  },
+  {
+    "file": "code/extensions/deepseek/run_study.py",
+    "before": "HERE = Path(__file__).resolve().parent\nROOT = HERE.parents[2]",
+    "after": "ROOT = Path(__file__).resolve().parents[3]\nHERE = ROOT / 'evidence/deepseek'",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  },
+  {
+    "file": "code/extensions/deepseek/deepseek_transport.py",
+    "before": "HERE = Path(__file__).resolve().parent\nROOT = HERE.parents[2]",
+    "after": "ROOT = Path(__file__).resolve().parents[3]\nHERE = ROOT / 'evidence/deepseek'",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  },
+  {
+    "file": "code/extensions/deepseek/run_study.py",
+    "before": "SOURCE = ROOT / 'extrnal' / 'code'",
+    "after": "SOURCE = ROOT / 'code'",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  },
+  {
+    "file": "code/extensions/deepseek/deepseek_transport.py",
+    "before": "raw = (ROOT / 'config.txt').read_text(encoding='utf-8-sig')",
+    "after": "raw = Path(os.environ['CHEM_DEEPSEEK_CONFIG']).read_text(encoding='utf-8-sig')",
+    "purpose": "Relocate a filesystem path; preserve numerical and decision logic."
+  }
+]
