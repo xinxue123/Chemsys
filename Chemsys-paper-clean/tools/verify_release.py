@@ -104,15 +104,16 @@ def result_check():
     assert len({r['key'] for r in claims})==99 and len(contrasts)==68
     coding=ROOT/'results/hypothesis_scope_v2_mechanism_20261106/claim_coding.json'
     assert sha(coding)==coding.with_suffix('.sha256').read_text().split()[0]
-    tex=(ROOT/'paper/hypothesis_scope_jcim/main.tex').read_text(encoding='utf-8')
-    table=tex[tex.index(r'\label{tab:map}'):];table=table[:table.index(r'\end{table}')];displayed=0
-    for line in table.splitlines():
-        cells=line.strip().removesuffix(r'\\').strip().split(' & ')
-        if len(cells)!=7 or not cells[3].isdigit():continue
-        n=int(cells[3]);effect=float(cells[4].strip('$'));win,loss=map(int,cells[5].split('/'))
-        assert any(int(r['contrasts'])==n and int(r['wins'])==win and int(r['losses'])==loss and r['verdict']==cells[6].lower() and abs(float(r['mean_effect'])-effect)<=.005000001 for r in contrasts)
-        displayed+=1
-    assert displayed==11
+    table = rows(ROOT / "results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv")
+    for item in table:
+        identity = (item["task"], item["axis"], item["higher"], item["lower"])
+        expected = (item["pairs"], item["wins"], item["losses"], item["verdict"])
+        matching = [row for row in contrasts
+                    if (row["task"], row["axis"], row["high"], row["low"]) == identity
+                    and (row["contrasts"], row["wins"], row["losses"], row["verdict"]) == expected]
+        assert any(abs(float(row["mean_effect"]) - float(item["effect"])) <= .005000001
+                   for row in matching), item
+    assert len(table) == 11
     return dict(development_trajectories=160,development_method_task_cells=len(method_rows),heldout_model_pairs=288,Table_4_rows=len(table4),knowledge_hypotheses=99,comparative_contrasts=68,Table_6_rows=11,scope='Arithmetic from published derived curves and tables; raw decision chains, GP fitting and LLM execution are not replayed.')
 
 def credentials_check():

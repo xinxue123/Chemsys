@@ -14,6 +14,16 @@
       "sha256": "7f94e62ecd0f524698b4be6c3a43f5ab4edcf25fff6945cf0a3f0be4615034bf"
     },
     {
+      "path": "LOCAL_DATA_REQUIREMENTS.md",
+      "bytes": 1854,
+      "sha256": "232e3c7d49bdc537e453d43fe35b0428c3be02637e831e3943949ebd4c855831"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4034,
+      "sha256": "30b92b4571d89ed04aeaf9f194ce11c3a201946093a9e399ac602f5ba5009b10"
+    },
+    {
       "path": "code/analysis/analyze_first_point_saved_evidence.py",
       "bytes": 18199,
       "sha256": "7f1caa34ae36d61d6327012c5beaeead53adca53ad9e6e49f706cfb73b9167a6"
@@ -314,14 +324,14 @@
       "sha256": "07e01cf19c3337e29fc77aecd222512680ba6106a79b96d36801666858a3762f"
     },
     {
-      "path": "code/chemist_system/third_party/reasoning_bo_official/data/chemistry_data.zip",
-      "bytes": 132939,
-      "sha256": "e504dd845bc2d02a9a4df95c168c1b4a938e6007694dd3ed2d6f259d79612712"
-    },
-    {
       "path": "code/chemist_system/third_party/reasoning_bo_official/SOURCE_PROVENANCE.json",
       "bytes": 21973,
       "sha256": "29f10f00f31125fd178a9aa776daf0e8da96537b2fe3e2f7f937beb9320b7b44"
+    },
+    {
+      "path": "code/chemist_system/third_party/reasoning_bo_official/data/chemistry_data.zip",
+      "bytes": 132939,
+      "sha256": "e504dd845bc2d02a9a4df95c168c1b4a938e6007694dd3ed2d6f259d79612712"
     },
     {
       "path": "code/chemist_system/third_party/reasoning_bo_official/src/bo/reasoner/base.py",
@@ -332,6 +342,16 @@
       "path": "code/chemist_system/third_party/reasoning_bo_official/src/prompts/test_prompts.json",
       "bytes": 10756,
       "sha256": "0c803bddc7e49389266135d4faf14c6a646cbd46e4f36dab590e3378b05e2c51"
+    },
+    {
+      "path": "code/chemist_system/third_party/suzuki_official/lgbo/LICENSE",
+      "bytes": 1069,
+      "sha256": "fbdd3992972c3fc5988ca0485d4efb0c92437da306fcc89907bd1b71beb3b430"
+    },
+    {
+      "path": "code/chemist_system/third_party/suzuki_official/lgbo/README.md",
+      "bytes": 9565,
+      "sha256": "1e59ec2763a8374baa91559ddbbd3d3592c090368da9b8589cc5e5034e82219d"
     },
     {
       "path": "code/chemist_system/third_party/suzuki_official/lgbo/boo.py",
@@ -349,11 +369,6 @@
       "sha256": "b64b1e449ecab461d94be952c730533b9e9c7042f9127257d8760627b8bf4ded"
     },
     {
-      "path": "code/chemist_system/third_party/suzuki_official/lgbo/LICENSE",
-      "bytes": 1069,
-      "sha256": "fbdd3992972c3fc5988ca0485d4efb0c92437da306fcc89907bd1b71beb3b430"
-    },
-    {
       "path": "code/chemist_system/third_party/suzuki_official/lgbo/prior.py",
       "bytes": 20342,
       "sha256": "2ccd8a6f9559a743b7150aa1ac998c341f069db4a7a5af01145ee21887cc7f7d"
@@ -369,11 +384,6 @@
       "sha256": "b8d2b47614edf1c1a96c38abfb3a6927643320c8a0c84a24afea3caf2b46c2d2"
     },
     {
-      "path": "code/chemist_system/third_party/suzuki_official/lgbo/README.md",
-      "bytes": 9565,
-      "sha256": "1e59ec2763a8374baa91559ddbbd3d3592c090368da9b8589cc5e5034e82219d"
-    },
-    {
       "path": "code/chemist_system/third_party/suzuki_official/lgbo/requirements.txt",
       "bytes": 51,
       "sha256": "4fcb96a3c237c52ba99e49a25b5abb38be29ff9a24046a06bfe467986b7d639d"
@@ -384,11 +394,6 @@
       "sha256": "cee7c02da6883951c7663b3585da20f447b6a74a3b6f4e99b2ef46eb3d85d7ea"
     },
     {
-      "path": "code/chemist_system/third_party/suzuki_official/llinbo/helper_func.py",
-      "bytes": 6318,
-      "sha256": "40d1f02d7fac8c671a3b376fdbaac504acdaa7d8e515626dd5c6ef888ee399eb"
-    },
-    {
       "path": "code/chemist_system/third_party/suzuki_official/llinbo/LLM_agent_BBFO.py",
       "bytes": 21503,
       "sha256": "e97371d3a9e48bbb108e23f8bb6036da570f19d23aa613db956f72d1f4251dd9"
@@ -397,6 +402,11 @@
       "path": "code/chemist_system/third_party/suzuki_official/llinbo/README.md",
       "bytes": 2790,
       "sha256": "2e84a886d47dbcf48542a82e5511150705f4cafd805414df582141020f67a815"
+    },
+    {
+      "path": "code/chemist_system/third_party/suzuki_official/llinbo/helper_func.py",
+      "bytes": 6318,
+      "sha256": "40d1f02d7fac8c671a3b376fdbaac504acdaa7d8e515626dd5c6ef888ee399eb"
     },
     {
       "path": "code/experiment_tools/chemical_hypothesis_bo/__init__.py",
@@ -764,6 +774,11 @@
       "sha256": "ad2bd1d9227814939d7ec5d7d79ddddae18c82827063fac9eb68fe64afacf9e3"
     },
     {
+      "path": "data/README.md",
+      "bytes": 1009,
+      "sha256": "d8de3804b84eba3797c158ca0ceee8a2fa186a4496277383ce83927587707453"
+    },
+    {
       "path": "data/dataset_registry.csv",
       "bytes": 3859,
       "sha256": "e7ee1f3b2f89556d70edd326c15ec52b562e4b763d856c11435d89113f1bb127"
@@ -994,11 +1009,6 @@
       "sha256": "8c15d7092eb36cd0bfa073b033b685e7473997fff792ee9f55b7d06ad250edc6"
     },
     {
-      "path": "data/README.md",
-      "bytes": 1009,
-      "sha256": "d8de3804b84eba3797c158ca0ceee8a2fa186a4496277383ce83927587707453"
-    },
-    {
       "path": "data/study_designs/deepseek_shared_starts.json",
       "bytes": 12259,
       "sha256": "23cc7108860be3c916cbc7d9b0225f15042ce3de54a9d99ee9e980a1199c08a2"
@@ -1040,8 +1050,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 2659,
-      "sha256": "469eaa2e20de04f5329ca3ce9e84590bd6eaab077d5d9ecb32a369b7dc07d069"
+      "bytes": 2591,
+      "sha256": "855bf1cee793a3e912afd198d76e6af8daadfaf4564fefffe0cf4a468a283256"
     },
     {
       "path": "environment/recorded_environment.json",
@@ -1059,14 +1069,9 @@
       "sha256": "16ea82bdde1fd7fe6c24b03f867bae93fb74793737e782640b7b81f44a9eda12"
     },
     {
-      "path": "LOCAL_DATA_REQUIREMENTS.md",
-      "bytes": 1854,
-      "sha256": "232e3c7d49bdc537e453d43fe35b0428c3be02637e831e3943949ebd4c855831"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/acs-si.bib",
-      "bytes": 305,
-      "sha256": "5b54c4fa125df16a7faec7b6fdad80e767ff91baa80bc6e4c33e97f2ed4c24c1"
+      "path": "paper/hypothesis_scope_jcim/figure_data/README.md",
+      "bytes": 1670,
+      "sha256": "3140cd8c5280e6e8701b612645b1d3ca0e0b878cc77152e0027985970f82b8e6"
     },
     {
       "path": "paper/hypothesis_scope_jcim/figure_data/fig2_development/panel_a_by_task.csv",
@@ -1134,11 +1139,6 @@
       "sha256": "70bb0cbacf9e2cece63da5d3200f03ba052e201af75c2b3a00e0e6e91b057ef2"
     },
     {
-      "path": "paper/hypothesis_scope_jcim/figure_data/README.md",
-      "bytes": 1670,
-      "sha256": "3140cd8c5280e6e8701b612645b1d3ca0e0b878cc77152e0027985970f82b8e6"
-    },
-    {
       "path": "paper/hypothesis_scope_jcim/figure_data/table4_deepseek/paired_results.csv",
       "bytes": 29222,
       "sha256": "98859bc88a2d62f6e535361bf5d8590f59c5e6f0cd1c1a79032bf9fc7e39031c"
@@ -1174,31 +1174,6 @@
       "sha256": "4af1d1e1ec26577145fede66b85ba7107c94d8252247afc5daef7e00de961c5f"
     },
     {
-      "path": "paper/hypothesis_scope_jcim/generated/claim_verdicts.tex",
-      "bytes": 298,
-      "sha256": "9722fc1863272b7fabc1a8e6b75bf5b1355838f0081851b188eccf94392d348b"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/designs.tex",
-      "bytes": 732,
-      "sha256": "e525096f2d396355c2db06ed10eabd2ab0a5eb16e3dfcaef52ad82d8f1396f63"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/first_points.tex",
-      "bytes": 391,
-      "sha256": "048b7b999db61cf1decd2d0d256b5d919c415927b7763eeccb732f5d6c5fa013"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/forecasts.tex",
-      "bytes": 436,
-      "sha256": "4b1adb00ba23a4a167bbb1cff5d8f84192ab7564c1731d3ea2dec2b51ab2976a"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/per_task.tex",
-      "bytes": 657,
-      "sha256": "74016f49c1670a959104cf2fb638958281e690a4a788adcccd9e51f2d5182a0b"
-    },
-    {
       "path": "paper/hypothesis_scope_jcim/generated/prompts/first_point.txt",
       "bytes": 1938,
       "sha256": "6e0a62517641787baa9e74da174c2939d2a17c622de3b94a41481696866c8496"
@@ -1217,41 +1192,6 @@
       "path": "paper/hypothesis_scope_jcim/generated/prompts/hypotheses_faithful.txt",
       "bytes": 4885,
       "sha256": "b8475618371fc23ba2936ebbdf121a600aba22ab1e1df3b6653d35daae03a265"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/test_f.tex",
-      "bytes": 290,
-      "sha256": "801c1302f8f43fbe63c99a186ad2d33bf1b55ab3151c91ea93c3d661ea125915"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/generated/test_g.tex",
-      "bytes": 216,
-      "sha256": "e00b9173b287b5270be48f87c445962a47763182fccf58138b063049074221f8"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/main.pdf",
-      "bytes": 364951,
-      "sha256": "c21480a78ad8ffc42a90b10ba531a661d114bb5ad0564248968145c408badd1d"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/main.tex",
-      "bytes": 49138,
-      "sha256": "6ab37655087f3035cd49b7a895d5f06d434e5547d64b7ddcbd2cccca6c5a855a"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/references.bib",
-      "bytes": 30878,
-      "sha256": "db2200b35a124203bd56b1fb6f8e9b4e59c3c8bc8061fef10b15c53871db0a82"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/si.pdf",
-      "bytes": 116992,
-      "sha256": "60e7dfe43edc25411541110c68ba58c5846c4abf8f8f6cd73c673ee2a2a19cb0"
-    },
-    {
-      "path": "paper/hypothesis_scope_jcim/si.tex",
-      "bytes": 23919,
-      "sha256": "2925c3286ccbe1d0992542c5d4818d55510c0d2025ac5600eefe1bec1146c745"
     },
     {
       "path": "provenance/COVERAGE.md",
@@ -1295,13 +1235,8 @@
     },
     {
       "path": "provenance/source_index.json",
-      "bytes": 85883,
-      "sha256": "000834a7eb6f82eddfbebb56fb9326c0e7116101f9c6fec830cbf1cdbb7db09a"
-    },
-    {
-      "path": "README.md",
-      "bytes": 4004,
-      "sha256": "840264bed77bee4c562d000257010be696c4ec18051eea417eecd96a06b5ab44"
+      "bytes": 81371,
+      "sha256": "a0b03f19592322339ba24510af9b4b15216b297835e3f681ce03a2dfa3f246f0"
     },
     {
       "path": "requirements.txt",
@@ -1474,6 +1409,11 @@
       "sha256": "0339f684cc28b3e9c6023232829cebca0337e1939fc05c827bab74fe034ecd76"
     },
     {
+      "path": "results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv",
+      "bytes": 736,
+      "sha256": "aa3c428a366a192c7a37003d4f5a3b661638d4346a205bba30827b1783ea349a"
+    },
+    {
       "path": "results/hypothesis_scope_v2_mechanism_20261106/translation.csv",
       "bytes": 6702,
       "sha256": "099e50897ce919155c0c0c35e56aa83706eefbcf3a89c6a46828f8a9c35b902a"
@@ -1540,8 +1480,8 @@
     },
     {
       "path": "tools/verify_release.py",
-      "bytes": 8878,
-      "sha256": "2f7aea04389e7b0bcdc2df62c4e12a21ef6c5783c1679c456f3c25b6b66c1006"
+      "bytes": 8863,
+      "sha256": "c09c962aaaebc894edc83e832f48ce5e6ee042c1679df5a402350027e75f92fc"
     }
   ],
   "local_only": [

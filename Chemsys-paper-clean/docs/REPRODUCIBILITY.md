@@ -18,6 +18,6 @@ The original source files are included. Their full study orchestration requires 
 
 `python tools/prepare_inputs.py` materializes the original eight development input paths from the published pools without a query. This alone does not restore a historical experiment. Supply model configurations externally through `CHEM_OPENAI_CONFIG` or `CHEM_DEEPSEEK_CONFIG`. No credential or environment installation is bundled.
 
-## Paper
+## Figures and source data
 
-The English manuscript, SI, references and frozen figures are supplied under `paper/hypothesis_scope_jcim/`. Compile SI first and make its `si.aux` available when compiling the manuscript, which uses `xr` for SI labels. The provided PDFs can be read without LaTeX. Scientific results, prompts, thresholds and figure layouts are unchanged in this publication projection.
+The frozen figures, plotted data and experimental prompts are under `paper/hypothesis_scope_jcim/`. The Table 6 source data are in `results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv`. The manuscript and Supporting Information are kept in the local research archive.

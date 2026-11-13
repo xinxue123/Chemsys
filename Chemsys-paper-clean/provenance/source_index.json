@@ -1194,42 +1194,6 @@
     "packaged_sha256": "9d4edee0914800271c3910d0a3a16cce7b265944566d317a06b877c46605fc48"
   },
   {
-    "path": "paper/hypothesis_scope_jcim/main.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/main.tex",
-    "source_sha256": "6ab37655087f3035cd49b7a895d5f06d434e5547d64b7ddcbd2cccca6c5a855a",
-    "packaged_sha256": "6ab37655087f3035cd49b7a895d5f06d434e5547d64b7ddcbd2cccca6c5a855a"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/si.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/si.tex",
-    "source_sha256": "2925c3286ccbe1d0992542c5d4818d55510c0d2025ac5600eefe1bec1146c745",
-    "packaged_sha256": "2925c3286ccbe1d0992542c5d4818d55510c0d2025ac5600eefe1bec1146c745"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/references.bib",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/references.bib",
-    "source_sha256": "db2200b35a124203bd56b1fb6f8e9b4e59c3c8bc8061fef10b15c53871db0a82",
-    "packaged_sha256": "db2200b35a124203bd56b1fb6f8e9b4e59c3c8bc8061fef10b15c53871db0a82"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/acs-si.bib",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/acs-si.bib",
-    "source_sha256": "5b54c4fa125df16a7faec7b6fdad80e767ff91baa80bc6e4c33e97f2ed4c24c1",
-    "packaged_sha256": "5b54c4fa125df16a7faec7b6fdad80e767ff91baa80bc6e4c33e97f2ed4c24c1"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/main.pdf",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/main.pdf",
-    "source_sha256": "c21480a78ad8ffc42a90b10ba531a661d114bb5ad0564248968145c408badd1d",
-    "packaged_sha256": "c21480a78ad8ffc42a90b10ba531a661d114bb5ad0564248968145c408badd1d"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/si.pdf",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/si.pdf",
-    "source_sha256": "60e7dfe43edc25411541110c68ba58c5846c4abf8f8f6cd73c673ee2a2a19cb0",
-    "packaged_sha256": "60e7dfe43edc25411541110c68ba58c5846c4abf8f8f6cd73c673ee2a2a19cb0"
-  },
-  {
     "path": "paper/hypothesis_scope_jcim/figures/fig2_development.pdf",
     "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/figures/fig2_development.pdf",
     "source_sha256": "f35944c99a083aec76e92a134b7694b7d1917f133fda41e78e3d605f40ea3e2e",
@@ -1356,36 +1320,6 @@
     "packaged_sha256": "3247147efcc6fd15e7d1cef733cc8ce762f5078a83781160fdb6d4af0eb1511e"
   },
   {
-    "path": "paper/hypothesis_scope_jcim/generated/claim_verdicts.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/claim_verdicts.tex",
-    "source_sha256": "9722fc1863272b7fabc1a8e6b75bf5b1355838f0081851b188eccf94392d348b",
-    "packaged_sha256": "9722fc1863272b7fabc1a8e6b75bf5b1355838f0081851b188eccf94392d348b"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/designs.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/designs.tex",
-    "source_sha256": "e525096f2d396355c2db06ed10eabd2ab0a5eb16e3dfcaef52ad82d8f1396f63",
-    "packaged_sha256": "e525096f2d396355c2db06ed10eabd2ab0a5eb16e3dfcaef52ad82d8f1396f63"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/first_points.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/first_points.tex",
-    "source_sha256": "048b7b999db61cf1decd2d0d256b5d919c415927b7763eeccb732f5d6c5fa013",
-    "packaged_sha256": "048b7b999db61cf1decd2d0d256b5d919c415927b7763eeccb732f5d6c5fa013"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/forecasts.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/forecasts.tex",
-    "source_sha256": "4b1adb00ba23a4a167bbb1cff5d8f84192ab7564c1731d3ea2dec2b51ab2976a",
-    "packaged_sha256": "4b1adb00ba23a4a167bbb1cff5d8f84192ab7564c1731d3ea2dec2b51ab2976a"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/per_task.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/per_task.tex",
-    "source_sha256": "74016f49c1670a959104cf2fb638958281e690a4a788adcccd9e51f2d5182a0b",
-    "packaged_sha256": "74016f49c1670a959104cf2fb638958281e690a4a788adcccd9e51f2d5182a0b"
-  },
-  {
     "path": "paper/hypothesis_scope_jcim/generated/prompts/first_point.txt",
     "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/first_point.txt",
     "source_sha256": "6e0a62517641787baa9e74da174c2939d2a17c622de3b94a41481696866c8496",
@@ -1408,18 +1342,6 @@
     "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/prompts/hypotheses_faithful.txt",
     "source_sha256": "b8475618371fc23ba2936ebbdf121a600aba22ab1e1df3b6653d35daae03a265",
     "packaged_sha256": "b8475618371fc23ba2936ebbdf121a600aba22ab1e1df3b6653d35daae03a265"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/test_f.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/test_f.tex",
-    "source_sha256": "801c1302f8f43fbe63c99a186ad2d33bf1b55ab3151c91ea93c3d661ea125915",
-    "packaged_sha256": "801c1302f8f43fbe63c99a186ad2d33bf1b55ab3151c91ea93c3d661ea125915"
-  },
-  {
-    "path": "paper/hypothesis_scope_jcim/generated/test_g.tex",
-    "source": "Falsifiable_Search_Scopes__Auditing_Language_Model_Guidance_in_Bayesian_Reaction_Optimization/generated/test_g.tex",
-    "source_sha256": "e00b9173b287b5270be48f87c445962a47763182fccf58138b063049074221f8",
-    "packaged_sha256": "e00b9173b287b5270be48f87c445962a47763182fccf58138b063049074221f8"
   },
   {
     "path": "results/grounded_baselines_20261105/per_seed_results.csv",
@@ -1502,5 +1424,11 @@
     "source": "runtime/research/deepseek_table4_20261110/frozen/shared_starts.json",
     "source_sha256": "23cc7108860be3c916cbc7d9b0225f15042ce3de54a9d99ee9e980a1199c08a2",
     "packaged_sha256": "23cc7108860be3c916cbc7d9b0225f15042ce3de54a9d99ee9e980a1199c08a2"
+  },
+  {
+    "path": "results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv",
+    "source": "Chemsys-submission_20261112/results/hypothesis_scope_v2_mechanism_20261106/table6_displayed.csv",
+    "source_sha256": "aa3c428a366a192c7a37003d4f5a3b661638d4346a205bba30827b1783ea349a",
+    "packaged_sha256": "aa3c428a366a192c7a37003d4f5a3b661638d4346a205bba30827b1783ea349a"
   }
 ]

@@ -28,7 +28,7 @@
 | `data_catalogue/excluded/` |Per-archive transient/reparse/credential exclusions | Inspect the capture boundary explicitly. |
 | `paper/v13_late/`, `paper/v13_confirmation/` |Previously exported English manuscript/supplement/addendum, unchanged | Original arithmetic verifiers and frozen documents. |
 
-The archive, full-pool, compiled-runtime and detailed-index paths in this map refer to the separate local bundle. The GitHub edition contains their compact metadata, code and result summaries; see [LOCAL_DATA_REQUIREMENTS.md](../LOCAL_DATA_REQUIREMENTS.md) for restoration. `paper/v13_confirmation/` retains the earlier small LaTeX source snapshot; the complete manuscript trees are local.
+The archive, full-pool, compiled-runtime and detailed-index paths in this map refer to the separate local bundle. The GitHub edition contains their compact metadata, code and result summaries; see [LOCAL_DATA_REQUIREMENTS.md](../LOCAL_DATA_REQUIREMENTS.md) for restoration. The historical manuscript sources are kept with the local research archive.
 
 The 72 local archives contain 399,703 exported source members from 63 run groups and nine other archive groups. Data are preserved by file, without selecting only successful trajectories. Runtime environments, Git repositories/dependency caches, transient lock/tmp/bytecode files, and unrelated Ce–Al–Ge/Materials Project/XRD assets are outside this chemical optimization capture.
 

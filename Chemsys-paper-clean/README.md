@@ -2,7 +2,7 @@
 
 This is the GitHub edition of **Falsifiable Search Scopes: Auditing Language-Model Guidance in Bayesian Reaction Optimization**. The current study layer is `hypothesis_scope_v2`. Historical names such as `cold_start_v13` are retained dependencies, not the main study version.
 
-The companion contains the method/comparator code, English documentation, **13 frozen candidate pools with 38,119 candidates**, compact results, derived running-best curves, and the English manuscript and Supporting Information. Raw experiment/LLM logs, original decision-state chains, per-round GP arrays, fit caches, environments and large archives remain in the separate local project.
+The companion contains the method/comparator code, English documentation, **13 frozen candidate pools with 38,119 candidates**, compact results, and derived running-best curves. The manuscript and Supporting Information are kept in the local research archive. Raw experiment/LLM logs, original decision-state chains, per-round GP arrays, fit caches, environments and large archives remain in the separate local project.
 
 ## Start here
 
@@ -27,7 +27,7 @@ These commands use no model service, GP fit or experimental query. Verification 
 | `code/extensions/deepseek/` | Additional-model driver and transport |
 | `data/` | All 13 public pools and evaluator oracle arrays; complete catalogue in `tasks.csv` |
 | `results/` | Metrics, contrasts, knowledge audit and derived curves |
-| `paper/hypothesis_scope_jcim/` | English TeX/PDF files, figures and plotted data |
+| `paper/hypothesis_scope_jcim/` | Figures, plotted data and experimental prompts |
 | `provenance/` | Source hashes and filesystem/publication adaptations |
 | `environment/` | Numerical requirements and observed environment |
 | `docs/` | English handoff, metric definitions and reproducibility notes |
