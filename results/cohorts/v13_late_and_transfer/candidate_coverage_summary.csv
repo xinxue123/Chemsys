@@ -1,9 +1,0 @@
-cohort,queries,queries_with_any_live_note,queries_with_any_menu_coverage,queries_with_selective_coverage,queries_with_all_five_note,queries_with_selected_forecast,live_note_menu_pairs,zero_coverage_pairs,selective_coverage_pairs,all_five_coverage_pairs,promote_selected_GP_outside_associations,avoid_selected_outside_GP_inside_associations,changed_reliability_events_with_next_query,changed_reliability_live_and_visible_next_query,changed_reliability_with_next_menu_coverage
-cold,640,477,164,117,51,117,651,475,125,51,21,1,106,106,71
-new_holdout_full,60,48,29,16,13,22,61,32,16,13,3,0,17,17,14
-new_prefix_coupled,120,120,24,24,0,14,166,142,24,0,5,0,13,13,10
-new_prefix_full,120,120,26,26,0,14,172,146,26,0,5,0,13,13,10
-new_prefix_kf_fixed,120,120,21,21,0,15,178,157,21,0,9,0,0,0,0
-new_prefix_no_refresh,120,120,24,24,0,14,160,136,24,0,4,0,14,14,10
-warm_development,128,124,52,41,12,36,231,177,42,12,7,0,34,34,14
-warm_primary,384,369,205,116,99,172,660,432,128,100,31,4,158,158,111

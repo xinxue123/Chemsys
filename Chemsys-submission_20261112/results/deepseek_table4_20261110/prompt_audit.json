@@ -1,9 +1,0 @@
-{
-  "status": "PASS_UNCHANGED_PROMPTS_AND_CARDS",
-  "requests_checked": 1145,
-  "initial_requests": 65,
-  "own_prefix_requests": 1080,
-  "unmeasured_outcomes_supplied": false,
-  "validated_response_provenance": 1120,
-  "lossless_reference_resolutions": 2
-}

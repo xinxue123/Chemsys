@@ -1,4 +1,0 @@
-{
-  "base_url": "https://your-provider.example/v1",
-  "DEEPSEEK_API_KEY": "REPLACE_WITH_YOUR_API_KEY"
-}

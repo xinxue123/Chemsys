@@ -1,4 +1,0 @@
-Unselected JS discrimination prototypes, 2026-11-01.
-knowledge_discrimination_math.py and knowledge_discrimination_engine.py were not tested or integrated into production, and no optimization/LLM call used them. They are research drafts, not runnable supported benchmark modules.
-The seed2 prefix induction shows JS-ranking-only preserves all8task trajectories; JS admission+ranking can change only originally tied Case2, hence at most4wins on this specific frozen initialization. This does not prove a bound for other initializations. Keep the evidence; do not silently activate these drafts.
-See code/tools/knowledge_js_seed2_prefix_proof.py and experiments/reports/knowledge_loop_20261101/seed2_JS_prefix_induction_review.json.

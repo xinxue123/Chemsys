@@ -1,9 +1,0 @@
-Active publication goal, 2026-11-01
-
-The earlier application goal is no longer present. A new active application goal was successfully created at 2026-11-01 14:08:41 UTC (22:08:41 Asia/Singapore), using the user's explicit publication-goal request and instruction to finish through subagents. This status supersedes the earlier operational blocker noted in paper_goal_20261101.txt; that historical file and delivered paper remain unchanged.
-
-Complete all 68 registered subagent trajectories without changing frozen V12 or historical controls; independently audit numeric decisions, prospective feedback and exact request/response custody; keep the original API and subagent cohorts separate; consolidate all evidence into an English LaTeX methods manuscript, supplementary materials, verified PDFs and reproducible tables.
-
-The source protocol is experiments/runs/paper_v12_subagent/protocol.json, SHA-256 identity 17fa080d2a5167a1c70cc9cb7b84a4e5afa44594c8249cdda90419d7e029721f. Experimental decisions use a newly spawned gpt-6.1-terra medium agent for every request attempt, fork_turns=none, with opaque exact system/public packets. The scheduler supplies no scientific advice.
-
-The goal is active and incomplete. Execution validity does not establish optimization advantage. All losses, schema failures and external blockers must remain visible. No journal submission, merge or push is part of this goal.

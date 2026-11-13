@@ -1,2 +1,0 @@
--r requirements.txt
-rdkit==2024.9.6

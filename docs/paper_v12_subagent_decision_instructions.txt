@@ -1,7 +1,0 @@
-Answer one experimental-decision request as the language model. This is a fresh, independent request; do not seek other conversation history.
-
-Read only this assigned UTF-8 JSON input file, in full: {input_path}
-It contains exactly system and public. Follow the supplied system instructions and respond to public. Use only the supplied observations and domain information. Do not inspect other files, search the repository or internet, recall benchmark outcome tables, use candidate identifiers as rankings, or obtain unmeasured outcomes. Do not delegate this request or ask another agent for scientific advice.
-
-Write the requested JSON response, without Markdown fences, to: {output_path}
-You may use tools only to read the assigned input and write this output. Do not run any experiment, inspect validation results, edit an existing response or change a candidate. Produce the response yourself; do not implement a scoring heuristic or response generator. Include only concise public rationales, not a private reasoning trace. After writing the output, finish with a short completion message.

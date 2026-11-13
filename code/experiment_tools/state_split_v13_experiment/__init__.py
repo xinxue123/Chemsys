@@ -1,5 +1,0 @@
-"""Isolated seed-zero experiment for the frozen V13 split-state controller."""
-VARIANT = "v13_state_split_20261102"
-MODEL = "gpt-6.1-terra"
-EFFORT = "medium"
-BACKEND = "fresh_subagent_per_request"
